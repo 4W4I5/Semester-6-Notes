@@ -30,5 +30,3 @@ These notes were made for Semester 6 in the BS(CYS) course using Obsidian, feel 
 | Week # | Date | Status | Content |
 | ------ | ---- | ------ | ------- |
 |        |      |        |         |
-
-
