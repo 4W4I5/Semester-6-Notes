@@ -4,42 +4,42 @@
 > These notes were made for Semester 6 in the BS(CYS) course using Obsidian, feel free to clone the repo and push changes to add your own notes here or just let me know and ill add them
 # VARE
 
-| Week #  | Date                                                                         | Status | Content         |
-| ------- | ---------------------------------------------------------------------------- | ------ | --------------- |
-| Week 1  | 22nd Jan, 2024                                                               | N/A    | Nothing to note |
-| Week 1  | [24th Jan, 2024](VARE/1_VARE_24th_Jan,%202024.md)                                                               | N/A    | Class Cancelled |
+| Week #  | Date                                               | Status | Content         |
+| ------- | -------------------------------------------------- | ------ | --------------- |
+| Week 1  | 22nd Jan, 2024                                     | N/A    | Nothing to note |
+| Week 1  | [25th Jan, 2024](VARE/1_VARE_25th_Jan,%202024.md)  | N/A    | Class Cancelled |
 | Week 2  | [29th Jan, 2024](VARE/2_VARE_29th_Jan,%202024.md)  |        |                 |
-| Week 2  | [31st Jan, 2024](VARE/3_VARE_31st_Jan,%202024.md)  |        |                 |
+| Week 2  | [1st Feb, 2024](VARE/3_VARE_1st_Feb,%202024.md)    |        |                 |
 | Week 3  | [5th Feb, 2024](VARE/4_VARE_5th_Feb,%202024.md)    |        |                 |
-| Week 3  | [7th Feb, 2024](VARE/5_VARE_7th_Feb,%202024.md)    |        |                 |
+| Week 3  | [8th Feb, 2024](VARE/5_VARE_8th_Feb,%202024.md)    |        |                 |
 | Week 4  | [12th Feb, 2024](VARE/6_VARE_12th_Feb,%202024.md)  |        |                 |
-| Week 4  | [14th Feb, 2024](VARE/7_VARE_14th_Feb,%202024.md)  |        |                 |
+| Week 4  | [15th Feb, 2024](VARE/7_VARE_15th_Feb,%202024.md)  |        |                 |
 | Week 5  | [19th Feb, 2024](VARE/8_VARE_19th_Feb,%202024.md)  |        |                 |
-| Week 5  | [21st Feb, 2024](VARE/9_VARE_21st_Feb,%202024.md)  |        |                 |
-| Week 6  | [26th Feb, 2024](VARE/10_VARE_26th_Feb,%202024.md)  |        |                 |
-| Week 6  | [28th Feb, 2024](VARE/11_VARE_28th_Feb,%202024.md) |        |                 |
+| Week 5  | [22nd Feb, 2024](VARE/9_VARE_22nd_Feb,%202024.md)  |        |                 |
+| Week 6  | [26th Feb, 2024](VARE/10_VARE_26th_Feb,%202024.md) |        |                 |
+| Week 6  | [29th Feb, 2024](VARE/11_VARE_29th_Feb,%202024.md) |        |                 |
 | Week 7  | [4th Mar, 2024](VARE/12_VARE_4th_Mar,%202024.md)   |        |                 |
-| Week 7  | [6th Mar, 2024](VARE/13_VARE_6th_Mar,%202024.md)   |        |                 |
+| Week 7  | [7th Mar, 2024](VARE/13_VARE_7th_Mar,%202024.md)   |        |                 |
 | Week 8  | [11th Mar, 2024](VARE/14_VARE_11th_Mar,%202024.md) |        |                 |
-| Week 8  | [13th Mar, 2024](VARE/15_VARE_13th_Mar,%202024.md) |        |                 |
+| Week 8  | [14th Mar, 2024](VARE/15_VARE_14th_Mar,%202024.md) |        |                 |
 | Week 9  | [18th Mar, 2024](VARE/16_VARE_18th_Mar,%202024.md) |        |                 |
-| Week 9  | [20th Mar, 2024](VARE/17_VARE_20th_Mar,%202024.md) |        |                 |
+| Week 9  | [21st Mar, 2024](VARE/17_VARE_21st_Mar,%202024.md) |        |                 |
 | Week 10 | [25th Mar, 2024](VARE/18_VARE_25th_Mar,%202024.md) |        |                 |
-| Week 10 | [27th Mar, 2024](VARE/19_VARE_27th_Mar,%202024.md) |        |                 |
+| Week 10 | [28th Mar, 2024](VARE/19_VARE_28th_Mar,%202024.md) |        |                 |
 | Week 11 | [1st Apr, 2024](VARE/20_VARE_1st_Apr,%202024.md)   |        |                 |
-| Week 11 | [3rd Apr, 2024](VARE/21_VARE_3rd_Apr,%202024.md)   |        |                 |
+| Week 11 | [4th Apr, 2024](VARE/21_VARE_4th_Apr,%202024.md)   |        |                 |
 | Week 12 | [8th Apr, 2024](VARE/22_VARE_8th_Apr,%202024.md)   |        |                 |
-| Week 12 | [10th Apr, 2024](VARE/23_VARE_10th_Apr,%202024.md) |        |                 |
+| Week 12 | [11th Apr, 2024](VARE/23_VARE_11th_Apr,%202024.md) |        |                 |
 | Week 13 | [15th Apr, 2024](VARE/24_VARE_15th_Apr,%202024.md) |        |                 |
-| Week 13 | [17th Apr, 2024](VARE/25_VARE_17th_Apr,%202024.md) |        |                 |
+| Week 13 | [18th Apr, 2024](VARE/25_VARE_18th_Apr,%202024.md) |        |                 |
 | Week 14 | [22nd Apr, 2024](VARE/26_VARE_22nd_Apr,%202024.md) |        |                 |
-| Week 14 | [24th Apr, 2024](VARE/27_VARE_24th_Apr,%202024.md) |        |                 |
+| Week 14 | [25th Apr, 2024](VARE/27_VARE_25th_Apr,%202024.md) |        |                 |
 | Week 15 | [29th Apr, 2024](VARE/28_VARE_29th_Apr,%202024.md) |        |                 |
-| Week 15 | [1st May, 2024](VARE/29_VARE_1st_May,%202024.md)   |        |                 |
+| Week 15 | [2nd May, 2024](VARE/29_VARE_2nd_May,%202024.md)   |        |                 |
 | Week 16 | [6th May, 2024](VARE/30_VARE_6th_May,%202024.md)   |        |                 |
-| Week 16 | [8th May, 2024](VARE/31_VARE_8th_May,%202024.md)   |        |                 |
+| Week 16 | [9th May, 2024](VARE/31_VARE_9th_May,%202024.md)   |        |                 |
 | Week 17 | [13th May, 2024](VARE/32_VARE_13th_May,%202024.md) |        |                 |
-| Week 17 | [15th May, 2024](VARE/33_VARE_15th_May,%202024.md) |        |                 |
+| Week 17 | [16th May, 2024](VARE/33_VARE_16th_May,%202024.md) |        |                 |
 
 # Digital Forensics
 
