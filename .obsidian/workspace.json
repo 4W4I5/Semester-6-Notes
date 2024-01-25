@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/1_AI_25th_Jan, 2024.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/1_AI_25th_Jan, 2024.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/1_AI_25th_Jan, 2024.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/1_AI_25th_Jan, 2024.md"
+                "file": "README.md"
               }
             }
           },
@@ -172,8 +173,8 @@
   },
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
-    "README.md",
     "AI/1_AI_25th_Jan, 2024.md",
+    "README.md",
     "AI/1_AI 25th Jan, 2024.md",
     "AI",
     "Pasted image 20240106061949.png",
