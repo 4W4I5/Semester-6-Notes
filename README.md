@@ -126,7 +126,7 @@
 | Week 1  | 23rd Jan, 2024                                 | N/A          | Class Cancelled |
 | Week 1  | [25th Jan, 2024](InfoSec/1_InfoSec_25th_Jan,%202024.md)  | Complete-ish | Introductory    |
 | Week 2  | [29th Jan, 2024](InfoSec/2_InfoSec_29th_Jan,%202024.md)  |              |                 |
-| Week 2  | [31st Jan, 2024](InfoSec/3_InfoSec_31st_Jan,%202024.md)  |              |                 |
+| Week 2  | [30th Jan, 2024](InfoSec/3_InfoSec_30th_Jan,%202024.md)  |              |                 |
 | Week 3  | [5th Feb, 2024](InfoSec/4_InfoSec_5th_Feb,%202024.md)    |              |                 |
 | Week 3  | [7th Feb, 2024](InfoSec/5_InfoSec_7th_Feb,%202024.md)    |              |                 |
 | Week 4  | [12th Feb, 2024](InfoSec/6_InfoSec_12th_Feb,%202024.md)  |              |                 |
