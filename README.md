@@ -40,11 +40,11 @@ These notes were made for Semester 6 in the BS(CYS) course using Obsidian, feel 
 | Week 6  | [21st Feb, 2024](Ethical%20Hacking/8_Ethical%20Hacking_21st_Feb,%202024.md)  |        |                 |
 | Week 6  | [26th Feb, 2024](Ethical%20Hacking/9_Ethical%20Hacking_26th_Feb,%202024.md)  |        |                 |
 | Week 7  | [28th Feb, 2024](Ethical%20Hacking/10_Ethical%20Hacking_28th_Feb,%202024.md) |        |                 |
-| Week 7  | []                                                                             |        |                 |
-| Week 8  |                                                                              |        |                 |
-| Week 8  |                                                                              |        |                 |
-| Week 9  |                                                                              |        |                 |
-| Week 9  |                                                                              |        |                 |
-| Week 10 |                                                                              |        |                 |
-| Week 10 |                                                                              |        |                 |
+| Week 7  | [4th Mar, 2024](Ethical%20Hacking/11_Ethical%20Hacking_4th_Mar,%202024.md)   |        |                 |
+| Week 8  | [6th Mar, 2024](Ethical%20Hacking/12_Ethical%20Hacking_6th_Mar,%202024.md)   |        |                 |
+| Week 8  | [11th Mar, 2024](Ethical%20Hacking/13_Ethical%20Hacking_11th_Mar,%202024.md) |        |                 |
+| Week 9  | [13th Mar, 2024](Ethical%20Hacking/14_Ethical%20Hacking_13th_Mar,%202024.md) |        |                 |
+| Week 9  | [18th Mar, 2024](Ethical%20Hacking/15_Ethical%20Hacking_18th_Mar,%202024.md) |        |                 |
+| Week 10 | [25th Mar, 2024](Ethical%20Hacking/16_Ethical%20Hacking_22nd_Mar,%202024.md)                                                                             |        |                 |
+| Week 10 | [25th Mar, 2024](Ethical%20Hacking/17_Ethical%20Hacking_25th_Mar,%202024.md)                                                                             |        |                 |
 | Week 11 |                                                                              |        |                 |
