@@ -49,4 +49,9 @@ These notes were made for Semester 6 in the BS(CYS) course using Obsidian, feel 
 | Week 9  | [20th Mar, 2024](Ethical%20Hacking/16_Ethical%20Hacking_20th_Mar,%202024.md) |        |                 |
 | Week 10 | [25th Mar, 2024](Ethical%20Hacking/17_Ethical%20Hacking_25th_Mar,%202024.md) |        |                 |
 | Week 10 | [27th Mar, 2024](Ethical%20Hacking/18_Ethical%20Hacking_27th_Mar,%202024.md) |        |                 |
-| Week 11 |                                                                              |        |                 |
+| Week 11 | [1st Apr, 2024](Ethical%20Hacking/19_Ethical%20Hacking_1st_Apr,%202024.md)   |        |                 |
+| Week 11 | [3rd Apr, 2024](Ethical%20Hacking/20_Ethical%20Hacking_3rd_Apr,%202024.md)   |        |                 |
+| Week 12 | [8th Apr, 2024](Ethical%20Hacking/21_Ethical%20Hacking_8th_Apr,%202024.md)   |        |                 |
+| Week 12 | [10th Apr, 2024](Ethical%20Hacking/22_Ethical%20Hacking_10th_Apr,%202024.md) |        |                 |
+| Week 13 | [15th Apr, 2024](Ethical%20Hacking/23_Ethical%20Hacking_15th_Apr,%202024.md) |        |                 |
+| Week 13 |                                                                              |        |                 |
