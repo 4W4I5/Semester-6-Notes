@@ -17,7 +17,7 @@ These notes were made for Semester 6 in the BS(CYS) course using Obsidian, feel 
 
 | Week # | Date | Status | Content |
 | ------ | ---- | ------ | ------- |
-|        |      |        |         |
+| Week 1 | [25th Jan, 2024](AI/1_AI_25th_)     |        |         |
 
 # Information Security
 
