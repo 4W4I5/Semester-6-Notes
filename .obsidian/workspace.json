@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "AI/1_AI_25th_Jan, 2024.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "AI/1_AI_25th_Jan, 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "AI/1_AI_25th_Jan, 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "AI/1_AI_25th_Jan, 2024.md"
               }
             }
           },
@@ -173,6 +173,8 @@
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
     "README.md",
+    "AI/1_AI_25th_Jan, 2024.md",
+    "AI",
     "Pasted image 20240106061949.png",
     "Pasted image 20231216180329.png",
     "Algo/Exam Prep/Algo Finals Prep.md",
@@ -215,7 +217,6 @@
     "OS/Exam Prep",
     "Marketing/Exam Prep",
     "Books/CYSEC Book.pdf",
-    "Books/OS Book.pdf",
-    "Books/DB Book.pdf"
+    "Books/OS Book.pdf"
   ]
 }
