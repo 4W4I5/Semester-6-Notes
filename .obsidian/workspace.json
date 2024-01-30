@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VARE/1_VARE_25th_Jan, 2024.md",
+                "file": "AI/2_AI_30th_Jan, 2024.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VARE/1_VARE_25th_Jan, 2024.md",
+                "file": "AI/2_AI_30th_Jan, 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VARE/1_VARE_25th_Jan, 2024.md",
+                "file": "AI/2_AI_30th_Jan, 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VARE/1_VARE_25th_Jan, 2024.md"
+                "file": "AI/2_AI_30th_Jan, 2024.md"
               }
             }
           },
@@ -174,6 +173,7 @@
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
     "README.md",
+    "AI/2_AI_30th_Jan, 2024.md",
     "VARE/1_VARE_25th_Jan, 2024.md",
     "VARE",
     "AI/1_AI_25th_Jan, 2024.md",
@@ -211,7 +211,6 @@
     "CySec-2/CySec2 29 August, 2023.md",
     "CySec-2/CySec2 3 October, 2023.md",
     "CySec-2/CySec2 31 August, 2023.md",
-    "CySec-2/CySec2 5 October, 2023.md",
     "Algo/Exam Prep",
     "CySec-2/Exam Prep",
     "CySec2/Exam Prep",
