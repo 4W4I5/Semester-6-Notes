@@ -123,42 +123,42 @@
 
 # Information Security
 
-| Week #  | Date                                                     | Status       | Content         |
-| ------- | -------------------------------------------------------- | ------------ | --------------- |
-| Week 1  | 23rd Jan, 2024                                           | N/A          | Class Cancelled |
-| Week 1  | [25th Jan, 2024](InfoSec/1_InfoSec_25th_Jan,%202024.md)  | Complete-ish | Introductory    |
-| Week 2  | [30th Jan, 2024](InfoSec/2_InfoSec_30th_Jan,%202024.md)  |              |                 |
-| Week 2  | [1st Feb, 2024](InfoSec/3_InfoSec_1st_Feb,%202024.md)    |              |                 |
-| Week 3  | [6th Feb, 2024](InfoSec/4_InfoSec_6th_Feb,%202024.md)    |              |                 |
-| Week 3  | [8th Feb, 2024](InfoSec/5_InfoSec_8th_Feb,%202024.md)    |              |                 |
-| Week 4  | [13th Feb, 2024](InfoSec/6_InfoSec_13th_Feb,%202024.md)  |              |                 |
-| Week 4  | [15th Feb, 2024](InfoSec/7_InfoSec_15th_Feb,%202024.md)  |              |                 |
-| Week 5  | [20th Feb, 2024](InfoSec/8_InfoSec_20th_Feb,%202024.md)  |              |                 |
-| Week 5  | [22nd Feb, 2024](InfoSec/9_InfoSec_22nd_Feb,%202024.md)  |              |                 |
-| Week 6  | [27th Feb, 2024](InfoSec/10_InfoSec_27th_Feb,%202024.md) |              |                 |
-| Week 6  | [29th Feb, 2024](InfoSec/11_InfoSec_29th_Feb,%202024.md) |              |                 |
-| Week 7  | [5th Mar, 2024](InfoSec/12_InfoSec_5th_Mar,%202024.md)   |              |                 |
-| Week 7  | [7th Mar, 2024](InfoSec/13_InfoSec_7th_Mar,%202024.md)   |              |                 |
-| Week 8  | [12th Mar, 2024](InfoSec/14_InfoSec_12th_Mar,%202024.md) |              |                 |
-| Week 8  | [14th Mar, 2024](InfoSec/15_InfoSec_14th_Mar,%202024.md) |              |                 |
-| Week 9  | [19th Mar, 2024](InfoSec/16_InfoSec_19th_Mar,%202024.md) |              |                 |
-| Week 9  | [21th Mar, 2024](InfoSec/17_InfoSec_21th_Mar,%202024.md) |              |                 |
-| Week 10 | [26th Mar, 2024](InfoSec/18_InfoSec_26th_Mar,%202024.md) |              |                 |
-| Week 10 | [28th Mar, 2024](InfoSec/19_InfoSec_28th_Mar,%202024.md) |              |                 |
-| Week 11 | [2nd Apr, 2024](InfoSec/20_InfoSec_2nd_Apr,%202024.md)   |              |                 |
-| Week 11 | [4th Apr, 2024](InfoSec/21_InfoSec_4th_Apr,%202024.md)   |              |                 |
-| Week 12 | [9th Apr, 2024](InfoSec/22_InfoSec_9th_Apr,%202024.md)   |              |                 |
-| Week 12 | [11th Apr, 2024](InfoSec/23_InfoSec_11th_Apr,%202024.md) |              |                 |
-| Week 13 | [16th Apr, 2024](InfoSec/24_InfoSec_16th_Apr,%202024.md) |              |                 |
-| Week 13 | [18th Apr, 2024](InfoSec/25_InfoSec_18th_Apr,%202024.md) |              |                 |
-| Week 14 | [23rd Apr, 2024](InfoSec/26_InfoSec_23rd_Apr,%202024.md) |              |                 |
-| Week 14 | [25th Apr, 2024](InfoSec/27_InfoSec_25th_Apr,%202024.md) |              |                 |
-| Week 15 | [30th Apr, 2024](InfoSec/28_InfoSec_30th_Apr,%202024.md) |              |                 |
-| Week 15 | [2nd May, 2024](InfoSec/29_InfoSec_2nd_May,%202024.md)   |              |                 |
-| Week 16 | [7th May, 2024](InfoSec/30_InfoSec_7th_May,%202024.md)   |              |                 |
-| Week 16 | [9th May, 2024](InfoSec/31_InfoSec_9th_May,%202024.md)   |              |                 |
-| Week 17 | [14th May, 2024](InfoSec/32_InfoSec_14th_May,%202024.md) |              |                 |
-| Week 17 | [16th May, 2024](InfoSec/33_InfoSec_16th_May,%202024.md) |              |                 |
+| Week #  | Date                                                     | Status | Content         |
+| ------- | -------------------------------------------------------- | ------ | --------------- |
+| Week 1  | 23rd Jan, 2024                                           | N/A    | Class Cancelled |
+| Week 1  | [25th Jan, 2024](InfoSec/1_InfoSec_25th_Jan,%202024.md)  |        | Introductory    |
+| Week 2  | [30th Jan, 2024](InfoSec/2_InfoSec_30th_Jan,%202024.md)  |        |                 |
+| Week 2  | [1st Feb, 2024](InfoSec/3_InfoSec_1st_Feb,%202024.md)    |        |                 |
+| Week 3  | [6th Feb, 2024](InfoSec/4_InfoSec_6th_Feb,%202024.md)    |        |                 |
+| Week 3  | [8th Feb, 2024](InfoSec/5_InfoSec_8th_Feb,%202024.md)    |        |                 |
+| Week 4  | [13th Feb, 2024](InfoSec/6_InfoSec_13th_Feb,%202024.md)  |        |                 |
+| Week 4  | [15th Feb, 2024](InfoSec/7_InfoSec_15th_Feb,%202024.md)  |        |                 |
+| Week 5  | [20th Feb, 2024](InfoSec/8_InfoSec_20th_Feb,%202024.md)  |        |                 |
+| Week 5  | [22nd Feb, 2024](InfoSec/9_InfoSec_22nd_Feb,%202024.md)  |        |                 |
+| Week 6  | [27th Feb, 2024](InfoSec/10_InfoSec_27th_Feb,%202024.md) |        |                 |
+| Week 6  | [29th Feb, 2024](InfoSec/11_InfoSec_29th_Feb,%202024.md) |        |                 |
+| Week 7  | [5th Mar, 2024](InfoSec/12_InfoSec_5th_Mar,%202024.md)   |        |                 |
+| Week 7  | [7th Mar, 2024](InfoSec/13_InfoSec_7th_Mar,%202024.md)   |        |                 |
+| Week 8  | [12th Mar, 2024](InfoSec/14_InfoSec_12th_Mar,%202024.md) |        |                 |
+| Week 8  | [14th Mar, 2024](InfoSec/15_InfoSec_14th_Mar,%202024.md) |        |                 |
+| Week 9  | [19th Mar, 2024](InfoSec/16_InfoSec_19th_Mar,%202024.md) |        |                 |
+| Week 9  | [21th Mar, 2024](InfoSec/17_InfoSec_21th_Mar,%202024.md) |        |                 |
+| Week 10 | [26th Mar, 2024](InfoSec/18_InfoSec_26th_Mar,%202024.md) |        |                 |
+| Week 10 | [28th Mar, 2024](InfoSec/19_InfoSec_28th_Mar,%202024.md) |        |                 |
+| Week 11 | [2nd Apr, 2024](InfoSec/20_InfoSec_2nd_Apr,%202024.md)   |        |                 |
+| Week 11 | [4th Apr, 2024](InfoSec/21_InfoSec_4th_Apr,%202024.md)   |        |                 |
+| Week 12 | [9th Apr, 2024](InfoSec/22_InfoSec_9th_Apr,%202024.md)   |        |                 |
+| Week 12 | [11th Apr, 2024](InfoSec/23_InfoSec_11th_Apr,%202024.md) |        |                 |
+| Week 13 | [16th Apr, 2024](InfoSec/24_InfoSec_16th_Apr,%202024.md) |        |                 |
+| Week 13 | [18th Apr, 2024](InfoSec/25_InfoSec_18th_Apr,%202024.md) |        |                 |
+| Week 14 | [23rd Apr, 2024](InfoSec/26_InfoSec_23rd_Apr,%202024.md) |        |                 |
+| Week 14 | [25th Apr, 2024](InfoSec/27_InfoSec_25th_Apr,%202024.md) |        |                 |
+| Week 15 | [30th Apr, 2024](InfoSec/28_InfoSec_30th_Apr,%202024.md) |        |                 |
+| Week 15 | [2nd May, 2024](InfoSec/29_InfoSec_2nd_May,%202024.md)   |        |                 |
+| Week 16 | [7th May, 2024](InfoSec/30_InfoSec_7th_May,%202024.md)   |        |                 |
+| Week 16 | [9th May, 2024](InfoSec/31_InfoSec_9th_May,%202024.md)   |        |                 |
+| Week 17 | [14th May, 2024](InfoSec/32_InfoSec_14th_May,%202024.md) |        |                 |
+| Week 17 | [16th May, 2024](InfoSec/33_InfoSec_16th_May,%202024.md) |        |                 |
 
 # Ethical Hacking
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VARE/2_VARE_30th_Jan, 2024.md",
+                "file": "InfoSec/2_InfoSec_30th_Jan, 2024.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VARE/2_VARE_30th_Jan, 2024.md",
+                "file": "InfoSec/2_InfoSec_30th_Jan, 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VARE/2_VARE_30th_Jan, 2024.md",
+                "file": "InfoSec/2_InfoSec_30th_Jan, 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VARE/2_VARE_30th_Jan, 2024.md"
+                "file": "InfoSec/2_InfoSec_30th_Jan, 2024.md"
               }
             }
           },
@@ -173,6 +173,8 @@
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
     "README.md",
+    "InfoSec/2_InfoSec_30th_Jan, 2024.md",
+    "InfoSec",
     "VARE/2_VARE_30th_Jan, 2024.md",
     "AI/2_AI_30th_Jan, 2024.md",
     "VARE/1_VARE_25th_Jan, 2024.md",
@@ -210,13 +212,11 @@
     "CySec-2/CySec2 28 September, 2023.md",
     "CySec-2/CySec2 24 August, 2023.md",
     "CySec-2/CySec2 29 August, 2023.md",
-    "CySec-2/CySec2 3 October, 2023.md",
     "Algo/Exam Prep",
     "CySec-2/Exam Prep",
     "CySec2/Exam Prep",
     "CySec2",
     "OS/Exam Prep",
-    "Marketing/Exam Prep",
-    "Books/CYSEC Book.pdf"
+    "Marketing/Exam Prep"
   ]
 }
