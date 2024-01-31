@@ -6,42 +6,42 @@
 
 # VARE
 
-| Week #  | Date                                               | Status | Content         |
-| ------- | -------------------------------------------------- | ------ | --------------- |
-| Week 1  | 23rd Jan, 2024                                     | N/A    | Class Cancelled |
-| Week 1  | [25th Jan, 2024](VARE/1_VARE_25th_Jan,%202024.md)  |        |                 |
-| Week 2  | [30th Jan, 2024](VARE/2_VARE_30th_Jan,%202024.md)  |        |                 |
-| Week 2  | [1st Feb, 2024](VARE/3_VARE_1st_Feb,%202024.md)    |        |                 |
-| Week 3  | [6th Feb, 2024](VARE/4_VARE_6th_Feb,%202024.md)    |        |                 |
-| Week 3  | [8th Feb, 2024](VARE/5_VARE_8th_Feb,%202024.md)    |        |                 |
-| Week 4  | [13th Feb, 2024](VARE/6_VARE_13th_Feb,%202024.md)  |        |                 |
-| Week 4  | [15th Feb, 2024](VARE/7_VARE_15th_Feb,%202024.md)  |        |                 |
-| Week 5  | [20th Feb, 2024](VARE/8_VARE_20th_Feb,%202024.md)  |        |                 |
-| Week 5  | [22nd Feb, 2024](VARE/9_VARE_22nd_Feb,%202024.md)  |        |                 |
-| Week 6  | [27th Feb, 2024](VARE/10_VARE_27th_Feb,%202024.md) |        |                 |
-| Week 6  | [29th Feb, 2024](VARE/11_VARE_29th_Feb,%202024.md) |        |                 |
-| Week 7  | [5th Mar, 2024](VARE/12_VARE_5th_Mar,%202024.md)   |        |                 |
-| Week 7  | [7th Mar, 2024](VARE/13_VARE_7th_Mar,%202024.md)   |        |                 |
-| Week 8  | [12th Mar, 2024](VARE/14_VARE_12th_Mar,%202024.md) |        |                 |
-| Week 8  | [14th Mar, 2024](VARE/15_VARE_14th_Mar,%202024.md) |        |                 |
-| Week 9  | [19th Mar, 2024](VARE/16_VARE_19th_Mar,%202024.md) |        |                 |
-| Week 9  | [21th Mar, 2024](VARE/17_VARE_21th_Mar,%202024.md) |        |                 |
-| Week 10 | [26th Mar, 2024](VARE/18_VARE_26th_Mar,%202024.md) |        |                 |
-| Week 10 | [28th Mar, 2024](VARE/19_VARE_28th_Mar,%202024.md) |        |                 |
-| Week 11 | [2nd Apr, 2024](VARE/20_VARE_2nd_Apr,%202024.md)   |        |                 |
-| Week 11 | [4th Apr, 2024](VARE/21_VARE_4th_Apr,%202024.md)   |        |                 |
-| Week 12 | [9th Apr, 2024](VARE/22_VARE_9th_Apr,%202024.md)   |        |                 |
-| Week 12 | [11th Apr, 2024](VARE/23_VARE_11th_Apr,%202024.md) |        |                 |
-| Week 13 | [16th Apr, 2024](VARE/24_VARE_16th_Apr,%202024.md) |        |                 |
-| Week 13 | [18th Apr, 2024](VARE/25_VARE_18th_Apr,%202024.md) |        |                 |
-| Week 14 | [23rd Apr, 2024](VARE/26_VARE_23rd_Apr,%202024.md) |        |                 |
-| Week 14 | [25th Apr, 2024](VARE/27_VARE_25th_Apr,%202024.md) |        |                 |
-| Week 15 | [30th Apr, 2024](VARE/28_VARE_30th_Apr,%202024.md) |        |                 |
-| Week 15 | [2nd May, 2024](VARE/29_VARE_2nd_May,%202024.md)   |        |                 |
-| Week 16 | [7th May, 2024](VARE/30_VARE_7th_May,%202024.md)   |        |                 |
-| Week 16 | [9th May, 2024](VARE/31_VARE_9th_May,%202024.md)   |        |                 |
-| Week 17 | [14th May, 2024](VARE/32_VARE_14th_May,%202024.md) |        |                 |
-| Week 17 | [16th May, 2024](VARE/33_VARE_16th_May,%202024.md) |        |                 |
+| Week #  | Date                                               | Status     | Content           |
+| ------- | -------------------------------------------------- | ---------- | ----------------- |
+| Week 1  | 23rd Jan, 2024                                     | N/A        | Class Cancelled   |
+| Week 1  | [25th Jan, 2024](VARE/1_VARE_25th_Jan,%202024.md)  |            |                   |
+| Week 2  | [30th Jan, 2024](VARE/2_VARE_30th_Jan,%202024.md)  | Incomplete | Classical Ciphers |
+| Week 2  | [1st Feb, 2024](VARE/3_VARE_1st_Feb,%202024.md)    |            |                   |
+| Week 3  | [6th Feb, 2024](VARE/4_VARE_6th_Feb,%202024.md)    |            |                   |
+| Week 3  | [8th Feb, 2024](VARE/5_VARE_8th_Feb,%202024.md)    |            |                   |
+| Week 4  | [13th Feb, 2024](VARE/6_VARE_13th_Feb,%202024.md)  |            |                   |
+| Week 4  | [15th Feb, 2024](VARE/7_VARE_15th_Feb,%202024.md)  |            |                   |
+| Week 5  | [20th Feb, 2024](VARE/8_VARE_20th_Feb,%202024.md)  |            |                   |
+| Week 5  | [22nd Feb, 2024](VARE/9_VARE_22nd_Feb,%202024.md)  |            |                   |
+| Week 6  | [27th Feb, 2024](VARE/10_VARE_27th_Feb,%202024.md) |            |                   |
+| Week 6  | [29th Feb, 2024](VARE/11_VARE_29th_Feb,%202024.md) |            |                   |
+| Week 7  | [5th Mar, 2024](VARE/12_VARE_5th_Mar,%202024.md)   |            |                   |
+| Week 7  | [7th Mar, 2024](VARE/13_VARE_7th_Mar,%202024.md)   |            |                   |
+| Week 8  | [12th Mar, 2024](VARE/14_VARE_12th_Mar,%202024.md) |            |                   |
+| Week 8  | [14th Mar, 2024](VARE/15_VARE_14th_Mar,%202024.md) |            |                   |
+| Week 9  | [19th Mar, 2024](VARE/16_VARE_19th_Mar,%202024.md) |            |                   |
+| Week 9  | [21th Mar, 2024](VARE/17_VARE_21th_Mar,%202024.md) |            |                   |
+| Week 10 | [26th Mar, 2024](VARE/18_VARE_26th_Mar,%202024.md) |            |                   |
+| Week 10 | [28th Mar, 2024](VARE/19_VARE_28th_Mar,%202024.md) |            |                   |
+| Week 11 | [2nd Apr, 2024](VARE/20_VARE_2nd_Apr,%202024.md)   |            |                   |
+| Week 11 | [4th Apr, 2024](VARE/21_VARE_4th_Apr,%202024.md)   |            |                   |
+| Week 12 | [9th Apr, 2024](VARE/22_VARE_9th_Apr,%202024.md)   |            |                   |
+| Week 12 | [11th Apr, 2024](VARE/23_VARE_11th_Apr,%202024.md) |            |                   |
+| Week 13 | [16th Apr, 2024](VARE/24_VARE_16th_Apr,%202024.md) |            |                   |
+| Week 13 | [18th Apr, 2024](VARE/25_VARE_18th_Apr,%202024.md) |            |                   |
+| Week 14 | [23rd Apr, 2024](VARE/26_VARE_23rd_Apr,%202024.md) |            |                   |
+| Week 14 | [25th Apr, 2024](VARE/27_VARE_25th_Apr,%202024.md) |            |                   |
+| Week 15 | [30th Apr, 2024](VARE/28_VARE_30th_Apr,%202024.md) |            |                   |
+| Week 15 | [2nd May, 2024](VARE/29_VARE_2nd_May,%202024.md)   |            |                   |
+| Week 16 | [7th May, 2024](VARE/30_VARE_7th_May,%202024.md)   |            |                   |
+| Week 16 | [9th May, 2024](VARE/31_VARE_9th_May,%202024.md)   |            |                   |
+| Week 17 | [14th May, 2024](VARE/32_VARE_14th_May,%202024.md) |            |                   |
+| Week 17 | [16th May, 2024](VARE/33_VARE_16th_May,%202024.md) |            |                   |
 
 # Digital Forensics
 
@@ -88,15 +88,15 @@
 | ------- | ---------------------------------------------- | ------------ | --------------- |
 | Week 1  | 23rd Jan, 2024                                 | N/A          | Class Cancelled |
 | Week 1  | [25th Jan, 2024](AI/1_AI_25th_Jan,%202024.md)  | Complete-ish | Introductory    |
-| Week 2  | [30th Jan, 2024](AI/2_AI_30th_Jan,%202024.md)  |              |                 |
-| Week 2  | [1st Feb, 2024](AI/3_AI_1st_Feb,%202024.md)  |              |                 |
+| Week 2  | [30th Jan, 2024](AI/2_AI_30th_Jan,%202024.md)  | Incomplete   | AI Chapter 1    |
+| Week 2  | [1st Feb, 2024](AI/3_AI_1st_Feb,%202024.md)    |              |                 |
 | Week 3  | [6th Feb, 2024](AI/4_AI_6th_Feb,%202024.md)    |              |                 |
 | Week 3  | [8th Feb, 2024](AI/5_AI_8th_Feb,%202024.md)    |              |                 |
 | Week 4  | [13th Feb, 2024](AI/6_AI_13th_Feb,%202024.md)  |              |                 |
 | Week 4  | [15th Feb, 2024](AI/7_AI_15th_Feb,%202024.md)  |              |                 |
 | Week 5  | [20th Feb, 2024](AI/8_AI_20th_Feb,%202024.md)  |              |                 |
 | Week 5  | [22nd Feb, 2024](AI/9_AI_22nd_Feb,%202024.md)  |              |                 |
-| Week 6  | [27th Feb, 2024](AI/10_AI_27th_Feb,%202024.md)  |              |                 |
+| Week 6  | [27th Feb, 2024](AI/10_AI_27th_Feb,%202024.md) |              |                 |
 | Week 6  | [29th Feb, 2024](AI/11_AI_29th_Feb,%202024.md) |              |                 |
 | Week 7  | [5th Mar, 2024](AI/12_AI_5th_Mar,%202024.md)   |              |                 |
 | Week 7  | [7th Mar, 2024](AI/13_AI_7th_Mar,%202024.md)   |              |                 |
@@ -166,35 +166,35 @@
 | ------- | ---------------------------------------------------------------------------- | ------ | --------------- |
 | Week 1  | 22nd Jan, 2024                                                               | N/A    | Nothing to note |
 | Week 1  | 24th Jan, 2024                                                               | N/A    | Class Cancelled |
-| Week 2  | [29th Jan, 2024](Ethical%20Hacking/1_Ethical%20Hacking_29th_Jan,%202024.md)  |        |                 |
-| Week 2  | [31st Jan, 2024](Ethical%20Hacking/2_Ethical%20Hacking_31st_Jan,%202024.md)  |        |                 |
-| Week 3  | [5th Feb, 2024](Ethical%20Hacking/3_Ethical%20Hacking_5th_Feb,%202024.md)    |        |                 |
-| Week 3  | [7th Feb, 2024](Ethical%20Hacking/4_Ethical%20Hacking_7th_Feb,%202024.md)    |        |                 |
-| Week 4  | [12th Feb, 2024](Ethical%20Hacking/5_Ethical%20Hacking_12th_Feb,%202024.md)  |        |                 |
-| Week 4  | [14th Feb, 2024](Ethical%20Hacking/6_Ethical%20Hacking_14th_Feb,%202024.md)  |        |                 |
-| Week 5  | [19th Feb, 2024](Ethical%20Hacking/7_Ethical%20Hacking_19th_Feb,%202024.md)  |        |                 |
-| Week 5  | [21st Feb, 2024](Ethical%20Hacking/8_Ethical%20Hacking_21st_Feb,%202024.md)  |        |                 |
-| Week 6  | [26th Feb, 2024](Ethical%20Hacking/9_Ethical%20Hacking_26th_Feb,%202024.md)  |        |                 |
-| Week 6  | [28th Feb, 2024](Ethical%20Hacking/10_Ethical%20Hacking_28th_Feb,%202024.md) |        |                 |
-| Week 7  | [4th Mar, 2024](Ethical%20Hacking/11_Ethical%20Hacking_4th_Mar,%202024.md)   |        |                 |
-| Week 7  | [6th Mar, 2024](Ethical%20Hacking/12_Ethical%20Hacking_6th_Mar,%202024.md)   |        |                 |
-| Week 8  | [11th Mar, 2024](Ethical%20Hacking/13_Ethical%20Hacking_11th_Mar,%202024.md) |        |                 |
-| Week 8  | [13th Mar, 2024](Ethical%20Hacking/14_Ethical%20Hacking_13th_Mar,%202024.md) |        |                 |
-| Week 9  | [18th Mar, 2024](Ethical%20Hacking/15_Ethical%20Hacking_18th_Mar,%202024.md) |        |                 |
-| Week 9  | [20th Mar, 2024](Ethical%20Hacking/16_Ethical%20Hacking_20th_Mar,%202024.md) |        |                 |
-| Week 10 | [25th Mar, 2024](Ethical%20Hacking/17_Ethical%20Hacking_25th_Mar,%202024.md) |        |                 |
-| Week 10 | [27th Mar, 2024](Ethical%20Hacking/18_Ethical%20Hacking_27th_Mar,%202024.md) |        |                 |
-| Week 11 | [1st Apr, 2024](Ethical%20Hacking/19_Ethical%20Hacking_1st_Apr,%202024.md)   |        |                 |
-| Week 11 | [3rd Apr, 2024](Ethical%20Hacking/20_Ethical%20Hacking_3rd_Apr,%202024.md)   |        |                 |
-| Week 12 | [8th Apr, 2024](Ethical%20Hacking/21_Ethical%20Hacking_8th_Apr,%202024.md)   |        |                 |
-| Week 12 | [10th Apr, 2024](Ethical%20Hacking/22_Ethical%20Hacking_10th_Apr,%202024.md) |        |                 |
-| Week 13 | [15th Apr, 2024](Ethical%20Hacking/23_Ethical%20Hacking_15th_Apr,%202024.md) |        |                 |
-| Week 13 | [17th Apr, 2024](Ethical%20Hacking/24_Ethical%20Hacking_17th_Apr,%202024.md) |        |                 |
-| Week 14 | [22nd Apr, 2024](Ethical%20Hacking/25_Ethical%20Hacking_22nd_Apr,%202024.md) |        |                 |
-| Week 14 | [24th Apr, 2024](Ethical%20Hacking/26_Ethical%20Hacking_24th_Apr,%202024.md) |        |                 |
-| Week 15 | [29th Apr, 2024](Ethical%20Hacking/27_Ethical%20Hacking_29th_Apr,%202024.md) |        |                 |
-| Week 15 | [1st May, 2024](Ethical%20Hacking/28_Ethical%20Hacking_1st_May,%202024.md)   |        |                 |
-| Week 16 | [6th May, 2024](Ethical%20Hacking/29_Ethical%20Hacking_6th_May,%202024.md)   |        |                 |
-| Week 16 | [8th May, 2024](Ethical%20Hacking/30_Ethical%20Hacking_8th_May,%202024.md)   |        |                 |
-| Week 17 | [13th May, 2024](Ethical%20Hacking/31_Ethical%20Hacking_13th_May,%202024.md) |        |                 |
-| Week 17 | [15th May, 2024](Ethical%20Hacking/32_Ethical%20Hacking_15th_May,%202024.md) |        |                 |
+| Week 2  | 29th Jan, 2024                                                               | N/A    | Class Cancelled |
+| Week 2  | [31st Jan, 2024](Ethical%20Hacking/1_Ethical%20Hacking_31st_Jan,%202024.md)  |        |                 |
+| Week 3  | [5th Feb, 2024](Ethical%20Hacking/2_Ethical%20Hacking_5th_Feb,%202024.md)    |        |                 |
+| Week 3  | [7th Feb, 2024](Ethical%20Hacking/3_Ethical%20Hacking_7th_Feb,%202024.md)    |        |                 |
+| Week 4  | [12th Feb, 2024](Ethical%20Hacking/4_Ethical%20Hacking_12th_Feb,%202024.md)  |        |                 |
+| Week 4  | [14th Feb, 2024](Ethical%20Hacking/5_Ethical%20Hacking_14th_Feb,%202024.md)  |        |                 |
+| Week 5  | [19th Feb, 2024](Ethical%20Hacking/6_Ethical%20Hacking_19th_Feb,%202024.md)  |        |                 |
+| Week 5  | [21st Feb, 2024](Ethical%20Hacking/7_Ethical%20Hacking_21st_Feb,%202024.md)  |        |                 |
+| Week 6  | [26th Feb, 2024](Ethical%20Hacking/8_Ethical%20Hacking_26th_Feb,%202024.md)  |        |                 |
+| Week 6  | [28th Feb, 2024](Ethical%20Hacking/9_Ethical%20Hacking_28th_Feb,%202024.md)  |        |                 |
+| Week 7  | [4th Mar, 2024](Ethical%20Hacking/10_Ethical%20Hacking_4th_Mar,%202024.md)   |        |                 |
+| Week 7  | [6th Mar, 2024](Ethical%20Hacking/11_Ethical%20Hacking_6th_Mar,%202024.md)   |        |                 |
+| Week 8  | [11th Mar, 2024](Ethical%20Hacking/12_Ethical%20Hacking_11th_Mar,%202024.md) |        |                 |
+| Week 8  | [13th Mar, 2024](Ethical%20Hacking/13_Ethical%20Hacking_13th_Mar,%202024.md) |        |                 |
+| Week 9  | [18th Mar, 2024](Ethical%20Hacking/14_Ethical%20Hacking_18th_Mar,%202024.md) |        |                 |
+| Week 9  | [20th Mar, 2024](Ethical%20Hacking/15_Ethical%20Hacking_20th_Mar,%202024.md) |        |                 |
+| Week 10 | [25th Mar, 2024](Ethical%20Hacking/16_Ethical%20Hacking_25th_Mar,%202024.md) |        |                 |
+| Week 10 | [27th Mar, 2024](Ethical%20Hacking/17_Ethical%20Hacking_27th_Mar,%202024.md) |        |                 |
+| Week 11 | [1st Apr, 2024](Ethical%20Hacking/18_Ethical%20Hacking_1st_Apr,%202024.md)   |        |                 |
+| Week 11 | [3rd Apr, 2024](Ethical%20Hacking/19_Ethical%20Hacking_3rd_Apr,%202024.md)   |        |                 |
+| Week 12 | [8th Apr, 2024](Ethical%20Hacking/20_Ethical%20Hacking_8th_Apr,%202024.md)   |        |                 |
+| Week 12 | [10th Apr, 2024](Ethical%20Hacking/21_Ethical%20Hacking_10th_Apr,%202024.md) |        |                 |
+| Week 13 | [15th Apr, 2024](Ethical%20Hacking/22_Ethical%20Hacking_15th_Apr,%202024.md) |        |                 |
+| Week 13 | [17th Apr, 2024](Ethical%20Hacking/23_Ethical%20Hacking_17th_Apr,%202024.md) |        |                 |
+| Week 14 | [22nd Apr, 2024](Ethical%20Hacking/24_Ethical%20Hacking_22nd_Apr,%202024.md) |        |                 |
+| Week 14 | [24th Apr, 2024](Ethical%20Hacking/25_Ethical%20Hacking_24th_Apr,%202024.md) |        |                 |
+| Week 15 | [29th Apr, 2024](Ethical%20Hacking/26_Ethical%20Hacking_29th_Apr,%202024.md) |        |                 |
+| Week 15 | [1st May, 2024](Ethical%20Hacking/27_Ethical%20Hacking_1st_May,%202024.md)   |        |                 |
+| Week 16 | [6th May, 2024](Ethical%20Hacking/28_Ethical%20Hacking_6th_May,%202024.md)   |        |                 |
+| Week 16 | [8th May, 2024](Ethical%20Hacking/29_Ethical%20Hacking_8th_May,%202024.md)   |        |                 |
+| Week 17 | [13th May, 2024](Ethical%20Hacking/30_Ethical%20Hacking_13th_May,%202024.md) |        |                 |
+| Week 17 | [15th May, 2024](Ethical%20Hacking/31_Ethical%20Hacking_15th_May,%202024.md) |        |                 |
