@@ -43,7 +43,7 @@ Forensics vs other related disciplines
 	- Recovering information deleted by mistake/on purpose
 - Disaster Recovery
 	- Use of forensics to retrieve data lost in a disaster
-- Enterprise Network Enviroment
+- Enterprise Network Environment
 	- Large Corporate computing systems ha
 - VARE Group
 	- Tests/verifies the integrity of standalone workstations and network servers
