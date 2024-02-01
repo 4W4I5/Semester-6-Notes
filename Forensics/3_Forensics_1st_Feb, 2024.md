@@ -29,4 +29,22 @@ Understanding computer forensics
 - Search warrants are needed for forensics
 	- Example: 4th Amendment, From search & seizure: Protect everyones rights to be secure in their person, residence and property
 	- Example: Copenhefer Case
-		- Add in details later
+		- Add in details later but the general gist is during an investigation. Privacy/Transparency does not matter. In fact both the analyst and the suspected are required to be transparent.
+
+---
+
+Forensics vs other related disciplines
+- Computer forensics
+	- Only computer related i.e evidence retried from a computers hDD or other media
+	- Evidence can be inculpatory/exculpatory i.e incriminating
+- Network forensics
+	- Evidence pertaining to how the attacker gained access to a network
+- Data Recovery
+	- Recovering information deleted by mistake/on purpose
+- Disaster Recovery
+	- Use of forensics to retrieve data lost in a disaster
+- Enterprise Network Enviroment
+	- Large Corporate computing systems ha
+- VARE Group
+	- Tests/verifies the integrity of standalone workstations and network servers
+	- Professionals in this group have skills in network ID/IR
