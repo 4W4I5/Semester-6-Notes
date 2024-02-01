@@ -24,3 +24,7 @@ Fixing vulns
 - Distribute
 - Infection
 - Post infection
+
+---
+
+# Lecture 4: Setup malware lab
