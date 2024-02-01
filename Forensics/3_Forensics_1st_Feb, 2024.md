@@ -29,4 +29,4 @@ Understanding computer forensics
 - Search warrants are needed for forensics
 	- Example: 4th Amendment, From search & seizure: Protect everyones rights to be secure in their person, residence and property
 	- Example: Copenhefer Case
-		- 
+		- Add in details later
