@@ -89,7 +89,7 @@
 | Week 1  | 23rd Jan, 2024                                 | N/A          | Class Cancelled |
 | Week 1  | [25th Jan, 2024](AI/1_AI_25th_Jan,%202024.md)  | Complete-ish | Introductory    |
 | Week 2  | [30th Jan, 2024](AI/2_AI_30th_Jan,%202024.md)  | Incomplete   | AI Chapter 1    |
-| Week 2  | [1st Feb, 2024](AI/3_AI_1st_Feb,%202024.md)    |              |                 |
+| Week 2  | 1st Feb, 2024                                  | N/A          | Quiz            |
 | Week 3  | [6th Feb, 2024](AI/4_AI_6th_Feb,%202024.md)    |              |                 |
 | Week 3  | [8th Feb, 2024](AI/5_AI_8th_Feb,%202024.md)    |              |                 |
 | Week 4  | [13th Feb, 2024](AI/6_AI_13th_Feb,%202024.md)  |              |                 |
