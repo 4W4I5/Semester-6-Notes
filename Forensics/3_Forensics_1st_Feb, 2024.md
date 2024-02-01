@@ -11,4 +11,4 @@ Use of validated tools: custom tools not allowed
 
 Repeatability: Results should be repeatable
 
-Reporting: All evidence gathered must be submitted, none withheld, Follow legal format. Relevant comments must be included in as well.
+Reporting: All evidence gathered must be submitted, none withheld, Follow legal format. Relevant comments must be included in as well. Personal opinions must not be reported/presented. 
