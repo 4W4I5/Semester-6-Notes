@@ -48,3 +48,22 @@ Forensics vs other related disciplines
 - VARE Group
 	- Tests/verifies the integrity of standalone workstations and network servers
 	- Professionals in this group have skills in network ID/IR
+- Litigation
+	- Legal process of proving guilt/innocence in court
+- Computer investigations group
+	- Manages investigations & conducts forensics analysis blah blah
+---
+
+HT: History of computer forensics
+
+
+---
+
+Law & resources
+
+Understanding case law
+- Technology is evolving at an exponential pace
+- Case used when statues/regulations do not exist
+- Case allows legal counsel to use previous cases similar to the current one
+- Each case is evaluated on its own merit and issues
+ 
