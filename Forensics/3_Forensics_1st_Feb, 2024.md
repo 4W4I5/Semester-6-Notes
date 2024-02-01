@@ -19,3 +19,14 @@ Reporting: All evidence gathered must be submitted, none withheld, Follow legal 
 NIST definition:
 National institute of standard and technology, Look into NIST SP800-86
 
+ISO (International organization for standardization):
+
+
+
+---
+
+Understanding computer forensics
+- Search warrants are needed for forensics
+	- Example: 4th Amendment, From search & seizure: Protect everyones rights to be secure in their person, residence and property
+	- Example: Copenhefer Case
+		- 
