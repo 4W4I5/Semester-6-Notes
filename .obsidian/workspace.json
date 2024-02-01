@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "VARE/3_VARE_1st_Feb, 2024.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "VARE/3_VARE_1st_Feb, 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "VARE/3_VARE_1st_Feb, 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "VARE/3_VARE_1st_Feb, 2024.md"
               }
             }
           },
@@ -172,8 +172,9 @@
   },
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
-    "Forensics/3_Forensics_1st_Feb, 2024.md",
     "README.md",
+    "VARE/3_VARE_1st_Feb, 2024.md",
+    "Forensics/3_Forensics_1st_Feb, 2024.md",
     "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",
     "Forensics",
     "Ethical Hacking/2_Ethical Hacking_31st_Jan, 2024.md",
@@ -213,7 +214,6 @@
     "CySec-2/CySec2 14 September, 2023.md",
     "CySec-2/CySec2 19 September, 2023.md",
     "CySec-2/CySec2 19 October, 2023.md",
-    "CySec-2/CySec2 22 August, 2023.md",
     "Algo/Exam Prep",
     "CySec-2/Exam Prep",
     "CySec2/Exam Prep",
