@@ -18,3 +18,9 @@ Fixing vulns
 - Static/dormant
 
 #### Cyberkill chain
+
+#### Malware attack lifecycle
+- Develop
+- Distribute
+- Infection
+- Post infection
