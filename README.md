@@ -165,7 +165,7 @@
 | Week #  | Date                                                                         | Status | Content         |
 | ------- | ---------------------------------------------------------------------------- | ------ | --------------- |
 | Week 1  | 22nd Jan, 2024                                                               | N/A    | Nothing to note |
-| Week 1  | 24th Jan, 2024                                                               | N/A    | Class Cancelled |
+| Week 1  | [24th Jan, 2024](0_1_Ethical%20Hacking_24_Jan,%202024.md)                    | N/A    | Some notes?     |
 | Week 2  | 29th Jan, 2024                                                               | N/A    | Class Cancelled |
 | Week 2  | [31st Jan, 2024](Ethical%20Hacking/1_Ethical%20Hacking_31st_Jan,%202024.md)  |        |                 |
 | Week 3  | [5th Feb, 2024](Ethical%20Hacking/2_Ethical%20Hacking_5th_Feb,%202024.md)    |        |                 |
