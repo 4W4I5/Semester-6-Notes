@@ -131,8 +131,8 @@
 | Week 2  | [1st Feb, 2024](InfoSec/3_InfoSec_1st_Feb,%202024.md)    |        | Some note       |
 | Week 3  | [6th Feb, 2024](InfoSec/4_InfoSec_6th_Feb,%202024.md)    |        |                 |
 | Week 3  | [8th Feb, 2024](InfoSec/5_InfoSec_8th_Feb,%202024.md)    |        |                 |
-| Week 4  | [13th Feb, 2024](7_InfoSec_15th_Feb,%202024.md)  |        | Some note       | 
-| Week 4  | [15th Feb, 2024](InfoSec/7_InfoSec_15th_Feb,%202024.md)  |        |                 |
+| Week 4  | [13th Feb, 2024](InfoSec/6_InfoSec_15th_Feb,%202024.md)  |        | Fiestal Cipher  |
+| Week 4  | [15th Feb, 2024](InfoSec/7_InfoSec_16th_Feb,%202024.md)  |        | Galloa Fields   |
 | Week 5  | [20th Feb, 2024](InfoSec/8_InfoSec_20th_Feb,%202024.md)  |        |                 |
 | Week 5  | [22nd Feb, 2024](InfoSec/9_InfoSec_22nd_Feb,%202024.md)  |        |                 |
 | Week 6  | [27th Feb, 2024](InfoSec/10_InfoSec_27th_Feb,%202024.md) |        |                 |
