@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VARE/3_VARE_1st_Feb, 2024.md",
+                "file": "InfoSec/3_InfoSec_1st_Feb, 2024.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VARE/3_VARE_1st_Feb, 2024.md",
+                "file": "InfoSec/3_InfoSec_1st_Feb, 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VARE/3_VARE_1st_Feb, 2024.md",
+                "file": "InfoSec/3_InfoSec_1st_Feb, 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VARE/3_VARE_1st_Feb, 2024.md"
+                "file": "InfoSec/3_InfoSec_1st_Feb, 2024.md"
               }
             }
           },
@@ -172,15 +172,32 @@
   },
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
-    "Untitled.md",
-    "VARE/3_VARE_1st_Feb, 2024.md",
+    "InfoSec/7_InfoSec_16th_Feb, 2024.md",
+    "InfoSec/6_InfoSec_15th_Feb, 2024.md",
+    "InfoSec/3_InfoSec_1st_Feb, 2024.md",
+    "InfoSec/2_InfoSec_30th_Jan, 2024.md",
     "README.md",
+    "InfoSec/Info_sec/Info sec/Info sec P9.png",
+    "InfoSec/Info_sec/Info sec/Info sec P8.png",
+    "InfoSec/Info_sec/Info sec/Info sec P7.png",
+    "InfoSec/Info_sec/Info sec/Info sec P6.png",
+    "InfoSec/Info_sec/Info sec/Info sec P5.png",
+    "InfoSec/Info_sec/Info sec/Info sec P4.png",
+    "InfoSec/Info_sec/Info sec/Info sec P3.png",
+    "InfoSec/Info_sec/Info sec/Info sec P20.png",
+    "InfoSec/Info_sec/Info sec/Info sec P2.png",
+    "InfoSec/Info_sec/Info sec/Info sec P19.png",
+    "InfoSec/Info_sec/Info sec",
+    "InfoSec/Info_sec",
+    "InfoSec/Info sec/Info sec",
+    "InfoSec/Info sec",
+    "VARE/3_VARE_1st_Feb, 2024.md",
+    "Untitled.md",
     "Forensics/3_Forensics_1st_Feb, 2024.md",
     "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",
     "Forensics",
     "Ethical Hacking/2_Ethical Hacking_31st_Jan, 2024.md",
     "Ethical Hacking",
-    "InfoSec/2_InfoSec_30th_Jan, 2024.md",
     "InfoSec",
     "VARE/2_VARE_30th_Jan, 2024.md",
     "AI/2_AI_30th_Jan, 2024.md",
@@ -189,19 +206,9 @@
     "AI/1_AI_25th_Jan, 2024.md",
     "AI/1_AI 25th Jan, 2024.md",
     "AI",
-    "Pasted image 20240106061949.png",
-    "Pasted image 20231216180329.png",
     "Algo/Exam Prep/Algo Finals Prep.md",
     "OS/Exam Prep/OS Finals Prep.md",
-    "Pasted image 20240103224938.png",
-    "Pasted image 20240103224911.png",
-    "Pasted image 20240103224849.png",
-    "Pasted image 20240103224830.png",
-    "Pasted image 20240103224806.png",
-    "Pasted image 20240103224745.png",
     "Untitled 1.md",
-    "Pasted image 20240101124738.png",
-    "Pasted image 20240101124736.png",
     "Marketing/Exam Prep/Marketing Finals Prep.md",
     "Untitled 3.md",
     "DB/Exam Prep/DB Finals Prep.md",
@@ -210,13 +217,6 @@
     "DB/Exam Prep",
     "CySec-2/CySec2 124 October, 2023.md",
     "CySec-2/CySec2 14 November, 2023.md",
-    "CySec-2/CySec2 12 September, 2023.md",
-    "CySec-2/CySec2 14 September, 2023.md",
-    "CySec-2/CySec2 19 September, 2023.md",
-    "CySec-2/CySec2 19 October, 2023.md",
-    "Algo/Exam Prep",
-    "CySec-2/Exam Prep",
-    "CySec2/Exam Prep",
-    "CySec2"
+    "CySec-2/CySec2 12 September, 2023.md"
   ]
 }

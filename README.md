@@ -128,11 +128,11 @@
 | Week 1  | 23rd Jan, 2024                                           | N/A    | Class Cancelled |
 | Week 1  | 25th Jan, 2024                                           | N/A    | Introductory    |
 | Week 2  | 30th Jan, 2024                                           | N/A    | Quiz            |
-| Week 2  | [1st Feb, 2024](InfoSec/3_InfoSec_1st_Feb,%202024.md)    |        |                 |
+| Week 2  | [1st Feb, 2024](InfoSec/3_InfoSec_1st_Feb,%202024.md)    |        | Some note       |
 | Week 3  | [6th Feb, 2024](InfoSec/4_InfoSec_6th_Feb,%202024.md)    |        |                 |
 | Week 3  | [8th Feb, 2024](InfoSec/5_InfoSec_8th_Feb,%202024.md)    |        |                 |
-| Week 4  | [13th Feb, 2024](InfoSec/6_InfoSec_13th_Feb,%202024.md)  |        |                 |
-| Week 4  | [15th Feb, 2024](InfoSec/7_InfoSec_15th_Feb,%202024.md)  |        |                 |
+| Week 4  | [13th Feb, 2024](InfoSec/6_InfoSec_15th_Feb,%202024.md)  |        | Fiestal Cipher  |
+| Week 4  | [15th Feb, 2024](InfoSec/7_InfoSec_16th_Feb,%202024.md)  |        | Galloa Fields   |
 | Week 5  | [20th Feb, 2024](InfoSec/8_InfoSec_20th_Feb,%202024.md)  |        |                 |
 | Week 5  | [22nd Feb, 2024](InfoSec/9_InfoSec_22nd_Feb,%202024.md)  |        |                 |
 | Week 6  | [27th Feb, 2024](InfoSec/10_InfoSec_27th_Feb,%202024.md) |        |                 |
@@ -165,13 +165,13 @@
 | Week #  | Date                                                                         | Status | Content         |
 | ------- | ---------------------------------------------------------------------------- | ------ | --------------- |
 | Week 1  | 22nd Jan, 2024                                                               | N/A    | Nothing to note |
-| Week 1  | 24th Jan, 2024                                                               | N/A    | Class Cancelled |
+| Week 1  | [24th Jan, 2024](Ethical%20Hacking/0_1_Ethical%20Hacking_24_Jan,%202024.md)  | N/A    | Some notes?     |
 | Week 2  | 29th Jan, 2024                                                               | N/A    | Class Cancelled |
 | Week 2  | [31st Jan, 2024](Ethical%20Hacking/1_Ethical%20Hacking_31st_Jan,%202024.md)  |        |                 |
 | Week 3  | [5th Feb, 2024](Ethical%20Hacking/2_Ethical%20Hacking_5th_Feb,%202024.md)    |        |                 |
 | Week 3  | [7th Feb, 2024](Ethical%20Hacking/3_Ethical%20Hacking_7th_Feb,%202024.md)    |        |                 |
-| Week 4  | [12th Feb, 2024](Ethical%20Hacking/4_Ethical%20Hacking_12th_Feb,%202024.md)  |        |                 |
-| Week 4  | [14th Feb, 2024](Ethical%20Hacking/5_Ethical%20Hacking_14th_Feb,%202024.md)  |        |                 |
+| Week 4  | [12th Feb, 2024](Ethical%20Hacking/4_Ethical%20Hacking_12th_Feb,%202024.md)  |        | Some notes?     |
+| Week 4  | [14th Feb, 2024](Ethical%20Hacking/5_Ethical%20Hacking_14th_Feb,%202024.md)  |        | Some notes?     |
 | Week 5  | [19th Feb, 2024](Ethical%20Hacking/6_Ethical%20Hacking_19th_Feb,%202024.md)  |        |                 |
 | Week 5  | [21st Feb, 2024](Ethical%20Hacking/7_Ethical%20Hacking_21st_Feb,%202024.md)  |        |                 |
 | Week 6  | [26th Feb, 2024](Ethical%20Hacking/8_Ethical%20Hacking_26th_Feb,%202024.md)  |        |                 |
