@@ -171,7 +171,7 @@
 | Week 3  | [5th Feb, 2024](Ethical%20Hacking/2_Ethical%20Hacking_5th_Feb,%202024.md)    |        |                 |
 | Week 3  | [7th Feb, 2024](Ethical%20Hacking/3_Ethical%20Hacking_7th_Feb,%202024.md)    |        |                 |
 | Week 4  | [12th Feb, 2024](Ethical%20Hacking/4_Ethical%20Hacking_12th_Feb,%202024.md)  |        |                 |
-| Week 4  | [14th Feb, 2024](Ethical%20Hacking/5_Ethical%20Hacking_14th_Feb,%202024.md)  |        |                 |
+| Week 4  | [14th Feb, 2024](Ethical%20Hacking/5_Ethical%20Hacking_14th_Feb,%202024.md)  |        |  Some notes?               |
 | Week 5  | [19th Feb, 2024](Ethical%20Hacking/6_Ethical%20Hacking_19th_Feb,%202024.md)  |        |                 |
 | Week 5  | [21st Feb, 2024](Ethical%20Hacking/7_Ethical%20Hacking_21st_Feb,%202024.md)  |        |                 |
 | Week 6  | [26th Feb, 2024](Ethical%20Hacking/8_Ethical%20Hacking_26th_Feb,%202024.md)  |        |                 |
