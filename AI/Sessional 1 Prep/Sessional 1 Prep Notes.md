@@ -83,9 +83,9 @@
 		- What are the formal rules to draw valid conclusions
 		- What can be computed
 		- How do we reason with uncertain information
-		- Turing showed that no machine in general can tell that a given program will return an answer on a given input or run forever
-		- Intractable problems; time required to solve instances of a given problem grows exponentially
-		- NP-Completeness; 
+	- Turing showed that no machine in general can tell that a given program will return an answer on a given input or run forever
+	- Intractable problems; time required to solve instances of a given problem grows exponentially
+	- NP-Completeness;
 - Economics
 	- Analyzes decision-making processes, incentives, and resource allocation.
 	- Utilizes economic models to understand economic systems and behaviors.
@@ -113,8 +113,8 @@
 
 
 
+Table that might help
 
-<!--
 | Foundation        | Mathematics                                           | Logic                                            | Algorithms                                                         | Data                                            | Knowledge                                       | Perception                                                  | Learning                                             | Interaction                                              |
 | ----------------- | ----------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
 | Description       | Provides theoretical framework for AI.                | Basis for reasoning and problem-solving.         | Computational procedures for problem-solving.                      | Raw information used by AI systems.             | Domain-specific information and expertise.      | Interpretation and understanding of sensory inputs.         | Improvement of performance through experience.       | Communication and collaboration between AI and humans.   |
@@ -124,10 +124,19 @@
 | Challenges        | Complexity, scalability, accuracy.                    | Handling uncertainty, incompleteness.            | Efficiency, scalability, optimization.                             | Volume, variety, veracity, velocity.            | Acquiring, representing, updating knowledge.    | Ambiguity, variability, noise.                              | Overfitting, bias, scalability.                      | Natural language understanding, context awareness.       |
 | Advancements      | Advanced mathematical techniques (deep learning).     | Automated reasoning (automated theorem proving). | Improved algorithms (machine learning, deep learning).             | Big data technologies (Hadoop, Spark).          | Knowledge graphs, semantic web.                 | Computer vision (object detection, image segmentation).     | Reinforcement learning, transfer learning.           | Conversational AI, affective computing.                  |
 | Future Directions | Integration of mathematics with other domains (AI+X). | Automated reasoning in uncertain environments.   | Optimization of algorithms for distributed and parallel computing. | Data quality and reliability assurance.         | Semantic AI, explainable AI.                    | Multimodal perception, embodied AI.                         | Lifelong learning, explainable AI.                   | Human-centric AI, empathetic AI.                         |
--->
+
 
 
 ## 1.3: History of AI
+Inception of AI 1943 - 1956
+Early enthusiasm, great expectations 1952 - 1969
+Dose of reality 1966 - 1973
+Expert systems 1969 - 1986
+Return of neural networks 1986 - present
+Probabilistic Reasoning & Machine Learning 1987 - present
+Big data 2001 - present
+Deep learning 2011 - present
+
 ## 1.4: State of the art
 ## 1.5: Risks & Benefits of AI
 ---
