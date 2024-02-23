@@ -47,8 +47,7 @@ NOTE:: Skipped introduction
 	- Persistence
 	- Propagation
 	- Communication
-- Distribution Mechanisms
-	- Heavily dependent 
+- 
 	- Payload
 	- Packer
 	- Persistence
@@ -56,6 +55,9 @@ NOTE:: Skipped introduction
 	- Propagation
 	- Armoring
 	- Stealth
+- Distribution Mechanisms
+	- Heavily dependent
+
 # Lecture 3: Setting up a malware lab
 - Precautions
 	- Virtualization software must be kept uptodate
