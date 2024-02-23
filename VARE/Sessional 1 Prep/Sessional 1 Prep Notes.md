@@ -258,7 +258,18 @@ $ yara32 -r yaraRule.yara fileToTestRule.exe
 		- Simple strings can also use wildcards but that involves regex
 	- Wildcards = Use a "?" for each 4bits to guess
 	- Jumps = Use when length of string is unknown. use \[3-5\] where 3 is minLen and 5 is maxLen
-
+- Anonymous strings
+	- Just use a \$. No need to name. Can only use the 'of them' condition for this though
+- Global Rule
+	- Impose restrictions on all rules within the file
+- Private Rule
+	- Disable the rule
+- Iterative
+	- same syntax as python.
+	- example
+	- for all i in (1,2,3):
+		- (@a\[i\] + 10 == @b\[i\] )
+	- This code checks if the first 3 letters of A are spaced 10 bytes apart from the first 3 letters of B and if they match or not
 
 ---
 Copied from mattnotmax on github
@@ -310,7 +321,7 @@ rule specifc_name       // e.g. APT_CN_Winnti_exploit or crimeware_ZZ_RAT
 - `xor`  can be used to search for strings with a single byte xor applied to them.
 - you can combine all types. E.g. `ascii wide nocase xor`.
 - can write `xor (0x01-0xff)` for a specific range of xor bytes rather than all 255.
-- `fullword` odifier guarantees that the string will match only if it appears in the file delimited by non-alphanumeric characters.
+- `fullword` modifier guarantees that the string will match only if it appears in the file delimited by non-alphanumeric characters.
 - use `fullword` keyword when string is short.
 
 ## Hexadecimal Strings
