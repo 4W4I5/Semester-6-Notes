@@ -67,14 +67,47 @@
 
 ## 1.2: Foundations of AI
 - Philosophy
+	- Examines fundamental questions about knowledge, truth, and existence.
+	- Influences AI ethics and decision-making.
+	- Provides the basis for understanding logic and reasoning in AI systems.
+	- Questions
+		- Can formal rules be used to draw valid conclusions?
+		- How does the mind arise from the physical brain
+		- Where does knowledge come from
+		- How does knowledge lead to action
 - Mathematics
+	- Provides formal logic and reasoning tools.
+	- Utilizes mathematical models for analysis and optimization of AI algorithms.
+	- Applies mathematical concepts for AI algorithm development and optimization.
 - Economics
+	- Analyzes decision-making processes, incentives, and resource allocation.
+	- Utilizes economic models to understand economic systems and behaviors.
+	- Integrates economic principles into AI system design and optimization.
 - Neuroscience
-- Pschology
+	- Explores brain structure, function, and neural networks.
+	- Applies neuroscience findings to study brain function and cognition.
+	- Utilizes knowledge of brain processing for AI modeling and optimization.
+- Psychology
+	- Studies human behavior, cognition, and perception.
+	- Examines human decision-making and cognition.
+	- Provides insights into human behavior and cognition to inform AI design.
 - Computer Engineering
+	- Shapes hardware and software design for AI systems.
+	- Informs AI system design based on human behavior and cognition.
+	- Utilizes neural networks and feedback mechanisms for AI modeling and optimization.
 - Control Theory & Cybernetics
+	- Investigates feedback systems and control mechanisms.
+	- Applies principles of feedback and control for AI systems.
+	- Utilizes feedback mechanisms to optimize AI performance and self-regulation.
 - Linguistics
+	- Explores language structure, syntax, semantics, and pragmatics.
+	- Utilizes knowledge of linguistic structures for NLP algorithms.
+	- Applies principles of feedback and control for language acquisition and processing in AI systems.
 
+
+
+
+<!--
 | Foundation        | Mathematics                                           | Logic                                            | Algorithms                                                         | Data                                            | Knowledge                                       | Perception                                                  | Learning                                             | Interaction                                              |
 | ----------------- | ----------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
 | Description       | Provides theoretical framework for AI.                | Basis for reasoning and problem-solving.         | Computational procedures for problem-solving.                      | Raw information used by AI systems.             | Domain-specific information and expertise.      | Interpretation and understanding of sensory inputs.         | Improvement of performance through experience.       | Communication and collaboration between AI and humans.   |
@@ -84,6 +117,8 @@
 | Challenges        | Complexity, scalability, accuracy.                    | Handling uncertainty, incompleteness.            | Efficiency, scalability, optimization.                             | Volume, variety, veracity, velocity.            | Acquiring, representing, updating knowledge.    | Ambiguity, variability, noise.                              | Overfitting, bias, scalability.                      | Natural language understanding, context awareness.       |
 | Advancements      | Advanced mathematical techniques (deep learning).     | Automated reasoning (automated theorem proving). | Improved algorithms (machine learning, deep learning).             | Big data technologies (Hadoop, Spark).          | Knowledge graphs, semantic web.                 | Computer vision (object detection, image segmentation).     | Reinforcement learning, transfer learning.           | Conversational AI, affective computing.                  |
 | Future Directions | Integration of mathematics with other domains (AI+X). | Automated reasoning in uncertain environments.   | Optimization of algorithms for distributed and parallel computing. | Data quality and reliability assurance.         | Semantic AI, explainable AI.                    | Multimodal perception, embodied AI.                         | Lifelong learning, explainable AI.                   | Human-centric AI, empathetic AI.                         |
+-->
+
 
 ## 1.3: History of AI
 ## 1.4: State of the art
