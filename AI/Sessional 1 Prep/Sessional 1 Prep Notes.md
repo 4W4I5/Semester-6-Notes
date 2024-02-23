@@ -4,7 +4,7 @@
 | Chapter 1.2 | :white_check_mark: |
 | Chapter 1.3 | :white_check_mark: |
 | Chapter 1.4 | :white_check_mark: |
-| Chapter 1.5 | :white_check_mark: | 
+| Chapter 1.5 | :white_check_mark: |
 | Chapter 2.1 | :x:                |
 | Chapter 2.2 | :x:                |
 | Chapter 2.3 | :x:                |
@@ -111,7 +111,7 @@
 	- Utilizes knowledge of linguistic structures for NLP algorithms.
 	- Applies principles of feedback and control for language acquisition and processing in AI systems.
 
-Table that might help
+Table that might help - GPT made this tho
 
 | **Foundation**    | **Mathematics**                                       | **Logic**                                        | **Algorithms**                                                     | Data                                            | Knowledge                                       | Perception                                                  | Learning                                             | Interaction                                              |
 | ----------------- | ----------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
