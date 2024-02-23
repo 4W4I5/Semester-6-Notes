@@ -1,18 +1,18 @@
-| Chapter     | Status |
-| ----------- | ------ |
-| Chapter 1.1 | :white_check_mark:    |
-| Chapter 1.2 | :x:    |
-| Chapter 1.3 | :x:    |
-| Chapter 1.4 | :x:    |
-| Chapter 1.5 | :x:    |
-| Chapter 2.1 | :x:    |
-| Chapter 2.2 | :x:    |
-| Chapter 2.3 | :x:    |
-| Chapter 2.4 | :x:    |
-| Chapter 3.1 | :x:    |
-| Chapter 3.2 | :x:    |
-| Chapter 3.3 | :x:    |
-| Chapter 3.4 | :x:    |
+| Chapter     | Status             |
+| ----------- | ------------------ |
+| Chapter 1.1 | :white_check_mark: |
+| Chapter 1.2 | :white_check_mark: |
+| Chapter 1.3 | :white_check_mark: |
+| Chapter 1.4 | :x:                |
+| Chapter 1.5 | :x:                |
+| Chapter 2.1 | :x:                |
+| Chapter 2.2 | :x:                |
+| Chapter 2.3 | :x:                |
+| Chapter 2.4 | :x:                |
+| Chapter 3.1 | :x:                |
+| Chapter 3.2 | :x:                |
+| Chapter 3.3 | :x:                |
+| Chapter 3.4 | :x:                |
 
 <!--
 :white_check_mark:
@@ -55,7 +55,7 @@
 	- Ultimately, the goal is to develop agents that are provably beneficial to humans, addressing the value alignment problem.
 - Laws of thought vs Rational Agent
 
-| Aspect               | Laws of thought                                                   | Rational Agent (Ideal for AI)                                                               |
+| **Aspect**               | **Laws of thought    **                                               | **Rational Agent (Ideal for AI)**                                                               |
 | -------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | Definition           | Emphasizes correct inferences as the hallmark of intelligence.    | Focuses on agents that act to achieve the best outcome.                       |
 | Objective            | Making correct inferences based on logical rules.                 | Acting to achieve the best outcome or expected outcome.                       |
@@ -111,11 +111,9 @@
 	- Utilizes knowledge of linguistic structures for NLP algorithms.
 	- Applies principles of feedback and control for language acquisition and processing in AI systems.
 
-
-
 Table that might help
 
-| Foundation        | Mathematics                                           | Logic                                            | Algorithms                                                         | Data                                            | Knowledge                                       | Perception                                                  | Learning                                             | Interaction                                              |
+| **Foundation**    | **Mathematics**                                       | **Logic**                                        | **Algorithms**                                                     | Data                                            | Knowledge                                       | Perception                                                  | Learning                                             | Interaction                                              |
 | ----------------- | ----------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------- |
 | Description       | Provides theoretical framework for AI.                | Basis for reasoning and problem-solving.         | Computational procedures for problem-solving.                      | Raw information used by AI systems.             | Domain-specific information and expertise.      | Interpretation and understanding of sensory inputs.         | Improvement of performance through experience.       | Communication and collaboration between AI and humans.   |
 | Key Concepts      | Calculus, linear algebra, probability theory.         | Deductive, inductive, abductive reasoning.       | Search, sorting, optimization algorithms.                          | Structured, unstructured, semi-structured data. | Facts, rules, concepts, beliefs.                | Vision, speech, text processing.                            | Supervised, unsupervised, reinforcement learning.    | Natural language processing, human-computer interaction. |
@@ -125,17 +123,33 @@ Table that might help
 | Advancements      | Advanced mathematical techniques (deep learning).     | Automated reasoning (automated theorem proving). | Improved algorithms (machine learning, deep learning).             | Big data technologies (Hadoop, Spark).          | Knowledge graphs, semantic web.                 | Computer vision (object detection, image segmentation).     | Reinforcement learning, transfer learning.           | Conversational AI, affective computing.                  |
 | Future Directions | Integration of mathematics with other domains (AI+X). | Automated reasoning in uncertain environments.   | Optimization of algorithms for distributed and parallel computing. | Data quality and reliability assurance.         | Semantic AI, explainable AI.                    | Multimodal perception, embodied AI.                         | Lifelong learning, explainable AI.                   | Human-centric AI, empathetic AI.                         |
 
-
-
 ## 1.3: History of AI
-Inception of AI 1943 - 1956
-Early enthusiasm, great expectations 1952 - 1969
-Dose of reality 1966 - 1973
-Expert systems 1969 - 1986
-Return of neural networks 1986 - present
-Probabilistic Reasoning & Machine Learning 1987 - present
-Big data 2001 - present
-Deep learning 2011 - present
+
+| **Period**                                                    | **Description**                                                                                                                |
+| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Inception of AI 1943 - 1956                               | **Birth of AI:** Coined by John McCarthy in 1956 at the Dartmouth Conference.                                                  |
+|                                                           | **Key Milestones:** Warren McCulloch and Walter Pitts' neural network model (1943), Alan Turing's Turing Test proposal (1950). |
+| Early enthusiasm, great expectations 1952 - 1969          | **Growth Phase:** Rapid progress fueled by optimism and funding.                                                               |
+|                                                           | **Notable Achievements**: IBM's Logic Theorist (1956), John McCarthy's Lisp programming language (1958).                       |
+|                                                           | **Challenges:** Limited computing power and memory, leading to simplistic models.                                              |
+| Dose of reality 1966 - 1973                               | **AI Winter Begins:** Funding cuts, unmet expectations, and skepticism.                                                        |
+|                                                           | **Notable Events**: DART project failure (1966), Criticism from the Lighthill Report (1973).                                   |
+|                                                           | **Shift in Focus**: Emphasis on rule-based systems and knowledge representation.                                               |
+| Expert systems 1969 - 1986                                | **Rule-Based AI**: Focus on developing expert systems for specific domains.                                                    |
+|                                                           | **Notable Systems**: MYCIN (diagnostic system), DENDRAL (chemical analysis).                                                   |
+|                                                           | **Limitations**: Difficulty in encoding knowledge, lack of adaptability.                                                       |
+| Return of neural networks 1986 - present                  | **Neural Network Resurgence**: Rediscovery of backpropagation and advances in computing power.                                 |
+|                                                           | **Notable Milestones**: Backpropagation breakthrough (1986), Convolutional Neural Networks (CNNs) for image recognition.       |
+|                                                           | **Applications**: Speech recognition, image classification, natural language processing.                                       |
+| Probabilistic Reasoning & Machine Learning 1987 - present | **Statistical AI**: Integration of probabilistic reasoning and machine learning techniques.                                    |
+|                                                           | **Notable Developments**: Hidden Markov Models (HMMs), Support Vector Machines (SVMs), Reinforcement Learning.                 |
+|                                                           | **Applications**: Predictive modeling, pattern recognition, data mining.                                                       |
+| Big data 2001 - present                                   | **Data Revolution**: Emergence of massive datasets and tools for storage and analysis.                                         |
+|                                                           | **Impact on AI**: Enables training of more complex models and deep learning architectures.                                     |
+|                                                           | **Challenges**: Data quality, privacy concerns, scalability issues.                                                            |
+| Deep learning 2011 - present                              | **Deep Learning Dominance**: Breakthroughs in deep neural networks and architectures.                                          |
+|                                                           | **Notable Achievements**: AlexNet's victory in ImageNet competition (2012), AlphaGo's defeat of Go world champion (2016).      |
+|                                                           | **Applications**: Autonomous vehicles, healthcare diagnostics, natural language understanding.                                 |
 
 ## 1.4: State of the art
 ## 1.5: Risks & Benefits of AI
