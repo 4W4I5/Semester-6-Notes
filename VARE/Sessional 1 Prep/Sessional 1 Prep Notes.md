@@ -101,3 +101,9 @@ NOTE:: Skipped introduction
 	- Host-Only network config
 	- No removeable media must be connected
 	- Different Host OS to Guest OS
+# Reading Article till page 14
+Skipped taxonomy of malware. Added some extra types though
+- Scareware
+	- Designed to trick a user into buying and downloading unnecessary and potentially dangerous software
+- Bots
+	- 
