@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md"
               }
             }
           },
@@ -173,6 +173,8 @@
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
     "README.md",
+    "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "VARE/Sessional 1 Prep",
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "Ethical Hacking/0_1_Ethical Hacking_24_Jan, 2024.md",
     "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",
@@ -209,14 +211,12 @@
     "VARE",
     "AI/1_AI_25th_Jan, 2024.md",
     "AI/1_AI 25th Jan, 2024.md",
-    "AI",
     "Algo/Exam Prep/Algo Finals Prep.md",
     "OS/Exam Prep/OS Finals Prep.md",
     "Untitled 1.md",
     "Marketing/Exam Prep/Marketing Finals Prep.md",
     "Untitled 3.md",
     "DB/Exam Prep/DB Finals Prep.md",
-    "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
-    "Untitled 2.md"
+    "CySec-2/Exam Prep/CySec-2 Finals Prep.md"
   ]
 }
