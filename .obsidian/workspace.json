@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "InfoSec/3_InfoSec_1st_Feb, 2024.md",
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "InfoSec/3_InfoSec_1st_Feb, 2024.md",
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "InfoSec/3_InfoSec_1st_Feb, 2024.md",
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "InfoSec/3_InfoSec_1st_Feb, 2024.md"
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md"
               }
             }
           },
@@ -172,9 +172,15 @@
   },
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
+    "Ethical Hacking/0_1_Ethical Hacking_24_Jan, 2024.md",
+    "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",
+    "InfoSec/3_InfoSec_1st_Feb, 2024.md",
+    "Ethical Hacking/Untitled 1.md",
+    "Untitled.md",
+    "AI/Sessional 1 Prep",
     "InfoSec/7_InfoSec_16th_Feb, 2024.md",
     "InfoSec/6_InfoSec_15th_Feb, 2024.md",
-    "InfoSec/3_InfoSec_1st_Feb, 2024.md",
     "InfoSec/2_InfoSec_30th_Jan, 2024.md",
     "README.md",
     "InfoSec/Info_sec/Info sec/Info sec P9.png",
@@ -192,9 +198,7 @@
     "InfoSec/Info sec/Info sec",
     "InfoSec/Info sec",
     "VARE/3_VARE_1st_Feb, 2024.md",
-    "Untitled.md",
     "Forensics/3_Forensics_1st_Feb, 2024.md",
-    "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",
     "Forensics",
     "Ethical Hacking/2_Ethical Hacking_31st_Jan, 2024.md",
     "Ethical Hacking",
@@ -213,10 +217,6 @@
     "Untitled 3.md",
     "DB/Exam Prep/DB Finals Prep.md",
     "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
-    "Untitled 2.md",
-    "DB/Exam Prep",
-    "CySec-2/CySec2 124 October, 2023.md",
-    "CySec-2/CySec2 14 November, 2023.md",
-    "CySec-2/CySec2 12 September, 2023.md"
+    "Untitled 2.md"
   ]
 }
