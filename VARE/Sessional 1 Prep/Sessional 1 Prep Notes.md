@@ -2,7 +2,7 @@
 | ----------------- | ------------------ |
 | 2.pdf             | :white_check_mark: |
 | 3.pdf             | :white_check_mark: |
-| Reading Article-1 | :white_check_mark:                |
+| Reading Article-1 | :white_check_mark: |
 | 4.pdf             | :warning:          |
 | 5.pdf             | :warning:          |
 | 6.pdf             | :warning           |
@@ -180,3 +180,8 @@ Skipped taxonomy of malware. Added some extra types though
 
 
 # Lecture 4: Static malware analysis - 1
+- Initial analysis method that involves
+	- Extraction of useful information
+	- Classification via informed decisions
+	- Base for subsequent analysis
+- 
