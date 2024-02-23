@@ -53,7 +53,7 @@
 	- Ultimately, the goal is to develop agents that are provably beneficial to humans, addressing the value alignment problem.
 - Laws of thought vs Rational Agent
 
-| Aspect               | Laws of thought                                                   | Rational Agent                                                                |
+| Aspect               | Laws of thought                                                   | Rational Agent (Ideal for AI)                                                               |
 | -------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | Definition           | Emphasizes correct inferences as the hallmark of intelligence.    | Focuses on agents that act to achieve the best outcome.                       |
 | Objective            | Making correct inferences based on logical rules.                 | Acting to achieve the best outcome or expected outcome.                       |
