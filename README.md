@@ -5,10 +5,10 @@
 > While i may not make classwise notes anymore, you are more than welcome to clone the repo and push your own notes here. I'll link them as soon as possible.
 
 
-| Symbols           | Meaning      |
-| ----------------- | ------------ |
-| :x:               | Not made yet |
-| :warning:         | In progress  |
+| Symbols            | Meaning      |
+| ------------------ | ------------ |
+| :x:                | Not made yet |
+| :warning:          | In progress  | 
 | :white_check_mark: | Completed    |
 
 # VARE
@@ -52,11 +52,11 @@
 | Week 17 | [16th May, 2024](VARE/33_VARE_16th_May,%202024.md) |            |                 |
 -->
 
-| Exam                                                                     | Status |
-| ------------------------------------------------------------------------ | ------ |
-| [Sessional 1](VARE/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :warning:    |
-| [Sessional 2](VARE/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
-| [Finals](VARE/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
+| Exam                                                                     | Status             |
+| ------------------------------------------------------------------------ | ------------------ |
+| [Sessional 1](VARE/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
+| [Sessional 2](VARE/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                    |
+| [Finals](VARE/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                    |
 
 # Digital Forensics
 <!--
@@ -99,8 +99,8 @@
 -->
 
 
-| Exam                                                                     | Status |
-| ------------------------------------------------------------------------ | ------ |
+| Exam                                                                          | Status |
+| ----------------------------------------------------------------------------- | ------ |
 | [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
 | [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
 | [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
@@ -147,11 +147,11 @@
 -->
 
 
-| Exam                                                                     | Status |
-| ------------------------------------------------------------------------ | ------ |
-| [Sessional 1](AI/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :warning:    |
-| [Sessional 2](AI/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
-| [Finals](AI/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
+| Exam                                                                   | Status    |
+| ---------------------------------------------------------------------- | --------- |
+| [Sessional 1](AI/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :warning: |
+| [Sessional 2](AI/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |           |
+| [Finals](AI/Finals%20Prep/Finals%20Prep%20Notes.md)                    |           |
 
 # Information Security
 <!--
@@ -194,8 +194,8 @@
 -->
 
 
-| Exam                                                                     | Status |
-| ------------------------------------------------------------------------ | ------ |
+| Exam                                                                        | Status |
+| --------------------------------------------------------------------------- | ------ |
 | [Sessional 1](InfoSec/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
 | [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
 | [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
@@ -243,8 +243,8 @@
 -->
 
 
-| Exam                                                                     | Status |
-| ------------------------------------------------------------------------ | ------ |
+| Exam                                                                                  | Status |
+| ------------------------------------------------------------------------------------- | ------ |
 | [Sessional 1](Ethical%20Hacking/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
 | [Sessional 2](Ethical%20Hacking/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
 | [Finals](Ethical%20Hacking/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |

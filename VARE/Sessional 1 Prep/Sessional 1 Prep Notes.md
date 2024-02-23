@@ -5,8 +5,8 @@
 | Reading Article-1                      | :white_check_mark: |
 | Lecture 4: Static malware analysis - 1 | :white_check_mark: |
 | Lecture 5: PE + COFF                   | :white_check_mark: |
-| Lecture 6: String Analysis             | :warning           |
-| Lecture 7: YARA                        | :warning:          |
+| Lecture 6: String Analysis             | :white_check_mark: |
+| Lecture 7: YARA                        | :white_check_mark: |
 
 <!--
 :x:
@@ -229,7 +229,39 @@ Skipped taxonomy of malware. Added some extra types though
 				- .reloc: Holds information on how to relocate the exe in memory to a different address from the time it was linked
 
 # Lecture 6: String Analysis
+- Obfuscation/Packing
+	- Used to protect the inner workings of the malware from security researchers, malware analysts + RE
+	- Make it difficult to analyze the binary
+- String analysis
+	- Process of extracting readable characters and words from the malware
+	- Types of strings to look for (Only gives a hint to what the malware is capable of)
+		- File names
+		- URL
+		- IP addresses
+		- Commands i.e. attack commands
+		- Registry keys
 # Lecture 7: YARA
+
+Why YARA and not AWKSCRIPT
+- Yara is specifically tailored for string mathing
+- AWK is tailored for log processing
+
+```yara
+to run a yara file use the following
+
+$ yara32 -r yaraRule.yara fileToTestRule.exe
+```
+
+
+- Using hexadecimal strings
+	- Good for using Jumps, Wildcards and alternatives.
+		- Simple strings can also use wildcards but that involves regex
+	- Wildcards = Use a "?" for each 4bits to guess
+	- Jumps = 
+
+
+---
+Following was a GPT result
 
 1. **Rule Structure**:
    - YARA rules start with the `rule` keyword followed by the rule name.
