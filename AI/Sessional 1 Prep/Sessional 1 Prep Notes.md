@@ -153,6 +153,22 @@ Table that might help
 
 ## 1.4: State of the art
 ## 1.5: Risks & Benefits of AI
+## Summary
+- Different goals drive AI approaches: focus on thinking or behavior, modeling humans or optimizing results.
+- The standard model of AI prioritizes rational action, aiming to build intelligent agents.
+- Challenges arise due to computational limitations and the need for machines to pursue human-beneficial objectives.
+- Philosophy: Suggested mind-machine similarity, knowledge encoding, and thought-action link.
+- Mathematics: Provided tools for logical and probabilistic reasoning, computation understanding.
+- Economics: Formalized decision-making to maximize expected utility.
+- Neuroscience: Uncovered brain-computer similarities and differences.
+- Psychology: Considered humans and animals as information processors, with language fitting into this model.
+- Computer Engineering: Enabled AI applications through powerful hardware and usable software.
+- Control Theory: Designed devices for optimal action based on environmental feedback, increasingly intersecting with AI.
+- History: Marked by cycles of success, optimism, funding cutbacks, and innovative approaches.
+- Methodological evolution: Transitioned from Boolean logic to probabilistic reasoning and from hand-crafted knowledge to machine learning.
+- Real-world applications: Raised concerns about risks and ethical implications.
+- Long-term challenges: Addressing control and unpredictability of super intelligent AI systems, prompting reevaluation of AI conception.
+
 ---
 
 # Chapter 2
