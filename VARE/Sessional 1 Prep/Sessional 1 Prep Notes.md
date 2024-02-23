@@ -35,14 +35,14 @@ NOTE:: Skipped introduction
 	- Contain
 	- Cure and prevent future infections
 
-| Aspect             | Static Analysis                                      | Dynamic Analysis                                       |
-|--------------------|------------------------------------------------------|--------------------------------------------------------|
-| Timing of Analysis | Performed without executing the program              | Performed while the program is executing               |
-| Scope of Analysis | Focuses on the source code or static representations | Focuses on the runtime behavior of the software        |
-| Type of Issues     | Syntactic and semantic issues, potential vulnerabilities | Runtime errors, memory leaks, buffer overflows         |
-| Automation         | Can be highly automated                              | May require manual intervention, but can be automated   |
-| Coverage           | Provides comprehensive coverage of the codebase       | Coverage depends on the executed test cases            |
-| Resource           | Requires fewer resources                             | Can be more resource-intensive, especially for complex programs |
+| Aspect             | Static Analysis                                          | Dynamic Analysis                                                |
+| ------------------ | -------------------------------------------------------- | --------------------------------------------------------------- |
+| Timing of Analysis | Performed without executing the program                  | Performed while the program is executing                        |
+| Scope of Analysis  | Focuses on the source code or static representations     | Focuses on the runtime behavior of the software                 |
+| Type of Issues     | Syntactic and semantic issues, potential vulnerabilities | Runtime errors, memory leaks, buffer overflows                  |
+| Automation         | Can be highly automated                                  | May require manual intervention, but can be automated           |
+| Coverage           | Provides comprehensive coverage of the codebase          | Coverage depends on the executed test cases                     |
+| Resource           | Requires fewer resources                                 | Can be more resource-intensive, especially for complex programs |
 
 - Advanced Persistent Threat (APT)
 	- Malware created to infect a particular individual, company or organization
@@ -77,7 +77,21 @@ NOTE:: Skipped introduction
 		- Clicking on links
 		- Drive-by Downloads
 - Exploits
-	-
+	- Small piece of code input into programs to target their vulns
+	- Patches
+		- Identify and fix vulns before they can be exploits
+		- Done via updates by vendors
+		- Zero-Day = Vuln is not patched
+	- Exploit Kit
+		- Devised to attack computers that are hidden behind their home network
+		- Automatically managing and deploying exploits against a target computer
+		- Baits and traps using malicious servers
+		- Wait for users to contact these malicious server
+- Dimensions of infection vectors
+	- Speed
+	- Stealth
+	- Coverage
+	- Shelf life
 
 # Lecture 3: Setting up a malware lab
 - Precautions
