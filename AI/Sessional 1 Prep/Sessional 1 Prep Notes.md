@@ -29,7 +29,7 @@
 		- Automated Reasoning, to answer questions and draw new conclusions
 		- Machine Learning, to adapt new circumstances and to detect + extrapolate patterns
 	- Test Details
-		-
+		- 
 ## 1.2: Foundations of AI
 ## 1.3: History of AI
 ## 1.4: State of the art
