@@ -34,6 +34,16 @@ NOTE:: Skipped introduction
 	- Detect
 	- Contain
 	- Cure and prevent future infections
+
+| Aspect             | Static Analysis                                      | Dynamic Analysis                                       |
+|--------------------|------------------------------------------------------|--------------------------------------------------------|
+| Timing of Analysis | Performed without executing the program              | Performed while the program is executing               |
+| Scope of Analysis | Focuses on the source code or static representations | Focuses on the runtime behavior of the software        |
+| Type of Issues     | Syntactic and semantic issues, potential vulnerabilities | Runtime errors, memory leaks, buffer overflows         |
+| Automation         | Can be highly automated                              | May require manual intervention, but can be automated   |
+| Coverage           | Provides comprehensive coverage of the codebase       | Coverage depends on the executed test cases            |
+| Resource           | Requires fewer resources                             | Can be more resource-intensive, especially for complex programs |
+
 - Advanced Persistent Threat (APT)
 	- Malware created to infect a particular individual, company or organization
 	- Targeted campaigns against
@@ -47,7 +57,7 @@ NOTE:: Skipped introduction
 	- Persistence
 	- Propagation
 	- Communication
-- 
+-
 	- Payload
 	- Packer
 	- Persistence
