@@ -106,4 +106,6 @@ Skipped taxonomy of malware. Added some extra types though
 - Scareware
 	- Designed to trick a user into buying and downloading unnecessary and potentially dangerous software
 - Bots
-	- 
+	- Controlled by a C2 server, allows remote control of the infected system
+- Rootkits
+	- Hide processes/programs that enable continued privileged access to computers
