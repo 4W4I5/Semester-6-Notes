@@ -9,7 +9,7 @@
 | ----------------- | ------------ |
 | :x:               | Not made yet |
 | :warning:         | In progress  |
-| :white_check_mark: | Completed    | 
+| :white_check_mark: | Completed    |
 
 # VARE
 <!--
