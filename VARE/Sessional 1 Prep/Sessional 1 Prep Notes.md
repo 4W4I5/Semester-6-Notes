@@ -230,3 +230,58 @@ Skipped taxonomy of malware. Added some extra types though
 
 # Lecture 6: String Analysis
 # Lecture 7: YARA
+
+1. **Rule Structure**:
+   - YARA rules start with the `rule` keyword followed by the rule name.
+   - Curly braces `{}` enclose the rule body, which contains one or more conditions and an optional meta section.
+   - Each condition consists of a boolean expression that defines characteristics of the malware or file being matched.
+
+2. **Rule Naming**:
+   - Choose descriptive names for your rules that reflect the malware or behavior they detect.
+   - Avoid spaces or special characters in rule names.
+
+3. **Metadata**:
+   - The `meta` section allows you to add metadata to your rule, such as author, description, reference, etc.
+   - Metadata is optional but can be helpful for documentation and categorization.
+
+4. **Conditions**:
+   - Conditions are comprised of strings, hex strings, or other YARA rules.
+   - Strings are enclosed in double quotes `" "` and can use wildcards (`*`) and regular expressions (`/pattern/`).
+   - Hex strings are enclosed in curly braces `{}` and start with the `$` sign followed by the hexadecimal representation of the bytes.
+   - Conditions can be combined using boolean operators (`and`, `or`, `not`) and parentheses for precedence.
+
+5. **String Matching**:
+   - Be specific when writing string matches to avoid false positives.
+   - Use the `nocase` modifier for case-insensitive matching when appropriate.
+   - Utilize the `wide` modifier for wide character (UTF-16) string matching.
+
+6. **Regular Expressions**:
+   - Regular expressions (`/pattern/`) can be used for more complex string matching.
+   - Keep regular expressions simple and efficient to avoid performance issues.
+
+7. **Modifiers**:
+   - Modifiers such as `nocase`, `ascii`, `wide`, etc., can be applied to strings to modify their behavior.
+   - Choose modifiers wisely based on the nature of the data being matched.
+
+8. **Comments**:
+   - Use comments (`//` for single-line comments, `/* */` for multi-line comments) to document your rules and explain their purpose or logic.
+   - Comments improve the readability and maintainability of your YARA rules.
+
+Here's a basic example of a YARA rule:
+
+```yara
+rule ExampleRule {
+    meta:
+        description = "Detects example malware"
+        author = "Your Name"
+        date = "2024-02-24"
+    
+    strings:
+        $str1 = "malicious_string" nocase
+        $str2 = { DE AD BE EF }
+        $regex1 = /malware\d{3}/
+
+    condition:
+        $str1 or $str2 or $regex1
+}
+```
