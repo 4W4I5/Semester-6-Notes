@@ -79,6 +79,13 @@
 	- Provides formal logic and reasoning tools.
 	- Utilizes mathematical models for analysis and optimization of AI algorithms.
 	- Applies mathematical concepts for AI algorithm development and optimization.
+	- Questions
+		- What are the formal rules to draw valid conclusions
+		- What can be computed
+		- How do we reason with uncertain information
+		- Turing showed that no machine in general can tell that a given program will return an answer on a given input or run forever
+		- Intractable problems; time required to solve instances of a given problem grows exponentially
+		- NP-Completeness; 
 - Economics
 	- Analyzes decision-making processes, incentives, and resource allocation.
 	- Utilizes economic models to understand economic systems and behaviors.
