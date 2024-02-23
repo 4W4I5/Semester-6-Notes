@@ -217,7 +217,8 @@ Table that might help - GPT made this tho
 ## 2.1: Agents & Environments
 - Agent
 	- An agent is an entity that acts on its environment via actuators based on precept data from its sensors in the environment
-		- A precept sequence is the history of everything that the agent has precieved
+		- A precept sequence is the history of everything that the agent has perceived
+		- An Agent Function specifies the action taken by the agent in response to any precept sequence
 
 ## 2.2: Good behavior: Rationality concept
 ## 2.3: Nature of Environments
