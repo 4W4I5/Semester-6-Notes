@@ -3,8 +3,8 @@
 | Chapter 1.1 | :white_check_mark: |
 | Chapter 1.2 | :white_check_mark: |
 | Chapter 1.3 | :white_check_mark: |
-| Chapter 1.4 | :white_check_mark:                |
-| Chapter 1.5 | :x:                |
+| Chapter 1.4 | :white_check_mark: |
+| Chapter 1.5 | :white_check_mark: | 
 | Chapter 2.1 | :x:                |
 | Chapter 2.2 | :x:                |
 | Chapter 2.3 | :x:                |
@@ -152,14 +152,49 @@ Table that might help
 |                                                           | **Applications**: Autonomous vehicles, healthcare diagnostics, natural language understanding.                                 |
 
 ## 1.4: State of the art
+
+| Topic                            | State of the Art                                                                                                   |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Robotic Vehicles                 | - Advanced autonomous driving systems like Tesla Autopilot and Waymo's self-driving technology.                    |
+|                                  | - Integration of AI for real-time decision-making, perception, and navigation in vehicles.                         |
+| Legged Locomotion                | - Advancements in quadruped and bipedal robots like Boston Dynamics' Spot and Atlas robots.                        |
+|                                  | - Use of AI for dynamic balance, obstacle negotiation, and terrain adaptation in legged robots.                    |
+| Autonomous Planning & Scheduling | - AI-powered systems for resource allocation, task scheduling, and logistics optimization.                         |
+|                                  | - Integration of machine learning for adaptive planning and real-time adjustments in schedules.                    |
+| Machine Translation              | - State-of-the-art neural machine translation models like Google Translate and DeepL.                              |
+|                                  | - Use of transformer-based architectures and large-scale training data for improved translation quality.           |
+| Speech Recognition               | - Highly accurate speech recognition systems like Google's Speech-to-Text and Amazon Transcribe.                   |
+|                                  | - Integration of deep learning models for robust performance in various languages and accents.                     |
+| Recommendations                  | - Personalized recommendation systems in platforms like Netflix, Amazon, and Spotify.                              |
+|                                  | - Utilization of collaborative filtering, content-based filtering, and deep learning for accurate recommendations. |
+| Game Playing                     | - AI agents capable of superhuman performance in games like Chess, Go, and Dota 2.                                 |
+|                                  | - Development of reinforcement learning algorithms and deep neural networks for game strategy.                     |
+| Image Understanding              | - State-of-the-art image classification, object detection, and segmentation models.                                |
+|                                  | - Use of convolutional neural networks (CNNs) and transfer learning for robust image understanding.                |
+| Medicine                         | - AI applications in medical diagnosis, drug discovery, and personalized treatment planning.                       |
+|                                  | - Integration of deep learning, natural language processing, and computer vision in medical research.              |
+| Climate Science                  | - AI-based models for climate prediction, extreme weather detection, and climate change analysis.                  |
+|                                  | - Utilization of machine learning for data analysis, pattern recognition, and climate modeling.                    |
+
 ## 1.5: Risks & Benefits of AI
-- lethal autonomous weapons
-- surveillance and persuasion
-- biased decision making
-- impact on employment
-- safety-critical applications
-- cybersecurity
-- ai superintelligence
+
+| Topic                        | Risks                                                      | Benefits                                                              |
+| ---------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------- |
+| Lethal Autonomous Weapons    | - Potential for misuse leading to indiscriminate harm.     | - Reduced risk to human soldiers in combat situations.                |
+|                              | - Lack of accountability and ethical oversight.            | - Enhanced precision and efficiency in military operations.           |
+| Surveillance and Persuasion  | - Invasion of privacy and erosion of civil liberties.      | - Improved public safety and crime prevention.                        |
+|                              | - Manipulation of public opinion and behavior.             | - Enhanced monitoring and response to security threats.               |
+| Biased Decision Making       | - Reinforcement of existing biases and discrimination.     | - Increased efficiency and automation in decision-making.             |
+|                              | - Unfair treatment and perpetuation of inequality.         | - Potential for unbiased and data-driven decision-making.             |
+| Impact on Employment         | - Job displacement and economic inequality.                | - Increased productivity and economic growth.                         |
+|                              | - Loss of traditional livelihoods and skills.              | - Creation of new job opportunities and industries.                   |
+| Safety-Critical Applications | - Potential for catastrophic failures and accidents.       | - Enhanced reliability and efficiency in critical systems.            |
+|                              | - Limited ability to predict and mitigate risks.           | - Improved performance and safety in transportation, healthcare, etc. |
+| Cybersecurity                | - Vulnerabilities exploited for malicious purposes.        | - Improved defense against cyber threats and attacks.                 |
+|                              | - Potential for widespread disruption and damage.          | - Development of secure systems and protocols.                        |
+| AI Superintelligence         | - Existential risks from uncontrolled superintelligent AI. | - Accelerated scientific and technological progress.                  |
+|                              | - Loss of human control over AI systems.                   | - Potential solutions to complex global challenges.                   |
+
 ## Summary
 - Different goals drive AI approaches: focus on thinking or behavior, modeling humans or optimizing results.
 - The standard model of AI prioritizes rational action, aiming to build intelligent agents.
