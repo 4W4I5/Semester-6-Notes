@@ -1,13 +1,12 @@
-| Lecture Number    | Status             |
-| ----------------- | ------------------ |
-| 2.pdf             | :white_check_mark: |
-| 3.pdf             | :white_check_mark: |
-| Reading Article-1 | :white_check_mark: |
-| 4.pdf             | :warning:          |
-| 5.pdf             | :warning:          |
-| 6.pdf             | :warning           |
-| 7.pdf             | :warning:          |
-|                   |                    |
+| Lecture Number                         | Status             |
+| -------------------------------------- | ------------------ |
+| Lecture 2: History of malware          | :white_check_mark: |
+| Lecture 3: Setting up a malware lab    | :white_check_mark: |
+| Reading Article-1                      | :white_check_mark: |
+| Lecture 4: Static malware analysis - 1 | :white_check_mark: |
+| Lecture 5: PE + COFF                   | :white_check_mark: |
+| Lecture 6: String Analysis             | :warning           |
+| Lecture 7: YARA                        | :warning:          |
 
 <!--
 :x:
@@ -95,7 +94,7 @@ NOTE:: Skipped introduction
 
 # Lecture 3: Setting up a malware lab
 - Precautions
-	- Virtualization software must be kept uptodate
+	- Virtualization software must be kept UpToDate
 	- Fresh copy of Guest OS
 	- No sensitive information within the guest OS
 	- Host-Only network config
@@ -184,4 +183,50 @@ Skipped taxonomy of malware. Added some extra types though
 	- Extraction of useful information
 	- Classification via informed decisions
 	- Base for subsequent analysis
-- 
+- Basic Static Analysis
+	- Identifying a file
+		- Analyze extension, magic byte, PE type,
+	- Fingerprinting
+		- Calculating SHA1, SHA256 & MD5 hashes.
+		- Filenames not part of this, only the content is used
+	- Extracting strings, function + metadata
+	- Unpacking
+	- Classifying and Comparing
+
+# Lecture 5: PE + COFF
+- PE aka COFF (Common Object File format)
+- PE files do not contain PIE
+- PE contains
+	- Specifices where the exe needs to be loaded in memory
+	- Reference for linking DLLs
+	- Import/Export tables
+	- Thread-Local Storage + Resource management data
+- Components
+	- Header
+		- Structure
+			- MZDOS > DOS STUB > PE FileHeader > Optional > Section Tables > Section
+		- Metadata
+			- Date, time, versions
+			- Points + Offsets(RVAs) into sections where code and data are located
+	- Sections
+		- Stores data, code resources, directories + debug info
+		- Important sections to note
+			- DATA
+				- .bss: Uninitialized global/static data
+				- .rdata: ReadOnly data i.e. constants
+				- .data: Stack data
+			- RESOURCE
+				- .rsrc: Images, icons, thumbnails, payload etc
+			- EXE
+				- .text: code i.e machine instructions
+			- EXPORT
+				- .edata: Exported symbols/functions
+			- IMPORT
+				- .idata: Imported symbols/functions
+			- DEBUG
+				- .debug: Debugging information such as symbol tables, line numbers
+			- RELOCATE
+				- .reloc: Holds information on how to relocate the exe in memory to a different address from the time it was linked
+
+# Lecture 6: String Analysis
+# Lecture 7: YARA
