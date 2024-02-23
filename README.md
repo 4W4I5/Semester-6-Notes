@@ -5,6 +5,12 @@
 > While i may not make classwise notes anymore, you are more than welcome to clone the repo and push your own notes here. I'll link them as soon as possible.
 
 
+| Symbols           | Meaning      |
+| ----------------- | ------------ |
+| :x:               | Not made yet |
+| :warning:         | In progress  |
+| :white_check_mark | Completed    | 
+
 # VARE
 <!--
 
@@ -143,7 +149,7 @@
 
 | Exam                                                                     | Status |
 | ------------------------------------------------------------------------ | ------ |
-| [Sessional 1](AI/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
+| [Sessional 1](AI/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :warning:    |
 | [Sessional 2](AI/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
 | [Finals](AI/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
 

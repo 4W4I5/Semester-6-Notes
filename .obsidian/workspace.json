@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "README.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -154,7 +154,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,6 +173,7 @@
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "README.md",
     "Ethical Hacking/0_1_Ethical Hacking_24_Jan, 2024.md",
     "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",
     "InfoSec/3_InfoSec_1st_Feb, 2024.md",
@@ -181,7 +183,6 @@
     "InfoSec/7_InfoSec_16th_Feb, 2024.md",
     "InfoSec/6_InfoSec_15th_Feb, 2024.md",
     "InfoSec/2_InfoSec_30th_Jan, 2024.md",
-    "README.md",
     "InfoSec/Info_sec/Info sec/Info sec P9.png",
     "InfoSec/Info_sec/Info sec/Info sec P8.png",
     "InfoSec/Info_sec/Info sec/Info sec P7.png",

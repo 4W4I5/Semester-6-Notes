@@ -4,5 +4,7 @@
   "spellcheck": true,
   "useMarkdownLinks": true,
   "livePreview": false,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "readableLineLength": false,
+  "foldHeading": false
 }
