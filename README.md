@@ -1,10 +1,12 @@
 # Notes Status
 
 > [!NOTE]
-> These notes were made for Semester 6 in the BS(CYS) course using Obsidian, feel free to clone the repo and push changes to add your own notes here or just let me know and ill add them
+> Classwise notes are no longer being made. Only sessional and finals prep material will be available.
+> While i may not make classwise notes anymore, you are more than welcome to clone the repo and push your own notes here. I'll link them as soon as possible.
 
 
 # VARE
+<!--
 
 | Week #  | Date                                               | Status     | Content         |
 | ------- | -------------------------------------------------- | ---------- | --------------- |
@@ -42,9 +44,16 @@
 | Week 16 | [9th May, 2024](VARE/31_VARE_9th_May,%202024.md)   |            |                 |
 | Week 17 | [14th May, 2024](VARE/32_VARE_14th_May,%202024.md) |            |                 |
 | Week 17 | [16th May, 2024](VARE/33_VARE_16th_May,%202024.md) |            |                 |
+-->
+
+| Exam                                                                     | Status |
+| ------------------------------------------------------------------------ | ------ |
+| [Sessional 1](VARE/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
+| [Sessional 2](VARE/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
+| [Finals](VARE/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
 
 # Digital Forensics
-
+<!--
 | Week #  | Date                                                         | Status     | Content         |
 | ------- | ------------------------------------------------------------ | ---------- | --------------- |
 | Week 1  | 23rd Jan, 2024                                               | N/A        | Class Cancelled |
@@ -81,9 +90,18 @@
 | Week 16 | [9th May, 2024](Forensics/31_Forensics_9th_May,%202024.md)   |            |                 |
 | Week 17 | [14th May, 2024](Forensics/32_Forensics_14th_May,%202024.md) |            |                 |
 | Week 17 | [16th May, 2024](Forensics/33_Forensics_16th_May,%202024.md) |            |                 |
+-->
+
+
+| Exam                                                                     | Status |
+| ------------------------------------------------------------------------ | ------ |
+| [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
+| [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
+| [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
+
 
 # AI
-
+<!--
 | Week #  | Date                                           | Status       | Content         |
 | ------- | ---------------------------------------------- | ------------ | --------------- |
 | Week 1  | 23rd Jan, 2024                                 | N/A          | Class Cancelled |
@@ -120,9 +138,17 @@
 | Week 16 | [9th May, 2024](AI/31_AI_9th_May,%202024.md)   |              |                 |
 | Week 17 | [14th May, 2024](AI/32_AI_14th_May,%202024.md) |              |                 |
 | Week 17 | [16th May, 2024](AI/33_AI_16th_May,%202024.md) |              |                 |
+-->
+
+
+| Exam                                                                     | Status |
+| ------------------------------------------------------------------------ | ------ |
+| [Sessional 1](AI/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
+| [Sessional 2](AI/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
+| [Finals](AI/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
 
 # Information Security
-
+<!--
 | Week #  | Date                                                     | Status | Content         |
 | ------- | -------------------------------------------------------- | ------ | --------------- |
 | Week 1  | 23rd Jan, 2024                                           | N/A    | Class Cancelled |
@@ -159,9 +185,19 @@
 | Week 16 | [9th May, 2024](InfoSec/31_InfoSec_9th_May,%202024.md)   |        |                 |
 | Week 17 | [14th May, 2024](InfoSec/32_InfoSec_14th_May,%202024.md) |        |                 |
 | Week 17 | [16th May, 2024](InfoSec/33_InfoSec_16th_May,%202024.md) |        |                 |
+-->
+
+
+| Exam                                                                     | Status |
+| ------------------------------------------------------------------------ | ------ |
+| [Sessional 1](InfoSec/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
+| [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
+| [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
+
+
 
 # Ethical Hacking
-
+<!--
 | Week #  | Date                                                                         | Status | Content         |
 | ------- | ---------------------------------------------------------------------------- | ------ | --------------- |
 | Week 1  | 22nd Jan, 2024                                                               | N/A    | Nothing to note |
@@ -198,3 +234,11 @@
 | Week 16 | [8th May, 2024](Ethical%20Hacking/29_Ethical%20Hacking_8th_May,%202024.md)   |        |                 |
 | Week 17 | [13th May, 2024](Ethical%20Hacking/30_Ethical%20Hacking_13th_May,%202024.md) |        |                 |
 | Week 17 | [15th May, 2024](Ethical%20Hacking/31_Ethical%20Hacking_15th_May,%202024.md) |        |                 |
+-->
+
+
+| Exam                                                                     | Status |
+| ------------------------------------------------------------------------ | ------ |
+| [Sessional 1](Ethical%20Hacking/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
+| [Sessional 2](Ethical%20Hacking/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
+| [Finals](Ethical%20Hacking/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |

@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
-                "mode": "source",
+                "file": "README.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "README.md"
               }
             }
           },
@@ -154,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,8 +171,8 @@
   },
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
-    "Ethical Hacking/0_1_Ethical Hacking_24_Jan, 2024.md",
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "Ethical Hacking/0_1_Ethical Hacking_24_Jan, 2024.md",
     "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",
     "InfoSec/3_InfoSec_1st_Feb, 2024.md",
     "Ethical Hacking/Untitled 1.md",
