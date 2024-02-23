@@ -28,8 +28,15 @@
 		- Knowledge Representation, to store what it knows/hears
 		- Automated Reasoning, to answer questions and draw new conclusions
 		- Machine Learning, to adapt new circumstances and to detect + extrapolate patterns
+		- Optional
+			- The total turing test requires CV, Speech recognition and Robotics in order to better fool the test observer
 	- Test Details
-		- 
+		- Observer is placed in a room
+		- One human and One AI are placed in another room as players, both can communicate with the observer. The observer cannot see either of them.
+		- Observer and Players take turns communicating with each other or completing assigned tasks. The AI and Human player take turns answering the observer
+		- The concept is that the AI must be able to fool the observer into thinking that it was the human player all along
+	- Issues with the test
+		- Imitation of life is not the goal of AI. The goal is to understand how intelligence in organisms works in order to use that concept in AI
 ## 1.2: Foundations of AI
 ## 1.3: History of AI
 ## 1.4: State of the art
