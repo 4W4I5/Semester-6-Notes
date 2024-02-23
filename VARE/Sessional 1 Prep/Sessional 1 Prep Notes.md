@@ -51,6 +51,14 @@ NOTE:: Skipped introduction
 		- Devices
 		- Network
 		- Stay undetected for a long time (STUXNET for e.g.)
+	- Cyber killchain
+		- Reconnaissance
+		- Weaponization
+		- Delivery
+		- Exploitation
+		- Installation
+		- C2
+		- Action on Objectives
 - Components of Malware
 	- Stealth
 		- Packer: Techniques used to compress/encrypt malware code to evade detection by antivirus or other security measures
@@ -64,7 +72,12 @@ NOTE:: Skipped introduction
 	- Communication
 		- Interactions b/w malware and C2 server
 - Distribution Mechanisms
-	- Heavily dependent
+	- Heavily dependent on social engineering
+		- Email
+		- Clicking on links
+		- Drive-by Downloads
+- Exploits
+	-
 
 # Lecture 3: Setting up a malware lab
 - Precautions
