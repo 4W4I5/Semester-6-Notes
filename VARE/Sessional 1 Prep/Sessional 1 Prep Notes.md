@@ -42,7 +42,20 @@ NOTE:: Skipped introduction
 		- Network
 		- Stay undetected for a long time (STUXNET for e.g.)
 - Components of Malware
-	-
+	- Stealth
+	- Armoring
+	- Persistence
+	- Propagation
+	- Communication
+- Distribution Mechanisms
+	- Heavily dependent 
+	- Payload
+	- Packer
+	- Persistence
+	- Communication
+	- Propagation
+	- Armoring
+	- Stealth
 # Lecture 3: Setting up a malware lab
 - Precautions
 	- Virtualization software must be kept uptodate
