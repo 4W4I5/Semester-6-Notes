@@ -3,7 +3,7 @@
 | Chapter 1.1 | :white_check_mark: |
 | Chapter 1.2 | :white_check_mark: |
 | Chapter 1.3 | :white_check_mark: |
-| Chapter 1.4 | :x:                |
+| Chapter 1.4 | :white_check_mark:                |
 | Chapter 1.5 | :x:                |
 | Chapter 2.1 | :x:                |
 | Chapter 2.2 | :x:                |
@@ -153,6 +153,13 @@ Table that might help
 
 ## 1.4: State of the art
 ## 1.5: Risks & Benefits of AI
+- lethal autonomous weapons
+- surveillance and persuasion
+- biased decision making
+- impact on employment
+- safety-critical applications
+- cybersecurity
+- ai superintelligence
 ## Summary
 - Different goals drive AI approaches: focus on thinking or behavior, modeling humans or optimizing results.
 - The standard model of AI prioritizes rational action, aiming to build intelligent agents.
