@@ -43,8 +43,26 @@
 		- **Psychological Experiments**, observing a person in action
 		- **Brain imaging**, observing the brain in action
 	- Can express the theory as a computer program once these 3 domains are understood
-- Laws of thought approach
-	-
+- Beneficial Machines
+	- The standard model of AI assumes that a fully specified objective will be provided to the machine, but this may not be suitable in the long run.
+		- In tasks like chess or shortest-path computation, the objective is inherent, making the standard model applicable. However, in real-world scenarios like designing a self-driving car, specifying the objective becomes increasingly challenging.
+	- The value alignment problem arises when the objectives programmed into the machine must align with human values, particularly problematic in human-robot interaction scenarios.
+	- In lab or simulated environments, incorrect objectives can be easily corrected, but as intelligent systems are deployed in the real world, this approach becomes untenable due to potential negative consequences.
+	- The standard model's inadequacy is evident when considering the potential misbehavior of intelligent machines pursuing fixed objectives, highlighting the need for a new formulation.
+	- Machines should pursue human objectives rather than their own, necessitating a formulation where machines are uncertain about the complete objective and incentivized to act cautiously and defer to human control.
+	- Ultimately, the goal is to develop agents that are provably beneficial to humans, addressing the value alignment problem.
+- Laws of thought vs Rational Agent
+
+| Aspect               | Laws of thought                                                   | Rational Agent                                                                |
+| -------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Definition           | Emphasizes correct inferences as the hallmark of intelligence.    | Focuses on agents that act to achieve the best outcome.                       |
+| Objective            | Making correct inferences based on logical rules.                 | Acting to achieve the best outcome or expected outcome.                       |
+| Scope                | Primarily concerned with logical reasoning processes.             | Encompasses autonomous operation, perception, adaptation, etc.                |
+| Inference            | Central to rational behavior, deducing actions based on premises. | One mechanism among others for achieving rationality.                         |
+| Limitations          | Limited applicability in scenarios involving uncertainty.         | More adaptable to real-world scenarios and uncertain environments.            |
+| Development Approach | Built on logical foundations, focusing on definite plans.         | Evolves from logical foundations to probabilistic and learning-based methods. |
+| Scientific Rigor     | Relies on logical rules and deductive reasoning.                  | Mathematically well-defined, allowing for scientific development.                                                                              |
+
 ## 1.2: Foundations of AI
 ## 1.3: History of AI
 ## 1.4: State of the art
