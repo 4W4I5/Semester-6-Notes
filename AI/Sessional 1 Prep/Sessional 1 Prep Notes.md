@@ -85,7 +85,6 @@
 | Advancements      | Advanced mathematical techniques (deep learning).     | Automated reasoning (automated theorem proving). | Improved algorithms (machine learning, deep learning).             | Big data technologies (Hadoop, Spark).          | Knowledge graphs, semantic web.                 | Computer vision (object detection, image segmentation).     | Reinforcement learning, transfer learning.           | Conversational AI, affective computing.                  |
 | Future Directions | Integration of mathematics with other domains (AI+X). | Automated reasoning in uncertain environments.   | Optimization of algorithms for distributed and parallel computing. | Data quality and reliability assurance.         | Semantic AI, explainable AI.                    | Multimodal perception, embodied AI.                         | Lifelong learning, explainable AI.                   | Human-centric AI, empathetic AI.                         |
 
-
 ## 1.3: History of AI
 ## 1.4: State of the art
 ## 1.5: Risks & Benefits of AI
