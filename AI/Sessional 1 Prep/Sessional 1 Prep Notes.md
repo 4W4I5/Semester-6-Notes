@@ -1,6 +1,6 @@
 | Chapter     | Status |
 | ----------- | ------ |
-| Chapter 1.1 | :x:    |
+| Chapter 1.1 | :white_check_mark:    |
 | Chapter 1.2 | :x:    |
 | Chapter 1.3 | :x:    |
 | Chapter 1.4 | :x:    |
