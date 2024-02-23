@@ -66,6 +66,14 @@
 | Scientific Rigor     | Relies on logical rules and deductive reasoning.                  | Mathematically well-defined, allowing for scientific development.                                                                              |
 
 ## 1.2: Foundations of AI
+- Philosophy
+- Mathematics
+- Economics
+- Neuroscience
+- Pschology
+- Computer Engineering
+- Control Theory & Cybernetics
+- Linguistics
 ## 1.3: History of AI
 ## 1.4: State of the art
 ## 1.5: Risks & Benefits of AI
