@@ -108,4 +108,15 @@ Skipped taxonomy of malware. Added some extra types though
 - Bots
 	- Controlled by a C2 server, allows remote control of the infected system
 - Rootkits
-	- Hide processes/programs that enable continued privileged access to computers
+	- Hide processes/programs that enable continued privileged access to computers. They can instrument API calls in user-mode or tamper with OS structures as a device driver or a kernel module
+- Hybrid malware
+	- A malware that can belong to two or multiple types simultaneously. Such as spamware, adware and the like
+
+### Development of the malware industry
+-  Malware originated to expose security flaws or showcase technical prowess.
+- Tactics like encryption, packing, obfuscation, polymorphism, and metamorphism are used to evade detection.
+- Initially driven by curiosity, malware development shifted to profit-driven motives, exploiting the booming e-commerce sector.
+- Trojans surged, constituting 73% of malware, forming a lucrative underground industry.
+- Despite increased complexity, the barrier to entry for creating malware has lowered due to user-friendly toolkits like Zeus and SpyEye.
+- This led to a flood of variants that mutate rapidly, overwhelming anti-malware systems.
+- The exponential growth of malware is evident, posing a persistent threat to cybersecurity.
