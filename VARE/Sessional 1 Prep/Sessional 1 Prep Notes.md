@@ -53,18 +53,16 @@ NOTE:: Skipped introduction
 		- Stay undetected for a long time (STUXNET for e.g.)
 - Components of Malware
 	- Stealth
+		- Packer: Techniques used to compress/encrypt malware code to evade detection by antivirus or other security measures
 	- Armoring
+		- Payload: Main component of malware
+		- Mechanisms such as Obfuscation/Encryption to conceal the malware. Counts as stealth as well
 	- Persistence
+		- Mechanisms used by malware to maintain its presence on an infected system even after reboot/removal attempts
 	- Propagation
+		- Mechanisms used by the malware to spread to other systems/devices
 	- Communication
--
-	- Payload
-	- Packer
-	- Persistence
-	- Communication
-	- Propagation
-	- Armoring
-	- Stealth
+		- Interactions b/w malware and C2 server
 - Distribution Mechanisms
 	- Heavily dependent
 
