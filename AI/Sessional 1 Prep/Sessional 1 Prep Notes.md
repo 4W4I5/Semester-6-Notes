@@ -256,6 +256,18 @@ Table that might help - GPT made this tho
 | Discretization          | **Discrete:** The state and/or action space are finite and countable. <br> **Continuous:** The state and/or action space are infinite and uncountable. |
 | Knowledge               | **Known:** The agent has complete knowledge of the environment's dynamics and rules. <br> **Unknown:** The agent lacks complete information about the environment, such as its dynamics or rules. |
 
+Some examples from the book
+
+| Task             | Observability     | Agent Type   | Determinism          | Temporality   | Dynamics   | Discretization | Knowledge     |
+|------------------|-------------------|--------------|----------------------|---------------|------------|----------------|---------------|
+| Crossword Puzzle| Partially Observable| Single Agent | Deterministic       | Episodic      | Static       | Discrete       | Known         |
+| Chess            | Fully Observable   | Multiagent   | Deterministic       | Sequential    | Dynamic      | Discrete       | Known         |
+| Poker            | Partially Observable| Multiagent   | Nondeterministic    | Sequential    | Dynamic      | Discrete       | Known         |
+| Taxi Driving     | Partially Observable| Single Agent | Nondeterministic    | Sequential    | Dynamic      | Continuous     | Known         |
+| Medical Diagnosis| Partially Observable| Single Agent | Nondeterministic    | Sequential    | Dynamic      | Discrete       | Known         |
+| Image Analysis   | Fully Observable   | Single Agent | Deterministic       | Sequential    | Static       | Continuous     | Known         |
+| Teaching         | Partially Observable| Single Agent | Nondeterministic    | Sequential    | Dynamic      | Discrete       | Known         |
+
 
 ## 2.4: Structure of Agents
 - Agent programs
