@@ -21,8 +21,8 @@ NOTE:: Skipped introduction
 - Taxonomy of malware
 	- Malicious programs aka malware
 		- Needs a host
-			- Trapdoors
-			- Logic Bombs
+			- Trapdoors, basically backdoors, allow to bypass normal authentication means
+			- Logic Bombs, wait for a condition before triggering
 			- Trojans
 			- Viruses
 		- Independent
@@ -122,59 +122,59 @@ Skipped taxonomy of malware. Added some extra types though
 
 ### Progress in malware detection
 - **Signature-based Malware Detection**:
-  - Anti-malware products like Comodo, Kaspersky, and others use signature-based methods to detect known threats.
-  - Signatures are unique sequences of bytes specific to each malware, allowing for accurate identification.
-  - The process involves manual generation, updating, and dissemination of signatures, leading to delays in detecting new threats.
+	- Anti-malware products like Comodo, Kaspersky, and others use signature-based methods to detect known threats.
+	- Signatures are unique sequences of bytes specific to each malware, allowing for accurate identification.
+	- The process involves manual generation, updating, and dissemination of signatures, leading to delays in detecting new threats.
 - **Heuristic-based Malware Detection**:
-  - This method relies on rules or patterns to discern malware from benign files, but it's prone to errors and time-consuming.
-  - Automated malware development toolkits enable the creation of thousands of new malicious codes daily, evading traditional detection methods.
-  - Manual analysis becomes a bottleneck, demanding intelligent techniques for automatic sample analysis.
+	- This method relies on rules or patterns to discern malware from benign files, but it's prone to errors and time-consuming.
+	- Automated malware development toolkits enable the creation of thousands of new malicious codes daily, evading traditional detection methods.
+	- Manual analysis becomes a bottleneck, demanding intelligent techniques for automatic sample analysis.
 - **Cloud-based Malware Detection**:
-  - Many anti-malware vendors use cloud-based detection to overcome challenges and improve effectiveness.
-  - The workflow involves scanning files locally, sending information about unknown files to the cloud server, classification by classifiers, and sending verdicts back to clients.
-  - This approach ensures up-to-date security solutions and addresses the increasing number of unknown files.
+	- Many anti-malware vendors use cloud-based detection to overcome challenges and improve effectiveness.
+	- The workflow involves scanning files locally, sending information about unknown files to the cloud server, classification by classifiers, and sending verdicts back to clients.
+	- This approach ensures up-to-date security solutions and addresses the increasing number of unknown files.
 
 ### Malware detection by applying datamining techniques
 - **Data Mining Techniques for Malware Detection**:
-  - These techniques classify unseen malware samples, identify malware families, or infer signatures.
-  - Detection involves feature extraction and classification/clustering.
-  - Techniques vary in feature representation and data mining methods.
+	- These techniques classify unseen malware samples, identify malware families, or infer signatures.
+	- Detection involves feature extraction and classification/clustering.
+	- Techniques vary in feature representation and data mining methods.
 - **Classification**:
-  - Model construction involves training samples, feature extraction, and classification algorithms like ANN, DT, or SVM.
-  - Model usage classifies new samples based on their extracted feature vectors.
+	- Model construction involves training samples, feature extraction, and classification algorithms like ANN, DT, or SVM.
+	- Model usage classifies new samples based on their extracted feature vectors.
 - **Clustering**:
-  - Clustering groups malware samples with similar behaviors into different clusters.
-  - It enables automatic malware categorization and signature generation for detection.
+	- Clustering groups malware samples with similar behaviors into different clusters.
+	- It enables automatic malware categorization and signature generation for detection.
 - **Evaluation Measures**:
-  - True Positive Rate (TPR): Rate of correctly classified malware samples.
-  - False Positive Rate (FPR): Rate of benign files misclassified as malware.
-  - Accuracy (ACY): Rate of correctly classified instances (both positive and negative).
-  - Evaluation can be instance-level (cumulative approach) or transaction-level (interactive-based approach).
-  - Clustering-based methods are evaluated using Macro-F1 and Micro-F1 measures, emphasizing performance on rare and common categories, respectively.
+	- True Positive Rate (TPR): Rate of correctly classified malware samples.
+	- False Positive Rate (FPR): Rate of benign files misclassified as malware.
+	- Accuracy (ACY): Rate of correctly classified instances (both positive and negative).
+	- Evaluation can be instance-level (cumulative approach) or transaction-level (interactive-based approach).
+	- Clustering-based methods are evaluated using Macro-F1 and Micro-F1 measures, emphasizing performance on rare and common categories, respectively.
 
 
 ### Feature Extraction
 - **Feature Extraction Methods**:
 	- **Static Analysis**:
-	  - Analyzes PE files without execution.
-	  - Includes decompression, disassembly, and extraction of patterns.
-	  - Extracts features like API calls, byte n-grams, strings, opcodes, and control flow graphs.
-	  - Advantages: exhaustive detection, no malware interaction.
-	  - Disadvantages: undecidability in certain cases, limited support for runtime packing, complex obfuscation.
+		- Analyzes PE files without execution.
+		- Includes decompression, disassembly, and extraction of patterns.
+		- Extracts features like API calls, byte n-grams, strings, opcodes, and control flow graphs.
+		- Advantages: exhaustive detection, no malware interaction.
+		- Disadvantages: undecidability in certain cases, limited support for runtime packing, complex obfuscation.
 	- **Dynamic Analysis**:
-	  - Observes execution to derive features.
-	  - Techniques include debugging, profiling, and monitoring actions.
-	  - Tools like debuggers, simulators, emulators, and virtual machines are used.
-	  - Advantages: resolves environment-dependent information, useful for packed malware.
-	  - Disadvantages: limited coverage, time-consuming, resource-intensive.
+		- Observes execution to derive features.
+		- Techniques include debugging, profiling, and monitoring actions.
+		- Tools like debuggers, simulators, emulators, and virtual machines are used.
+		- Advantages: resolves environment-dependent information, useful for packed malware.
+		- Disadvantages: limited coverage, time-consuming, resource-intensive.
 - **Hybrid Analysis**:
-  - Integrates advantages of both static and dynamic analysis.
-  - Addresses limitations of each approach.
-  - Example: PolyUnpack combines dynamic and static analysis for packed malware.
+	- Integrates advantages of both static and dynamic analysis.
+	- Addresses limitations of each approach.
+	- Example: PolyUnpack combines dynamic and static analysis for packed malware.
 - **Other Novel Features**:
-  - Semantics-aware matching algorithms.
-  - Analysis of file relationships and interdependence.
-  - Example features: instruction sequences, file-to-machine relations, file placements.
+	- Semantics-aware matching algorithms.
+	- Analysis of file relationships and interdependence.
+	- Example features: instruction sequences, file-to-machine relations, file placements.
 
 
 
