@@ -236,6 +236,7 @@ Table that might help - GPT made this tho
 - Simple reflex agents
 - Model-based reflex agents
 - Goal-based agents
+	- Aka Problem-Solving Agent such as in Chapter3
 - Utility-based agents
 - Learning agents
 - How the components of agent programs work
@@ -246,7 +247,12 @@ Table that might help - GPT made this tho
 # Chapter 3
 ## 3.1: Problem Solving Agents
 - Search problems & solutions
-	- A search problem
+	- A search problem has
+		- State space: a set of possible states the environment can be in
+		- Initial State: starting state of the agent
+		- Goal State: ending state of the agent, can be multiple
+		- Actions: Possible actions the agent can perform to alter their environment
+		- Transition Model: 
 	- Assuming that the agent always has information about the environment we can adopt a 4-Phase problem solving process
 		- Goal Formulation
 		- Problem Formulation: Decide what actions/states to consider given a goal
