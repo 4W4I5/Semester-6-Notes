@@ -252,16 +252,21 @@ Table that might help - GPT made this tho
 		- Initial State: starting state of the agent
 		- Goal State: ending state of the agent, can be multiple
 		- Actions: Possible actions the agent can perform to alter their environment
-		- Transition Model: 
+			- Path: Sequence of actions
+			- Solution: Path from initial to goal state
+			- Optimal Solution: Solution with lowest path cost
+		- Transition Model: defines what an action will do. like what a function will return essentially
+		- Action Cost: Gives numeric cost of applying action A in state S to reach state S'
 	- Assuming that the agent always has information about the environment we can adopt a 4-Phase problem solving process
-		- Goal Formulation
+		- Goal Formulation: Adopt a goal state
 		- Problem Formulation: Decide what actions/states to consider given a goal
-		- Search
-		- Execution
-	-
+		- Search: Simulate a sequence of possible actions in its model
+		- Execution: Execute the actions one at a time
 - Formulating Problems
+	- Concept of abstraction is applied here.
 ## 3.2: Example Problems
 - Standardized problems
+	- 
 - Real-world problems
 ## 3.3: Search Algorithms
 -  %% Best-First Search %%
