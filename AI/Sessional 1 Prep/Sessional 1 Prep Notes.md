@@ -225,9 +225,11 @@ Table that might help - GPT made this tho
 			- A = Action performed
 		- Agent = Architecture + Program, where architecture is the hardware and program is the precept sequence
 ## 2.2: Good behavior: Rationality concept
-- Performance Measures
-- Rationality
-- Omniscience, Learning & Autonomy
+- What makes for a rational Agent
+	- Performance Measures
+		- Actions taken by an agent that lead it closer to the goal state via a desirable path
+	- Rationality
+	- Omniscience, Learning & Autonomy
 ## 2.3: Nature of Environments
 - Specifying Task Environments
 - Properties of Task environments
@@ -266,7 +268,7 @@ Table that might help - GPT made this tho
 	- Concept of abstraction is applied here.
 ## 3.2: Example Problems
 - Standardized problems
-	- 
+	-
 - Real-world problems
 ## 3.3: Search Algorithms
 -  %% Best-First Search %%
