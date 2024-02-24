@@ -7,9 +7,9 @@
 | Chapter 1.5 | :white_check_mark: |
 | Chapter 2.1 | :white_check_mark: |
 | Chapter 2.2 | :white_check_mark: |
-| Chapter 2.3 | :x:                |
+| Chapter 2.3 | :white_check_mark: |
 | Chapter 2.4 | :x:                |
-| Chapter 3.1 | :x:                |
+| Chapter 3.1 | :white_check_mark: | 
 | Chapter 3.2 | :x:                |
 | Chapter 3.3 | :x:                |
 | Chapter 3.4 | :x:                |
