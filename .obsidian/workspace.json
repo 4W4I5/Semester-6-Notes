@@ -85,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md"
               }
             }
           },
@@ -168,10 +170,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
-    "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "Untitled.md",
+    "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "README.md",
     "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "VARE/1_VARE_25th_Jan, 2024.md",

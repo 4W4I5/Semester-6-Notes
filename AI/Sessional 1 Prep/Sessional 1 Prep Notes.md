@@ -245,7 +245,18 @@ Table that might help - GPT made this tho
 		- Actuators: Action mechanisms available to the agent
 		- Sensors: Data available via selected inputs to the agent
 - Properties of Task environments
-- 
+
+| Property                | Description                                                                                                                                                        |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Observability           | **Fully Observable:** The agent can directly and completely observe the entire state of the environment. <br> **Partially Observable:** The agent's view of the environment is limited; it cannot observe all aspects directly. |
+| Agent Type              | **Single Agent:** There is only one agent operating in the environment. <br> **Multiagent:** Multiple agents are present, each with its own goals and actions.            |
+| Determinism             | **Deterministic:** Given a particular state and action, the outcome is certain and predictable. <br> **Nondeterministic (Stochastic):** Actions may lead to different outcomes with certain probabilities.  |
+| Temporality             | **Episodic:** Each action sequence is independent of previous ones; the agent's experience is divided into episodes. <br> **Sequential:** Actions are interdependent, and the current action may affect future ones. |
+| Dynamics                | **Static:** The environment does not change while the agent is deliberating. <br> **Dynamic:** The environment can change while the agent is deciding on its actions. |
+| Discretization          | **Discrete:** The state and/or action space are finite and countable. <br> **Continuous:** The state and/or action space are infinite and uncountable. |
+| Knowledge               | **Known:** The agent has complete knowledge of the environment's dynamics and rules. <br> **Unknown:** The agent lacks complete information about the environment, such as its dynamics or rules. |
+
+
 ## 2.4: Structure of Agents
 - Agent programs
 - Simple reflex agents
