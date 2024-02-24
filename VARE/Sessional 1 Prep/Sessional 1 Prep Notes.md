@@ -18,8 +18,8 @@ NOTE:: Skipped introduction
 # Lecture 2: History of malware
 - Malware is a software that is written with the intention of disrupting networks, causing harm to user/computer
 	- Without the knowledge of the user (Ransomware only reveals itself when the data is encrypted)
-- Taxonomy
-	- Malicious programs
+- Taxonomy of malware
+	- Malicious programs aka malware
 		- Needs a host
 			- Trapdoors
 			- Logic Bombs
@@ -27,7 +27,7 @@ NOTE:: Skipped introduction
 			- Viruses
 		- Independent
 			- Worm
-			- Zombie
+			- Zombie, basically bots
 - Goals of MA&RE
 	- Determine capability of Malware
 	- Detect
@@ -243,7 +243,7 @@ Skipped taxonomy of malware. Added some extra types though
 # Lecture 7: YARA
 
 Why YARA and not AWKSCRIPT
-- Yara is specifically tailored for string mathing
+- Yara is specifically tailored for string matching
 - AWK is tailored for log processing
 
 ```yara
