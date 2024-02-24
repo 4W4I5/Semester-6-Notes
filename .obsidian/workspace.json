@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 281.5
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md"
               }
             }
           },
@@ -173,13 +172,13 @@
   },
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
-    "VARE/1_VARE_25th_Jan, 2024.md",
+    "README.md",
     "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "VARE/1_VARE_25th_Jan, 2024.md",
     "VARE/3_VARE_1st_Feb, 2024.md",
     "VARE/2_VARE_30th_Jan, 2024.md",
     "Untitled.md",
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
-    "README.md",
     "VARE/Sessional 1 Prep",
     "Ethical Hacking/0_1_Ethical Hacking_24_Jan, 2024.md",
     "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",

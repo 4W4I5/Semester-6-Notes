@@ -219,6 +219,11 @@ Table that might help - GPT made this tho
 	- An agent is an entity that acts on its environment via actuators based on precept data from its sensors in the environment
 		- A precept sequence is the history of everything that the agent has perceived
 		- An Agent Function specifies the action taken by the agent in response to any precept sequence
+		- f = p<sup>*</sup> -> A
+			- f = Agent function
+			- p<sup>*</sup> = Perceived info
+			- A = Action performed
+		- Agent = Architecture + Program
 
 ## 2.2: Good behavior: Rationality concept
 ## 2.3: Nature of Environments
