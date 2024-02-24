@@ -82,9 +82,9 @@ NOTE:: Skipped introduction
 		- Done via updates by vendors
 		- Zero-Day = Vuln is not patched
 	- Exploit Kit
+		- Baits and traps using malicious servers, observes connected hosts and deploys malware accordingly
 		- Devised to attack computers that are hidden behind their home network
 		- Automatically managing and deploying exploits against a target computer
-		- Baits and traps using malicious servers
 		- Wait for users to contact these malicious server
 - Dimensions of infection vectors
 	- Speed
