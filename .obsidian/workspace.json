@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/1_VARE_25th_Jan, 2024.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/1_VARE_25th_Jan, 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/1_VARE_25th_Jan, 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "VARE/1_VARE_25th_Jan, 2024.md"
               }
             }
           },
@@ -172,8 +172,11 @@
   },
   "active": "51e885a91e1de6bd",
   "lastOpenFiles": [
-    "Untitled.md",
     "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "VARE/3_VARE_1st_Feb, 2024.md",
+    "VARE/2_VARE_30th_Jan, 2024.md",
+    "VARE/1_VARE_25th_Jan, 2024.md",
+    "Untitled.md",
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "README.md",
     "VARE/Sessional 1 Prep",
@@ -199,15 +202,12 @@
     "InfoSec/Info_sec",
     "InfoSec/Info sec/Info sec",
     "InfoSec/Info sec",
-    "VARE/3_VARE_1st_Feb, 2024.md",
     "Forensics/3_Forensics_1st_Feb, 2024.md",
     "Forensics",
     "Ethical Hacking/2_Ethical Hacking_31st_Jan, 2024.md",
     "Ethical Hacking",
     "InfoSec",
-    "VARE/2_VARE_30th_Jan, 2024.md",
     "AI/2_AI_30th_Jan, 2024.md",
-    "VARE/1_VARE_25th_Jan, 2024.md",
     "VARE",
     "AI/1_AI_25th_Jan, 2024.md",
     "AI/1_AI 25th Jan, 2024.md",
