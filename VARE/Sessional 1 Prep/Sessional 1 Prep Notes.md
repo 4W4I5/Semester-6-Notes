@@ -59,22 +59,22 @@ NOTE:: Skipped introduction
 		- C2
 		- Action on Objectives
 - Components of Malware
-	- Stealth
-		- Packer: Techniques used to compress/encrypt malware code to evade detection by antivirus or other security measures
-	- Armoring
-		- Payload: Main component of malware
+	- **Stealth**
+		- **Packer**: Techniques used to compress/encrypt malware code to evade detection by antivirus or other security measures
+	- **Armoring**
+		- **Payload**: Main component of malware
 		- Mechanisms such as Obfuscation/Encryption to conceal the malware. Counts as stealth as well
-	- Persistence
+	- **Persistence**
 		- Mechanisms used by malware to maintain its presence on an infected system even after reboot/removal attempts
-	- Propagation
+	- **Propagation**
 		- Mechanisms used by the malware to spread to other systems/devices
-	- Communication
+	- **Communication**
 		- Interactions b/w malware and C2 server
-- Distribution Mechanisms
-	- Heavily dependent on social engineering
-		- Email
-		- Clicking on links
-		- Drive-by Downloads
+	- **Distribution Mechanisms**
+		- Heavily dependent on social engineering
+			- Email
+			- Clicking on links
+			- Drive-by Downloads
 - Exploits
 	- Small piece of code input into programs to target their vulns
 	- Patches
