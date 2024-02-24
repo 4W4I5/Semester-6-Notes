@@ -192,7 +192,7 @@ Table that might help - GPT made this tho
 |                              | - Limited ability to predict and mitigate risks.           | - Improved performance and safety in transportation, healthcare, etc. |
 | Cybersecurity                | - Vulnerabilities exploited for malicious purposes.        | - Improved defense against cyber threats and attacks.                 |
 |                              | - Potential for widespread disruption and damage.          | - Development of secure systems and protocols.                        |
-| AI Superintelligence         | - Existential risks from uncontrolled superintelligent AI. | - Accelerated scientific and technological progress.                  |
+| AI Superintelligence         | - Existential risks from uncontrolled super intelligent AI. | - Accelerated scientific and technological progress.                  |
 |                              | - Loss of human control over AI systems.                   | - Potential solutions to complex global challenges.                   |
 
 ## Summary
@@ -225,13 +225,60 @@ Table that might help - GPT made this tho
 			- A = Action performed
 		- Agent = Architecture + Program, where architecture is the hardware and program is the precept sequence
 ## 2.2: Good behavior: Rationality concept
--
+- Performance Measures
+- Rationality
+- Omniscience, Learning & Autonomy
 ## 2.3: Nature of Environments
+- Specifying Task Environments
+- Properties of Task environments
 ## 2.4: Structure of Agents
+- Agent programs
+- Simple reflex agents
+- Model-based reflex agents
+- Goal-based agents
+- Utility-based agents
+- Learning agents
+- How the components of agent programs work
+
+
 ---
 
 # Chapter 3
 ## 3.1: Problem Solving Agents
+- Search problems & solutions
+- Formulating Problems
 ## 3.2: Example Problems
+- Standardized problems
+- Real-world problems
 ## 3.3: Search Algorithms
+-  %% Best-First Search %%
+- Search Data structures
+- Redundant paths
+- Measuring problem-solving performance
 ## 3.4: Uninformed Search Strategies
+- Breadth-first search
+- Uniform-Cost search (Dijkstra's algo)
+- Depth-First search
+- Depth-Limited & Iterative Deepening Search
+- Bidirectional Search
+
+
+- Comparing Uninformed Search Algorithms
+
+| Criterion     | BFS              | UCS                                              | DFS              | DLS              | IDS              | BiS                |
+| ------------- | ---------------- | ------------------------------------------------ | ---------------- | ---------------- | ---------------- | ------------------ |
+| Complete?     | Yes<sup>1</sup>  | Yes<sup>1,2</sup>                                | No               | No               | Yes<sup>1</sup>  | Yes<sup>1,4</sup>  |
+| Optimal Cost? | Yes<sup>3</sup>  | Yes                                              | No               | No               | Yes<sup>3</sup>  | Yes<sup>3,4</sup>  |
+| Time          | O(b<sup>d</sup>) | O(b<sup>1 + [<sup>C\*<sup/>/<sub>e</sub>]</sup>) | O(b<sup>m</sup>) | O(b<sup>l</sup>) | O(b<sup>d</sup>) | O(b<sup>d/2</sup>) |
+| Space         | O(b<sup>d</sup>) | O(b<sup>1 + [<sup>C\*<sup/>/<sub>e</sub>]</sup>) | O(b\m)           | O(b\*l)          | O(b\*d)          | O(b<sup>d/2</sup>) |
+
+- Key
+	- b = Branching factor
+	- m = Maximum Depth
+	- d = Depth of shallowest solution, M if there is no solution
+	- L = depth limit
+- Caveats
+	- 1: Complete if b is finite
+	- 2: Complete if all action costs are >= e > 0
+	- 3: Cost-Optimal if all action costs are all identical
+	- 4: If both directions are Breadth-First or Uniform Cost
