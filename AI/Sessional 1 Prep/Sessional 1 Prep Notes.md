@@ -246,6 +246,7 @@ Table that might help - GPT made this tho
 # Chapter 3
 ## 3.1: Problem Solving Agents
 - Search problems & solutions
+	- Assuming that the agent always has information about the environment we can adopt a 4-Phase 
 - Formulating Problems
 ## 3.2: Example Problems
 - Standardized problems
