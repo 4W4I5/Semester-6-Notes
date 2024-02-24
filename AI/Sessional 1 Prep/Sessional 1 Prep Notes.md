@@ -5,8 +5,8 @@
 | Chapter 1.3 | :white_check_mark: |
 | Chapter 1.4 | :white_check_mark: |
 | Chapter 1.5 | :white_check_mark: |
-| Chapter 2.1 | :x:                |
-| Chapter 2.2 | :x:                |
+| Chapter 2.1 | :white_check_mark: |
+| Chapter 2.2 | :white_check_mark: |
 | Chapter 2.3 | :x:                |
 | Chapter 2.4 | :x:                |
 | Chapter 3.1 | :x:                |
@@ -229,10 +229,23 @@ Table that might help - GPT made this tho
 	- Performance Measures
 		- Actions taken by an agent that lead it closer to the goal state via a desirable path
 	- Rationality
+		- The performance measure that defines the criterion of success.
+		- The agent’s prior knowledge of the environment.
+		- The actions that the agent can perform.
+		- The agent’s percept sequence to date.
 	- Omniscience, Learning & Autonomy
+		- If an agent acts on the design it was created for and not the precepts then it lacks autonomy
+		- An agent must be able to assimilate as much information as possible from its precepts
+		- Omniscience i.e. knowing what the result of every outcome will be is impossible for a computer but it it doable based on precept history and predictions
 ## 2.3: Nature of Environments
 - Specifying Task Environments
+	- For a rational agent we need a way to classify its attributes which are
+		- Performance Measure: The goals to keep in mind
+		- Environment: the scope of the agent which is expected to pull in data from and operate in
+		- Actuators: Action mechanisms available to the agent
+		- Sensors: Data available via selected inputs to the agent
 - Properties of Task environments
+- 
 ## 2.4: Structure of Agents
 - Agent programs
 - Simple reflex agents

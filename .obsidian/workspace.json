@@ -85,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -170,15 +168,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "51e885a91e1de6bd",
+  "active": "b8b68edca48e5359",
   "lastOpenFiles": [
+    "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "Untitled.md",
     "README.md",
     "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "VARE/1_VARE_25th_Jan, 2024.md",
     "VARE/3_VARE_1st_Feb, 2024.md",
     "VARE/2_VARE_30th_Jan, 2024.md",
-    "Untitled.md",
-    "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "VARE/Sessional 1 Prep",
     "Ethical Hacking/0_1_Ethical Hacking_24_Jan, 2024.md",
     "Ethical Hacking/1_Ethical Hacking_31st_Jan, 2024.md",
