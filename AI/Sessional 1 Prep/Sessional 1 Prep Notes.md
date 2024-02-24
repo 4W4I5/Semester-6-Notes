@@ -223,9 +223,9 @@ Table that might help - GPT made this tho
 			- f = Agent function
 			- p<sup>*</sup> = Perceived info
 			- A = Action performed
-		- Agent = Architecture + Program
-
+		- Agent = Architecture + Program, where archietecture is the hardware and program is the precept sequence
 ## 2.2: Good behavior: Rationality concept
+- 
 ## 2.3: Nature of Environments
 ## 2.4: Structure of Agents
 ---
