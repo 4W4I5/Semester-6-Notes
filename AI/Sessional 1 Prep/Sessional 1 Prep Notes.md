@@ -246,10 +246,10 @@ Table that might help - GPT made this tho
 # Chapter 3
 ## 3.1: Problem Solving Agents
 - Search problems & solutions
-	- A search problem 
+	- A search problem
 	- Assuming that the agent always has information about the environment we can adopt a 4-Phase problem solving process
 		- Goal Formulation
-		- Problem Formulation
+		- Problem Formulation: Decide what actions/states to consider given a goal
 		- Search
 		- Execution
 	-
