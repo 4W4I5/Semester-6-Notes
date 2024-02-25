@@ -11,4 +11,10 @@
 :x:
 -->
 
-
+# Lecture 0 - Introduction to EHCP
+# Lecture 1 - Reconnaissance-1
+# Lecture 2 - Reconnaissance-2 (Social Sources)
+# Lecture 3 - Reconnaissance-3 (Countermeasures)
+# Lecture 4 - 
+# Lecture 5
+# Lecture 8 - Scapy
