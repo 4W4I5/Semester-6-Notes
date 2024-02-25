@@ -121,3 +121,32 @@
 				- 16 bits for checksum
 			- Row 3
 				- Payload
+		- **ICMP**
+			- Min Packet size
+				- 8 bytes
+			- Max Packet size
+			    - 576 Bytes
+			- Row 1
+			    - 8 bits for Type
+			    - 8 bits for Code
+				- 16 bits for Checksum
+			- Row 2
+				- Variable length of bits for Data (depends on Type and Code)
+		- **MAC Frame**
+			- Min Packet size
+				- 64 bytes
+			- Max Packet size
+		        - 1518 bytes (excluding preamble and frame check sequence)
+		    - Row 1
+		        - 48 bits for Destination MAC Address
+		        - 48 bits for Source MAC Address
+		    - Row 2
+			    - 16 bits for EtherType or Length (depending on Ethernet version)
+			    - For IPv4= 0x0800
+			    - For IPv6= 0x86DD
+		    - Row 3
+			    - Variable length of bits for Payload (46-1500 bytes)
+			- Row 4
+				- 32 bits for Frame Check Sequence (FCS) / CRC (Cyclic Redundancy Check)
+				- (Optional) FCS/Error Checking
+			- The EtherType field is used to indicate the protocol type of the payload data. For example:
