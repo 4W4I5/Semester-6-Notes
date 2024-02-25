@@ -31,3 +31,7 @@
 		- Forge/Decode packets from a wide number of protocols
 		- Send crafted packets, Layering, Capture, Match requests and replies
 		- Can easily handle scanning, tracerouting, probing, unit tests and attacks
+	- Protocols
+		- Defined via RFC(Request for Comments)
+		- Includes TCP/UDP, IP, FTP, HTTP, SMTP, etc
+	- 
