@@ -9,6 +9,9 @@
 
 # 1 - Understanding Forensics Profession & Investigations
 ### Overview
+#### - Digital forensics & Other related disciplines
+- Not the same as data recovery
+	- Involves recovering data that users have 
 #### - Understanding case law
 #### - Develop resources
 ### Prepping for Digital Investigations
