@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md"
               }
             }
           },
@@ -172,8 +172,10 @@
   },
   "active": "7767d3f4def2f372",
   "lastOpenFiles": [
-    "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "README.md",
+    "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "Forensics/Sessional 1 Prep",
+    "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "InfoSec/Info_sec/Info sec P1.pdf",
     "InfoSec/Sessional 1 Prep",
@@ -212,7 +214,6 @@
     "InfoSec/Info_sec",
     "InfoSec/Info sec/Info sec",
     "InfoSec/Info sec",
-    "Forensics",
     "Ethical Hacking/2_Ethical Hacking_31st_Jan, 2024.md",
     "AI/1_AI 25th Jan, 2024.md",
     "Algo/Exam Prep/Algo Finals Prep.md",
