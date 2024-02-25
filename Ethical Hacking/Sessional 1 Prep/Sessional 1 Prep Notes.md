@@ -41,15 +41,17 @@
 	- Zone Transfers: Replicate DNS data across multiple DNS servers/backup.
 	- SMTP: Internal commands i.e. VRFY confirms the names of valid users + EXPN reveals the actual address and lists mailing lists
 	- Remote Procedure Call (RPC): Allows windows processes to communicate with one another in a client-server model
-	- Global Catalog Server: Provides a searchable 
-	- NetBIOS
-	- LDAP
-	- Server Message Block (SMB)
+	- Global Catalog Server: Provides a searchable catalog of all objects in every domain in a multidomain AD-DS
+	- NetBIOS: Enables applications on different computers to communicate with each other over LAN
+	- LDAP: Used to access Directory Listings within an AD, generally a social engineering vector
+	- Server Message Block (SMB): User/Application that is authorized can access files/resources on a remote server
 - Hinder Enumeration
 	- Change defaults i.e. settings, passwords, configs, properties, etc
 	- Sysinternals shows who has what access to directories, file and registry keys
 - Enumeration Countermeasures
 	- SNMP
+		- Upgrade to SNMP v3.
+		- Implement Group policies
 	- DNS
 	- SMTP
 	- LDAP
