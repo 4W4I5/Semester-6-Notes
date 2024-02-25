@@ -59,7 +59,7 @@
 			- Row 5
 				- 32 for dest IP
 			- Row 6
-				- 
+				-
 			- payload
 		- Max Transmission Unit
 			- Length of largest frame sent over a link
@@ -77,13 +77,3 @@
 		- IPv6 doesn't have fragmentation
 			- Causes complexity at the router
 			- can also be used to DOS
-		- CIDR
-			- fixed bits denoted by /x
-			- 192.168.1.1/24 means there are 24 fixed bits
-				- it also means this is a class C network
-		- Address class
-			- OLD WAY had either 0, 10, or 110 at the start of an IP address to determine its class respectively from A to C
-			- also these classes have ranges
-				- CLASS A = 1 - 126
-				- CLASS B = 128 - 191
-				- CLASS C = 192 - 223
