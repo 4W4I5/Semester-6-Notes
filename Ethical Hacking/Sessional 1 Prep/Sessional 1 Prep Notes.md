@@ -1,15 +1,14 @@
 | Chapter                                                           | Status             |
 | ----------------------------------------------------------------- | ------------------ |
 | Lecture 0 - Introduction to Ethical Hacking                       | :warning:          |
-| Lecture 1 - Reconnaissance-1                                      |                    |
-| Lecture 2 - Reconnaissance-2 (Social Sources)                     |                    |
-| Lecture 3 - Reconnaissance-3 (Countermeasures)                    |                    |
-| Lecture 4 - Network Scanning-1                                    |                    |
-| Lecture 5 - Network Scanning-2 (Types of scanning)                |                    |
-| Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) |                    |
-| Lecture 7 - Enumeration                                           |                    |
+| Lecture 1 - Reconnaissance-1                                      | :x:                |
+| Lecture 2 - Reconnaissance-2 (Social Sources)                     | :x:                |
+| Lecture 3 - Reconnaissance-3 (Countermeasures)                    | :x:                |
+| Lecture 4 - Network Scanning-1                                    | :x:                |
+| Lecture 5 - Network Scanning-2 (Types of scanning)                | :x:                |
+| Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) | :x:                | 
+| Lecture 7 - Enumeration                                           | :white_check_mark: |
 | Lecture 8 - Scapy                                                 | :white_check_mark: |
-
 
 <!--
 :white_check_mark:
@@ -51,13 +50,32 @@
 - Enumeration Countermeasures
 	- SNMP
 		- Upgrade to SNMP v3.
-		- Implement Group policies
+		- Implement Group policies especially for anon connections
+		- Ensure read-write authorization is disabled
+		- Change default strings
 	- DNS
+		- Disable zone transfers to untrusted hosts
+		- Avoid SE attacks via standard network admin contacts
 	- SMTP
+		- Ignore mails from unknown recipients
+		- Disable Open Relay
+		- Limit number of accepted connections to hinder brute-force
 	- LDAP
+		- Use LDAP/S
+		- Use authentication methods such as NTLM
 	- SMB
+		- Disable on web and dns servers
+		- Disable TCP 139, 445
+		- Restrict anon users
 	- NFS
+		- Proper perms
+		- Block NFS port 2049
+		- Log requests to system files on NFS server
+		- Enable root_squash in /etc/exports
 	- FTP
+		- Use SFTP or FTPS
+		- Disable anon ftp accounts
+		- Restrict access to FTP server by IP
 # Lecture 8 - Scapy
 - Scapy
 	- **Definition**
