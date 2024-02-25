@@ -37,22 +37,30 @@
 		- Includes TCP/UDP, IP, FTP, HTTP, SMTP, etc
 	- **IP**
 		- Min Packet size
-			- 21 bytes (20 for header and 1 for data)
+			- 21 bytes (20 for header and 1 for TCP data)
 		- Max Packet size
 			- 65535 Bytes
-		- Header
-			- 4 bits for version
-			- 4 for header len
-			- 8 for service
-			- 16 for packet length
-			- 16 for identifier
-			- 3 for flags and 13 for frag offset
-			- 8 for TTL
-			- 8 for upper layer protocol
-			- 16 for checksum
-			- 32 for src and dest IP
+		- Header (20 Bytes of overhead for TCP header and then another 20 for IP overhead)
+			- Row 1
+				- 4 bits for version
+				- 4 for header len
+				- 8 for service
+				- 16 for packet length
+			- Row 2
+				- 16 for identifier
+				- 3 for flags
+				- 13 for frag offset
+			- Row 3
+				- 8 for TTL
+				- 8 for upper layer protocol
+				- 16 for checksum
+			- Row 4
+				- 32 for src IP
+			- Row 5
+				- 32 for dest IP
+			- Row 6
+				- 
 			- payload
-			- 20 Bytes of overhead for TCP header and then another 20 for IP overhead
 		- Max Transmission Unit
 			- Length of largest frame sent over a link
 			- if larger than MTU
