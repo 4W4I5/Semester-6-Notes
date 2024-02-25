@@ -20,6 +20,15 @@ Boring so skipped
 Boring so skipped
 -->
 ### Prepping for Digital Investigations
+<!--
+#### Understanding law enforcement agency investigations
+#### Following legal processes
+
+Boring so skipped
+-->
+#### Understanding Private-Sector Investigations
+- Involves white collar crimes
+	- Harassment, Falsification of data, embezzlement, sabotage and industrial espionage
 ### Maintain Professional Conduct
 ### Prepping an investigation
 ### Procedures for Private-Sector High-Tech Investigation
