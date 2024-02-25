@@ -8,11 +8,11 @@
 | Chapter 2.1 | :white_check_mark: |
 | Chapter 2.2 | :white_check_mark: |
 | Chapter 2.3 | :white_check_mark: |
-| Chapter 2.4 | :x:                |
-| Chapter 3.1 | :white_check_mark: | 
-| Chapter 3.2 | :x:                |
-| Chapter 3.3 | :x:                |
-| Chapter 3.4 | :x:                |
+| Chapter 2.4 | :warning:          |
+| Chapter 3.1 | :white_check_mark: |
+| Chapter 3.2 | :warning:          |
+| Chapter 3.3 | :warning:          | 
+| Chapter 3.4 | :white_check_mark: |
 
 <!--
 :white_check_mark:
@@ -313,11 +313,125 @@ Some examples from the book
 - Measuring problem-solving performance
 ## 3.4: Uninformed Search Strategies
 - Breadth-first search
-- Uniform-Cost search (Dijkstra's algo)
-- Depth-First search
-- Depth-Limited & Iterative Deepening Search
-- Bidirectional Search
+	- Start with the initial node.
+	- Enqueue it into the queue.
+	- Dequeue a node from the queue and expand it.
+	- Enqueue all of its unvisited neighbors.
+	- Repeat until the goal node is found or the queue is empty.
+```pseduocode
+BFS(graph, start_node, goal_node):
+    initialize an empty queue
+    enqueue the start_node onto the queue
+    while queue is not empty:
+        current_node = dequeue from the queue
+        if current_node is goal_node:
+            return path to goal
+        for each neighbor of current_node:
+            if neighbor has not been visited:
+                mark neighbor as visited
+                enqueue neighbor onto the queue
+    return "goal not found"
 
+```
+
+- Uniform-Cost search (Dijkstra's algo)
+	- Start with the initial node with cost 0.
+	- Enqueue it into the priority queue.
+	- Dequeue a node from the priority queue with the lowest cost.
+	- Update the cost to its neighbors if a lower cost path is found.
+	- Repeat until the goal node is found or the priority queue is empty.
+```pseduocode
+Dijkstra(graph, start_node):
+    initialize an empty priority queue
+    enqueue start_node with priority 0
+    while priority queue is not empty:
+        current_node = dequeue from the priority queue
+        if current_node is goal_node:
+            return path to goal
+        for each neighbor of current_node:
+            new_cost = cost_to_current_node + cost_of_edge
+            if new_cost < cost_to_neighbor:
+                update cost_to_neighbor
+                enqueue neighbor with priority new_cost
+    return "goal not found"
+```
+
+- Depth-First search
+	- Start with the initial node.
+	- Push it onto the stack.
+	- Pop a node from the stack and expand it.
+	- Push all of its unvisited neighbors onto the stack.
+	- Repeat until the goal node is found or the stack is empty.
+```pseduocode
+DFS(graph, start_node, goal_node):
+    initialize an empty stack
+    push the start_node onto the stack
+    while stack is not empty:
+        current_node = pop from the stack
+        if current_node is goal_node:
+            return path to goal
+        for each neighbor of current_node:
+            if neighbor has not been visited:
+                mark neighbor as visited
+                push neighbor onto the stack
+    return "goal not found"
+```
+
+- Depth-Limited
+	- For Depth-Limited Search (DLS), set a maximum depth limit and perform DFS up to that limit.
+```pseduocode
+DLS(graph, start_node, goal_node, depth_limit):
+    recursive_DLS(start_node, goal_node, depth_limit)
+    
+recursive_DLS(current_node, goal_node, depth_limit):
+    if current_node is goal_node:
+        return path to goal
+    if depth_limit is 0:
+        return "cutoff"
+    for each neighbor of current_node:
+        if neighbor has not been visited:
+            mark neighbor as visited
+            result = recursive_DLS(neighbor, goal_node, depth_limit - 1)
+            if result is not "cutoff" and result is not "goal not found":
+                return result
+    return "cutoff"
+```
+
+- Iterative Deepening Search
+	- For Iterative Deepening Search (IDS), repeatedly perform DLS with increasing depth limits until the goal is found.
+```pseduocode
+IDS(graph, start_node, goal_node):
+    for depth_limit from 0 to infinity:
+        result = DLS(graph, start_node, goal_node, depth_limit)
+        if result is not "cutoff" and result is not "goal not found":
+            return result
+```
+
+- Bidirectional Search
+	- Start BFS from both the start and goal nodes simultaneously.
+	- Meet in the middle when both searches intersect.
+	- Combine paths from both searches to form the solution path.
+	- PseudoCode
+```pseducode
+BidirectionalSearch(graph, start_node, goal_node):
+    initialize an empty forward_queue and backward_queue
+    enqueue start_node into forward_queue
+    enqueue goal_node into backward_queue
+    while both forward_queue and backward_queue are not empty:
+        forward_node = dequeue from forward_queue
+        backward_node = dequeue from backward_queue
+        if forward_node is in backward_queue:
+            return path from start_node to forward_node + path from goal_node to forward_node
+        for each neighbor of forward_node:
+            if neighbor has not been visited:
+                mark neighbor as visited
+                enqueue neighbor into forward_queue
+        for each neighbor of backward_node:
+            if neighbor has not been visited:
+                mark neighbor as visited
+                enqueue neighbor into backward_queue
+    return "goal not found"
+```
 
 - Comparing Uninformed Search Algorithms
 
