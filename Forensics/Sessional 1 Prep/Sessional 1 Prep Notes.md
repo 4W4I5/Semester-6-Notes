@@ -11,9 +11,14 @@
 ### Overview
 #### - Digital forensics & Other related disciplines
 - Not the same as data recovery
-	- Involves recovering data that users have 
+	- Involves recovering data that users have hidden/deleted on purpose not accident
+- Evidence retrieved can be inculpatory i.e. incriminates the suspect or exculpatory i.e. screws them over
+<!--
 #### - Understanding case law
+Boring so skipped
 #### - Develop resources
+Boring so skipped
+-->
 ### Prepping for Digital Investigations
 ### Maintain Professional Conduct
 ### Prepping an investigation
