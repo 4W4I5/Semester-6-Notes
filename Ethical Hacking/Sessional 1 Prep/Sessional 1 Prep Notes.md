@@ -38,7 +38,24 @@
 		- Users & Groups
 		- Application & Banners
 - Enumeration Techniques
-	-
+	- Zone Transfers
+	- SMTP
+	- Remote Procedure Call (RPC)
+	- Global Catalog Server
+	- NetBIOS
+	- LDAP
+	- Server Message Block (SMB)
+- Hinder Enumeration
+	- Change defaults i.e. settings, passwords, configs, properties, etc
+	- Sysinternals shows who has what access to directories, file and registry keys
+- Enumeration Countermeasures
+	- SNMP
+	- DNS
+	- SMTP
+	- LDAP
+	- SMB
+	- NFS
+	- FTP
 # Lecture 8 - Scapy
 - Scapy
 	- **Definition**
