@@ -1,12 +1,12 @@
 | Chapter                                                           | Status             |
 | ----------------------------------------------------------------- | ------------------ |
-| Lecture 0 - Introduction to Ethical Hacking                       | :warning:          |
+| Lecture 0 - Introduction to Ethical Hacking                       | :white_check_mark: | 
 | Lecture 1 - Reconnaissance-1                                      | :x:                |
 | Lecture 2 - Reconnaissance-2 (Social Sources)                     | :x:                |
 | Lecture 3 - Reconnaissance-3 (Countermeasures)                    | :x:                |
 | Lecture 4 - Network Scanning-1                                    | :x:                |
 | Lecture 5 - Network Scanning-2 (Types of scanning)                | :x:                |
-| Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) | :x:                | 
+| Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) | :x:                |
 | Lecture 7 - Enumeration                                           | :white_check_mark: |
 | Lecture 8 - Scapy                                                 | :white_check_mark: |
 
@@ -16,6 +16,31 @@
 -->
 
 # Lecture 0 - Introduction to EHCP
+- What is EHCP
+	- Identify vulns to ensure system security
+	- Done via simulating techniques used by attackers to verify existence of exploitable vulns in the system
+- Scope
+	- Crucial component of risk assessment, auditing, counter fraud and information security best practices
+	- Identify risks and highlight remedial actions
+- Limitations
+	- Vendors generally do not know if they need such a service
+	- EH's can only help the organization if they are willing to better understand their security system
+- Key ethics
+	- Authorized Access
+	- Purpose & Scope
+	- Informed Consent
+	- Confidentiality
+	- Legal Compliance
+	- Responsible Disclosure
+	- Continuous Learning & Professionalism
+- PECA
+	- PECA, enacted in 2016, regulates cyber activities in Pakistan.
+	- It targets cybercrimes like hacking, unauthorized data access, and online harassment.
+	- PECA establishes Cybercrime Reporting Centers (CRCs) for investigations.
+	- Law enforcement agencies are empowered to prosecute cyber offenders.
+	- The law ensures preservation of electronic evidence and international cooperation.
+	- Critics raise concerns about potential infringements on freedom of expression.
+	- Proposed amendments seek to address these concerns and enhance effectiveness.
 # Lecture 1 - Reconnaissance-1
 # Lecture 2 - Reconnaissance-2 (Social Sources)
 # Lecture 3 - Reconnaissance-3 (Countermeasures)
