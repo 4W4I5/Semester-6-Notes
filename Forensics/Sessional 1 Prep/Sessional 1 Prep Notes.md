@@ -8,7 +8,11 @@
 ---
 # Chapter 1 is insanely boring. Here's the summary
 ### Q/A
-
+1. Digital forensics and data recovery refer to the same activities. False.
+2. Police in the United States must use procedures that adhere to which of the following? b. Fourth Amendment
+3. The triad of computing security includes which of the following? c. Vulnerability/threat assessment and risk management, network intrusion detection and incident response, and digital investigation
+4. What’s the purpose of maintaining a network of digital forensics specialists? The purpose of maintaining a network of digital forensics specialists is to ensure timely and effective response to digital incidents, such as cyber attacks or data breaches, and to provide expertise in investigating and analyzing digital evidence.
+5. Policies can address rules for which of the following? d. Any of the above
 
 ### Summary
 - Digital forensics involves applying forensic procedures to digital evidence for use in legal cases. It differs from network forensics and data recovery.
