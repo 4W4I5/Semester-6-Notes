@@ -9,8 +9,8 @@
 
 # 1 - Understanding Forensics Profession & Investigations
 ### Overview
-#### Understanding case law
-#### Develop resources
+#### - Understanding case law
+#### - Develop resources
 ### Prepping for Digital Investigations
 ### Maintain Professional Conduct
 ### Prepping an investigation
