@@ -1,7 +1,7 @@
 | Chapter                                                 | Status |
 | ------------------------------------------------------- | ------ |
-| 1 - Understanding Forensics Profession & Investigations |  :exclaimation: :exclaimation: :exclaimation: :exclaimation: :exclaimation:       |
-| 2 - Investigators Office                                |        |
+| 1 - Understanding Forensics Profession & Investigations | bruh.  |
+| 2 - Investigators Office                                | bruh.  | 
 | 3 - Data Acquisition                                    |        |
 | 5 - Working with Windows & CLI systems                  |        |
 
