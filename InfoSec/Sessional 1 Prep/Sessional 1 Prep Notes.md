@@ -2,11 +2,16 @@
 
 | Chapter                                      | Status    |
 | -------------------------------------------- | --------- |
-| 2 - Introduction to number theory (till 2.4) | :warning: |
-| 3 - Classical Encryption Techniques          | :warning: |
-| 4 - Block Ciphers & DES                      | :warning: |
-| 5 - Finite Fields                            | :warning: |
-| 6 - AES                                      | :warning: |
+| 2 - Introduction to number theory (till 2.4) | :exclaimation: |
+| 3 - Classical Encryption Techniques          | :exclaimation: |
+| 4 - Block Ciphers & DES                      | :exclaimation: |
+| 5 - Finite Fields                            | :exclaimation: |
+| 6 - AES                                      | :exclaimation: |
+
+NOTE:: Paper has no theory question. Notes are theory only so they are skipped
+
+<!--
+
 
 ---
 # 2 - Introduction to number theory (till 2.4)
@@ -25,9 +30,12 @@
 Set of elements with binary operation ".". Denoted by {G, . }
 - Properties
 	- A1: Closure => If A & B belong in G, then A.B is also in G
-	- A2: Associative => A.(B.C) == (A.B).C
-	- A3: Identity => A.E == E.A
+	- A2: Associative => A.(B.C) == (A.B).C, all in G
+	- A3: Identity => A.E == E.A for all A in G
 	- A4: Inverse => A.A' == A'.A == e
+- Abelian Group Properties
+	- A5: Commutative =>A.B == B.A for all in G
+		- Set of Integers(Positive,Negative and 0) under addition form an abelion group
 ## 5.2 Rings
 ## 5.3 Fields
 ## 5.4 Finite Fields of Form GF(p)
@@ -37,3 +45,6 @@ Set of elements with binary operation ".". Denoted by {G, . }
 ## 6.1 Finite Field Arithmetic
 ## 6.2 AES Structure
 ## 6.3 AES Key Expansion
+
+
+-->
