@@ -63,10 +63,28 @@
 - Self-critique improves investigation methods for future cases.
 
 # 2 - Investigators Office
-### Understanding Forensics Lab Accreditation Requirements
-### Determining the Physical Requirements
-### Basic forensic Workstation
-### Building A Business Case for a Lab
+How is this so boring, same scene as Chapter 1
+
+1. An employer can be held liable for e-mail harassment. True.
+2. Building a business case can involve which of the following? d. All of the above
+3. The ANAB mandates the procedures established for a digital forensics lab. False.
+4. The manager of a digital forensics lab is responsible for which of the following? a. Making necessary changes in lab procedures and software, b. Ensuring that staff members have enough training to do the job, c. Knowing the lab objectives
+5. To determine the types of operating systems needed in your lab, list two sources of information you could use. Manufacturers' specifications and industry standards.
+6. What items should your business plan include? Your business plan should include details such as the mission and objectives of the lab, target market, marketing strategies, financial projections, and operational plans.
+7. List two popular certification programs for digital forensics. Certified Information Systems Security Professional (CISSP) and Certified Computer Examiner (CCE).
+8. Why is physical security so critical for digital forensics labs? Physical security is critical for digital forensics labs to prevent unauthorized access, tampering, or theft of sensitive equipment and evidence, ensuring the integrity and reliability of forensic processes and findings.
+9. If a visitor to your digital forensics lab is a personal friend, it’s not necessary to have him or her sign the visitor’s log. False.
+10. What three items should you research before enlisting in a certification program? You should research the certification program's accreditation, reputation, and alignment with your career goals.
+11. Large digital forensics labs should have at least two exits.
+12. Typically, a(n) ________ lab has a separate storage area or room for evidence. Digital forensics lab.
+13. Digital forensics facilities always have windows. False.
+14. Evidence storage containers should have several master keys. False.
+15. A forensic workstation should always have a direct broadband connection to the Internet. False.
+16. Which organization provides good information on safe storage containers? National Institute of Standards and Technology (NIST).
+17. Which organization has guidelines on how to operate a digital forensics lab? National Institute of Justice (NIJ).
+18. What term refers to labs constructed to shield EMR emissions? Faraday cages.
+
+
 # 3 - Data Acquisition
 ### Storage formats for Evidence
 ### Determine the best acquisition method
