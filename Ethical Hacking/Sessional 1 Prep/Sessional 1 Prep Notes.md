@@ -133,20 +133,19 @@
 			- Row 2
 				- Variable length of bits for Data (depends on Type and Code)
 		- **MAC Frame**
-			- Min Packet size
+			- Min Frame size
 				- 64 bytes
-			- Max Packet size
+			- Max Frame size
 		        - 1518 bytes (excluding preamble and frame check sequence)
-		    - Row 1
+		    - Frame Structure
+			    - Preamble
+			    - Start Delimiter (EtherPeek captures the rest from here on out till FCS)
 		        - 48 bits for Destination MAC Address
 		        - 48 bits for Source MAC Address
-		    - Row 2
 			    - 16 bits for EtherType or Length (depending on Ethernet version)
-			    - For IPv4= 0x0800
-			    - For IPv6= 0x86DD
-		    - Row 3
+				    - For IPv4= 0x0800
+				    - For IPv6= 0x86DD
 			    - Variable length of bits for Payload (46-1500 bytes)
-			- Row 4
 				- 32 bits for Frame Check Sequence (FCS) / CRC (Cyclic Redundancy Check)
 				- (Optional) FCS/Error Checking
-			- The EtherType field is used to indicate the protocol type of the payload data. For example:
+				- End Delimiter
