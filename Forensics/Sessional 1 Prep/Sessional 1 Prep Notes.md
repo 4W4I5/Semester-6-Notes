@@ -33,4 +33,6 @@
 ## Understanding Filesystems
 ## Exploring Microsoft file structures
 ## NTFS
-## Boot 
+## Whole disk encryption
+## Windows Registry
+## Startup Tasks
