@@ -22,6 +22,12 @@
 ## 4.5 Block Cipher Design Principles
 # 5 - Finite Fields
 ## 5.1 Groups
+Set of elements with binary operation ".". Denoted by {G, . }
+- Properties
+	- A1: Closure => If A & B belong in G, then A.B is also in G
+	- A2: Associative => A.(B.C) == (A.B).C
+	- A3: Identity => A.E == E.A
+	- A4: Inverse => A.A' == A'.A == e
 ## 5.2 Rings
 ## 5.3 Fields
 ## 5.4 Finite Fields of Form GF(p)
