@@ -27,6 +27,18 @@
 - What is enumeration
 	- Involves an attacker creating active connections with a target and performing directed queries to gain more information
 	- Use extracted information to identify points for a system attack + use password attacks to gain unauthorized access to information system resources
+	- Conducted in an intranet environment
+	- Data sources enumerated usually are
+		- Network resources
+		- Network share
+		- Routing Tables
+		- Audit and service settings
+		- SNMP & FQDN details
+		- Machine names
+		- Users & Groups
+		- Application & Banners
+- Enumeration Techniques
+	-
 # Lecture 8 - Scapy
 - Scapy
 	- **Definition**
