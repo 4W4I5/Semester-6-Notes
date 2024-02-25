@@ -1,1 +1,1 @@
-[Dawood's Notes](InfoSec/Info_sec/Info%20sec%20P1.pdf)
+[Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf)
