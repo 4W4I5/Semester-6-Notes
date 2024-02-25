@@ -36,6 +36,10 @@
 		- Defined via RFC(Request for Comments)
 		- Includes TCP/UDP, IP, FTP, HTTP, SMTP, etc
 	- **IP**
+		- Min Packet size
+			- 21 bytes (20 for header and 1 for data)
+		- Max Packet size
+			- 65535 Bytes
 		- Header
 			- 4 bits for version
 			- 4 for header len
