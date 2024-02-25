@@ -38,10 +38,10 @@
 		- Users & Groups
 		- Application & Banners
 - Enumeration Techniques
-	- Zone Transfers
-	- SMTP
-	- Remote Procedure Call (RPC)
-	- Global Catalog Server
+	- Zone Transfers: Replicate DNS data across multiple DNS servers/backup.
+	- SMTP: Internal commands i.e. VRFY confirms the names of valid users + EXPN reveals the actual address and lists mailing lists
+	- Remote Procedure Call (RPC): Allows windows processes to communicate with one another in a client-server model
+	- Global Catalog Server: Provides a searchable 
 	- NetBIOS
 	- LDAP
 	- Server Message Block (SMB)
