@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ed588cef0f49d126",
+        "id": "936a2b2eac322119",
         "type": "tabs",
         "children": [
           {
-            "id": "51e885a91e1de6bd",
+            "id": "7767d3f4def2f372",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md"
               }
             }
           },
@@ -170,8 +170,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "7767d3f4def2f372",
   "lastOpenFiles": [
+    "README.md",
+    "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "InfoSec/Sessional 1 Prep",
+    "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "InfoSec/2_InfoSec_30th_Jan, 2024.md",
     "InfoSec/3_InfoSec_1st_Feb, 2024.md",
@@ -184,9 +188,7 @@
     "Ethical Hacking/4_Ethical Hacking_12th_Feb, 2024.md",
     "Ethical Hacking/5_Ethical Hacking_14th_Feb, 2024.md",
     "Forensics/3_Forensics_1st_Feb, 2024.md",
-    "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
-    "README.md",
     "Ethical Hacking/Sessional 1 Prep",
     "Untitled.md",
     "VARE/1_VARE_25th_Jan, 2024.md",
@@ -212,11 +214,9 @@
     "Forensics",
     "Ethical Hacking/2_Ethical Hacking_31st_Jan, 2024.md",
     "Ethical Hacking",
-    "InfoSec",
     "AI/1_AI 25th Jan, 2024.md",
     "Algo/Exam Prep/Algo Finals Prep.md",
     "OS/Exam Prep/OS Finals Prep.md",
-    "Untitled 1.md",
-    "Marketing/Exam Prep/Marketing Finals Prep.md"
+    "Untitled 1.md"
   ]
 }

@@ -194,11 +194,11 @@
 -->
 
 
-| Exam                                                                        | Status |
-| --------------------------------------------------------------------------- | ------ |
-| [Sessional 1](InfoSec/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x:    |
-| [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |        |
-| [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                    |        |
+| Exam                                                                        | Status    |
+| --------------------------------------------------------------------------- | --------- |
+| [Sessional 1](InfoSec/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :warning: | 
+| [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |           |
+| [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                    |           |
 
 
 
