@@ -7,6 +7,9 @@
 
 ---
 # Chapter 1 is insanely boring. Here's the summary
+### Q/A
+
+
 ### Summary
 - Digital forensics involves applying forensic procedures to digital evidence for use in legal cases. It differs from network forensics and data recovery.
 - Laws governing digital evidence were established in the 1970s.
