@@ -1,14 +1,14 @@
-| Chapter                                                           | Status    |
-| ----------------------------------------------------------------- | --------- |
-| Lecture 0 - Introduction to Ethical Hacking                       | :warning: |
-| Lecture 1 - Reconnaissance-1                                      |           |
-| Lecture 2 - Reconnaissance-2 (Social Sources)                     |           |
-| Lecture 3 - Reconnaissance-3 (Countermeasures)                    |           |
-| Lecture 4 - Network Scanning-1                                    |           |
-| Lecture 5 - Network Scanning-2 (Types of scanning)                |           |
-| Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) |           |
-| Lecture 7 - Enumeration                                           |           |
-| Lecture 8 - Scapy                                                 |           |
+| Chapter                                                           | Status             |
+| ----------------------------------------------------------------- | ------------------ |
+| Lecture 0 - Introduction to Ethical Hacking                       | :warning:          |
+| Lecture 1 - Reconnaissance-1                                      |                    |
+| Lecture 2 - Reconnaissance-2 (Social Sources)                     |                    |
+| Lecture 3 - Reconnaissance-3 (Countermeasures)                    |                    |
+| Lecture 4 - Network Scanning-1                                    |                    |
+| Lecture 5 - Network Scanning-2 (Types of scanning)                |                    |
+| Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) |                    |
+| Lecture 7 - Enumeration                                           |                    |
+| Lecture 8 - Scapy                                                 | :white_check_mark: | 
 
 
 <!--
@@ -59,8 +59,9 @@
 			- Row 5
 				- 32 for dest IP
 			- Row 6
-				-
-			- payload
+				- Variable length of bits for Options + Padding
+			- Row 7
+				- TCP/UDP payload
 		- Max Transmission Unit
 			- Length of largest frame sent over a link
 			- if larger than MTU
