@@ -24,6 +24,9 @@
 # Lecture 5 - Network Scanning-2 (Types of scanning)
 # Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing)
 # Lecture 7 - Enumeration
+- What is enumeration
+	- Involves an attacker creating active connections with a target and performing directed queries to gain more information
+	- Use extracted information to identify points for a system attack + use password attacks to gain unauthorized access to information system resources
 # Lecture 8 - Scapy
 - Scapy
 	- **Definition**
