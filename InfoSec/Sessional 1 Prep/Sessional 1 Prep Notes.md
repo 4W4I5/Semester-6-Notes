@@ -1,16 +1,33 @@
 [Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf)
 
-| Chapter                                     | Status    |
-| ------------------------------------------- | --------- |
-| 2 - Introduction to number theory (till 2.4)          | :warning: |
-| 3 - Classical Encryption Techniques         | :warning: |
-| 4 - Block Ciphers & DES                     | :warning: |
-| 5 - Finite Fields                           | :warning: |
-| 6 - AES                                     | :warning: |
+| Chapter                                      | Status    |
+| -------------------------------------------- | --------- |
+| 2 - Introduction to number theory (till 2.4) | :warning: |
+| 3 - Classical Encryption Techniques          | :warning: |
+| 4 - Block Ciphers & DES                      | :warning: |
+| 5 - Finite Fields                            | :warning: |
+| 6 - AES                                      | :warning: |
 
 ---
 # 2 - Introduction to number theory (till 2.4)
 # 3 - Classical Encryption Techniques
+## 3.1 Symmetric Cipher Model
+## 3.2 Substitution Techniques
+## 3.3 Transposition Techniques
 # 4 - Block Ciphers & DES
+## 4.1 Traditional Block Ciphers
+## 4.2 DES
+## 4.3 DES Example
+## 4.4 Strength of DES
+## 4.5 Block Cipher Design Principles
 # 5 - Finite Fields
+## 5.1 Groups
+## 5.2 Rings
+## 5.3 Fields
+## 5.4 Finite Fields of Form GF(p)
+## 5.5 Polynomial Arithmetic
+## 5.6 Finite Fields of the form GF(2<sup>n</sup>)
 # 6 - AES
+## 6.1 Finite Field Arithmetic
+## 6.2 AES Structure
+## 6.3 AES Key Expansion
