@@ -79,6 +79,10 @@
 				- Causes complexity at the router
 				- can also be used to DOS
 		- **TCP**
+			- Min Packet size
+				- 20 bytes
+			- Max Packet size
+				- 60 Bytes
 			- Row 1
 			    - 16 bits for src port
 			    - 16 bits for dest port
@@ -87,18 +91,33 @@
 			- Row 3
 				- 32 bits for Acknowledgement Number
 			- Row 4
-		    - len (8 BITS)
-		    - UNUSED SECTION (8 BITS)
-		    - recieve windows (32 BITS)
-		        - num of bytes receiver is willing to accept
-		    - chksum (32 BITS)
-		    - flags = SYN, ACK, RESET, PUSH, URGENT, FIN (16 BITS)
-		        - PUSH: App informs that data should be pushed up the stack in the receiving app
-		        - URGENT: Transmit everything right now, used for remote interrupts
-		        - ACK: acknowledge
-		        - RESET: Abort connection
-		        - FIN: Close connection
-		        - SYN: Sync
-		    - app data, can be variable length
-		    - urgent data pointer (32 BITS)
-		    - TOTAL SIZE = 20 BYTES
+				- 4 bits for Header length
+				- 6 bits are reserved
+				- 6 bits for flags
+					- PUSH: App informs that data should be pushed up the stack in the receiving app
+			        - URGENT: Transmit everything right now, used for remote interrupts
+			        - ACK: acknowledge
+			        - RESET: Abort connection
+			        - FIN: Close connection
+			        - SYN: Sync
+				- 16 bits for Window size i.e. number of bytes the receiver is willing to accept
+			- Row 5
+				- 16 bits for checksum
+				- 16 bits for Urgent
+			- Row 6
+				- Variable length of bits for Options + Padding
+			- Row 7
+				- Payload
+		- **UDP**
+			- Min header size
+				- 8 bytes
+			- Max header size
+				- theoretically 655355
+			- Row 1
+				- 16 bits for src port
+				- 16 bits for dest port
+			- Row 2
+				- 16 bits for Header Length
+				- 16 bits for checksum
+			- Row 3
+				- Payload
