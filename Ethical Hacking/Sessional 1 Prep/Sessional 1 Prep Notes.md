@@ -1,6 +1,6 @@
 | Chapter                                                           | Status             |
 | ----------------------------------------------------------------- | ------------------ |
-| Lecture 0 - Introduction to Ethical Hacking                       | :white_check_mark: | 
+| Lecture 0 - Introduction to Ethical Hacking                       | :white_check_mark: |
 | Lecture 1 - Reconnaissance-1                                      | :x:                |
 | Lecture 2 - Reconnaissance-2 (Social Sources)                     | :x:                |
 | Lecture 3 - Reconnaissance-3 (Countermeasures)                    | :x:                |
@@ -26,13 +26,13 @@
 	- Vendors generally do not know if they need such a service
 	- EH's can only help the organization if they are willing to better understand their security system
 - Key ethics
-	- Authorized Access
-	- Purpose & Scope
-	- Informed Consent
-	- Confidentiality
-	- Legal Compliance
-	- Responsible Disclosure
-	- Continuous Learning & Professionalism
+	- Authorized Access: Obtain proper authorization before conducting any security testing or penetration testing as unauthorized access to systems or networks is illegal and unethical.
+	- Purpose & Scope: Ethical hacking should be conducted solely for legitimate and lawful purposes, such as identifying and addressing security vulnerabilities. It should not involve any malicious intent, personal gain, or illegal activities.
+	- Informed Consent: Consent should be obtained in writing, clearly outlining the scope, objectives, and limitations of the engagement.
+	- Confidentiality: Ethical hackers should respect the confidentiality of any sensitive information they encounter during their testing
+	- Legal Compliance: Comply with applicable laws, regulations, and contractual obligations
+	- Responsible Disclosure: Promptly reporting the vulnerabilities to the relevant parties and giving them sufficient time to address the issues
+	- Continuous Learning & Professionalism Maintain professionalism, integrity, and a commitment to their ethical responsibilities
 - PECA
 	- PECA, enacted in 2016, regulates cyber activities in Pakistan.
 	- It targets cybercrimes like hacking, unauthorized data access, and online harassment.
@@ -42,11 +42,33 @@
 	- Critics raise concerns about potential infringements on freedom of expression.
 	- Proposed amendments seek to address these concerns and enhance effectiveness.
 # Lecture 1 - Reconnaissance-1
+- What is Recon
+- Why
+- Types
+- Goals
+- Tools
 # Lecture 2 - Reconnaissance-2 (Social Sources)
+- Social Sources
+- Financial Sources
+- Competitive Analysis
+- Social Engineering
+- Email Tracking
+- Tools
 # Lecture 3 - Reconnaissance-3 (Countermeasures)
+- Recon Countermeasures
+- Recon Workflow
 # Lecture 4 - Network Scanning-1
+- Scanning
+- Types, move to lec 5
+- Goals
+- Techniques
+- Tools
 # Lecture 5 - Network Scanning-2 (Types of scanning)
+- Uh add stuff from lec 4 here
 # Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing)
+- OS Fingerprinting
+- Banner Grabbing
+- Countermeasures
 # Lecture 7 - Enumeration
 - What is enumeration
 	- Involves an attacker creating active connections with a target and performing directed queries to gain more information
