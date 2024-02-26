@@ -99,7 +99,7 @@
 
 | Exam                                                                          | Status             |
 | ----------------------------------------------------------------------------- | ------------------ |
-| [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |  
+| [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
 | [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                    |
 | [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                    |
 
@@ -241,8 +241,8 @@
 -->
 
 
-| Exam                                                                                  | Status    |
-| ------------------------------------------------------------------------------------- | --------- |
-| [Sessional 1](Ethical%20Hacking/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :warning: |
-| [Sessional 2](Ethical%20Hacking/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |           |
-| [Finals](Ethical%20Hacking/Finals%20Prep/Finals%20Prep%20Notes.md)                    |           |
+| Exam                                                                                  | Status             |
+| ------------------------------------------------------------------------------------- | ------------------ |
+| [Sessional 1](Ethical%20Hacking/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: | 
+| [Sessional 2](Ethical%20Hacking/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                    |
+| [Finals](Ethical%20Hacking/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                    |

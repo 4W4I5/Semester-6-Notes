@@ -1,12 +1,12 @@
 | Chapter                                                           | Status             |
 | ----------------------------------------------------------------- | ------------------ |
 | Lecture 0 - Introduction to Ethical Hacking                       | :white_check_mark: |
-| Lecture 1 - Reconnaissance-1                                      | :white_check_mark:                |
-| Lecture 2 - Reconnaissance-2 (Social Sources)                     | :white_check_mark:                |
-| Lecture 3 - Reconnaissance-3 (Countermeasures)                    | :white_check_mark:                |
-| Lecture 4 - Network Scanning-1                                    | :x:                |
-| Lecture 5 - Network Scanning-2 (Types of scanning)                | :x:                |
-| Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) | :x:                |
+| Lecture 1 - Reconnaissance-1                                      | :white_check_mark: |
+| Lecture 2 - Reconnaissance-2 (Social Sources)                     | :white_check_mark: |
+| Lecture 3 - Reconnaissance-3 (Countermeasures)                    | :white_check_mark: |
+| Lecture 4 - Network Scanning-1                                    | :white_check_mark: |
+| Lecture 5 - Network Scanning-2 (Types of scanning)                | :white_check_mark: |
+| Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) | :white_check_mark: |
 | Lecture 7 - Enumeration                                           | :white_check_mark: |
 | Lecture 8 - Scapy                                                 | :white_check_mark: |
 
@@ -244,12 +244,64 @@
 				- Echo ping sweep
 		- TCP/IP pings
 			- TCP SYN/ACK ping
-- Tools
+		- NMAP Commands
+			- ARP ping
+				- nmap -sn -PR 192.168.1.1
+					- If response then host is active
+			- TCP SYN
+				- nmap -sn -PS 192.168.1.1
+					- if ack response then host is active
+					- also known as stealth scan as no logs are left behind
+			- TCP ACK
+				- nmap -sn -PA 192.168.1.1
+					- if rst response then host is active
+					- high chances of bypassing the firewall
+			- IP Ping
+				- nmap -sn -PO 192.168.1.1
+					- any response == host active as it sends different packets using different protocols
+			- UDP ping
+				- nmap -sn -PU 192.168.1.1
+					- if error then host is inactive, works behind firewalls with strict tcp filters
+			- ICMP ECHO
+				- nmap -sn -PE 192.168.1.1
+					- if no reply then host is inactive
+					- does not work on windows networks
+					- can go through the firewall assuming icmp is not blocked
+					- Works with a range of hosts too
+						- Very slow and old
+			- ICMP Timestamp
+				- nmap -sn -PP 192.168.1.1
+					- alternative to icmp ping
+					- if timestamp reply then host is active, response can be conditional tho
+			- ICMP address mask
+				- nmap -sn -PM 192.168.1.1
+					- if mask returned then host active
+					- conditional the same as timestamp
+	- Firewalking
+		- Determines what packet types can be passed through the firewall
+		- Heavy use of TTL
+		- If packet forwarded then port is open
+			- dropped == closed
 # Lecture 5 - Network Scanning-2 (Types of scanning)
-- Uh add stuff from lec 4 here
+- Full scan
+- Half-Open scan
+- XMAS tree
+- FIN scan
+- NULL scan
+- UDP scan
+- IDLE scan
+	- Evades IDS
+- SSDP scan
 # Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing)
-- OS Fingerprinting
-- Banner Grabbing
+- Fingerprinting
+	- Identify type and version of OS/service
+	- Send specially crafted packets or queries to the target, Focus on subtle differences that can reveal information
+	- A good example is nmap scans
+- Banner grabbing
+	- Subset of fingerprinting, it is passive compared to fingerprinting
+		- Focus is to identify specific services under open ports
+	- Request connection on open port and identify services from the response
+	- A good example can be the OS scan switch on NMAP and telnet
 - Countermeasures
 # Lecture 7 - Enumeration
 - What is enumeration
