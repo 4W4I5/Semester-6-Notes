@@ -271,11 +271,19 @@ Some examples from the book
 
 ## 2.4: Structure of Agents
 - Agent programs
-- Simple reflex agents
-- Model-based reflex agents
-- Goal-based agents
-	- Aka Problem-Solving Agent such as in Chapter3
-- Utility-based agents
+	- Simple reflex agents
+		- Select actions based on the current precept, no history is used
+		- psedocode
+			- Function: Simple-Reflex-Agent
+				- persistent: rules, set of condition-action rules
+				- state <- interpret-input(precept)
+				- rule <- Rule-match(state, rules)
+				- action <- rule.Action()
+					- return action 
+	- Model-based reflex agents
+	- Goal-based agents
+		- Aka Problem-Solving Agent such as in Chapter3
+	- Utility-based agents
 - Learning agents
 - How the components of agent programs work
 
