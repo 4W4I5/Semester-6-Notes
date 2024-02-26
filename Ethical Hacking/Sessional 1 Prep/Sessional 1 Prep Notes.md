@@ -283,15 +283,54 @@
 		- If packet forwarded then port is open
 			- dropped == closed
 # Lecture 5 - Network Scanning-2 (Types of scanning)
-- Full scan
-- Half-Open scan
-- XMAS tree
-- FIN scan
-- NULL scan
-- UDP scan
-- IDLE scan
-	- Evades IDS
-- SSDP scan
+:warning: Used GPT here since its repetitive 
+1. **Full Scan**:
+   - **Nmap Command**: `nmap -p- target`
+   - **How it works**: Scans all ports on a target system to identify open services and potential vulnerabilities.
+   - **Advantages**: Provides comprehensive information about all open ports and services on the target system.
+   - **Countermeasures**: Implement firewalls and intrusion detection systems (IDS) to block and detect excessive scan activity. Use network segmentation to limit the exposure of critical systems.
+
+2. **Half-Open Scan**:
+   - **Nmap Command**: `nmap -sS target`
+   - **How it works**: Sends SYN packets to the target, but does not complete the TCP handshake, leaving the connection in an incomplete state. This technique can be used to identify open ports without establishing a full connection.
+   - **Advantages**: Can be faster and less detectable than a full scan.
+   - **Countermeasures**: Configure firewalls to block excessive SYN packets and implement intrusion detection/prevention systems to detect abnormal SYN packet behavior.
+
+3. **XMAS Tree Scan**:
+   - **Nmap Command**: `nmap -sX target`
+   - **How it works**: Sends TCP packets with the FIN, URG, and PUSH flags set to probe target ports. If a port is open, it typically does not respond, helping to identify open ports.
+   - **Advantages**: Can bypass certain firewall configurations that may filter standard TCP handshake packets.
+   - **Countermeasures**: Use stateful inspection firewalls to monitor and block abnormal TCP packet behavior. Employ network traffic analysis tools to detect anomalous traffic patterns.
+
+4. **FIN Scan**:
+   - **Nmap Command**: `nmap -sF target`
+   - **How it works**: Sends TCP packets with only the FIN flag set to probe target ports. If a port is closed, it will respond with a TCP RST packet, while an open port will not respond at all.
+   - **Advantages**: Can evade some firewall and IDS configurations that may not monitor or respond to FIN packets.
+   - **Countermeasures**: Configure firewalls and IDS to monitor and respond to FIN packets, implement rate limiting to prevent excessive scan attempts, and employ network segmentation to isolate critical systems.
+
+5. **NULL Scan**:
+   - **Nmap Command**: `nmap -sN target`
+   - **How it works**: Sends TCP packets with no flags set to probe target ports. Similar to the FIN scan, it relies on the target's response (or lack thereof) to identify open ports.
+   - **Advantages**: Can bypass certain firewall and IDS configurations that may not monitor or respond to NULL packets.
+   - **Countermeasures**: Configure firewalls and IDS to monitor and respond to NULL packets, implement rate limiting to prevent excessive scan attempts, and use network segmentation to isolate critical systems.
+
+6. **UDP Scan**:
+   - **Nmap Command**: `nmap -sU target`
+   - **How it works**: Sends UDP packets to target ports and analyzes the responses to identify open UDP services.
+   - **Advantages**: Can identify open UDP ports, which may be overlooked by TCP-based scans.
+   - **Countermeasures**: Configure firewalls to block excessive UDP packets, implement UDP flood protection mechanisms, and use network segmentation to isolate UDP services.
+
+7. **IDLE Scan**:
+   - **Nmap Command**: `nmap -sI zombie target`
+   - **How it works**: Uses a third-party system (zombie) to scan a target while disguising the source of the scan, often evading intrusion detection systems (IDS).
+   - **Advantages**: Can evade IDS by using a trusted third-party system as the source of the scan.
+   - **Countermeasures**: Implement ingress and egress filtering to restrict IP spoofing, configure firewalls and IDS to detect and block suspicious traffic patterns, and regularly monitor network traffic for anomalies.
+
+8. **SSDP Scan**:
+   - **Nmap Command**: `nmap -sU -p 1900 --script=http-discover target`
+   - **How it works**: Leverages SSDP packets to identify devices and services on a network, typically used in UPnP (Universal Plug and Play) environments.
+   - **Advantages**: Can identify UPnP-enabled devices and services on a network.
+   - **Countermeasures**: Disable UPnP where not needed, implement network segmentation to isolate UPnP-enabled devices, and configure firewalls to block SSDP packets from traversing the network boundary.
 # Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing)
 - Fingerprinting
 	- Identify type and version of OS/service
