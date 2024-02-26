@@ -124,7 +124,35 @@
 			- Past and current employment information
 			- Personal education info
 			- Contact info
-		-
+		- Email
+			- When an email is sent, received and read
+			- If it is forwarded and to who
+			- OS used by the recipient
+			- Attachments sent and received
+			- Sender/Receiver IP addresses
+			- Auth system used
+			- Tools
+				- EmailLookup
+				- PoliteEmail
+				- TraceEmail
+	- Financial tools
+		- Yahoo & Google finances
+			- Projects
+			- Trends
+			- Competitors
+			- Insider info
+	- Competitive analysis
+		- When, how and where did the company begin
+		- Who's in charge
+		- Future plans
+	- Social Engineering
+		- Fraud + Scams
+			- Gift cards mainly indian scammers approach
+	- Other types
+		- **Dumpster Diving**: Physically searching through trash for discarded documents or equipment containing sensitive information like passwords or financial records.
+		- **Eavesdropping**: Secretly listening to private conversations or communications, often by tapping phone lines or monitoring network traffic.
+		- **Shoulder Surfing**: Covertly observing someone entering passwords or PINs on electronic devices like computers or ATMs, either by standing nearby or using hidden cameras.
+		- **Impersonation**: Pretending to be someone else to gain access to sensitive information or resources, often through social engineering or identity theft techniques.
 # Lecture 3 - Reconnaissance-3 (Countermeasures)
 - Recon Countermeasures
 - Recon Workflow
