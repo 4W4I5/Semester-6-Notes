@@ -85,8 +85,8 @@
 						- site:mod.gov.pk
 					- Get the admin login page
 						- site:mod.gov.pk inurl:wp-admin.php
-					- Password policy doc
-						- site:mod.gov.pk doc:passwordpolicy
+					- Password policy doc, might be a pdf
+						- site:mod.gov.pk filetype:pdf
 		- WhoIS
 			- Domain name info (IP address, Owner, Expiration)
 		- Ping DNS servers
@@ -96,12 +96,35 @@
 		- Use OSINT framework
 	-
 # Lecture 2 - Reconnaissance-2 (Social Sources)
-- Social Sources
-- Financial Sources
-- Competitive Analysis
-- Social Engineering
-- Email Tracking
-- Tools
+- What can be learned from the working company of the target
+	- Recruitment
+		- Platforms & Technology used data
+	- User support
+		- Social Engineering
+	- User surveys
+		- Business Strats
+	- Promotes Products
+		- Product Specs
+	- Games??
+		- Interests
+	- Share photos
+		- ID of Family members
+	- Friend requests
+		- List of friends
+		- Contact info
+		- Who you are
+- Tools used
+	- Provided in KALI
+		- METAGOOFIL
+		- theharvester
+		- inspy
+	- Social media
+		- Facebook
+		- Linkedin
+			- Past and current employment information
+			- Personal education info
+			- Contact info
+		-
 # Lecture 3 - Reconnaissance-3 (Countermeasures)
 - Recon Countermeasures
 - Recon Workflow
