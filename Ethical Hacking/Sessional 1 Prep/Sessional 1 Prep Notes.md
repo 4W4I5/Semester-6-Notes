@@ -82,11 +82,11 @@
 				- link: - This command finds pages that link to a specific URL. For example, "link:example.com" will return pages that link to example.com.
 				- Example (mod.gov.pk)
 					- Get the registry dump of
-						- site::mod.gov.pk
+						- site:mod.gov.pk
 					- Get the admin login page
-						- site::mod.gov.pk inurl::wp-admin.php
+						- site:mod.gov.pk inurl:wp-admin.php
 					- Password policy doc
-						- site::mod.gov.pk doc:passwordpolicy
+						- site:mod.gov.pk doc:passwordpolicy
 		- WhoIS
 			- Domain name info (IP address, Owner, Expiration)
 		- Ping DNS servers
