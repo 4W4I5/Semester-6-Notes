@@ -282,7 +282,19 @@ Some examples from the book
 			- action <- rule.Action()
 			- return action
 - **Model-based reflex agents:**
-	- To handle partial observability, keep track of the part of the enviro it cannot see right now
+	- To handle partial observability, keep track of the part of the enviro it cannot see right now i.e. maintain a state of what its seen so far
+		- Knowledge of how the world changes over time needed i.e. a transition model
+			- Effects of the agents actions
+			- How the world evolves independent of the agent
+		- State of the world reflected in the agent's precepts i.e. a sensor model
+	- Both models are used to keep a track on the state of the world
+	- **Pseudocode:**
+		- Function: Model-Based-Agent
+			- persistent: state, current conception of the world state, transition + sensor model, rules, action
+			- state <- Update-State(state, action, precept, transition-model, sensor-model)
+			- rule <- Rule-match(state, rules)
+			- action <- rule.Action()
+			- return action
 - **Goal-based agents:**
 	- Also referred to as problem-solving agents, they seek sequences of actions that lead to desirable states or goals.
 	- These agents utilize problem-solving algorithms, like depth-first search or A* search, to find optimal or satisficing solutions.
