@@ -4,7 +4,6 @@
 > Classwise notes are no longer being made. Only sessional and finals prep material will be available.
 > While i may not make classwise notes anymore, you are more than welcome to clone the repo and push your own notes here. I'll link them as soon as possible.
 
-
 | Symbols            | Meaning          |
 | ------------------ | ---------------- |
 | :x:                | Will not be made |
@@ -98,10 +97,9 @@
 | Week 17 | [16th May, 2024](Forensics/33_Forensics_16th_May,%202024.md) |            |                 |
 -->
 
-
 | Exam                                                                          | Status             |
 | ----------------------------------------------------------------------------- | ------------------ |
-| [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: | 
+| [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |  
 | [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                    |
 | [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                    |
 

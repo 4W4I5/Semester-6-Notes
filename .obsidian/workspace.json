@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
-                "mode": "source",
+                "file": "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md"
               }
             }
           },
