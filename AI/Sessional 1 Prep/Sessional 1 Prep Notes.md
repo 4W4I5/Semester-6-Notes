@@ -273,13 +273,13 @@ Some examples from the book
 - Agent programs
 	- Simple reflex agents
 		- Select actions based on the current precept, no history is used
-		- psedocode
+		- pseudocode
 			- Function: Simple-Reflex-Agent
 				- persistent: rules, set of condition-action rules
 				- state <- interpret-input(precept)
 				- rule <- Rule-match(state, rules)
 				- action <- rule.Action()
-					- return action 
+					- return action
 	- Model-based reflex agents
 	- Goal-based agents
 		- Aka Problem-Solving Agent such as in Chapter3
