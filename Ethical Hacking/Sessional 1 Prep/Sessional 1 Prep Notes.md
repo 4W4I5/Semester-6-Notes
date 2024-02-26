@@ -72,9 +72,19 @@
 	- Starting point
 		- Search engines
 			- Google Dorking
-				- 
+				- site: - This command restricts the search results to a specific domain or website. For example, "site:example.com" will only show results from the domain example.com.
+				- intitle: - This command searches for specific words or phrases in the title of web pages. For example, "intitle:login page" will return pages with "login page" in their title.
+				- inurl: - This command searches for specific words or phrases in the URL of web pages. For example, "inurl:admin" will return pages with "admin" in their URL.
+				- filetype: - This command restricts the search results to specific file types. For example, "filetype:pdf" will return only PDF files.
+				- intext: - This command searches for specific words or phrases within the text of web pages. For example, "intext:password" will return pages containing the word "password" in their content.
+				- related: - This command finds websites related to a specified website. For example, "related:example.com" will return websites related to example.com.
+				- cache: - This command displays the cached version of a website as indexed by Google. For example, "cache:example.com" will show the cached version of example.com.
+				- link: - This command finds pages that link to a specific URL. For example, "link:example.com" will return pages that link to example.com.
 		- WhoIS
+			- Domain name info (IP address, Owner, Expiration)
 		- Ping DNS servers
+			- PING
+			- NSLOOKUP
 		- Check Email links
 		- Use OSINT framework
 	-
