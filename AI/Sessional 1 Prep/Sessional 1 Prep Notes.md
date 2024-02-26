@@ -273,6 +273,7 @@ Some examples from the book
 - Agent programs
 	- Simple reflex agents
 		- Select actions based on the current precept, no history is used
+		- Infinite loops are often unavoidable with partially observable environments
 		- pseudocode
 			- Function: Simple-Reflex-Agent
 				- persistent: rules, set of condition-action rules
