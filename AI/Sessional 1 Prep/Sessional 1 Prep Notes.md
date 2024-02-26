@@ -273,6 +273,7 @@ Some examples from the book
 	    - They select actions solely based on the current percept, without considering past percepts or future consequences.
 	    - These agents operate using a set of condition-action rules.
 	    - Infinite loops can occur in partially observable environments, where crucial information might be missing.
+		    - Can break of these loops however if the agent randomly picks its actions
 	- **Pseudocode:**
 		- Function: Simple-Reflex-Agent
 			- persistent: rules, set of condition-action rules
@@ -281,9 +282,7 @@ Some examples from the book
 			- action <- rule.Action()
 			- return action
 - **Model-based reflex agents:**
-	- These agents maintain an internal model of the world, allowing them to consider past percepts and anticipate future consequences of actions.
-	- They utilize both the current percept and the internal model to make decisions.
-	- The internal model helps in handling partially observable environments more effectively than simple reflex agents.
+	- To handle partial observability, keep track of the part of the enviro it cannot see right now
 - **Goal-based agents:**
 	- Also referred to as problem-solving agents, they seek sequences of actions that lead to desirable states or goals.
 	- These agents utilize problem-solving algorithms, like depth-first search or A* search, to find optimal or satisficing solutions.
