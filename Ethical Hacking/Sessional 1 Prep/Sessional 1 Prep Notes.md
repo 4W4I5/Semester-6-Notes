@@ -43,6 +43,11 @@
 	- Proposed amendments seek to address these concerns and enhance effectiveness.
 # Lecture 1 - Reconnaissance-1
 - What is Recon
+	- Set of processes and techinqies
+		- Footprinting
+		- Scanning
+		- Enumeration
+		- 
 - Why
 - Types
 - Goals
