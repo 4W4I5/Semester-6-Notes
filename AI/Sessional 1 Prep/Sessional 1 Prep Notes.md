@@ -11,7 +11,7 @@
 | Chapter 2.4 | :warning:          |
 | Chapter 3.1 | :white_check_mark: |
 | Chapter 3.2 | :warning:          |
-| Chapter 3.3 | :warning:          | 
+| Chapter 3.3 | :warning:          |
 | Chapter 3.4 | :white_check_mark: |
 
 <!--
@@ -55,7 +55,7 @@
 	- Ultimately, the goal is to develop agents that are provably beneficial to humans, addressing the value alignment problem.
 - Laws of thought vs Rational Agent
 
-| **Aspect**               | **Laws of thought    **                                               | **Rational Agent (Ideal for AI)**                                                               |
+| **Aspect**           | **Laws of thought    **                                           | **Rational Agent (Ideal for AI)**                                             |
 | -------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | Definition           | Emphasizes correct inferences as the hallmark of intelligence.    | Focuses on agents that act to achieve the best outcome.                       |
 | Objective            | Making correct inferences based on logical rules.                 | Acting to achieve the best outcome or expected outcome.                       |
@@ -63,7 +63,7 @@
 | Inference            | Central to rational behavior, deducing actions based on premises. | One mechanism among others for achieving rationality.                         |
 | Limitations          | Limited applicability in scenarios involving uncertainty.         | More adaptable to real-world scenarios and uncertain environments.            |
 | Development Approach | Built on logical foundations, focusing on definite plans.         | Evolves from logical foundations to probabilistic and learning-based methods. |
-| Scientific Rigor     | Relies on logical rules and deductive reasoning.                  | Mathematically well-defined, allowing for scientific development.                                                                              |
+| Scientific Rigor     | Relies on logical rules and deductive reasoning.                  | Mathematically well-defined, allowing for scientific development.             |
 
 ## 1.2: Foundations of AI
 - Philosophy
@@ -246,27 +246,27 @@ Table that might help - GPT made this tho
 		- Sensors: Data available via selected inputs to the agent
 - Properties of Task environments
 
-| Property                | Description                                                                                                                                                        |
-|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Observability           | **Fully Observable:** The agent can directly and completely observe the entire state of the environment. <br> **Partially Observable:** The agent's view of the environment is limited; it cannot observe all aspects directly. |
-| Agent Type              | **Single Agent:** There is only one agent operating in the environment. <br> **Multiagent:** Multiple agents are present, each with its own goals and actions.            |
-| Determinism             | **Deterministic:** Given a particular state and action, the outcome is certain and predictable. <br> **Nondeterministic (Stochastic):** Actions may lead to different outcomes with certain probabilities.  |
-| Temporality             | **Episodic:** Each action sequence is independent of previous ones; the agent's experience is divided into episodes. <br> **Sequential:** Actions are interdependent, and the current action may affect future ones. |
-| Dynamics                | **Static:** The environment does not change while the agent is deliberating. <br> **Dynamic:** The environment can change while the agent is deciding on its actions. |
-| Discretization          | **Discrete:** The state and/or action space are finite and countable. <br> **Continuous:** The state and/or action space are infinite and uncountable. |
-| Knowledge               | **Known:** The agent has complete knowledge of the environment's dynamics and rules. <br> **Unknown:** The agent lacks complete information about the environment, such as its dynamics or rules. |
+| Property       | Description                                                                                                                                                                                                                     |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Observability  | **Fully Observable:** The agent can directly and completely observe the entire state of the environment. <br> **Partially Observable:** The agent's view of the environment is limited; it cannot observe all aspects directly. |
+| Agent Type     | **Single Agent:** There is only one agent operating in the environment. <br> **Multiagent:** Multiple agents are present, each with its own goals and actions.                                                                  |
+| Determinism    | **Deterministic:** Given a particular state and action, the outcome is certain and predictable. <br> **Nondeterministic (Stochastic):** Actions may lead to different outcomes with certain probabilities.                      |
+| Temporality    | **Episodic:** Each action sequence is independent of previous ones; the agent's experience is divided into episodes. <br> **Sequential:** Actions are interdependent, and the current action may affect future ones.            |
+| Dynamics       | **Static:** The environment does not change while the agent is deliberating. <br> **Dynamic:** The environment can change while the agent is deciding on its actions.                                                           |
+| Discretization | **Discrete:** The state and/or action space are finite and countable. <br> **Continuous:** The state and/or action space are infinite and uncountable.                                                                          |
+| Knowledge      | **Known:** The agent has complete knowledge of the environment's dynamics and rules. <br> **Unknown:** The agent lacks complete information about the environment, such as its dynamics or rules.                               |
 
 Some examples from the book
 
-| Task             | Observability     | Agent Type   | Determinism          | Temporality   | Dynamics   | Discretization | Knowledge     |
-|------------------|-------------------|--------------|----------------------|---------------|------------|----------------|---------------|
-| Crossword Puzzle| Partially Observable| Single Agent | Deterministic       | Episodic      | Static       | Discrete       | Known         |
-| Chess            | Fully Observable   | Multiagent   | Deterministic       | Sequential    | Dynamic      | Discrete       | Known         |
-| Poker            | Partially Observable| Multiagent   | Nondeterministic    | Sequential    | Dynamic      | Discrete       | Known         |
-| Taxi Driving     | Partially Observable| Single Agent | Nondeterministic    | Sequential    | Dynamic      | Continuous     | Known         |
-| Medical Diagnosis| Partially Observable| Single Agent | Nondeterministic    | Sequential    | Dynamic      | Discrete       | Known         |
-| Image Analysis   | Fully Observable   | Single Agent | Deterministic       | Sequential    | Static       | Continuous     | Known         |
-| Teaching         | Partially Observable| Single Agent | Nondeterministic    | Sequential    | Dynamic      | Discrete       | Known         |
+| Task              | Observability        | Agent Type   | Determinism      | Temporality | Dynamics | Discretization | Knowledge |
+| ----------------- | -------------------- | ------------ | ---------------- | ----------- | -------- | -------------- | --------- |
+| Crossword Puzzle  | Partially Observable | Single Agent | Deterministic    | Episodic    | Static   | Discrete       | Known     |
+| Chess             | Fully Observable     | Multiagent   | Deterministic    | Sequential  | Dynamic  | Discrete       | Known     |
+| Poker             | Partially Observable | Multiagent   | Nondeterministic | Sequential  | Dynamic  | Discrete       | Known     |
+| Taxi Driving      | Partially Observable | Single Agent | Nondeterministic | Sequential  | Dynamic  | Continuous     | Known     |
+| Medical Diagnosis | Partially Observable | Single Agent | Nondeterministic | Sequential  | Dynamic  | Discrete       | Known     |
+| Image Analysis    | Fully Observable     | Single Agent | Deterministic    | Sequential  | Static   | Continuous     | Known     |
+| Teaching          | Partially Observable | Single Agent | Nondeterministic | Sequential  | Dynamic  | Discrete       | Known     |
 
 
 ## 2.4: Structure of Agents
