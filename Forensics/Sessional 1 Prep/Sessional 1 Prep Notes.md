@@ -192,11 +192,15 @@ How is this so boring, same scene as Chapter 1
 		- EFI is for x64, typically used with GPT configured drives
 - Understanding drives at the hardware level
 	- Head - Two per platter, perform r/w operations
-	- Tracks - Concentric circles holding sectors
+	- Tracks - Concentric circles holding sectors. Index from 0
 	- Cylinder - Column of tracks i.e. 5th track on the top and bottom face of a platter is the 5th cylinder
 	- Sector - Section on a track, min size of 512 bytes
 - CHS (Cylinder, Head, Sector) calculations
-	- 
+	- Determine total number of addressable bytes
+		- numOfCylinders \* numOfHeads(Tracks) \* numOfSectors => Total number of sectors available
+		- For example: Drive has 1024 cylinders, 32 heads and 63 sectors
+			- 1024 \* 32 \* 63 = 2,064,384 sectors
+			- Total number o
 ## Exploring Microsoft file structures
 ## NTFS
 ## Whole disk encryption
