@@ -212,6 +212,17 @@ How is this so boring, same scene as Chapter 1
 		- 2 in FAT
 - Partition Table is in MBR
 	- Located at sector 0
+- Examining FAT
+	- FAT12, floppy disk version, max size = 16mb
+	- FAT16, Used till win95, max size = 4gb
+	- FAT32, used for drives bigger than 2gb, max size = 2tb
+	- exFAT
+- Deleting FAT
+	- Insert 0xE5 at the start of the filename
+	- Set FAT chain of file to 0
+- Drive slack
+	- unused space in a cluster at the end of an active file and the end of the cluster
+	- inlcudes Ram Slack and File Slack
 ## NTFS
 ## Whole disk encryption
 ## Windows Registry
