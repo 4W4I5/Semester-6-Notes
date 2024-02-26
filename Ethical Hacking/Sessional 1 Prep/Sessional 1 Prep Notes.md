@@ -80,6 +80,8 @@
 				- related: - This command finds websites related to a specified website. For example, "related:example.com" will return websites related to example.com.
 				- cache: - This command displays the cached version of a website as indexed by Google. For example, "cache:example.com" will show the cached version of example.com.
 				- link: - This command finds pages that link to a specific URL. For example, "link:example.com" will return pages that link to example.com.
+				- Example (mod.gov.pk)
+					- Get the registry dump of
 		- WhoIS
 			- Domain name info (IP address, Owner, Expiration)
 		- Ping DNS servers
