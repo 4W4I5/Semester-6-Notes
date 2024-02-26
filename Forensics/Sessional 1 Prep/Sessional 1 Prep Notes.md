@@ -204,9 +204,88 @@ How is this so boring, same scene as Chapter 1
 - Wear-Levelling
 	- SSDs cells are designed to handle 10k to 100k r/w operations
 	- Wear levelling shifts data to less used cells to improve drive health
-	- Bad for forensics as it modifies data that wouldve stayed in a HDD
+	- Bad for forensics as it modifies data that would've stayed in a HDD
 ## Exploring Microsoft file structures
+- Clusters, logically grouped sectors, can range from 512bytes to 32kbytes in size
+	- Numbered sequentially in LBA
+		- 0 in NTFS
+		- 2 in FAT
+- Partition Table is in MBR
+	- Located at sector 0
 ## NTFS
 ## Whole disk encryption
 ## Windows Registry
 ## Startup Tasks
+
+## Q/A
+
+1. On a Windows system, sectors typically contain how many bytes?
+   - Answer: b. 512 bytes
+
+2. What does CHS stand for?
+   - Answer: CHS stands for Cylinder-Head-Sector, a method used to address individual sectors on a disk drive.
+
+3. Zone bit recording is how disk manufacturers ensure that a platter’s outer tracks store as much data as possible. True or False?
+   - Answer: True.
+
+4. Areal density refers to which of the following?
+   - Answer: c. Number of bits per square inch of a disk platter
+
+5. Clusters in Windows always begin numbering at what number?
+   - Answer: Clusters in Windows always begin numbering at cluster number 2.
+
+6. How many sectors are typically in a cluster on a disk drive?
+   - Answer: c. 4 or more sectors.
+
+7. List three items stored in the FAT database.
+   - Answer: Three items stored in the FAT database are:
+     - File allocation table entries
+     - Cluster status (such as free or allocated)
+     - Volume label
+
+8. What does the Ntuser.dat file contain?
+   - Answer: The Ntuser.dat file contains the user's specific configuration settings and preferences for their user profile in Windows.
+
+9. In FAT32, a 123 KB file uses how many sectors?
+   - Answer: In FAT32, a 123 KB file typically uses 4 sectors.
+
+10. What is the space on a drive called when a file is deleted? (Choose all that apply.)
+    - Answer: b. Unallocated space
+
+11. List two features NTFS has that FAT does not.
+    - Answer: Two features NTFS has that FAT does not are:
+      - Support for file permissions and access control lists (ACLs)
+      - Journaling for improved file system consistency and crash recovery.
+
+12. What does MFT stand for?
+    - Answer: MFT stands for Master File Table, a database in NTFS that stores information about all files and directories on a volume.
+
+13. In NTFS, files smaller than 512 bytes are stored in the MFT. True or False?
+    - Answer: False. In NTFS, files smaller than or equal to 512 bytes are stored within the MFT itself, not in separate clusters.
+
+14. In Windows 7 and later, how much data from RAM is loaded into RAM slack on a disk drive?
+    - Answer: In Windows 7 and later, 64 KB of data from RAM is loaded into RAM slack on a disk drive.
+
+15. What’s a virtual cluster number?
+    - Answer: A virtual cluster number is a logical cluster number that represents the location of a file or folder within the file system, independent of the physical layout of the disk.
+
+16. Why was EFI boot firmware developed?
+    - Answer: EFI (Extensible Firmware Interface) boot firmware was developed to replace the legacy BIOS (Basic Input/Output System) firmware, providing support for modern hardware features, larger disk sizes, and faster boot times.
+
+17. Device drivers contain what kind of information?
+    - Answer: Device drivers contain information required for the operating system to communicate with and control hardware devices.
+
+18. Which of the following Windows 8 files contains user-specific information?
+    - Answer: b. Ntuser.dat
+
+19. Virtual machines have which of the following limitations when running on a host computer?
+    - Answer: c. Virtual machines are limited to the host computer’s peripheral configurations, such as mouse, keyboard, CD/DVD drives, and other devices.
+
+20. An image of a suspect drive can be loaded on a virtual machine. True or False?
+    - Answer: True.
+
+21. EFS can encrypt which of the following?
+    - Answer: a. Files, folders, and volumes
+
+22. What happens when you copy an encrypted file from an EFS-enabled NTFS disk to a non-EFS disk or folder?
+    - Answer: b. EFS protection is maintained on the file.
