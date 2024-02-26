@@ -45,6 +45,7 @@
 - Recon
 	- Set of processes and techniques
 		- Footprinting, Collect information about a target network
+			- Data gathered can include Security Policies, Network Infrastructure, Employee Contact details, Host information
 			- Passive
 				- Without direct interaction, for e.g. packet sniffing
 			- Active
@@ -57,7 +58,26 @@
 		- Domain Names both internal and external, IP addresses, TCP/UDP services
 	- OS Info
 		- Users, LDAP servers, Remote servers, Routing Tables & SNMP (Dont believe this belongs here)
-	- 
+		- Banner grabbing
+			- Gain information about a computer system, what ports are running and what services are using those ports
+		- Organization Information
+			- Organization Websites
+			- Company Directories
+			- Employee Details
+			- Location Details
+			- Addresses/Phone Numbers
+			- Comments in HTML Source code
+			- Security Policies Deployed
+			- Web server links
+	- Starting point
+		- Search engines
+			- Google Dorking
+				- 
+		- WhoIS
+		- Ping DNS servers
+		- Check Email links
+		- Use OSINT framework
+	-
 # Lecture 2 - Reconnaissance-2 (Social Sources)
 - Social Sources
 - Financial Sources
