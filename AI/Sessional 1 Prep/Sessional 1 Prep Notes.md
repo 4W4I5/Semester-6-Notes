@@ -8,7 +8,7 @@
 | Chapter 2.1 | :white_check_mark: |
 | Chapter 2.2 | :white_check_mark: |
 | Chapter 2.3 | :white_check_mark: |
-| Chapter 2.4 | :warning:          |
+| Chapter 2.4 | :white_check_mark: |
 | Chapter 3.1 | :white_check_mark: |
 | Chapter 3.2 | :warning:          |
 | Chapter 3.3 | :warning:          |
@@ -297,15 +297,58 @@ Some examples from the book
 			- return action
 - **Goal-based agents:**
 	- Also referred to as problem-solving agents, they seek sequences of actions that lead to desirable states or goals.
-	- These agents utilize problem-solving algorithms, like depth-first search or A* search, to find optimal or satisficing solutions.
-	- Goal-based agents involve a goal formulation stage, where the agent determines what needs to be achieved, followed by a search for a solution to reach that goal.
+	- Behavior is based off of model agents but now they have a goal to seek out i.e. actions that favor the goal state are chosen
+	- Now we test for how the enviro is affected based off of our choice, this allows us to pick the most favorable action
+	- Only provides a crude binary however b/w satisfactory state and unsatisfactory state
+	- **Pseudocode:**
+		- Function: Model-Based-Agent
+			- persistent: state, current conception of the world state, transition + sensor model, rules, action
+			- state <- Update-State(state, action, precept, transition-model, sensor-model)
+			- testState <- Update-State(state, action, precept, transition-model, sensor-model)
+			- if testState more favorable than state then
+				- rule <- Rule-match(testState, rules)
+			- else
+				- rule <- Rule-match(state, rules)
+			- action <- rule.Action()
+			- return action
 - **Utility-based agents:**
 	- These agents make decisions by evaluating the utility or desirability of different outcomes.
+		- Maximizes expected utility i.e. the probability that the action chosen grants high utility
 	- They consider not only whether a state achieves a goal but also how desirable that outcome is, as quantified by a utility function.
 	- Utility-based agents can handle situations where there are multiple conflicting goals by prioritizing actions based on their expected utility.
+	- Add to Pseudocode
+		- Compare action with utility meter and observe which one is the highest, return that action
 - Learning agents
+	- Any agent can be a learning agent
+	- Just a problem generator to it
+	- Concept division of 4
+		- Critic
+			- Compares data from precept and performance standards to provide feedback
+		- Learning element
+			- Uses feedback from critic to bias the performance element fed by precepts
+			- Provides learning goals to the problem generator
+		- Performance element
+			- Provides knowledge back to the learning element as well as performing the actions based off of data from the learning element, precepts and problem generator
+		- Problem generator
+			- Uses learning goals to create new problems i.e. new precept sequences are suggested. Kind of like the randomized reflex agent in a partially observable world
 - How the components of agent programs work
-
+	- Atomic Representation:
+		- Represents knowledge as indivisible units or atomic propositions.
+		- Each proposition represents a single fact.
+		- Simplifies reasoning by breaking problems into smaller pieces.
+		- May struggle with capturing complex relationships.
+	- Factored Representation:
+		- Breaks knowledge into smaller components or attributes.
+		- Variables represent different states or conditions.
+		- Allows for more flexibility and expressiveness.
+		- Considers interactions and dependencies between variables.
+		- Managing many variables can become complex.
+	- Structured Representation:
+		- Organizes knowledge using hierarchical or relational structures.
+		- Groups related information into graphs, trees, or frames.
+		- Captures rich semantic relationships and dependencies.
+		- Efficient retrieval and manipulation of knowledge.
+		- Design and maintenance may require significant effort.
 
 ---
 
@@ -333,6 +376,7 @@ Some examples from the book
 - Standardized problems
 	-
 - Real-world problems
+	- 
 ## 3.3: Search Algorithms
 -  %% Best-First Search %%
 - Search Data structures
