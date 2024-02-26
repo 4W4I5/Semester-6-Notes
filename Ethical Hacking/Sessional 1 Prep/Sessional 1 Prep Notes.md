@@ -238,6 +238,12 @@
 		- Vulns + Threats
 		- Security risks
 - Techniques
+	- Host Discovery
+		- ARP, ICMP, UDP pings
+			- ICMP echo, timestamp, address mask pings
+				- Echo ping sweep
+		- TCP/IP pings
+			- TCP SYN/ACK ping
 - Tools
 # Lecture 5 - Network Scanning-2 (Types of scanning)
 - Uh add stuff from lec 4 here
