@@ -1,9 +1,9 @@
-| Chapter                                                 | Status            |
-| ------------------------------------------------------- | ----------------- |
-| 1 - Understanding Forensics Profession & Investigations | bruh.             |
-| 2 - Investigators Office                                | bruh.             |
-| 3 - Data Acquisition                                    | bruh.             |
-| 5 - Working with Windows & CLI systems                  | :white_check_mark |
+| Chapter                                                 | Status   |
+| ------------------------------------------------------- | -------- |
+| 1 - Understanding Forensics Profession & Investigations | bruh.    |
+| 2 - Investigators Office                                | bruh.    |
+| 3 - Data Acquisition                                    | bruh.    |
+| 5 - Working with Windows & CLI systems                  | :warning | 
 
 ---
 
@@ -228,7 +228,7 @@ How is this so boring, same scene as Chapter 1
 	- Sector 0 is now the Partition Boot Sector, can expand to 16 sectors
 	- MFT is next
 	- Cluster size min is 4kb
-- 
+-
 ## Whole disk encryption
 ## Windows Registry
 ## Startup Tasks
