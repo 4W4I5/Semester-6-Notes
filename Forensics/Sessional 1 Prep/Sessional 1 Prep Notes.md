@@ -200,7 +200,8 @@ How is this so boring, same scene as Chapter 1
 		- numOfCylinders \* numOfHeads(Tracks) \* numOfSectors => Total number of sectors available
 		- For example: Drive has 1024 cylinders, 32 heads and 63 sectors
 			- 1024 \* 32 \* 63 = 2,064,384 sectors
-			- Total number o
+			- Total number of sectors \* 512 bytes per sector = 1.056 GB
+- 
 ## Exploring Microsoft file structures
 ## NTFS
 ## Whole disk encryption
