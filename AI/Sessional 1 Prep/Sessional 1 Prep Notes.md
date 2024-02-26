@@ -10,8 +10,8 @@
 | Chapter 2.3 | :white_check_mark: |
 | Chapter 2.4 | :white_check_mark: |
 | Chapter 3.1 | :white_check_mark: |
-| Chapter 3.2 | :warning:          |
-| Chapter 3.3 | :warning:          |
+| Chapter 3.2 | :white_check_mark: |
+| Chapter 3.3 | :exclaimation:     | 
 | Chapter 3.4 | :white_check_mark: |
 
 <!--
@@ -373,12 +373,13 @@ Some examples from the book
 - Formulating Problems
 	- Concept of abstraction is applied here.
 ## 3.2: Example Problems
-- Standardized problems
-	-
-- Real-world problems
-	- 
-## 3.3: Search Algorithms
--  %% Best-First Search %%
+- **Standardized Problems**:
+	- **Vacuum Robot**: Tasked with efficiently cleaning a space, requiring path planning and obstacle avoidance.
+	- **Sokoban**: Puzzle game involving moving boxes in a maze, needing route-finding algorithms like A* search.
+- **Real-world Problems**:
+	- **Travelling Salesman Problem (TSP)**: Seeks the shortest route visiting locations once, vital in logistics and transportation.
+	- **Tourist Route Planning**: Involves optimizing travel itineraries for tourists, blending TSP and route optimization techniques.
+## 3.3: Search Algorithms (skipped cause meh)
 - Search Data structures
 - Redundant paths
 - Measuring problem-solving performance
