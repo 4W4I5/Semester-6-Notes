@@ -1,9 +1,9 @@
 | Chapter                                                           | Status             |
 | ----------------------------------------------------------------- | ------------------ |
 | Lecture 0 - Introduction to Ethical Hacking                       | :white_check_mark: |
-| Lecture 1 - Reconnaissance-1                                      | :x:                |
-| Lecture 2 - Reconnaissance-2 (Social Sources)                     | :x:                |
-| Lecture 3 - Reconnaissance-3 (Countermeasures)                    | :x:                |
+| Lecture 1 - Reconnaissance-1                                      | :white_check_mark:                |
+| Lecture 2 - Reconnaissance-2 (Social Sources)                     | :white_check_mark:                |
+| Lecture 3 - Reconnaissance-3 (Countermeasures)                    | :white_check_mark:                |
 | Lecture 4 - Network Scanning-1                                    | :x:                |
 | Lecture 5 - Network Scanning-2 (Types of scanning)                | :x:                |
 | Lecture 6 - Network Scanning-3 (Fingerprinting & Banner Grabbing) | :x:                |
@@ -155,7 +155,76 @@
 		- **Impersonation**: Pretending to be someone else to gain access to sensitive information or resources, often through social engineering or identity theft techniques.
 # Lecture 3 - Reconnaissance-3 (Countermeasures)
 - Recon Countermeasures
+	- Configure Routers
+	- IDS
+	- Reconfig Webservers
+	- Recon on yourself as the target and plug any holes
+	- Lock unused ports via a firewall
+	- Check services provided by webservers
+	- Use robot.txt to prevent page caching
+	- Disable Dir listing
+	- Configure Internal vs External DNS
+	- Restrict input types
+	- Avoid cross-linking
+	- Use encryption/passwords
 - Recon Workflow
+	- Get permission first
+	- Determine scope
+	- Recon
+		- Via WHOIS
+		- Via DNS
+		- Network Ranges
+		- Dorking
+		- Websites
+		- Email
+		- Competitive intel
+		- Social engineering/networks
+	- Compile your report
+		- Search engine data
+			- Emp details
+			- Login pages
+			- Intranet
+			- Technology Platforms
+		- Website data
+			- OS Enviro
+			- File sys struct
+			- Scripting platform
+			- Contact info
+		- People Search
+			- Contact info
+			- BD
+			- Emails, photos, etc
+		- Email Recon
+			- IP Addresses
+			- GPS Location
+			- Auth Systems
+		- Competitive intel
+			- Financial Info
+			- Projects planned
+		- Google Dork
+			- Vulns
+			- Error messages w sensitive data
+			- Files exposed
+		- Whois
+			- Domain name
+				- Details, contacts
+			- DNS Servers
+				- Date of creation
+			- Network range
+		- Social engineering
+			- Personal Data
+			- OS Environ
+			- Financial Data
+			- Username + PW
+			- Network map
+			- IP of servers
+		- NSLOOKUP
+			- whereabouts
+			- type
+		- Social networking
+			- Personal + Work profiles
+				- Company related data
+			- News and potential partners
 # Lecture 4 - Network Scanning-1
 - Scanning
 - Types, move to lec 5
