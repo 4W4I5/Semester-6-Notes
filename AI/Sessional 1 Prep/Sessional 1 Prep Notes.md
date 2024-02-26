@@ -268,23 +268,30 @@ Some examples from the book
 | Image Analysis    | Fully Observable     | Single Agent | Deterministic    | Sequential  | Static   | Continuous     | Known     |
 | Teaching          | Partially Observable | Single Agent | Nondeterministic | Sequential  | Dynamic  | Discrete       | Known     |
 
-
 ## 2.4: Structure of Agents
-- Agent programs
-	- Simple reflex agents
-		- Select actions based on the current precept, no history is used
-		- Infinite loops are often unavoidable with partially observable environments
-		- pseudocode
-			- Function: Simple-Reflex-Agent
-				- persistent: rules, set of condition-action rules
-				- state <- interpret-input(precept)
-				- rule <- Rule-match(state, rules)
-				- action <- rule.Action()
-					- return action
-	- Model-based reflex agents
-	- Goal-based agents
-		- Aka Problem-Solving Agent such as in Chapter3
-	- Utility-based agents
+- **Simple reflex agents:**
+	    - They select actions solely based on the current percept, without considering past percepts or future consequences.
+	    - These agents operate using a set of condition-action rules.
+	    - Infinite loops can occur in partially observable environments, where crucial information might be missing.
+	- **Pseudocode:**
+		- Function: Simple-Reflex-Agent
+			- persistent: rules, set of condition-action rules
+			- state <- interpret-input(precept)
+			- rule <- Rule-match(state, rules)
+			- action <- rule.Action()
+			- return action
+- **Model-based reflex agents:**
+	- These agents maintain an internal model of the world, allowing them to consider past percepts and anticipate future consequences of actions.
+	- They utilize both the current percept and the internal model to make decisions.
+	- The internal model helps in handling partially observable environments more effectively than simple reflex agents.
+- **Goal-based agents:**
+	- Also referred to as problem-solving agents, they seek sequences of actions that lead to desirable states or goals.
+	- These agents utilize problem-solving algorithms, like depth-first search or A* search, to find optimal or satisficing solutions.
+	- Goal-based agents involve a goal formulation stage, where the agent determines what needs to be achieved, followed by a search for a solution to reach that goal.
+- **Utility-based agents:**
+	- These agents make decisions by evaluating the utility or desirability of different outcomes.
+	- They consider not only whether a state achieves a goal but also how desirable that outcome is, as quantified by a utility function.
+	- Utility-based agents can handle situations where there are multiple conflicting goals by prioritizing actions based on their expected utility.
 - Learning agents
 - How the components of agent programs work
 
@@ -327,6 +334,7 @@ Some examples from the book
 	- Dequeue a node from the queue and expand it.
 	- Enqueue all of its unvisited neighbors.
 	- Repeat until the goal node is found or the queue is empty.
+
 ```pseduocode
 BFS(graph, start_node, goal_node):
     initialize an empty queue
@@ -349,6 +357,7 @@ BFS(graph, start_node, goal_node):
 	- Dequeue a node from the priority queue with the lowest cost.
 	- Update the cost to its neighbors if a lower cost path is found.
 	- Repeat until the goal node is found or the priority queue is empty.
+
 ```pseduocode
 Dijkstra(graph, start_node):
     initialize an empty priority queue
@@ -371,6 +380,7 @@ Dijkstra(graph, start_node):
 	- Pop a node from the stack and expand it.
 	- Push all of its unvisited neighbors onto the stack.
 	- Repeat until the goal node is found or the stack is empty.
+
 ```pseduocode
 DFS(graph, start_node, goal_node):
     initialize an empty stack
@@ -388,6 +398,7 @@ DFS(graph, start_node, goal_node):
 
 - Depth-Limited
 	- For Depth-Limited Search (DLS), set a maximum depth limit and perform DFS up to that limit.
+
 ```pseduocode
 DLS(graph, start_node, goal_node, depth_limit):
     recursive_DLS(start_node, goal_node, depth_limit)
@@ -408,6 +419,7 @@ recursive_DLS(current_node, goal_node, depth_limit):
 
 - Iterative Deepening Search
 	- For Iterative Deepening Search (IDS), repeatedly perform DLS with increasing depth limits until the goal is found.
+
 ```pseduocode
 IDS(graph, start_node, goal_node):
     for depth_limit from 0 to infinity:
@@ -421,6 +433,7 @@ IDS(graph, start_node, goal_node):
 	- Meet in the middle when both searches intersect.
 	- Combine paths from both searches to form the solution path.
 	- PseudoCode
+
 ```pseducode
 BidirectionalSearch(graph, start_node, goal_node):
     initialize an empty forward_queue and backward_queue
