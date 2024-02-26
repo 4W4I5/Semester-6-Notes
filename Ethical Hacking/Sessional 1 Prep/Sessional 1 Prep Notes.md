@@ -42,16 +42,22 @@
 	- Critics raise concerns about potential infringements on freedom of expression.
 	- Proposed amendments seek to address these concerns and enhance effectiveness.
 # Lecture 1 - Reconnaissance-1
-- What is Recon
-	- Set of processes and techinqies
-		- Footprinting
+- Recon
+	- Set of processes and techniques
+		- Footprinting, Collect information about a target network
+			- Passive
+				- Without direct interaction, for e.g. packet sniffing
+			- Active
+				- Direct interaction, scanning for directories, enumeration of IP addresses
 		- Scanning
 		- Enumeration
-		- 
-- Why
-- Types
-- Goals
-- Tools
+	- During Recon an EH attempts to gather as much info as possible
+- Why Recon
+	- Network info
+		- Domain Names both internal and external, IP addresses, TCP/UDP services
+	- OS Info
+		- Users, LDAP servers, Remote servers, Routing Tables & SNMP (Dont believe this belongs here)
+	- 
 # Lecture 2 - Reconnaissance-2 (Social Sources)
 - Social Sources
 - Financial Sources
