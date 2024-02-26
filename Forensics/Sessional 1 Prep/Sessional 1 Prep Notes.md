@@ -224,6 +224,11 @@ How is this so boring, same scene as Chapter 1
 	- unused space in a cluster at the end of an active file and the end of the cluster
 	- inlcudes Ram Slack and File Slack
 ## NTFS
+- Everything is a file
+	- Sector 0 is now the Partition Boot Sector, can expand to 16 sectors
+	- MFT is next
+	- Cluster size min is 4kb
+- 
 ## Whole disk encryption
 ## Windows Registry
 ## Startup Tasks
