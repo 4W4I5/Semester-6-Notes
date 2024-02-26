@@ -99,11 +99,11 @@
 -->
 
 
-| Exam                                                                          | Status    |
-| ----------------------------------------------------------------------------- | --------- |
-| [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :warning: |
-| [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |           |
-| [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    |           |
+| Exam                                                                          | Status             |
+| ----------------------------------------------------------------------------- | ------------------ |
+| [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: | 
+| [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                    |
+| [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                    |
 
 
 # AI
@@ -196,7 +196,7 @@
 
 | Exam                                                                        | Status                                                                                                             |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [Sessional 1](InfoSec/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x: \|  [Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf) | 
+| [Sessional 1](InfoSec/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x: \|  [Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf) |
 | [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                                                                                                                    |
 | [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                                                                                                                    |
 

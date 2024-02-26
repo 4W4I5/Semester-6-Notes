@@ -1,9 +1,9 @@
-| Chapter                                                 | Status |
-| ------------------------------------------------------- | ------ |
-| 1 - Understanding Forensics Profession & Investigations | bruh.  |
-| 2 - Investigators Office                                | bruh.  |
-| 3 - Data Acquisition                                    |        |
-| 5 - Working with Windows & CLI systems                  |        |
+| Chapter                                                 | Status            |
+| ------------------------------------------------------- | ----------------- |
+| 1 - Understanding Forensics Profession & Investigations | bruh.             |
+| 2 - Investigators Office                                | bruh.             |
+| 3 - Data Acquisition                                    | bruh.             |
+| 5 - Working with Windows & CLI systems                  | :white_check_mark |
 
 ---
 
@@ -109,8 +109,94 @@ How is this so boring, same scene as Chapter 1
 - To acquire RAID disks, you need to determine the type of RAID and which acquisition tool to use. With a firmware- hardware RAID, acquiring data directly from the RAID server might be necessary.
 - Remote network acquisition tools require installing a remote agent on the suspect computer. The remote agent can be detected if suspects install their own security programs, such as a firewall.
 
+### Q/A
+1. What’s the main goal of a static acquisition?
+   - Answer: The main goal of a static acquisition is to create a bit-for-bit copy of the digital evidence in its original state without altering the original data.
+
+2. Name the three formats for digital forensics data acquisitions.
+   - Answer: The three formats for digital forensics data acquisitions are raw format, proprietary format, and logical format.
+
+3. What are two advantages and disadvantages of the raw format?
+   - Answer: Advantages:
+     - Raw format preserves all data including deleted files and unallocated space.
+     - It is universally compatible with forensic tools.
+   - Disadvantages:
+     - Large file size.
+     - Does not include metadata, making analysis more challenging.
+
+4. List two features common with proprietary format acquisition files.
+   - Answer: Two common features with proprietary format acquisition files are compression to reduce file size and inclusion of metadata for better organization and analysis.
+
+5. Of all the proprietary formats, which one is the unofficial standard?
+   - Answer: The EnCase proprietary format is considered the unofficial standard in digital forensics.
+
+6. Name two commercial tools that can make a forensic sector-by-sector copy of a drive to a larger drive.
+   - Answer: Two commercial tools capable of making a forensic sector-by-sector copy are EnCase and FTK (Forensic Toolkit).
+
+7. What does a logical acquisition collect for an investigation?
+   - Answer: A logical acquisition collects only specific files and data relevant to the investigation, such as documents, emails, and user-generated content.
+
+8. What does a sparse acquisition collect for an investigation?
+   - Answer: A sparse acquisition collects only allocated data, ignoring unallocated space and deleted files.
+
+9. What should you consider when determining which data acquisition method to use?
+   - Answer: Factors to consider include the type of investigation, the nature of the digital evidence, legal requirements, available resources, and the capabilities of forensic tools.
+
+10. Why is it a good practice to make two images of a suspect drive in a critical investigation?
+    - Answer: Making two images provides redundancy and ensures data integrity. If one image becomes corrupted or compromised, the second one serves as a backup.
+
+11. When you perform an acquisition at a remote location, what should you consider to prepare for this task?
+    - Answer: Considerations include network stability, bandwidth availability, legal permissions, security protocols, and ensuring the remote system is not tampered with during acquisition.
+
+12. With newer Linux kernel distributions, what happens if you connect a hot-swappable device, such a USB drive, containing evidence?
+    - Answer: The device may be automatically mounted, potentially altering metadata and timestamps. It's crucial to disable auto-mounting or use write-blocking hardware.
+
+13. In Linux, the fdisk -l command lists the suspect drive as /dev/hda1. Is the following dcfldd command correct? dcfldd if=image_file.img of=/dev/hda1
+    - Answer: No, the command is incorrect. It should specify a partition (e.g., /dev/hda1) rather than the entire disk (/dev/hda) to avoid overwriting partition tables.
+
+14. What’s the most critical aspect of digital evidence?
+    - Answer: The most critical aspect of digital evidence is ensuring its integrity throughout the entire forensic process, from acquisition to analysis and presentation in court.
+
+15. What’s a hashing algorithm?
+    - Answer: A hashing algorithm is a cryptographic function that converts input data into a fixed-size string of characters, called a hash value or digest. It's used to verify data integrity and authenticity.
+
+16. In the Linux dcfldd command, which three options are used for validating data?
+    - Answer: The three options used for validating data in the dcfldd command are hash (hashing), hof (hash output file), and verify (verification).
+
+17. What’s the maximum file size when writing data to a FAT32 drive?
+    - Answer: The maximum file size when writing data to a FAT32 drive is 4 GB minus 1 byte.
+
+18. What are two concerns when acquiring data from a RAID server?
+    - Answer: Two concerns when acquiring data from a RAID server are ensuring proper handling of RAID configurations and dealing with data striping and redundancy across multiple disks.
+
+19. With remote acquisitions, what problems should you be aware of? (Choose all that apply.)
+    - Answer: Problems to be aware of include:
+      - a. Data transfer speeds
+      - b. Access permissions over the network
+      - c. Antivirus, antispyware, and firewall programs
+
+20. Which forensics tools can connect to a suspect’s remote computer and run surreptitiously?
+    - Answer: Remote access tools like Netcat and Meterpreter can connect to a suspect's remote computer and execute commands or gather information without detection.
+
+21. EnCase, FTK, SMART, and ILookIX treat an image file as though it were the original disk. True or False?
+    - Answer: True. EnCase, FTK, SMART, and ILookIX treat an image file as though it were the original disk, allowing investigators to analyze the data without altering the original evidence.
+
+22. FTK Imager can acquire data in a drive’s host protected area. True or False?
+    - Answer: True. FTK Imager can acquire data from a drive's host protected area, which contains system files and configurations not accessible through traditional file system methods.
+
 # 5 - Working with Windows & CLI systems
 ## Understanding Filesystems
+- Boot sequence
+	- BIOS/EFI at the hardware level
+		- BIOS is for x86, typically used with MBR configured drives
+		- EFI is for x64, typically used with GPT configured drives
+- Understanding drives at the hardware level
+	- Head - Two per platter, perform r/w operations
+	- Tracks - Concentric circles holding sectors
+	- Cylinder - Column of tracks i.e. 5th track on the top and bottom face of a platter is the 5th cylinder
+	- Sector - Section on a track, min size of 512 bytes
+- CHS (Cylinder, Head, Sector) calculations
+	- 
 ## Exploring Microsoft file structures
 ## NTFS
 ## Whole disk encryption
