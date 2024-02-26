@@ -201,7 +201,10 @@ How is this so boring, same scene as Chapter 1
 		- For example: Drive has 1024 cylinders, 32 heads and 63 sectors
 			- 1024 \* 32 \* 63 = 2,064,384 sectors
 			- Total number of sectors \* 512 bytes per sector = 1.056 GB
-- 
+- Wear-Levelling
+	- SSDs cells are designed to handle 10k to 100k r/w operations
+	- Wear levelling shifts data to less used cells to improve drive health
+	- Bad for forensics as it modifies data that wouldve stayed in a HDD
 ## Exploring Microsoft file structures
 ## NTFS
 ## Whole disk encryption
