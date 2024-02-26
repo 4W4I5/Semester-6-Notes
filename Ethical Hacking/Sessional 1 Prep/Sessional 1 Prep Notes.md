@@ -227,8 +227,16 @@
 			- News and potential partners
 # Lecture 4 - Network Scanning-1
 - Scanning
-- Types, move to lec 5
-- Goals
+	- Identifying live systems
+	- Discover what ports are open or closed
+	- What services are running
+	- Get
+		- IP addresses
+		- Live hosts
+		- Open/Closed ports
+		- OS architecture
+		- Vulns + Threats
+		- Security risks
 - Techniques
 - Tools
 # Lecture 5 - Network Scanning-2 (Types of scanning)
