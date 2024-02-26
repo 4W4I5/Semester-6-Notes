@@ -178,22 +178,22 @@ Table that might help - GPT made this tho
 
 ## 1.5: Risks & Benefits of AI
 
-| Topic                        | Risks                                                      | Benefits                                                              |
-| ---------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------- |
-| Lethal Autonomous Weapons    | - Potential for misuse leading to indiscriminate harm.     | - Reduced risk to human soldiers in combat situations.                |
-|                              | - Lack of accountability and ethical oversight.            | - Enhanced precision and efficiency in military operations.           |
-| Surveillance and Persuasion  | - Invasion of privacy and erosion of civil liberties.      | - Improved public safety and crime prevention.                        |
-|                              | - Manipulation of public opinion and behavior.             | - Enhanced monitoring and response to security threats.               |
-| Biased Decision Making       | - Reinforcement of existing biases and discrimination.     | - Increased efficiency and automation in decision-making.             |
-|                              | - Unfair treatment and perpetuation of inequality.         | - Potential for unbiased and data-driven decision-making.             |
-| Impact on Employment         | - Job displacement and economic inequality.                | - Increased productivity and economic growth.                         |
-|                              | - Loss of traditional livelihoods and skills.              | - Creation of new job opportunities and industries.                   |
-| Safety-Critical Applications | - Potential for catastrophic failures and accidents.       | - Enhanced reliability and efficiency in critical systems.            |
-|                              | - Limited ability to predict and mitigate risks.           | - Improved performance and safety in transportation, healthcare, etc. |
-| Cybersecurity                | - Vulnerabilities exploited for malicious purposes.        | - Improved defense against cyber threats and attacks.                 |
-|                              | - Potential for widespread disruption and damage.          | - Development of secure systems and protocols.                        |
+| Topic                        | Risks                                                       | Benefits                                                              |
+| ---------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------- |
+| Lethal Autonomous Weapons    | - Potential for misuse leading to indiscriminate harm.      | - Reduced risk to human soldiers in combat situations.                |
+|                              | - Lack of accountability and ethical oversight.             | - Enhanced precision and efficiency in military operations.           |
+| Surveillance and Persuasion  | - Invasion of privacy and erosion of civil liberties.       | - Improved public safety and crime prevention.                        |
+|                              | - Manipulation of public opinion and behavior.              | - Enhanced monitoring and response to security threats.               |
+| Biased Decision Making       | - Reinforcement of existing biases and discrimination.      | - Increased efficiency and automation in decision-making.             |
+|                              | - Unfair treatment and perpetuation of inequality.          | - Potential for unbiased and data-driven decision-making.             |
+| Impact on Employment         | - Job displacement and economic inequality.                 | - Increased productivity and economic growth.                         |
+|                              | - Loss of traditional livelihoods and skills.               | - Creation of new job opportunities and industries.                   |
+| Safety-Critical Applications | - Potential for catastrophic failures and accidents.        | - Enhanced reliability and efficiency in critical systems.            |
+|                              | - Limited ability to predict and mitigate risks.            | - Improved performance and safety in transportation, healthcare, etc. |
+| Cybersecurity                | - Vulnerabilities exploited for malicious purposes.         | - Improved defense against cyber threats and attacks.                 |
+|                              | - Potential for widespread disruption and damage.           | - Development of secure systems and protocols.                        |
 | AI Superintelligence         | - Existential risks from uncontrolled super intelligent AI. | - Accelerated scientific and technological progress.                  |
-|                              | - Loss of human control over AI systems.                   | - Potential solutions to complex global challenges.                   |
+|                              | - Loss of human control over AI systems.                    | - Potential solutions to complex global challenges.                   |
 
 ## Summary
 - Different goals drive AI approaches: focus on thinking or behavior, modeling humans or optimizing results.
