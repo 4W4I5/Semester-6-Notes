@@ -11,7 +11,7 @@
 | Chapter 2.4 | :white_check_mark: |
 | Chapter 3.1 | :white_check_mark: |
 | Chapter 3.2 | :white_check_mark: |
-| Chapter 3.3 | :exclaimation:     | 
+| Chapter 3.3 | :exclaimation:     |
 | Chapter 3.4 | :white_check_mark: |
 
 <!--
@@ -270,10 +270,10 @@ Some examples from the book
 
 ## 2.4: Structure of Agents
 - **Simple reflex agents:**
-	    - They select actions solely based on the current percept, without considering past percepts or future consequences.
-	    - These agents operate using a set of condition-action rules.
-	    - Infinite loops can occur in partially observable environments, where crucial information might be missing.
-		    - Can break of these loops however if the agent randomly picks its actions
+	- They select actions solely based on the current percept, without considering past percepts or future consequences.
+	- These agents operate using a set of condition-action rules.
+	- Infinite loops can occur in partially observable environments, where crucial information might be missing.
+	- Can break of these loops however if the agent randomly picks its actions
 	- **Pseudocode:**
 		- Function: Simple-Reflex-Agent
 			- persistent: rules, set of condition-action rules
