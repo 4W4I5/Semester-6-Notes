@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 281.5
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "README.md"
               }
             }
           },
@@ -173,8 +172,8 @@
   },
   "active": "7767d3f4def2f372",
   "lastOpenFiles": [
-    "Untitled.md",
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+    "Untitled.md",
     "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "README.md",
     "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
