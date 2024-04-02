@@ -1,8 +1,8 @@
 | Lecture Number                                      | Status                                                            |
 | --------------------------------------------------- | ----------------------------------------------------------------- |
-| Lecture 8 & 9: Reverse Engineering                  | :warning:                                                         |
-| Lecture 10 & 11: Windows Internal - DLLs & Registry | :warning:                                                         |
-| Lecture 12: IDA                                     | :x: Would be Regurgitating Info, Go through the slides (42 Pages) | 
+| Lecture 8 & 9: Reverse Engineering                  | :white_check_mark:                                                |
+| Lecture 10 & 11: Windows Internal - DLLs & Registry | :white_check_mark:                                                | 
+| Lecture 12: IDA                                     | :x: Would be Regurgitating Info, Go through the slides (42 Pages) |
 | Lecture 13: Basic Dynamic Analysis                  | :white_check_mark:                                                |
 
 <!--
@@ -129,17 +129,76 @@
 
 ## Disassembly Algo (Concept)
 - Step 1
-	- Identify Code segement
+	- Identify Code segment
 		- Generally Code and Data segments are mixed
 			- Observe PE/ELF format to understand both segments
 			- These generally have mechanisms to identify code and entrypoint
-	-
+- Step 2
+	- Given the initial address of an instruction
+	- Read value contained at file offset and lookup from a table to convert from binary opcode to asm mnemonic
+	- Additional bytes may need to be retrieved in cases where (Variable-Length Instructions) VLI are used
+- Step 3
+	- Format decoded mnemonics and output a formatted listing
+	- Can chose x86 or AT&T as the formats
+- Step 4
+	- Advance to next instruction
+	- Repeat
 
 ## Disassembly Algo (Linear sweep vs Recursive Descent)
 
-# Lecture 10: Windows Internal - DLLs- 2
-# Lecture 11: Windows Internal - Registry- 3
-# Lecture 12: IDA
+| Aspect                   | Linear Sweep Disassembly                                      | Recursive Descent Disassembly                                 |
+| ------------------------ | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| Approach                 | Straightforward, linear                                       | Focuses on control flow                                       |
+| Starting point           | Begins at the first byte in a code section                    | Decides whether to disassemble based on references            |
+| Handling of control flow | Does not recognize nonlinear instructions such as branches    | Focuses on understanding control flow                         |
+| Method                   | Linear fashion through the section                            | Analyzes how instructions affect the CPU instruction pointer  |
+| Maintaining pointers     | Maintains a pointer to mark the beginning of each instruction | Utilizes control flow to determine disassembly                |
+| Instruction length       | Computes the length of each instruction to determine the next | Considers how instructions affect the CPU instruction pointer |
+| Ease of disassembly      | Challenging for complex control flows                         | Better suited for understanding complex control flow          |
+
+# Lecture 10 & 11: Windows Internal - DLLs & Registry
+### Static VS Dynamic
+| Aspect           | Static                                                 | Dynamic                                                 |
+| ---------------- | ------------------------------------------------------ | ------------------------------------------------------- |
+| Linking          | Linked directly into the exe                           | Loaded and linked at runtime                            |
+| Runtime behavior | Self-Contained as code is directly included in the exe | Loaded into memory separately and linked during runtime |
+| Reusability      | Not necessarily possible across multiple applications  | Can be shared among different programs                  |
+
+## What is a DLL like
+- Same structure as a PE exe file
+	- PE Header Flags
+		- Even has the EXE flag set
+		- DLL flag is set
+## Dependencies
+- An imported DLL is known as a dependency
+	- Can observe which DLLs are directly required by checking the import table
+- DLLs can be chained
+	- Runtime chaining can be observed using process hacker
+- Exports
+	- Both EXE and DLLs have exports
+		- EXE generally export the main function for the LOADER process to load the process into memory
+	- DLLs can export functions for other DLLS/EXE files to use
+- Import Address Table (IAT)
+	- Table that is filled in with external functions that are imported by LOADER as DLLs are loaded into memory
+
+## Windows Application Programming Interface (Win32API)
+- Software Interface
+- Provides a layer of abstraction to the inner workings of a program that is offering a service to other software
+- Win32API provides a set of DLLs, present under the system32 folder
+- Consists of
+	- NT version of API
+	- Extended Versions
+	- Undocumented API's
+#### Categories of Win32API
+- Base
+- Graphics Device
+- User Interface
+- Common Control
+- Common Dialog Box
+- Windows Shell
+- Network Services
+-
+
 # Lecture 13: Basic Dynamic Analysis
 ### Basics
 - Dynamic analysis involves
