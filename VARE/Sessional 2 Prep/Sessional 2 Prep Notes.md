@@ -14,22 +14,39 @@
 
 
 # Lecture 8 & 9: Reverse Engineering
+## Why?
+- Understand the internal workings of a malware binary
+- Implement detection mechanism for a given sample
+- Cure needed
+- Tools
+	- Disassembler
+		- Convert machinecode -> asm file
+	- Decompiler
+		- Convert machinecode -> pseduo-code (HLL Type)
+
+## Understanding machine code
+- CPU specfic code
+	- Wide variety of CPUs, generically based on their own ISA's (Instruction-Set Architectures)
+		- x86-64
+		- amd
+	- Program execution viablity is checked in the NT header
 
 ## Perspectives
 
-|                   | High Level                                                                                                                                                                                                                                                                | Low Level                                     |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| Program Structure | Modules i.e. DLL and Static Libs                                                                                                                                                                                                                                          | ASM version                                   |
-| Data Management   | Procedural/OOP                                                                                                                                                                                                                                                            | Registers, Stack, Heaps, Non-NX Data sections |
-| Example Language  | C, C++, C#, Java, Python                                                                                                                                                                                                                                                  | Assembly                                      |
-| Compilation       | Frontend parses source code after performing lexical analysis and converts it to an Intermediate Representation or Abstract Syntax Tree. Optimizer optimizes by deadcode elimination, loop optimization, register allocation, etc. Backend generates machinecode/bytecode | n/a                                              |
+|                         | High Level                                                                                                                                                                                                                                                                | Low Level                                                                                                                                                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Program Structure       | Modules i.e. DLL and Static Libs                                                                                                                                                                                                                                          | ASM version                                                                                                                                                                                                         |
+| Data Management         | Procedural/OOP                                                                                                                                                                                                                                                            | Registers, Stack, Heaps, Non-NX Data sections                                                                                                                                                                       |
+| Example Language        | C, C++, C#, Java, Python                                                                                                                                                                                                                                                  | Assembly                                                                                                                                                                                                            |
+| Compilation/ListingFile | Frontend parses source code after performing lexical analysis and converts it to an Intermediate Representation or Abstract Syntax Tree. Optimizer optimizes by deadcode elimination, loop optimization, register allocation, etc. Backend generates machinecode/bytecode | Compiler generated, Text file, IR of the code read by compiler frontend, Maps ASM code to the Machine code (1:1), Mapping to ASM->Source is (M:1) i.e. One line of source code can consist of multiple instructions |
 
-#### Listing File
-- Compiler generated
-- Text file
-- IR of the code read by compiler frontend
-- Maps ASM code to the Machine code (1:1)
-	- Mapping to ASM->Source is (M:1) i.e. One line of source code can consist of multiple instructions
+## Execution Environments
+- Software Enviros
+	- Any type of VM
+		- JVM, CLR that runs .NET, bytecodes
+- Hardware Execution in modern Processors
+	- Modern execution techniques such as spectre, NetBurst and microOps
+
 
 # Lecture 10: Windows Internal - DLLs- 2
 # Lecture 11: Windows Internal - Registry- 3
