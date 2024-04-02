@@ -1,10 +1,10 @@
-| Lecture Number                             | Status    |
-| ------------------------------------------ | --------- |
-| Lecture 8 & 9: Reverse Engineering         | :warning: |
-| Lecture 10: Windows Internal - DLLs- 2     | :warning: |
-| Lecture 11: Windows Internal - Registry- 3 | :warning: |
-| Lecture 12: IDA                            | :warning: |
-| Lecture 13: Basic Dynamic Analysis         | :warning: |
+| Lecture Number                             | Status             |
+| ------------------------------------------ | ------------------ |
+| Lecture 8 & 9: Reverse Engineering         | :warning:          |
+| Lecture 10: Windows Internal - DLLs- 2     | :warning:          |
+| Lecture 11: Windows Internal - Registry- 3 | :warning:          |
+| Lecture 12: IDA                            | :warning:          |
+| Lecture 13: Basic Dynamic Analysis         | :white_check_mark: |
 
 <!--
 :x:
@@ -35,7 +35,7 @@
 # Lecture 11: Windows Internal - Registry- 3
 # Lecture 12: IDA
 # Lecture 13: Basic Dynamic Analysis
-
+### Basics
 - Dynamic analysis involves
 	- Analyzing a sample by executing it in an isolated environment and monitoring its
 		- Activities
@@ -46,3 +46,44 @@
 	- Purpose
 	- Functionality
 - Dynamic analysis is also called **behavioral** **analysis**
+
+## Steps
+- Clean Slate
+	- Revert to a snapshot with no malware loaded
+- Start up monitoring tools. NOTE:: Run as Admin
+	- Why?
+		- Expected interactions
+			- System
+				- Child processes spawned
+				- Files dropped
+				- Registry keys modified
+			- Network
+				- Contact with C2
+				- New files to be downloaded
+	- Types
+		- Process Monitoring
+			- Process activity and properties of the running process following an execution
+		- FileSystem Monitoring
+			- Check for changes, files being deleted/added
+		- Registry Monitoring
+		- Network Monitoring
+			- Inspect live traffic to/from malware during execution
+	- Tools
+		- Process monitor/Process Hacker
+			- OpenSrc
+			- Process inspection
+				- Inspect process/thread attributes
+				- Explore Disk activity, open network connections, etc
+		- Noriben
+			- Works alongside procmon
+				- Collects, Analyzes and reports running IOCs of the malware
+			- Stores results in .txt and .csv file
+		- Wireshark
+			- Network monitor, Logs all packet information from an interface
+		- FakeNet-NG/INetSIM
+			- Runs a server that returns a deadend page to any and all network traffic while generating a pcap file of all packets sent to the server
+			- Simulates the network environment essentially
+		- RegShot, Take a shot before running malware
+- Execute Malware for a set interval
+- Stop monitoring tools, take another RegShot
+- Analyze results from tools and compare RegShot shots
