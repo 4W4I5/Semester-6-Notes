@@ -30,6 +30,7 @@
 		- x86-64
 		- amd
 	- Program execution viablity is checked in the NT header
+		- NT Header -> File Header
 
 ## Perspectives
 
