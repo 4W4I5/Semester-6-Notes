@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 281.5
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
+                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md"
+                "file": "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md"
               }
             }
           },
@@ -174,6 +173,8 @@
   "active": "7767d3f4def2f372",
   "lastOpenFiles": [
     "README.md",
+    "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
+    "VARE/Sessional 2 Prep",
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "Untitled.md",
     "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",
@@ -214,10 +215,8 @@
     "InfoSec/Info_sec/Info sec",
     "InfoSec/Info_sec",
     "InfoSec/Info sec/Info sec",
-    "InfoSec/Info sec",
     "Ethical Hacking/2_Ethical Hacking_31st_Jan, 2024.md",
     "AI/1_AI 25th Jan, 2024.md",
-    "Algo/Exam Prep/Algo Finals Prep.md",
-    "OS/Exam Prep/OS Finals Prep.md"
+    "Algo/Exam Prep/Algo Finals Prep.md"
   ]
 }

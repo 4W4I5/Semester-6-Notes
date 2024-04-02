@@ -183,7 +183,7 @@ Skipped taxonomy of malware. Added some extra types though
 	- Extraction of useful information
 	- Classification via informed decisions
 	- Base for subsequent analysis
-- Basic Static Analysis
+- Basic Static Analysis (I.)
 	- Identifying a file
 		- Analyze extension, magic byte, PE type,
 	- Fingerprinting
