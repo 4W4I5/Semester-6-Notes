@@ -54,7 +54,7 @@
 | Exam                                                                     | Status             |
 | ------------------------------------------------------------------------ | ------------------ |
 | [Sessional 1](VARE/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
-| [Sessional 2](VARE/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :warning:           |
+| [Sessional 2](VARE/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :white_check_mark: |
 | [Finals](VARE/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                    |
 
 # Digital Forensics
@@ -103,7 +103,6 @@
 | [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                    |
 | [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                    |
 
-
 # AI
 <!--
 | Week #  | Date                                           | Status       | Content         |
@@ -143,7 +142,6 @@
 | Week 17 | [14th May, 2024](AI/32_AI_14th_May,%202024.md) |              |                 |
 | Week 17 | [16th May, 2024](AI/33_AI_16th_May,%202024.md) |              |                 |
 -->
-
 
 | Exam                                                                   | Status             |
 | ---------------------------------------------------------------------- | ------------------ |
@@ -191,14 +189,11 @@
 | Week 17 | [16th May, 2024](InfoSec/33_InfoSec_16th_May,%202024.md) |        |                 |
 -->
 
-
 | Exam                                                                        | Status                                                                                                             |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Sessional 1](InfoSec/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x: \|  [Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf) |
 | [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                                                                                                                    |
 | [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                                                                                                                    |
-
-
 
 # Ethical Hacking
 <!--
@@ -239,7 +234,6 @@
 | Week 17 | [13th May, 2024](Ethical%20Hacking/30_Ethical%20Hacking_13th_May,%202024.md) |        |                 |
 | Week 17 | [15th May, 2024](Ethical%20Hacking/31_Ethical%20Hacking_15th_May,%202024.md) |        |                 |
 -->
-
 
 | Exam                                                                                  | Status             |
 | ------------------------------------------------------------------------------------- | ------------------ |
