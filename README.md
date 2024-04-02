@@ -54,7 +54,7 @@
 | Exam                                                                     | Status             |
 | ------------------------------------------------------------------------ | ------------------ |
 | [Sessional 1](VARE/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
-| [Sessional 2](VARE/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) |                    |
+| [Sessional 2](VARE/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :warning:           |
 | [Finals](VARE/Finals%20Prep/Finals%20Prep%20Notes.md)                    |                    |
 
 # Digital Forensics
