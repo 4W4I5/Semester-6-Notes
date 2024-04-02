@@ -22,14 +22,14 @@
 	- Disassembler
 		- Convert machinecode -> asm file
 	- Decompiler
-		- Convert machinecode -> pseduo-code (HLL Type)
+		- Convert machinecode -> pseudo-code (HLL Type)
 
 ## Understanding machine code
-- CPU specfic code
+- CPU specific code
 	- Wide variety of CPUs, generically based on their own ISA's (Instruction-Set Architectures)
 		- x86-64
 		- amd
-	- Program execution viablity is checked in the NT header
+	- Program execution viability is checked in the NT header
 		- NT Header -> File Header
 
 ## Perspectives
