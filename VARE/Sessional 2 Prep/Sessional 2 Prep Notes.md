@@ -1,9 +1,9 @@
-| Lecture Number                                      | Status             |
-| --------------------------------------------------- | ------------------ |
-| Lecture 8 & 9: Reverse Engineering                  | :warning:          |
-| Lecture 10 & 11: Windows Internal - DLLs & Registry | :warning:          |
-| Lecture 12: IDA                                     | :warning:          |
-| Lecture 13: Basic Dynamic Analysis                  | :white_check_mark: |
+| Lecture Number                                      | Status                                                            |
+| --------------------------------------------------- | ----------------------------------------------------------------- |
+| Lecture 8 & 9: Reverse Engineering                  | :warning:                                                         |
+| Lecture 10 & 11: Windows Internal - DLLs & Registry | :warning:                                                         |
+| Lecture 12: IDA                                     | :x: Would be Regurgitating Info, Go through the slides (42 Pages) | 
+| Lecture 13: Basic Dynamic Analysis                  | :white_check_mark:                                                |
 
 <!--
 :x:
