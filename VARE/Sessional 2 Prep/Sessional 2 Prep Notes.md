@@ -1,7 +1,15 @@
 
+
+
 > [!WARNING]
 > Due to inclusion of YARA, its worth going over these topics from sessional 1
 
+# Lecture 8: Reverse Engineering - 1
+# Lecture 9: Reverse Engineering - 2
+# Lecture 10: Windows Internal & DLLs- 2
+# Lecture 11: Windows Internal & DLLs- 3
+
+---
 
 # Lecture 4: Static malware analysis - 1
 - Initial analysis method that involves
