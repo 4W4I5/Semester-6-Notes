@@ -48,6 +48,18 @@
 - Hardware Execution in modern Processors
 	- Modern execution techniques such as spectre, NetBurst and microOps
 
+## Assembly Language
+#### Operand Types + Addressing Mode
+- Immediate
+	- Fixed values
+- Indirect
+	- Essentially a pointer, refers to a memory location to fetch data from. Identify via use of \[ \]
+- Register
+	- Common Sense
+- Implicit VS Explicit
+	- Implicit
+		- No 
+
 
 # Lecture 10: Windows Internal - DLLs- 2
 # Lecture 11: Windows Internal - Registry- 3
