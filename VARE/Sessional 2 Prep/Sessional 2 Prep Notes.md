@@ -1,10 +1,9 @@
-| Lecture Number                             | Status             |
-| ------------------------------------------ | ------------------ |
-| Lecture 8 & 9: Reverse Engineering         | :warning:          |
-| Lecture 10: Windows Internal - DLLs- 2     | :warning:          |
-| Lecture 11: Windows Internal - Registry- 3 | :warning:          |
-| Lecture 12: IDA                            | :warning:          |
-| Lecture 13: Basic Dynamic Analysis         | :white_check_mark: |
+| Lecture Number                                      | Status             |
+| --------------------------------------------------- | ------------------ |
+| Lecture 8 & 9: Reverse Engineering                  | :warning:          |
+| Lecture 10 & 11: Windows Internal - DLLs & Registry | :warning:          |
+| Lecture 12: IDA                                     | :warning:          |
+| Lecture 13: Basic Dynamic Analysis                  | :white_check_mark: |
 
 <!--
 :x:
@@ -18,14 +17,16 @@
 - Understand the internal workings of a malware binary
 - Implement detection mechanism for a given sample
 - Cure needed
-- Tools
+- **Tools**
 	- Disassembler
 		- Convert machinecode -> asm file
 	- Decompiler
 		- Convert machinecode -> pseudo-code (HLL Type)
+	- Debugger
+		- Run machine code in a safe enviro to step through and observe program flow + registers state
 
 ## Understanding machine code
-- CPU specific code
+- **CPU specific code**
 	- Wide variety of CPUs, generically based on their own ISA's (Instruction-Set Architectures)
 		- x86-64
 		- amd
@@ -42,24 +43,99 @@
 | Compilation/ListingFile | Frontend parses source code after performing lexical analysis and converts it to an Intermediate Representation or Abstract Syntax Tree. Optimizer optimizes by deadcode elimination, loop optimization, register allocation, etc. Backend generates machinecode/bytecode | Compiler generated, Text file, IR of the code read by compiler frontend, Maps ASM code to the Machine code (1:1), Mapping to ASM->Source is (M:1) i.e. One line of source code can consist of multiple instructions |
 
 ## Execution Environments
-- Software Enviros
+- **Software Enviros**
 	- Any type of VM
 		- JVM, CLR that runs .NET, bytecodes
-- Hardware Execution in modern Processors
+- **Hardware Execution in modern Processors**
 	- Modern execution techniques such as spectre, NetBurst and microOps
 
 ## Assembly Language
 #### Operand Types + Addressing Mode
-- Immediate
+- **Immediate**
 	- Fixed values
-- Indirect
+- **Indirect**
 	- Essentially a pointer, refers to a memory location to fetch data from. Identify via use of \[ \]
-- Register
+- **Register**
 	- Common Sense
-- Implicit VS Explicit
+- **Implicit VS Explicit**
 	- Implicit
-		- No 
+		- No explicit operand/addresses required
+	- Explicit
+		- Common Sense
 
+#### Registers
+- **EAX**
+	- Accumulator
+- **EBX**
+	- Base Register, used for indexing/address calculations
+- **ECX**
+	- Counter, used by loops
+- **EDX**
+	- Used for Data I/O
+- **EIP**
+	- Instruction pointer, points to the address of the next instruction to fetch
+- **ESP**
+	- Stack pointer, points to top of stack
+- **EBP**
+	- Base pointer, points to the base address of the currently executing function
+- **ESI**
+	- Stack Index, points to starting address to fetch
+- **EDI**
+	- Data index, points to last address to fetch to
+- **Flags/Status**
+	- OF -> Overflow Flag
+	- DF -> Direction Flag
+	- IF -> Interrupt Flag
+	- TF -> Trap Flag(Single step mode)
+	- SF -> Signed Flag
+	- ZF -> Zero Flag
+	- AF -> Auxiliary Flag (Half-Carry)
+	- PF -> Parity Flag
+	- CF -> Carry Flag
+- **Debug**
+	- DR0 thru DR3
+		- Hold Breakpoint addresses
+	- Debug control is in bits of DR7
+
+#### Important x86 Instructions
+- **Stack**
+	- PUSH, POP, CALL, RETURN, ENTER, LEAVE
+- **Arithmetic**
+	- ADD, SUB, MUL, DIV, INC, DEC
+		- Sub modifies ZF and CF
+		- MUL is single op, multiples AX with op
+- **Logical**
+	- AND, OR, XOR, CMP, TEST, SHL, SHR
+		- AND, OR, and XOR Sets OF and CF to 0
+		- ZF, SF, PF modified according to result
+- **Control Flow**
+	- CALL, JMP, RET
+		- Unconditional^
+	- JZ, JO, JS, JC, JP.
+		- All have a NOT modifier version as well
+	- LOOPs
+- **Data movement**
+	- MOV, XCHG
+- **Address Loading**
+	- LEA
+		- Essentially use of indirect addressing
+- **String Manipulation**
+	- MOVS, SCAS, LODS
+	- Need to point ESI/EDI to the correct location first
+	- SCAS Modifies ZF if found
+- **Interrupt**
+	- INT
+		- Generate a software level interrupt
+
+## Disassembly Algo (Concept)
+- Step 1
+	- Identify Code segement
+		- Generally Code and Data segments are mixed
+			- Observe PE/ELF format to understand both segments
+			- These generally have mechanisms to identify code and entrypoint
+	-
+
+## Disassembly Algo (Linear sweep vs Recursive Descent)
 
 # Lecture 10: Windows Internal - DLLs- 2
 # Lecture 11: Windows Internal - Registry- 3
@@ -78,9 +154,9 @@
 - Dynamic analysis is also called **behavioral** **analysis**
 
 ## Steps
-- Clean Slate
+- **Clean Slate**
 	- Revert to a snapshot with no malware loaded
-- Start up monitoring tools. NOTE:: Run as Admin
+- **Start up monitoring tools.** NOTE:: Run as Admin
 	- Why?
 		- Expected interactions
 			- System
@@ -114,6 +190,6 @@
 			- Runs a server that returns a deadend page to any and all network traffic while generating a pcap file of all packets sent to the server
 			- Simulates the network environment essentially
 		- RegShot, Take a shot before running malware
-- Execute Malware for a set interval
-- Stop monitoring tools, take another RegShot
-- Analyze results from tools and compare RegShot shots
+- **Execute Malware for a set interval**
+- **Stop monitoring tools, take another RegShot**
+- **Analyze results from tools and compare RegShot shots**
