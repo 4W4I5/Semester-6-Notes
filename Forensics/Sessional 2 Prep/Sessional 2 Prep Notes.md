@@ -100,6 +100,13 @@
 	- Other GPT Header (Secondary)
 
 # Lecture 6 - MFT
+### Understanding Slack
+- Drive Slack
+	- Result of Windows allocating space in clusters. Leaves unused space from EOF active file to end of cluster
+	- Consists of RAM and File slack
+- Ram Slack
+	- 
+- File Slack
 
 
 # Lecture 7 - Registry
