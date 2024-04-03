@@ -46,7 +46,20 @@
 	- Type i.e 0x4 offset is set to 0xEEh if Protective MBR
 - **LBA 1**
 	- 0x00 -> 8Bytes Length, Signature, "EFI PART"
-	- 0x08 -> 4Bytes Length, 
+	- 0x08 -> 4Bytes Length, Revision Number
+	- 0x0C -> 4Bytes Length, Header Size in LE
+	- 0x10 -> 4Bytes Length, Header CRC
+	- 0x14 -> 4Bytes Length, Reserved, Set to 0
+	- 0x18 -> 8Bytes Length, Current LBA where Header is placed
+	- 0x20 -> 8Bytes Length, Backup LBA of other Header
+	- 0x28 -> 8Bytes Length, First Useable LBA for Partition
+	- 0x30 -> 8Bytes Length, Last Useable LBA for Partition
+	- 0x38 -> 16Bytes Length, Disk GUID
+	- 0x48 -> 8Bytes Length, Starting LBA of array of partition entries
+	- 0x50 -> 4Bytes Length, Starting LBA of array of partition entries
+	- 0x54 -> 4Bytes Length, Size of single partition entry
+	- 0x58 -> 4Bytes Length, CRC of partition entries
+	- 0x5C -> \* Bytes Length, Starting LBA of array of partition entries
 - **LBA 2**
 - **LBA 33**
 - **LBA 34**
