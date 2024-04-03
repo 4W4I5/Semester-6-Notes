@@ -81,4 +81,75 @@
 
 # Lecture 6 - MFT
 # Lecture 7 - Registry
+
+> [!WARNING]
+> Converted slides directly using GPT
+
+
+
 # Lecture 10 - Email Forensics
+
+> [!WARNING]
+> Converted slides directly using GPT
+
+#### Introduction
+- **Role of Email in Crimes:**
+  - Email serves as a primary mode of communication in various aspects of life, from personal to professional interactions.
+  - Given its pervasive use, it becomes crucial to delve into its role in criminal activities, as it often leaves traces of illicit behavior within communication records.
+
+#### Terminology
+- **Mail User Agent (MUA):**
+  - Also referred to as an email client, MUA is the software interface utilized by end-users to compose, send, receive, and manage emails.
+- **Mail Submission Agent (MSA):**
+  - MSA is responsible for accepting outgoing emails from users, preparing them for transmission, and then submitting them to the Mail Transfer Agent (MTA) for onward delivery.
+- **Mail Transfer Agent (MTA):**
+  - MTA is a software component that facilitates the transfer of electronic mail messages from one computer to another using a client-server application architecture.
+- **Mail Exchange (MX):**
+  - MX records designate the mail server responsible for receiving email on behalf of a domain name.
+- **Mail Delivery Agent (MDA):**
+  - MDA is tasked with delivering incoming email messages to the respective recipient's local mailbox.
+
+#### Email Delivery
+- **Corporate Mail vs. Web Mail:**
+  - Corporate email services provided by organizations to their employees entail certain risks, especially concerning data security and potential unauthorized data transfer.
+  - Web-based email services, like Yahoo or Gmail, pose even greater risks due to their accessibility and lack of stringent monitoring.
+- **Email Transaction Analysis:**
+  - While email transactions are not typically scrutinized in real-time, they play a significant role in forensic investigations, particularly when suspicions arise regarding illicit activities.
+
+#### How Email Works
+- **Mail Servers:**
+  - These servers act as intermediaries in the transmission of email messages, facilitating their routing from sender to recipient.
+- **SMTP Servers:**
+  - SMTP servers handle the outgoing email flow, processing messages and forwarding them to the intended recipients.
+- **POP3 and IMAP Servers:**
+  - POP3 and IMAP servers manage incoming email retrieval, with POP3 typically downloading messages to local storage and IMAP allowing access to messages stored on the server.
+
+#### Email Lifecycle
+- **Steps in Email Transmission:**
+  - The process encompasses composing the message, communication with SMTP servers, DNS resolution to locate recipient servers, routing between SMTP servers, recipient server processing, and final delivery to the recipient's inbox.
+
+#### Email Header Examination
+- **Header Information:**
+  - Email headers contain vital metadata such as IP addresses, sender and recipient details, timestamps, and protocol specifics.
+- **Key Header Fields:**
+  - These include From, Subject, Date, To, Return-Path, Delivery Date, Received, Message-ID, Mime-Version, Content-Type, DKIM-Signature, Domainkey-Signature, SPF, and DMARC.
+- **Verification Techniques:**
+  - Examining SPF, DKIM, DMARC fields, Return Paths, and Received fields aids in verifying the legitimacy of email communications.
+
+#### Email Examination Tools
+- **Data Recovery Tools:**
+  - Specialized software tools are available to facilitate the extraction and analysis of data from email servers and clients.
+- **Examples:**
+  - DataNumen, FINALeMAIL, MailXaminer, Paraben E-Mail Examiner, among others, offer functionalities tailored for email forensics purposes.
+
+#### Social Media Forensics
+- **Role in Investigations:**
+  - Social media platforms serve as significant repositories of digital evidence, providing insights into various aspects of individuals' activities, including criminal behavior.
+- **Challenges:**
+  - Jurisdictional complexities, legal constraints, and tool limitations pose challenges in conducting thorough social media forensic examinations.
+
+#### Mobile Devices and Social Media
+- **Evidence Artifacts:**
+  - The nature and availability of evidence artifacts vary across different social media channels and mobile device platforms.
+- **Tool Development:**
+  - While efforts are underway to develop specialized tools for social media forensics, the field currently faces limitations in terms of tool availability and legal considerations regarding the admissibility of obtained evidence in legal proceedings.
