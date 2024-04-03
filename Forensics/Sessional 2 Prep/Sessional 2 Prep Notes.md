@@ -37,8 +37,10 @@
 
 ## GPT Layout
 - **LBA 0**
-	- Protective MBR -> Legacy systems see that the disk has a MBR partition and therefore do not attempt to mount
+	- Protective MBR -> Legacy systems see that the disk has a MBR partition in use and therefore do not attempt to overwrite
+	- Type i.e 0x4 offset is set to 0xEEh if Protective MBR
 - **LBA 1**
+	-
 - **LBA 2**
 - **LBA 33**
 - **LBA 34**
