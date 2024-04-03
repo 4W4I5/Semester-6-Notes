@@ -32,7 +32,19 @@
 	- Storage Limit -> 8ZiB `2^64 * 512 = 9.44ZB`
 	- Redundancy -> Backup of GPT headers and partition tables in last sectors of a disk. Fetched when main information is corrupted
 	- Security -> CRC32 Checksum
-	- Primary Partitions -> 
+	- Primary Partitions -> No extended partitions. All partitions are main partitions. Max 128 allowed by windows.
+	- No hidden sectors -> First partition starts right after the partition table
+
+## GPT Layout
+- **LBA 0**
+	- Protective MBR -> Legacy systems see that the disk has a MBR partition and therefore do not attempt to mount
+- **LBA 1**
+- **LBA 2**
+- **LBA 33**
+- **LBA 34**
+- **LBA -34**
+- **LBA -2**
+- **LBA -1**
 
 # Lecture 6 - MFT
 # Lecture 7 - Registry
