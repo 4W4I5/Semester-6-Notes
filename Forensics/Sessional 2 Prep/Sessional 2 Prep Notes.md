@@ -62,6 +62,18 @@
 		- 0x58 -> 4Bytes Length, CRC of partition entries
 		- 0x5C -> \* Bytes Length, Starting LBA of array of partition entries
 - **LBA 2 to 33**
+	- Partition entries
+		- 0x00 -> 16Bytes Length, Partition Type GUID
+		- 0x10 -> 16Bytes Length, Unique Partition GUID
+		- 0x20 -> 8Bytes Length, First LBA in LE
+		- 0x28 -> 8Bytes Length, Last LBA
+		- 0x30 -> 8Bytes Length, Attribute Flags
+			- Bit 0 -> OEM Partition
+			- Bit 1 -> Ignore bit, DO NOT READ
+			- Bit 2 -> Legacy BIOS Bootable
+			- Bits 3-47 -> Reserved
+			- Bits 48-63 -> Used by partition
+		- 0x38 -> 72Bytes Length, Partition Name in unicode
 - **LBA 34**
 - **LBA -34**
 - **LBA -2**
