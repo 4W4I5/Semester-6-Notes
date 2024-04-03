@@ -56,12 +56,11 @@
 	- 0x30 -> 8Bytes Length, Last Useable LBA for Partition
 	- 0x38 -> 16Bytes Length, Disk GUID
 	- 0x48 -> 8Bytes Length, Starting LBA of array of partition entries
-	- 0x50 -> 4Bytes Length, Starting LBA of array of partition entries
+	- 0x50 -> 4Bytes Length, Number of partition entries
 	- 0x54 -> 4Bytes Length, Size of single partition entry
 	- 0x58 -> 4Bytes Length, CRC of partition entries
 	- 0x5C -> \* Bytes Length, Starting LBA of array of partition entries
-- **LBA 2**
-- **LBA 33**
+- **LBA 2 to 33**
 - **LBA 34**
 - **LBA -34**
 - **LBA -2**
