@@ -1,9 +1,9 @@
-| Lecture Title                | Status    |
-| ---------------------------- | --------- |
-| Lecture 5 - GPT              | :warning: |
-| Lecture 6 - MFT              | :warning: |
-| Lecture 7 - Registry         | :warning: |
-| Lecture 10 - Email Forensics | :warning:  |
+| Lecture Title                | Status             |
+| ---------------------------- | ------------------ |
+| Lecture 5 - GPT              | :white_check_mark: |
+| Lecture 6 - MFT              | :warning:          |
+| Lecture 7 - Registry         | :warning:          |
+| Lecture 10 - Email Forensics | :warning:          |
 <!--
 :x:
 :warning:
@@ -39,6 +39,23 @@
 			- Partition Gap (sizes range from 47KB to 1MB)
 			- Unused Sector 0, 1 + Unused partitions can be used to hide data
 			- Start sector. Size = 17KB
+
+### Comparison Table of MBR and GPT (Repeated data i know)
+
+| Feature                               | MBR     | GPT                       |
+| ------------------------------------- | ------- | ------------------------- |
+| Backup Partition Table                | No      | Yes                       |
+| Integrity Protection                  | No      | Yes                       |
+| \# of Primary Partitions              | 4       | 128                       |
+| Partition Gap                         | No      | Yes                       |
+| Max Size                              | 2TB     | 8ZiB                      |
+| Legacy Boot                           | Yes     | Need to enable UEFI       |
+| Tampering resistance                  | No      | One table can be tampered |
+| Hidden Sectors                        | Allowed | Not Allowed               |
+| MS Reserved?                          | No      | Yes                       |
+| Minimum Size                          | 3MB     | 128MB                     |
+| CHS Addressing?                       | Yes     | No                        |
+| Compatibility With Forensic software? | Yes     | Limited                   | 
 
 ## GPT Layout
 - **LBA 0**
@@ -85,6 +102,49 @@
 > [!WARNING]
 > Converted slides directly using GPT
 
+#### NTFS Features
+
+- **Encrypting File System (EFS):**
+  - **Introduction:**
+    - EFS was introduced with Windows 2000, providing a method for encrypting files, folders, or disk volumes.
+  - **Functionality:**
+    - EFS implements a public key and private key method for encryption.
+    - Users can apply EFS to files stored on local workstations or remote servers.
+    - A recovery certificate is generated and sent to the local Windows administrator account.
+  - **Recovery Key Agent:**
+    - This component implements the recovery certificate stored in the Windows administrator account.
+    - Windows administrators can recover keys through Windows or from a command prompt.
+  - **EFS Keys:**
+    - EFS utilizes the Data Decryption Field (DDF), which consists of the File Encryption Key (FEK) and File Encryption Key Information (FEKI).
+    - The FEK encrypts file data using the user's public key, while Feki stores information about FEK.
+    - When accessing an EFS-encrypted file, the OS retrieves the FEK and decrypts it using the user's private key.
+
+- **NTFS File Deletion:**
+  - When a file is deleted in Windows NT and later, the OS renames it and moves it to the Recycle Bin.
+
+- **Resilient File System (ReFS):**
+  - ReFS is designed to address large data storage needs, especially in cloud environments.
+  - Features include maximized data availability, improved integrity, and scalability.
+  - ReFS utilizes disk structures similar to the Master File Table (MFT) in NTFS.
+
+#### Windows Registry
+
+- **Registry Structure:**
+  - Key components of the Windows Registry structure include:
+    - HKEY_LOCAL_MACHINE (HKLM)
+    - HKEY_CURRENT_CONFIG (HKCC)
+    - HKEY_CLASSES_ROOT (HKCR)
+    - HKEY_CURRENT_USER (HKCU)
+    - HKEY_USERS (HKU)
+    - HKEY_PERFORMANCE_DATA (visible in NT-based Windows)
+    - HKEY_DYN_DATA (visible in Windows 9x/ME)
+
+- **BitLocker Encryption:**
+  - BitLocker encryption is available on various Windows versions, including Vista Enterprise/Ultimate, Windows 7/8/10 Professional/Enterprise, and Server 2008 and later.
+  - It requires specific hardware and software configurations, including TPM microchip, compliant BIOS, and NTFS partitions.
+
+- **Third-Party Disk Encryption Tools:**
+  - Examples of third-party disk encryption tools include Endpoint Encryption, Voltage SecureFile, and Jetico BestCrypt Volume Encryption.
 
 
 # Lecture 10 - Email Forensics
