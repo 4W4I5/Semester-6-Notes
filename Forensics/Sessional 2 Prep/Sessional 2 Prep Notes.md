@@ -29,7 +29,10 @@
 		- 4 Bytes LBA Starting address
 		- 4 Bytes LBA Size of partition
 - **GPT**
-	-
+	- Storage Limit -> 8ZiB `2^64 * 512 = 9.44ZB`
+	- Redundancy -> Backup of GPT headers and partition tables in last sectors of a disk. Fetched when main information is corrupted
+	- Security -> CRC32 Checksum
+	- Primary Partitions -> 
 
 # Lecture 6 - MFT
 # Lecture 7 - Registry
