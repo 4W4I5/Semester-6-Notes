@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
+                "file": "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
+                "file": "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
+                "file": "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md"
+                "file": "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md"
               }
             }
           },
@@ -173,6 +173,8 @@
   "active": "7767d3f4def2f372",
   "lastOpenFiles": [
     "README.md",
+    "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md",
+    "Forensics/Sessional 2 Prep",
     "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
     "Untitled.md",
     "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
@@ -214,9 +216,7 @@
     "InfoSec/Info_sec/Info sec/Info sec P19.png",
     "InfoSec/Info_sec/Info sec",
     "InfoSec/Info_sec",
-    "InfoSec/Info sec/Info sec",
     "Ethical Hacking/2_Ethical Hacking_31st_Jan, 2024.md",
-    "AI/1_AI 25th Jan, 2024.md",
-    "Algo/Exam Prep/Algo Finals Prep.md"
+    "AI/1_AI 25th Jan, 2024.md"
   ]
 }
