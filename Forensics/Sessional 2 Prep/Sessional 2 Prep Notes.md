@@ -21,8 +21,15 @@
 	- Limitations
 		- Max space 2TB
 		- Not tamper-proof
+	- Example partition that is 16 bytes long will have
+		- 1 Byte bootable flag
+		- 3 bytes for CHS Starting address
+		- 1 Byte for Filesystem
+		- 3 Bytes for CHS Ending address
+		- 4 Bytes LBA Starting address
+		- 4 Bytes LBA Size of partition
 - **GPT**
-	- 
+	-
 
 # Lecture 6 - MFT
 # Lecture 7 - Registry
