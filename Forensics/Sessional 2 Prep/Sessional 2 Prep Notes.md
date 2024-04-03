@@ -34,6 +34,11 @@
 	- Security -> CRC32 Checksum
 	- Primary Partitions -> No extended partitions. All partitions are main partitions. Max 128 allowed by windows.
 	- No hidden sectors -> First partition starts right after the partition table
+		- Data can still be hidden in
+			- MS reserved partition (sizes range from 32mb to 128mb)
+			- Partition Gap (sizes range from 47KB to 1MB)
+			- Unused Sector 0, 1 + Unused partitions can be used to hide data
+			- Start sector. Size = 17KB
 
 ## GPT Layout
 - **LBA 0**
