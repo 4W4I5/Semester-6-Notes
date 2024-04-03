@@ -4,6 +4,7 @@
 | Lecture 6 - MFT              | :warning:          |
 | Lecture 7 - Registry         | :warning:          |
 | Lecture 10 - Email Forensics | :warning:          |
+
 <!--
 :x:
 :warning:
@@ -13,7 +14,7 @@
 # Lecture 5 - GPT
 - Addresses Security and Storage requirements not met by MBR
 
-### Comparison of MBR and GPT
+## Comparison of MBR and GPT
 - **MBR**
 	- Resides in Sector 0
 	- 446(01 BE) bytes long bootcode
@@ -40,7 +41,7 @@
 			- Unused Sector 0, 1 + Unused partitions can be used to hide data
 			- Start sector. Size = 17KB
 
-### Comparison Table of MBR and GPT (Repeated data i know)
+## Comparison Table of MBR and GPT (Repeated data i know)
 
 | Feature                               | MBR     | GPT                       |
 | ------------------------------------- | ------- | ------------------------- |
@@ -55,7 +56,7 @@
 | MS Reserved?                          | No      | Yes                       |
 | Minimum Size                          | 3MB     | 128MB                     |
 | CHS Addressing?                       | Yes     | No                        |
-| Compatibility With Forensic software? | Yes     | Limited                   | 
+| Compatibility With Forensic software? | Yes     | Limited                   |
 
 ## GPT Layout
 - **LBA 0**
@@ -91,10 +92,12 @@
 			- Bits 3-47 -> Reserved
 			- Bits 48-63 -> Used by partition
 		- 0x38 -> 72Bytes Length, Partition Name in unicode
-- **LBA 34**
-- **LBA -34**
-- **LBA -2**
+- **LBA 34 to -34**
+	- Holds Partitions i.e the data
+- **LBA -33 to -2**
+	- Backup of Partition Entries
 - **LBA -1**
+	- Other GPT Header (Secondary)
 
 # Lecture 6 - MFT
 # Lecture 7 - Registry
@@ -102,7 +105,7 @@
 > [!WARNING]
 > Converted slides directly using GPT
 
-#### NTFS Features
+## NTFS Features
 
 - **Encrypting File System (EFS):**
   - **Introduction:**
@@ -118,16 +121,14 @@
     - EFS utilizes the Data Decryption Field (DDF), which consists of the File Encryption Key (FEK) and File Encryption Key Information (FEKI).
     - The FEK encrypts file data using the user's public key, while Feki stores information about FEK.
     - When accessing an EFS-encrypted file, the OS retrieves the FEK and decrypts it using the user's private key.
-
 - **NTFS File Deletion:**
   - When a file is deleted in Windows NT and later, the OS renames it and moves it to the Recycle Bin.
-
 - **Resilient File System (ReFS):**
   - ReFS is designed to address large data storage needs, especially in cloud environments.
   - Features include maximized data availability, improved integrity, and scalability.
   - ReFS utilizes disk structures similar to the Master File Table (MFT) in NTFS.
 
-#### Windows Registry
+## Windows Registry
 
 - **Registry Structure:**
   - Key components of the Windows Registry structure include:
@@ -138,11 +139,9 @@
     - HKEY_USERS (HKU)
     - HKEY_PERFORMANCE_DATA (visible in NT-based Windows)
     - HKEY_DYN_DATA (visible in Windows 9x/ME)
-
 - **BitLocker Encryption:**
   - BitLocker encryption is available on various Windows versions, including Vista Enterprise/Ultimate, Windows 7/8/10 Professional/Enterprise, and Server 2008 and later.
   - It requires specific hardware and software configurations, including TPM microchip, compliant BIOS, and NTFS partitions.
-
 - **Third-Party Disk Encryption Tools:**
   - Examples of third-party disk encryption tools include Endpoint Encryption, Voltage SecureFile, and Jetico BestCrypt Volume Encryption.
 
@@ -152,12 +151,12 @@
 > [!WARNING]
 > Converted slides directly using GPT
 
-#### Introduction
+## Introduction
 - **Role of Email in Crimes:**
   - Email serves as a primary mode of communication in various aspects of life, from personal to professional interactions.
   - Given its pervasive use, it becomes crucial to delve into its role in criminal activities, as it often leaves traces of illicit behavior within communication records.
 
-#### Terminology
+## Terminology
 - **Mail User Agent (MUA):**
   - Also referred to as an email client, MUA is the software interface utilized by end-users to compose, send, receive, and manage emails.
 - **Mail Submission Agent (MSA):**
@@ -169,14 +168,14 @@
 - **Mail Delivery Agent (MDA):**
   - MDA is tasked with delivering incoming email messages to the respective recipient's local mailbox.
 
-#### Email Delivery
+## Email Delivery
 - **Corporate Mail vs. Web Mail:**
   - Corporate email services provided by organizations to their employees entail certain risks, especially concerning data security and potential unauthorized data transfer.
   - Web-based email services, like Yahoo or Gmail, pose even greater risks due to their accessibility and lack of stringent monitoring.
 - **Email Transaction Analysis:**
   - While email transactions are not typically scrutinized in real-time, they play a significant role in forensic investigations, particularly when suspicions arise regarding illicit activities.
 
-#### How Email Works
+## How Email Works
 - **Mail Servers:**
   - These servers act as intermediaries in the transmission of email messages, facilitating their routing from sender to recipient.
 - **SMTP Servers:**
@@ -184,11 +183,11 @@
 - **POP3 and IMAP Servers:**
   - POP3 and IMAP servers manage incoming email retrieval, with POP3 typically downloading messages to local storage and IMAP allowing access to messages stored on the server.
 
-#### Email Lifecycle
+## Email Lifecycle
 - **Steps in Email Transmission:**
   - The process encompasses composing the message, communication with SMTP servers, DNS resolution to locate recipient servers, routing between SMTP servers, recipient server processing, and final delivery to the recipient's inbox.
 
-#### Email Header Examination
+## Email Header Examination
 - **Header Information:**
   - Email headers contain vital metadata such as IP addresses, sender and recipient details, timestamps, and protocol specifics.
 - **Key Header Fields:**
@@ -196,19 +195,19 @@
 - **Verification Techniques:**
   - Examining SPF, DKIM, DMARC fields, Return Paths, and Received fields aids in verifying the legitimacy of email communications.
 
-#### Email Examination Tools
+## Email Examination Tools
 - **Data Recovery Tools:**
   - Specialized software tools are available to facilitate the extraction and analysis of data from email servers and clients.
 - **Examples:**
   - DataNumen, FINALeMAIL, MailXaminer, Paraben E-Mail Examiner, among others, offer functionalities tailored for email forensics purposes.
 
-#### Social Media Forensics
+## Social Media Forensics
 - **Role in Investigations:**
   - Social media platforms serve as significant repositories of digital evidence, providing insights into various aspects of individuals' activities, including criminal behavior.
 - **Challenges:**
   - Jurisdictional complexities, legal constraints, and tool limitations pose challenges in conducting thorough social media forensic examinations.
 
-#### Mobile Devices and Social Media
+## Mobile Devices and Social Media
 - **Evidence Artifacts:**
   - The nature and availability of evidence artifacts vary across different social media channels and mobile device platforms.
 - **Tool Development:**
