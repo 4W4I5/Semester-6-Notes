@@ -100,6 +100,8 @@
 	- Other GPT Header (Secondary)
 
 # Lecture 6 - MFT
+
+
 # Lecture 7 - Registry
 
 > [!WARNING]
