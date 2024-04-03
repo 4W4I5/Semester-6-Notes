@@ -45,7 +45,8 @@
 	- Protective MBR -> Legacy systems see that the disk has a MBR partition in use and therefore do not attempt to overwrite
 	- Type i.e 0x4 offset is set to 0xEEh if Protective MBR
 - **LBA 1**
-	-
+	- 0x00 -> 8Bytes Length, Signature, "EFI PART"
+	- 0x08 -> 4Bytes Length, 
 - **LBA 2**
 - **LBA 33**
 - **LBA 34**
