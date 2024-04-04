@@ -1,7 +1,7 @@
 | Lecture Title                       | Status             |
 | ----------------------------------- | ------------------ |
 | Lecture 7 - Enumeration             | :white_check_mark: |
-| Lecture 9 - Vulnerability Analysis  | :warning:          | 
+| Lecture 9 - Vulnerability Analysis  | :warning:          |
 | Lecture 10, 11, 12 - System Hacking | :warning:          |
 | Lecture 14, 15 - Malware Threats    | :white_check_mark: |
 
@@ -200,6 +200,26 @@
 	- Configure host-based firewall/IDS
 	- Scan removeable media
 
-## Viruses & Worms
+## Viruses
+- Self replicating program, Execute on download, Can sleep and remain undetected by AV
+- Features
+	- Infect other files
+	- Alter files, Transformation, Corruption, Encryption, Self-replication
+- Types
+	- 
+### Virus Development lifecycle
+- **Creation**
+- **Design**
+- **Replication**
+- **Launch**
+- **Detection**
+- **Incorporation**
+- **Elimination**
 
+### Virus attack modes
+- **Infection**
+- **Attack**
+
+
+## Worms
 ## Malware Detection & Analysis
