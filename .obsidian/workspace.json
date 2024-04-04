@@ -85,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -170,14 +168,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8c6d55feab7a2f1f",
+  "active": "b8b68edca48e5359",
   "lastOpenFiles": [
+    "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md",
+    "Untitled.md",
     "README.md",
     "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
-    "Forensics/Sessional 2 Prep/Sessional 2 Prep Notes.md",
     "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
     "Forensics/Sessional 2 Prep",
-    "Untitled.md",
     "VARE/Sessional 2 Prep",
     "AI/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "Ethical Hacking/Sessional 1 Prep/Sessional 1 Prep Notes.md",

@@ -147,7 +147,26 @@
 
 
 #### How to read a MFT
--
+- Identify FILE (46 49 4C 45)
+- Offsets from start of FILE
+	- 0x14 -> Length of MFT Header. Should point to start of StandardInformation Attribute 0x10 (Generally it is at 0x38)
+	- StandardInformation Attribute 0x10
+		- 0x04 to 0x05 -> Length of attribute
+		- Timestamps at:
+			- 0x18 to 0x1F -> Last Creation Time Time/Date
+			- 0x20 to 0x27 -> Last Modified Time Time/Date
+			- 0x28 to 0x2F -> Last Accessed Time Time/Date
+			- 0x30 to 0x37 -> Last Updated Time/Date
+	- Filename Attribute 0x30
+		- 0x04 to 0x05 -> Length of attribute
+		- Timestamps at:
+			- 0x20 to 0x27 -> Last Creation Time Time/Date
+			- 0x28 to 0x2F  -> Last Modified Time Time/Date
+			- 0x30 to 0x37 -> Last Accessed Time Time/Date
+			- 0x38 to 0x3F -> Last Updated Time/Date
+		- 0x5A to Length of Attribute -> ShortFilename in Unicode (Should Notice ASCII with 00 gaps. For e.g. 'A' would be 41 00)
+	- Data Attribute 0x80
+		-  0x04 to 0x05 -> Length of attribute
 # Lecture 7 - Registry
 
 > [!WARNING]
