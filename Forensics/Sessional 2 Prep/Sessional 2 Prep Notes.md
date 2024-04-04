@@ -129,14 +129,25 @@
 	- First 15 records reserved for system files
 - All files are contained in 1KB records
 	- A record can be resident or non-resident
+- Files larger than 512 bytes are stored outside of the MFT
+	- It becomes nonresident and now contains data runs
 
-| Filename   | SystemFile | Record Pos | Description                                                                                |
-| ---------- | ---------- | ---------- | ------------------------------------------------------------------------------------------ |
-| \$\MFT     | MFT        | 0          | Base file record for each folder on NTFS                                                   |
-| \$\MFTMirr | MFT2       | 1          | First four records of MFT saved here, Used to restore MFT as well if a single sector fails |
-| \$\LogFile | LogFile    | 2           |                                                                                            |
+| Filename   | SystemFile            | Record Pos | Description                                                                                |
+| ---------- | --------------------- | ---------- | ------------------------------------------------------------------------------------------ |
+| \$\MFT     | MFT                   | 0          | Base file record for each folder on NTFS                                                   |
+| \$\MFTMirr | MFT2                  | 1          | First four records of MFT saved here, Used to restore MFT as well if a single sector fails |
+| \$\LogFile | LogFile               | 2          | Previous transactions are stored here for recovery after volume failure                    |
+| \$Volume   | Volume                | 3          | Label, version of volume is stored here                                                    |
+| \$AttrDef  | Attribute Definitions | 4          | Table listing attribute names, numbers and definitions                                     |
+| \$         | RootFilename Index    | 5          | Root folder on the volume                                                                  |
+| \$Bitmap   | Boot Sector           | 6          | Map of the partition shows which clusters are used/available                               |
+| \$Boot     | Boot Sector           | 7          | Additional code for bootstrapping, identifies partition as boot as well                    |
+| \$BadClus  | Bad Cluster file      | 8          | Bad clusters are noted here                                                                |
+| \$Secure   | Security File         | 9          | ACL maintained here                                                                        |
 
 
+#### How to read a MFT
+-
 # Lecture 7 - Registry
 
 > [!WARNING]
