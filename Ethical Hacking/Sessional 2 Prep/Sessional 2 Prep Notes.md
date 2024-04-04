@@ -30,15 +30,21 @@
 	- Auditing Services
 	- Applications
 	- DNS & SNMP info
-### How does enumeration work | Techniques of enumeration
+### Techniques of enumeration
 - Email/Business Cards
 	- Getting an email ID can reveal the username and the domain name of the target
 - Windows Groups
-	- 
+	- Interal domains and groups
 - Default Passwords
+	- Known default passwords or a policy stating a default password that needs to be changed
 - SNMP
+	- Extract usernames via the API
 - Brute Force AD
+	- Can enumerate throughout the AD to get users when "Logon Hours" is enabled
+	- Tells the attacker if a username exists or does not. Design flaw of AD.
 - DNS Zone transfers
+	- Used to replicate DNS Data across several DNS servers or backups. Successful Auth of a Zone transfer request dumps all IP and DNS of the server into an ascii file
+	- If proper auth is not setup, anyone can init a Zone Transfer and get all hosts within that domain. Can be performed using NSLOOKUP and DIG commands
 ### What can we learn from enumeration
 ### Technologies we can enumerate
 # Lecture 9 - Vulnerability Analysis
