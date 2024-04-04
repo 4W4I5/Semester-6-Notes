@@ -76,39 +76,39 @@
 - PsShutdown -> Shutdown/reboot a computer
 
 ### Enumeration Countermeasures
-| Protocol | Countermeasure                                                                                        |
-| -------- | ----------------------------------------------------------------------------------------------------- |
-| SNMP     | Remove the SNMP agent or turn off the SNMP service                                                    |
-|          | If shutting off SNMP is not an option, then change the default community string names                 |
-|          | Upgrade to SNMP3, which encrypts passwords and messages                                               |
-|          | Implement the Group Policy security option called "Additional restrictions for anonymous connections" | 
-|          | Point 5                                                                                               |
-|          | Point 6                                                                                               |
-| DNS      | Point 1                                                                                               |
-|          | Point 2                                                                                               |
-|          | Point 3                                                                                               |
-|          | Point 4                                                                                               |
-| SMTP     | Point 1                                                                                               |
-|          | Point 2                                                                                               |
-|          | Point 3                                                                                               |
-|          | Point 4                                                                                               |
-| LDAP     | Point 1                                                                                               |
-|          | Point 2                                                                                               |
-|          | Point 3                                                                                               |
-| SMB      | Point 1                                                                                               |
-|          | Point 2                                                                                               |
-|          | Point 3                                                                                               |
-|          | Point 4                                                                                               |
-| NFS      | Point 1                                                                                               |
-|          | Point 2                                                                                               |
-|          | Point 3                                                                                               |
-|          | Point 4                                                                                               |
-|          | Point 5                                                                                               |
-| FTP      | Point 1                                                                                               |
-|          | Point 2                                                                                               |
-|          | Point 3                                                                                               |
-|          | Point 4                                                                                               |
-|          | Point 5                                                                                               |
+| Protocol | Countermeasure                                                                                                          |
+| -------- | ----------------------------------------------------------------------------------------------------------------------- |
+| SNMP     | Remove the SNMP agent or turn off the SNMP service                                                                      |
+|          | If shutting off SNMP is not an option, then change the default community string names                                   |
+|          | Upgrade to SNMP3, which encrypts passwords and messages                                                                 |
+|          | Implement the Group Policy security option called "Additional restrictions for anonymous connections"                   |
+|          | Ensure that the access to null session pipes, null session shares, and IPSec filtering is restricted                    |
+|          | Do not misconfigure SNMP service with read-write authorization                                                          |
+| DNS      | Disable Zone-Transfers to untrusted hosts                                                                               |
+|          | Ensure that the private hosts and their IP addresses are not published in DNS zone files of public DNS servers          |
+|          | Use premium DNS registration services that hide sensitive information, such as host information (HINFO) from the public |
+|          | Use standard network admin contacts for DNS registrations to avoid social engineering attacks                           | 
+| SMTP     | Point 1                                                                                                                 |
+|          | Point 2                                                                                                                 |
+|          | Point 3                                                                                                                 |
+|          | Point 4                                                                                                                 |
+| LDAP     | Point 1                                                                                                                 |
+|          | Point 2                                                                                                                 |
+|          | Point 3                                                                                                                 |
+| SMB      | Point 1                                                                                                                 |
+|          | Point 2                                                                                                                 |
+|          | Point 3                                                                                                                 |
+|          | Point 4                                                                                                                 |
+| NFS      | Point 1                                                                                                                 |
+|          | Point 2                                                                                                                 |
+|          | Point 3                                                                                                                 |
+|          | Point 4                                                                                                                 |
+|          | Point 5                                                                                                                 |
+| FTP      | Point 1                                                                                                                 |
+|          | Point 2                                                                                                                 |
+|          | Point 3                                                                                                                 |
+|          | Point 4                                                                                                                 |
+|          | Point 5                                                                                                                 |
 
 ### !What can we learn from enumeration
 ### !Technologies we can enumerate
