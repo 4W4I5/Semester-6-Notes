@@ -37,6 +37,7 @@
 	- Interal domains and groups
 - Default Passwords
 	- Known default passwords or a policy stating a default password that needs to be changed
+		- Use art of misdirection here
 - SNMP
 	- Extract usernames via the API
 - Brute Force AD
@@ -45,6 +46,8 @@
 - DNS Zone transfers
 	- Used to replicate DNS Data across several DNS servers or backups. Successful Auth of a Zone transfer request dumps all IP and DNS of the server into an ascii file
 	- If proper auth is not setup, anyone can init a Zone Transfer and get all hosts within that domain. Can be performed using NSLOOKUP and DIG commands
+- WindowsSysInternals
+	- Shows who has what access to directories, files and registry keys
 
 ### Services and ports to Enumerate
 - TCP/UDP 53 -> DNS Zone Transfer
@@ -60,8 +63,55 @@
 - TCP 22 -> SSH
 - UDP 161 -> SNMP
 
-### What can we learn from enumeration
-### Technologies we can enumerate
+### Microsoft tools to enumerate with (PsTools Suite)
+- PsExec -> Executes processes remotely
+- PsFile -> Shows files opened remotely
+- PsGetSID -> Displays the SID of a computer/user
+- PsKill -> Kills processes by name/process ID
+- PsInfo -> List info about a system
+- PsList -> Lists detailed info on processes
+- PsLoggedOn -> Shows who is logged on locally/via resource sharing
+- PsLogList -> Dumps event log records
+- PsPasswd -> Change account password
+- PsShutdown -> Shutdown/reboot a computer
+
+### Enumeration Countermeasures
+| Protocol | Countermeasure |
+| -------- | -------------- |
+| SNMP     | Point 1        |
+|          | Point 2        |
+|          | Point 3        |
+|          | Point 4        |
+|          | Point 5        |
+|          | Point 6        |
+| DNS      | Point 1        |
+|          | Point 2        |
+|          | Point 3        |
+|          | Point 4        |
+| SMTP     | Point 1        |
+|          | Point 2        |
+|          | Point 3        |
+|          | Point 4        |
+| LDAP     | Point 1        |
+|          | Point 2        |
+|          | Point 3        |
+| SMB      | Point 1        |
+|          | Point 2        |
+|          | Point 3        |
+|          | Point 4        |
+| NFS      | Point 1        |
+|          | Point 2        |
+|          | Point 3        |
+|          | Point 4        |
+|          | Point 5        |
+| FTP      | Point 1        |
+|          | Point 2        |
+|          | Point 3        |
+|          | Point 4        |
+|          | Point 5        |
+
+### !What can we learn from enumeration
+### !Technologies we can enumerate
 # Lecture 9 - Vulnerability Analysis
 # Lecture 10 - System Hacking Pt1
 # Lecture 11 - System Hacking Pt2
