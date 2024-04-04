@@ -1,9 +1,9 @@
 | Lecture Title                       | Status             |
 | ----------------------------------- | ------------------ |
 | Lecture 7 - Enumeration             | :white_check_mark: |
-| Lecture 9 - Vulnerability Analysis  | :warning:          |
+| Lecture 9 - Vulnerability Analysis  | :warning:          | 
 | Lecture 10, 11, 12 - System Hacking | :warning:          |
-| Lecture 14, 15 - Malware Threats    | :warning:          |
+| Lecture 14, 15 - Malware Threats    | :white_check_mark: |
 
 <!--
 :x:
