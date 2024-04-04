@@ -172,6 +172,8 @@
 	- Data Attribute 0x80
 		- 0x04 to 0x05 -> Length of attribute
 		- 0x08 -> Resident/Non-Resident Flag set to 1 or 0 respectively
+			- Understanding DataRuns
+				- For `0x32`, 3 means
 			- If resident
 				- 0x10 -> Length of Resident Data run
 				- 0x18 -> Start of Data run
