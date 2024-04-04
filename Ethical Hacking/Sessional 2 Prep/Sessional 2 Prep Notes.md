@@ -130,7 +130,11 @@
 ### !What can we learn from enumeration
 ### !Technologies we can enumerate
 # Lecture 9 - Vulnerability Analysis
-
+### Concept
+### Types of VA
+### VA Lifecycle
+### Best practices and VA Scoring
+### Vuln scanning tools
 # Lecture 10 - System Hacking Pt1
 # Lecture 11 - System Hacking Pt2
 # Lecture 12 - System Hacking Pt3
