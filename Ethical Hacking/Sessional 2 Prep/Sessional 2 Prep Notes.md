@@ -53,16 +53,32 @@
 - TCP/UDP 53 -> DNS Zone Transfer
 	- Normal request is sent over UDP. Request URL can exceed 512 octets, if so then server responds with invalid URL. Server requests for TCP. Failsafe
 - TCP/UDP 135 -> RPC Endpoint Mapper
+	- Authn not required, multiple attacks can be launched
 - TCP/UDP 389 -> LDAP
+	- Exploit misconfig for username enumeration
+	- Global Catalog server -> Distributed data storage stored in DC that is searchable for data stored in all DS of an AD DS network
 - TCP/UDP 445 -> SMB over TCP
-- TCP/UDP 162 -> SNMP Trap
-- UDP 137 -> NetBIOS name service
-- TCP 25 -> SMTP
-	- VRFY: Confirm name of valid user
-	- EXPN: Reveal actual address of user aliases and mailing list
-- UDP 500 -> ISAKMP
-- TCP 22 -> SSH
 - UDP 161 -> SNMP
+	- Send request
+	- Network managment
+- TCP/UDP 162 -> SNMP Trap
+	- Receive Response for 161 Request
+	- Used for sending System Uptime notifications/optional variables such as time sync
+- UDP 137 -> NetBIOS name service
+	- Name resolution for local computers on the same net
+- TCP 139 -> SMB over NetBIOS
+	- Used by printers, used for file transfer
+	- Used for NULL session enumeration
+- TCP 25 -> SMTP
+	- Commands can be exploited
+		- VRFY: Confirm name of valid user
+		- EXPN: Reveal actual address of user aliases and mailing list
+- UDP 500 -> ISAKMP
+	- Used by IPsec for negotiating crypto keys
+- TCP 22 -> SSH
+	-
+- TCP 2049 -> NFS
+	- Used for File sharing, can be exploited for remote access + privileged access
 
 ### Microsoft tools to enumerate with (PsTools Suite)
 - PsExec -> Executes processes remotely
