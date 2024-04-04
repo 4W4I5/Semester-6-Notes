@@ -206,20 +206,49 @@
 	- Infect other files
 	- Alter files, Transformation, Corruption, Encryption, Self-replication
 - Types
-	- 
-### Virus Development lifecycle
-- **Creation**
-- **Design**
-- **Replication**
-- **Launch**
-- **Detection**
-- **Incorporation**
-- **Elimination**
+	- Ransomware
+	- System/Boot sector
+	- File/Multipartite
+	- Macro
+	- Cluster
+	- Stealth/Tunneling
+	- Logic Bombs
+	- Encryption
+### Virus/Anti-Virus Development lifecycle
+- **Design** -> Use construction kits or DIY
+- **Replication** -> Virus replicates for a set period of time, usually short and done before spreading to other files
+- **Launch** -> File clicked on, interacted with in some way to trigger virus execution
+- **Detection** -> Behavioral analysis to observe signatures and IOCs
+- **Incorporation** -> Update sig database/create method to detect and then include the new virus, update AV to load new database/methods
+- **Elimination** -> AV takes appropriate action
+
+#### Virus Development Example
+- Create a folder with BAT and TXT file
+- Add code to TXT file
+- Save as .BAT
+- Convert to executable using BAT2COM or BAT2EXE
+- Now it will execute on click
 
 ### Virus attack modes
 - **Infection**
 - **Attack**
 
-
 ## Worms
-## Malware Detection & Analysis
+- Need a trigger to be executed
+- Self-replicate over the network instead of local PC
+	- Uses File transport protocols
+
+## Virus Detection & Analysis
+- **Scanning** -> Scan suspected file for signatures
+- **Detection** -> Check entire disk for integrity via checksum
+- **Interception** -> Behavioral analysis within the system, virus tends to access and create files for self-replication so such behavior should be flagged. NOTE:: ONLY A WARNING IS GIVEN. NO ACTION TAKEN.
+- **Code Emulation & Heuristic Analysis aka SheepDipping** -> Kind of same as interception but run it in a dynamic analysis environment to gather and store IOCs for sig analysis in file header or behaviors
+
+### Goals of analysis
+- Understand threat severity
+- Classify malware
+- Scope the attack
+- Build defenses
+- Find root cause
+- Build IR Actions
+- Add sig to AV or develop custom anti-malware
