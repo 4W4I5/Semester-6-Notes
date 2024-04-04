@@ -51,6 +51,7 @@
 
 ### Services and ports to Enumerate
 - TCP/UDP 53 -> DNS Zone Transfer
+	- Normal request is sent over UDP. Request URL can exceed 512 octets, if so then server responds with invalid URL. Server requests for TCP. Failsafe
 - TCP/UDP 135 -> RPC Endpoint Mapper
 - TCP/UDP 389 -> LDAP
 - TCP/UDP 445 -> SMB over TCP
