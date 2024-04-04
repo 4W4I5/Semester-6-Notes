@@ -109,6 +109,32 @@
 		- For last sector the OS includes random data from the ram to fill the slack
 		- Now its just 0's
 
+### Files in FAT
+- Starting Cluster position assigned to file
+	- First sector written here
+- Next available cluster used when first is filled
+	- If not contiguous, then file becomes fragmented
+- Deletions
+	- First letter of filename is replaced with 0xE5
+		- For both RecycleBin and PermaDelete
+	- File space used now becomes unallocated and is overwritable
+
+### NTFS
+- Journaling FS
+- PBS (Partition Boot Sector) is set first and then the MFT (Master File Table)
+- Use of Unicode as well as Smaller cluster sizes for small disk drives
+
+#### MFT
+- Contains info on all files on disk, essentially a metadata file
+	- First 15 records reserved for system files
+- All files are contained in 1KB records
+	- A record can be resident or non-resident
+
+| Filename   | SystemFile | Record Pos | Description                                                                                |
+| ---------- | ---------- | ---------- | ------------------------------------------------------------------------------------------ |
+| \$\MFT     | MFT        | 0          | Base file record for each folder on NTFS                                                   |
+| \$\MFTMirr | MFT2       | 1          | First four records of MFT saved here, Used to restore MFT as well if a single sector fails |
+| \$\LogFile | LogFile    | 2           |                                                                                            |
 
 
 # Lecture 7 - Registry
