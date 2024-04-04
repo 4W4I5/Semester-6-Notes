@@ -1,12 +1,10 @@
-| Lecture Title                      | Status             |
-| ---------------------------------- | ------------------ |
-| Lecture 7 - Enumeration            | :white_check_mark: |
-| Lecture 9 - Vulnerability Analysis | :warning:          |
-| Lecture 10 - System Hacking Pt1    | :warning:          |
-| Lecture 11 - System Hacking Pt2    | :warning:          |
-| Lecture 12 - System Hacking Pt3    | :warning:          |
-| Lecture 14 - Malware Threats Pt1   | :warning:          |
-| Lecture 15 - Malware Threats Pt2   | :warning:          |
+| Lecture Title                       | Status             |
+| ----------------------------------- | ------------------ |
+| Lecture 7 - Enumeration             | :white_check_mark: |
+| Lecture 9 - Vulnerability Analysis  | :warning:          |
+| Lecture 10, 11, 12 - System Hacking | :warning:          |
+| Lecture 14, 15 - Malware Threats    | :warning:          |
+
 <!--
 :x:
 :warning:
@@ -15,7 +13,7 @@
 
 
 # Lecture 7 - Enumeration
-### What is Enumeration
+## What is Enumeration
 - Internally Conducted, attacker/scanner has to be part of the network i.e. the environment is an intranet.
 	- Discover hosts and services available on the network
 	- Create NULL Sessions where a connection is established but not authenticated to extract info. For example, SV scans from nmap to get OS info
@@ -30,7 +28,7 @@
 	- Auditing Services
 	- Applications
 	- DNS & SNMP info
-### Techniques of enumeration
+## Techniques of enumeration
 - Email/Business Cards
 	- Getting an email ID can reveal the username and the domain name of the target
 - Windows Groups
@@ -49,7 +47,7 @@
 - WindowsSysInternals
 	- Shows who has what access to directories, files and registry keys
 
-### Services and ports to Enumerate
+## Services and ports to Enumerate
 - TCP/UDP 53 -> DNS Zone Transfer
 	- Normal request is sent over UDP. Request URL can exceed 512 octets, if so then server responds with invalid URL. Server requests for TCP. Failsafe
 - TCP/UDP 135 -> RPC Endpoint Mapper
@@ -81,7 +79,7 @@
 - TCP 2049 -> NFS
 	- Used for File sharing, can be exploited for remote access + privileged access
 
-### Microsoft tools to enumerate with (PsTools Suite)
+## Microsoft tools to enumerate with (PsTools Suite)
 - PsExec -> Executes processes remotely
 - PsFile -> Shows files opened remotely
 - PsGetSID -> Displays the SID of a computer/user
@@ -93,7 +91,8 @@
 - PsPasswd -> Change account password
 - PsShutdown -> Shutdown/reboot a computer
 
-### Enumeration Countermeasures
+## Enumeration Countermeasures
+
 | Protocol | Countermeasure                                                                                                                       |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | SNMP     | Remove the SNMP agent or turn off the SNMP service                                                                                   |
@@ -127,16 +126,19 @@
 | \*       | Disable anonymous FTP accounts; if not feasible, regularly monitor anonymous FTP accounts                                            |
 | \*       | Restrict access by IP or domain name to the FTP server                                                                               |
 
-### !What can we learn from enumeration
-### !Technologies we can enumerate
 # Lecture 9 - Vulnerability Analysis
-### Concept
-### Types of VA
-### VA Lifecycle
-### Best practices and VA Scoring
-### Vuln scanning tools
-# Lecture 10 - System Hacking Pt1
-# Lecture 11 - System Hacking Pt2
-# Lecture 12 - System Hacking Pt3
-# Lecture 14 - Malware Threats Pt1
-# Lecture 15 - Malware Threats Pt2
+## Concept
+## Types of VA
+## VA Lifecycle
+## Best practices and VA Scoring
+## Vuln scanning tools
+# Lecture 10, 11, 12 - System Hacking
+### Goals
+## Password Cracking
+## Priv escalation
+
+# Lecture 14, 15 - Malware Threats
+### Malware
+- 
+## Trojans
+## Viruses & Worms
