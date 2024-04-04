@@ -284,7 +284,33 @@
     - These include From, Subject, Date, To, Return-Path, Delivery Date, Received, Message-ID, Mime-Version, Content-Type, DKIM-Signature, Domainkey-Signature, SPF, and DMARC.
 - **Verification Techniques:**
     - Examining SPF, DKIM, DMARC fields, Return Paths, and Received fields aids in verifying the legitimacy of email communications.
-### My own stuff
+### EMAIL Header MY OWN
+- Header fields
+	- From
+	- Subject
+	- Date
+	- To
+	- Return-Path
+		- Return address for an email same as reply-to
+	- Delivery Date
+	- Recieved
+	- message id
+	- mime-vesrion
+	- content-type
+		- HTML or pt
+	- DKIM sig
+	- SPF framework
+
+### SPF vs DKIM
+| Feature            | SPF                                                                       | DKIM                                                           |
+| ------------------ | ------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Purpose            | Adds allowed IP to the domain                                             | Sender signs with a sig, verified by domain owner              |
+| Working            |                                                                           | DO generates a PKI pair, Public key in DNS, Signs with Private |
+| Verfication        | Server checks SPF record in DNS to confirm mail is from authorized server | Use PKI                                                        |
+| Protection Against | Email spoofing, verifies source IP addr                                   | Ensures tampering via integrity and                            |
+| DNS Record type    | txt record spf string                                                     | txt record containing public key                               |
+| Email modification | Does not affect email contents, only protects the enevlope                | Protects against modification                                  |
+| Limitation         | Hard to setup, DNS lookup failure likely                                  | Does not prevent spam                                          |
 
 ## Email Examination Tools
 - **Data Recovery Tools:**
