@@ -284,6 +284,7 @@
     - These include From, Subject, Date, To, Return-Path, Delivery Date, Received, Message-ID, Mime-Version, Content-Type, DKIM-Signature, Domainkey-Signature, SPF, and DMARC.
 - **Verification Techniques:**
     - Examining SPF, DKIM, DMARC fields, Return Paths, and Received fields aids in verifying the legitimacy of email communications.
+### My own stuff
 
 ## Email Examination Tools
 - **Data Recovery Tools:**
