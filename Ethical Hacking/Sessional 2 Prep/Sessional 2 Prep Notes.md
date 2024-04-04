@@ -45,6 +45,21 @@
 - DNS Zone transfers
 	- Used to replicate DNS Data across several DNS servers or backups. Successful Auth of a Zone transfer request dumps all IP and DNS of the server into an ascii file
 	- If proper auth is not setup, anyone can init a Zone Transfer and get all hosts within that domain. Can be performed using NSLOOKUP and DIG commands
+
+### Services and ports to Enumerate
+- TCP/UDP 53 -> DNS Zone Transfer
+- TCP/UDP 135 -> RPC Endpoint Mapper
+- TCP/UDP 389 -> LDAP
+- TCP/UDP 445 -> SMB over TCP
+- TCP/UDP 162 -> SNMP Trap
+- UDP 137 -> NetBIOS name service
+- TCP 25 -> SMTP
+	- VRFY: Confirm name of valid user
+	- EXPN: Reveal actual address of user aliases and mailing list
+- UDP 500 -> ISAKMP
+- TCP 22 -> SSH
+- UDP 161 -> SNMP
+
 ### What can we learn from enumeration
 ### Technologies we can enumerate
 # Lecture 9 - Vulnerability Analysis
