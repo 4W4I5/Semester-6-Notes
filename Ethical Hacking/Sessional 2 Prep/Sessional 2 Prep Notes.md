@@ -76,42 +76,43 @@
 - PsShutdown -> Shutdown/reboot a computer
 
 ### Enumeration Countermeasures
-| Protocol | Countermeasure                                                                                                          |
-| -------- | ----------------------------------------------------------------------------------------------------------------------- |
-| SNMP     | Remove the SNMP agent or turn off the SNMP service                                                                      |
-|          | If shutting off SNMP is not an option, then change the default community string names                                   |
-|          | Upgrade to SNMP3, which encrypts passwords and messages                                                                 |
-|          | Implement the Group Policy security option called "Additional restrictions for anonymous connections"                   |
-|          | Ensure that the access to null session pipes, null session shares, and IPSec filtering is restricted                    |
-|          | Do not misconfigure SNMP service with read-write authorization                                                          |
-| DNS      | Disable Zone-Transfers to untrusted hosts                                                                               |
-|          | Ensure that the private hosts and their IP addresses are not published in DNS zone files of public DNS servers          |
-|          | Use premium DNS registration services that hide sensitive information, such as host information (HINFO) from the public |
-|          | Use standard network admin contacts for DNS registrations to avoid social engineering attacks                           |
-| SMTP     | Ignore email messages to unknown recipients                                                                             |
-|          | Exclude sensitive mail server and local host information in mail responses                                              |
-|          | Disable open relay feature                                                                                              |
-|          | Limit the number of accepted connections from a source to prevent brute-force attacks                                   |
-| LDAP     | By default, LDAP traffic is transmitted unsecured; use SSL or STARTTLS technology to encrypt the traffic                |
-|          | Select a username different from your email address and enable account lockout                                          |
-|          | Use NTLM or any basic authentication mechanism to limit access to legitimate users only                                 |
-| SMB      | Disable SMB protocol on Web, DNS and any Internet-Facing Servers                                                        |
-|          | Disable ports TCP 139 and TCP 445 used by the SMB protocol                                                              |
-|          | Restrict anonymous access through RestrictNullSessAccess parameter from the Windows Registry                            | 
-| NFS      | Point 1                                                                                                                 |
-|          | Point 2                                                                                                                 |
-|          | Point 3                                                                                                                 |
-|          | Point 4                                                                                                                 |
-|          | Point 5                                                                                                                 |
-| FTP      | Point 1                                                                                                                 |
-|          | Point 2                                                                                                                 |
-|          | Point 3                                                                                                                 |
-|          | Point 4                                                                                                                 |
-|          | Point 5                                                                                                                 |
+| Protocol | Countermeasure                                                                                                                       |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| SNMP     | Remove the SNMP agent or turn off the SNMP service                                                                                   |
+|          | If shutting off SNMP is not an option, then change the default community string names                                                |
+|          | Upgrade to SNMP3, which encrypts passwords and messages                                                                              |
+|          | Implement the Group Policy security option called "Additional restrictions for anonymous connections"                                |
+|          | Ensure that the access to null session pipes, null session shares, and IPSec filtering is restricted                                 |
+|          | Do not misconfigure SNMP service with read-write authorization                                                                       |
+| DNS      | Disable Zone-Transfers to untrusted hosts                                                                                            |
+|          | Ensure that the private hosts and their IP addresses are not published in DNS zone files of public DNS servers                       |
+|          | Use premium DNS registration services that hide sensitive information, such as host information (HINFO) from the public              |
+|          | Use standard network admin contacts for DNS registrations to avoid social engineering attacks                                        |
+| SMTP     | Ignore email messages to unknown recipients                                                                                          |
+|          | Exclude sensitive mail server and local host information in mail responses                                                           |
+|          | Disable open relay feature                                                                                                           |
+|          | Limit the number of accepted connections from a source to prevent brute-force attacks                                                |
+| LDAP     | By default, LDAP traffic is transmitted unsecured; use SSL or STARTTLS technology to encrypt the traffic                             |
+|          | Select a username different from your email address and enable account lockout                                                       |
+|          | Use NTLM or any basic authentication mechanism to limit access to legitimate users only                                              |
+| SMB      | Disable SMB protocol on Web, DNS and any Internet-Facing Servers                                                                     |
+|          | Disable ports TCP 139 and TCP 445 used by the SMB protocol                                                                           |
+|          | Restrict anonymous access through RestrictNullSessAccess parameter from the Windows Registry                                         |
+| NFS      | Implement proper permissions (read/write must be restricted to specific users) on exported file systems                              |
+|          | Implement firewall rules to block NFS port 2049                                                                                      |
+|          | Ensure proper configuration of files, such as /etc/smb.conf, /etc/exports and ete/hosts.allow, to protect the data stored in servers |
+|          | Log requests to access system files on the NFS server                                                                                |
+|          | Keep the root_squash option in /etc/exports file turned ON, so that no requests made as root on the client are trusted               |
+| FTP      | Implement secure FTP (SFTP, which uses SSH) or FTP secure (FTPS, which uses SSL) to encrypt the FTP traffic over the network         |
+|          | Implement strong passwords or a certification-based authentication policy                                                            |
+|          | Ensure that unrestricted uploading of files on the FTP server is not allowed                                                         |
+|          | Disable anonymous FTP accounts; if not feasible, regularly monitor anonymous FTP accounts                                            |
+|          | Restrict access by IP or domain name to the FTP server                                                                               |
 
 ### !What can we learn from enumeration
 ### !Technologies we can enumerate
 # Lecture 9 - Vulnerability Analysis
+
 # Lecture 10 - System Hacking Pt1
 # Lecture 11 - System Hacking Pt2
 # Lecture 12 - System Hacking Pt3
