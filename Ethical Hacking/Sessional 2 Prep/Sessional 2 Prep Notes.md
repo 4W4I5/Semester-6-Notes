@@ -1,12 +1,12 @@
-| Lecture Title                      | Status    |
-| ---------------------------------- | --------- |
-| Lecture 7 - Enumeration            | :warning: |
-| Lecture 9 - Vulnerability Analysis | :warning: |
-| Lecture 10 - System Hacking Pt1    | :warning: |
-| Lecture 11 - System Hacking Pt2    | :warning: |
-| Lecture 12 - System Hacking Pt3    | :warning: |
-| Lecture 14 - Malware Threats Pt1   | :warning: |
-| Lecture 15 - Malware Threats Pt2   | :warning: |
+| Lecture Title                      | Status             |
+| ---------------------------------- | ------------------ |
+| Lecture 7 - Enumeration            | :white_check_mark: | 
+| Lecture 9 - Vulnerability Analysis | :warning:          |
+| Lecture 10 - System Hacking Pt1    | :warning:          |
+| Lecture 11 - System Hacking Pt2    | :warning:          |
+| Lecture 12 - System Hacking Pt3    | :warning:          |
+| Lecture 14 - Malware Threats Pt1   | :warning:          |
+| Lecture 15 - Malware Threats Pt2   | :warning:          |
 <!--
 :x:
 :warning:
@@ -87,7 +87,7 @@
 | DNS      | Disable Zone-Transfers to untrusted hosts                                                                               |
 |          | Ensure that the private hosts and their IP addresses are not published in DNS zone files of public DNS servers          |
 |          | Use premium DNS registration services that hide sensitive information, such as host information (HINFO) from the public |
-|          | Use standard network admin contacts for DNS registrations to avoid social engineering attacks                           | 
+|          | Use standard network admin contacts for DNS registrations to avoid social engineering attacks                           |
 | SMTP     | Point 1                                                                                                                 |
 |          | Point 2                                                                                                                 |
 |          | Point 3                                                                                                                 |
