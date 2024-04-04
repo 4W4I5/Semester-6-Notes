@@ -1,6 +1,6 @@
 | Lecture Title                      | Status             |
 | ---------------------------------- | ------------------ |
-| Lecture 7 - Enumeration            | :white_check_mark: | 
+| Lecture 7 - Enumeration            | :white_check_mark: |
 | Lecture 9 - Vulnerability Analysis | :warning:          |
 | Lecture 10 - System Hacking Pt1    | :warning:          |
 | Lecture 11 - System Hacking Pt2    | :warning:          |
@@ -88,17 +88,16 @@
 |          | Ensure that the private hosts and their IP addresses are not published in DNS zone files of public DNS servers          |
 |          | Use premium DNS registration services that hide sensitive information, such as host information (HINFO) from the public |
 |          | Use standard network admin contacts for DNS registrations to avoid social engineering attacks                           |
-| SMTP     | Point 1                                                                                                                 |
-|          | Point 2                                                                                                                 |
-|          | Point 3                                                                                                                 |
-|          | Point 4                                                                                                                 |
-| LDAP     | Point 1                                                                                                                 |
-|          | Point 2                                                                                                                 |
-|          | Point 3                                                                                                                 |
-| SMB      | Point 1                                                                                                                 |
-|          | Point 2                                                                                                                 |
-|          | Point 3                                                                                                                 |
-|          | Point 4                                                                                                                 |
+| SMTP     | Ignore email messages to unknown recipients                                                                             |
+|          | Exclude sensitive mail server and local host information in mail responses                                              |
+|          | Disable open relay feature                                                                                              |
+|          | Limit the number of accepted connections from a source to prevent brute-force attacks                                   |
+| LDAP     | By default, LDAP traffic is transmitted unsecured; use SSL or STARTTLS technology to encrypt the traffic                |
+|          | Select a username different from your email address and enable account lockout                                          |
+|          | Use NTLM or any basic authentication mechanism to limit access to legitimate users only                                 |
+| SMB      | Disable SMB protocol on Web, DNS and any Internet-Facing Servers                                                        |
+|          | Disable ports TCP 139 and TCP 445 used by the SMB protocol                                                              |
+|          | Restrict anonymous access through RestrictNullSessAccess parameter from the Windows Registry                            | 
 | NFS      | Point 1                                                                                                                 |
 |          | Point 2                                                                                                                 |
 |          | Point 3                                                                                                                 |
