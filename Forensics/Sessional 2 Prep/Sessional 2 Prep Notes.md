@@ -300,6 +300,13 @@
 		- HTML or pt
 	- DKIM sig
 	- SPF framework
+	- ARC (Authenticated Received Chain)
+		- ARC Auth results header
+			- SPF, DKIM, DMARC
+		- ARC sig
+			- DKIM like sig, snapshot of message header
+		- ARC Seal
+			- another DKIM like sig that includes the arc sig and arc auth results
 
 ### SPF vs DKIM
 | Feature            | SPF                                                                       | DKIM                                                           |
