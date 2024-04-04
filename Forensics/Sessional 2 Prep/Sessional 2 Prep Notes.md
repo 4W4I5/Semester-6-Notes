@@ -1,7 +1,7 @@
 | Lecture Title                | Status             |
 | ---------------------------- | ------------------ |
 | Lecture 5 - GPT              | :white_check_mark: |
-| Lecture 6 - MFT              | :warning:          |
+| Lecture 6 - MFT              | :white_check_mark:          |
 | Lecture 7 - Registry         | :warning:          |
 | Lecture 10 - Email Forensics | :warning:          |
 
