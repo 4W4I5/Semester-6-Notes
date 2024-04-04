@@ -171,8 +171,16 @@
 			- Whatever value 0x14 points to is where the GUID starts
 	- Data Attribute 0x80
 		- 0x04 to 0x05 -> Length of attribute
-		- 0x08 -> Resident/Non-Resident Flag
-			- If resident then filen
+		- 0x08 -> Resident/Non-Resident Flag set to 1 or 0 respectively
+			- If resident
+				- 0x10 -> Length of Resident Data run
+				- 0x18 -> Start of Data run
+			- If NonResident
+				- 0x40 -> Start of Data Run. First Logical Cluster Number (Logical Cluster Number)
+	- Checksum
+		- 0x01FE and 0x01FF -> Sector checksum value
+	- End of Sector
+		- Identified by `FF FF FF FF`
 # Lecture 7 - Registry
 
 > [!WARNING]
