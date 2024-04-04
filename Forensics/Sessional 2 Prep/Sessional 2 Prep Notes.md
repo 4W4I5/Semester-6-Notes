@@ -165,8 +165,14 @@
 			- 0x30 to 0x37 -> Last Accessed Time Time/Date
 			- 0x38 to 0x3F -> Last Updated Time/Date
 		- 0x5A to Length of Attribute -> ShortFilename in Unicode (Should Notice ASCII with 00 gaps. For e.g. 'A' would be 41 00)
+	- ObjectID Attribute 0x40
+		- 0x04 to 0x05 -> Length of attribute
+		- 0x14 -> Offset for GUID
+			- Whatever value 0x14 points to is where the GUID starts
 	- Data Attribute 0x80
-		-  0x04 to 0x05 -> Length of attribute
+		- 0x04 to 0x05 -> Length of attribute
+		- 0x08 -> Resident/Non-Resident Flag
+			- If resident then filen
 # Lecture 7 - Registry
 
 > [!WARNING]
