@@ -56,7 +56,8 @@
 	- Authn not required, multiple attacks can be launched
 - TCP/UDP 389 -> LDAP
 	- Exploit misconfig for username enumeration
-	- Global Catalog server -> Distributed data storage stored in DC that is searchable for data stored in all DS of an AD DS network
+- TCP/UDP 3628 -> Global Catalog server
+	- Distributed data storage stored in DC that is searchable for data stored in all DS of an AD DS network
 - TCP/UDP 445 -> SMB over TCP
 - UDP 161 -> SNMP
 	- Send request
