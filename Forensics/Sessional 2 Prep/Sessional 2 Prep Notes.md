@@ -173,12 +173,19 @@
 		- 0x04 to 0x05 -> Length of attribute
 		- 0x08 -> Resident/Non-Resident Flag set to 1 or 0 respectively
 			- Understanding DataRuns
-				- For `0x32`, 3 means
+				- For `0x32`, 3 means \# of Bytes to store starting LCN and 2 is \# of Bytes to store Clusters assigned to this data run
+				- IF NumOfClusters = 1 then VCN == LCN
+					- Otherwise if First byte of VCN is 0x80 or greater then the VCN is a negative number. Use 2's complement to calculate
 			- If resident
 				- 0x10 -> Length of Resident Data run
 				- 0x18 -> Start of Data run
 			- If NonResident
 				- 0x40 -> Start of Data Run. First Logical Cluster Number (Logical Cluster Number)
+	- DDF Attribute 0x0100 (LECTURE 7 EFS CONTENT)
+		- Contains FEK and FEKI
+			- FEK is a symmetric encryption key, FEKI contains info on FEK that is the version num, algo used and length of FEK
+		- 0x20 -> FEK
+		- 0x20 + FEK Len(normally 32bytes) -> FEKI
 	- Checksum
 		- 0x01FE and 0x01FF -> Sector checksum value
 	- End of Sector
