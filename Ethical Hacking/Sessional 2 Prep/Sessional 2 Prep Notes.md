@@ -139,6 +139,67 @@
 
 # Lecture 14, 15 - Malware Threats
 ### Malware
-- 
+- Designed for gaining access, stealing info and harming the target system
+- Modes of propagation
+	- Freeware
+		- Cracked software contains patched malicious DLLs
+	- File sharing services
+		- Freeware usually downloaded via P2P clients, can sneak a malware in the download
+	- Removeable media
+		- Many malware are configured to store a copy into a newly mounted Filesystem to enhance propagation chances
+	- Email Comms
+		- Sent via attachments, if bad AV then download will proceed as planned
+	- Inadequate Firewall and AV protection
+		- Some people disable AV and firewall, common sense as to what'll happen here
 ## Trojans
+- Insert story of Troy and the wooden horse
+- Trojans mislead the user to thinking the program has functionality that might be productive to them, at the backend they can
+	- Create backdoors/Gain Unauthorized access
+	- Steal Info, Download other software, Disable firewalls
+	- Infect connected devices
+	- Use victim device as a botnet/spamming net
+
+### Trojan Lifecycle
+- Creation using Trojan construction Kit
+	- Pandora's Box, Senna SpyGen, DarkHorse, etc
+- Create a Dropper
+	- Payload delivery without detection
+	- ROTBROWA, MEREDROP, DESTOVER-C, etc
+- Create a Wrapper
+	- Packing trojan inside a non-malicious file
+- Crypter
+	- Encrypt, obfuscate and manipulate the malware to hide it
+	- Avoids AV Sig Detection
+	- CRYOGENIC, HEAVEN, SWAYZ
+- Propagation
+	- Can be via the email, net, removable devices
+- Execute Dropper
+	- Run unpacker during non-malicious file execution and execute dropper to install required files for the trojan
+
+### Trojan Deployment (Social Engineering)
+- Upload dropper to a download server
+- Dropper link attached to a email and sent to target user
+- User clicks on link and file is downloaded to PC instantly
+- Download file is executed and unpacks after which the exe starts a dropper to download the trojan
+- Trojan connects to attacker with privileged access/Steal info and secretly send it back to the attacker
+	- C2 approach
+
+### Trojan Types & Countermeasures
+- **Types**
+	- Command Shell -> CLI Reverse Shell, Use of NETCAT
+	- Defacement -> View, edit and extract info from any windows program, Attacker leaves their mark on every file. Website defacement is a good example.
+	- HTTP/S -> HTTP/S Reverse Shell created after bypassing firewall
+	- Botnet -> C2 server control, Used for DDOS, Spamming, Mining, etc
+	- Proxy Server -> Turn host system into a proxy server, Used to launch DDOS and/or mask and spoof attacker's IP to a real device
+	- RAT (Remote Access Trojans) -> Backdoor to maintain admin access and control over victim, provide GUI Access to target
+	- Others
+		- FTP, VNC, Mobile, ICMP, Covert, Notification, Data Hiding
+- **CounterMeasures (Social Engineering based)**
+	- Avoid suspected links/attachments/downloads
+	- Block unused ports
+	- Configure host-based firewall/IDS
+	- Scan removeable media
+
 ## Viruses & Worms
+
+## Malware Detection & Analysis
