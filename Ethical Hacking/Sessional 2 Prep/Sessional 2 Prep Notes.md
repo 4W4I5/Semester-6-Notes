@@ -265,7 +265,7 @@
 - DNA
 
 ## Microsoft Authentication
-#### General Knowledge
+### General Knowledge
 - Windows stores pw in SAM file
 - Windows DC stores in NTDS.dit file
 - Linux stores in Shadow
@@ -295,7 +295,7 @@
 		- Ticket-Granting Server sends TGT + Session key
 	- Once per service session
 		- Client sends Service Request
-		- Service Server sends Service Response 
+		- Service Server sends Service Response
 
 ## Password salting
 - Hashes are seeded with data of the file. Salting is where a random string like the current time is added to increase uniqueness of the hash
