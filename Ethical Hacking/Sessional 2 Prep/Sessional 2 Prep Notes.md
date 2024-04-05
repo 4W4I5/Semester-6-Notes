@@ -144,7 +144,7 @@
 	- Use of multiple approaches to conduct the assessments for e.g. the auditor might use a technique for windows that might not be the same for ubuntu
 - **Inference-Based Assessments**:
 	- An initial result is used to conduct a deep audit of the result
-#### Approaches to VA
+### Approaches to VA
 - **Product-based solutions**:
 	- Deployed within a small private network
 	- Usually dedicated for such networks
@@ -198,7 +198,7 @@
 	- GFI LanGuard
 	- Qualys Freescan
 # Lecture 10, 11, 12 - System Hacking
-### Goals
+## Goals
 - Part of VA
 	- Includes
 		- Cracking Passwords
@@ -264,12 +264,121 @@
 - Rainbow table
 - DNA
 
+## Microsoft Authentication
+#### General Knowledge
+- Windows stores pw in SAM file
+- Windows DC stores in NTDS.dit file
+- Linux stores in Shadow
+### SAM
+- DB that stores creds
+	- Location: C:/windows/system32/config/sam
+- Passwords are hashed
+	- NTLM hashing format
+	- XP Onwards the Lan Manager (LM) hash stopped being stored and if it exceed 14 charecters blank or dummy values were added
+- Locked to be accessed from other services when OS is running
+### NTLM
+- Login authn by a domain controller
+- DC sends a nonce (16byte random number) challenge that has to be encrypted with the password hash
+- DC permits or denys based on its own calculated response
+- Two versions
+	- NTLM1
+	- NTLM2: Combined with SSP (Security Support provider)
+### Kerberos
+- Clients receive ticket from Kerberos Key Distribution Center (KDC)
+	- Depends on Authn Server + Ticket-Granting Server
+- Steps
+	- Once per login
+		- Client sends TGT request
+		- Authn Server sends TGT + Session key
+	- Once per type of service
+		- Client sends Service Ticket request
+		- Ticket-Granting Server sends TGT + Session key
+	- Once per service session
+		- Client sends Service Request
+		- Service Server sends Service Response 
+
+## Password salting
+- Hashes are seeded with data of the file. Salting is where a random string like the current time is added to increase uniqueness of the hash
+- Harder to reverse therefore harder to brute force using a dictionary or a rainbow table
 
 ## Priv escalation
+- **Introduction:**
+    - After gaining access to the target system, privilege escalation is necessary for complete high-level access with no or limited restrictions.
+- **Types of Privilege Escalation:**
+    1. **Horizontal Privileges Escalation:**
+        - Involves an attacker attempting to take command over the privileges of another user with the same set of privileges.
+        - Occurs when accessing the same set of resources allowed for a particular user.
+    2. **Vertical Privileges Escalation:**
+        - Involves an attacker attempting to escalate privileges to a higher level, typically to the administrator account.
+        - Higher privileges allow access to sensitive information, installation, modification, and deletion of files and programs.
+
+### Privilege Escalation using DLL Hijacking:
+- **Overview:**
+    - Applications in Windows OS search for Dynamic Link Libraries (DLL) in directories instead of using fully qualified paths.
+- **Exploitation:**
+    - Malicious DLLs are renamed with the same name as legitimate DLLs and replaced in the directory.
+    - When an application runs, it loads the malicious DLL from the application directory instead of the real DLL.
+- **Tools:**
+    - DLL hijacking tools like Metasploit can generate DLLs that return with a session with privileges.
+    - These DLLs are renamed and placed in the directory, leading to the opening of a session with system privileges.
+- **Registry Key:**
+    - Known DLLs are specified in the registry key:
+	- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\`
+
+
+### Executing Applications:
+
+- **Introduction:**
+    - After gaining unauthorized access and escalating privileges, attackers execute malicious applications on the target system.
+    - The intention is to gain unauthorized access to system resources, crack passwords, set up backdoors, etc.
+- **Tools:**
+    - RemoteExec: Allows remote installation, execution of code and scripts, updating files, and remote configuration management.
+    - PDQ Deploy: Installs and sends updates silently to remote systems, facilitating the deployment of applications and software.
+
+### Keyloggers:
+
+- **Overview:**
+    - Keyloggers monitor or record user actions, such as keystrokes, without the user's knowledge.
+    - They can be software-based or hardware-based.
+- **Software Keyloggers:**
+    - Remotely installed or executed by the user, includes application, kernel, and form-grabbing keyloggers.
+- **Hardware Keyloggers:**
+    - Physically installed on hardware, including PC/Bios embedded, keyboard, and external keyloggers.
+- **Anti-Keyloggers:**
+    - Application software that protects against keylogging by providing SSL protection, clipboard logging protection, etc.
+
+### Spyware:
+
+- **Overview:**
+    - Spyware gathers user interaction information without informing the user, typically used for tracking internet interactions.
+- **Types of Spyware:**
+    - Includes adware, system monitors, tracking cookies, and Trojans.
+- **Features:**
+    - Tracks users, records conversations, blocks applications/services, delivers logs remotely, etc.
+
+### Rootkits:
+
+- **Overview:**
+    - Rootkits provide privileged access to a remote user over the target system, often installed after an attack for maintaining access.
+- **Types of Rootkits:**
+    - Application level, kernel-level, hardware/firmware level, and hypervisor level.
+- **Countermeasures:**
+    - Detection methods include integrity-based, difference-based, and behavioral detection, along with tools like Rootkitrevealer and anti-rootkit software.
+
+### NTFS Data Stream:
+
+- **Overview:**
+    - NTFS (New Technology File System) is a proprietary file system by Microsoft.
+- **Alternate Data Stream (ADS):**
+    - A file attribute in NTFS used for hiding data within an existing file without noticeable changes.
+    - Can be exploited for hiding malicious data.
+
+### Countermeasures:
+- Moving files to FAT partition or using third-party tools like ADS Spy, LADS, and Stream Armor for detection and removal.
 
 
 # Lecture 14, 15 - Malware Threats
-### Malware
+## Malware
 - Designed for gaining access, stealing info and harming the target system
 - **Modes of propagation**
 	- Freeware
