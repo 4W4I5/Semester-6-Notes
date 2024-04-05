@@ -211,8 +211,8 @@
 	- File/Multipartite -> FILE: Infect BAT/EXE files | MULTIPARTITE: Infects BootSector and Files simultaneously
 	- Macro -> Specializes in Microsoft Office Suite. Macro is a feature provided in the suite. Abuses privileges provided to the suite
 	- Cluster -> Specialized to attack Location/Directory Table. Modifies the entries so the virus is executed whenever the user attempts to open a file
-	- Stealth/Tunneling -> Avoids AV detection. 
-	- Logic Bombs
+	- Stealth/Tunneling -> Avoids AV detection. Memory-Resident.
+	- Logic Bombs -> Stays in Sleep state until a trigger event occurs
 	- Encryption
 ### Virus/Anti-Virus Development lifecycle
 - **Design** -> Use construction kits or DIY
