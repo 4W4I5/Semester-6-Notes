@@ -206,12 +206,12 @@
 	- Infect other files
 	- Alter files, Transformation, Corruption, Encryption, Self-replication
 - **Types**
-	- Ransomware -> Encrypts User + System Files, Demands ransom from user to be granted the decryption key 
-	- System/Boot sector
-	- File/Multipartite
-	- Macro
-	- Cluster
-	- Stealth/Tunneling
+	- Ransomware -> Deploys via Trojans, Encrypts User + System Files, Demands ransom from user to be granted the decryption key
+	- System/Boot sector -> Replaces MBR with its own copy, virus gets executed before the OS is loaded. Can either boot into OS as system or outright prevent the PC from booting
+	- File/Multipartite -> FILE: Infect BAT/EXE files | MULTIPARTITE: Infects BootSector and Files simultaneously
+	- Macro -> Specializes in Microsoft Office Suite. Macro is a feature provided in the suite. Abuses privileges provided to the suite
+	- Cluster -> Specialized to attack Location/Directory Table. Modifies the entries so the virus is executed whenever the user attempts to open a file
+	- Stealth/Tunneling -> Avoids AV detection. 
 	- Logic Bombs
 	- Encryption
 ### Virus/Anti-Virus Development lifecycle
