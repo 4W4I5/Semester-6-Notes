@@ -230,7 +230,7 @@
 - Now it will execute on click
 
 ### Virus attack modes
-- **Infection**
+- **Infection** -> Plant Virus, Enforce methods of propagation such as Email attachments, File infection, transfer to external media
 - **Attack**
 
 ## Worms
