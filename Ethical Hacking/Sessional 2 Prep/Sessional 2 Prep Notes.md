@@ -1,7 +1,7 @@
 | Lecture Title                       | Status             |
 | ----------------------------------- | ------------------ |
 | Lecture 7 - Enumeration             | :white_check_mark: |
-| Lecture 9 - Vulnerability Analysis  | :warning:          |
+| Lecture 9 - Vulnerability Analysis  | :white_check_mark: | 
 | Lecture 10, 11, 12 - System Hacking | :warning:          |
 | Lecture 14, 15 - Malware Threats    | :white_check_mark: |
 
@@ -158,11 +158,49 @@
 
 ## VA Lifecycle
 - **Creating a Baseline**
-	- Pre-Assessment. Creates inventory of all resources and assets which helps to manage, prioritize the assessment
+	- Pre-Assessment. Creates inventory of all resources and assets which helps to manage & prioritize the assessment
+	- Maps infrastructure, learn security controls, policies and standards followed by the org
+	- Helps to plan the process effectively, schedule tasks, manage them with respect to priority
 - **VA**
+	- Includes examination and inspection of security faults, and other vulns either by individual probing or assessment tools
+	- Once scanning is complete, findings are ranked in terms of priorities
+	- Result: Report with all detected vulns, their scope and priorities
 - **Risk Assessment**
+	- Scoping the identified Vulns and their impact on the corporate/org network
+- **Remediation**
+	- Remedial actions for these detected vulns. High priority/High impact ones are addressed first
+- **Verification**
+	- Ensures that all vulns are eliminated
+- **Monitor**
+	- Monitor Network traffic + System behavior for any further intrusions
 ## Best practices and Vuln Scoring
+- **Best practices**
+	- Auditor must fully understand the assessment tool before using it
+	- Ensure that the tool used will not cause any damage/changes to the existing infrastructure
+	- Ensure to focus on the scan on only the suspect parts of the infrastructure
+	- Run scan frequently
+- **Vuln Scoring**
+	- Common Vulnerability Scoring Systems (CVSS)
+		- Gives a number from 0 to 10.0
+			- 0 -> None
+			- 0.1-3.9 -> Low
+			- 4.0-6.9 -> Medium
+			- 7.0-8.9 -> High
+			- 9.0-10.0 -> Critical
+	- Common Vulnerability and Exposure (CVE)
+		- Maintains a list (NVD) + description of known vulns under a CVE identifier
+			- Provides fix info severity scores and impact ratings
+		- Launched by NIST
+		- CVE data is fed into the NVD
+
 ## Vuln scanning tools
+- Performs deep inspection of scripts, open ports, banners, running services, config errors
+	- Nessus
+	- OpenVAS
+	- Nexpose
+	- Retina
+	- GFI LanGuard
+	- Qualys Freescan
 # Lecture 10, 11, 12 - System Hacking
 ### Goals
 ## Password Cracking
