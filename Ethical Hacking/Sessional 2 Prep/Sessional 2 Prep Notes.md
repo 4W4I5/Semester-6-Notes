@@ -139,7 +139,9 @@
 - **Active Assessments**:
 	- Process of VA which includes actively sending requests to the live target and examining responses
 - **Passive Assessments**:
-	- Use of packet sniffing, monitoring directory changes 
+	- Use of packet sniffing, monitoring directory changes, Seeing what services are available and running
+- **External Assessments**:
+	- 
 ## VA Lifecycle
 ## Best practices and VA Scoring
 ## Vuln scanning tools
