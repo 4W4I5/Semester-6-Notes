@@ -128,7 +128,18 @@
 
 # Lecture 9 - Vulnerability Analysis
 ## Concept
+- Discover weaknesses/designFlaws in an environment that can cause the OS, Application and/or Website to be misused
+- Causes
+	- Misconfigs
+	- default configs
+	- buffer overflows
+	- OS flaws
+	- Open services
 ## Types of VA
+- **Active Assessments**:
+	- Process of VA which includes actively sending requests to the live target and examining responses
+- **Passive Assessments**:
+	- Use of packet sniffing, monitoring directory changes 
 ## VA Lifecycle
 ## Best practices and VA Scoring
 ## Vuln scanning tools
