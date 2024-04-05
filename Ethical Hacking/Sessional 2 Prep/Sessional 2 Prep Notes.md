@@ -141,6 +141,12 @@
 - **Passive Assessments**:
 	- Use of packet sniffing, monitoring directory changes, Seeing what services are available and running
 - **External Assessments**:
+	- Conduct VA on Systems from the outside
+- **Internal Assessments**:
+	- Scanning the internal network
+- **Tree-Based Assessments**:
+	- Use of multiple approaches to conduct the assessments for e.g. the auditor might use a technique for windows that might not be the same for ubuntu
+- **Inference-Based Assessments**:
 	- 
 ## VA Lifecycle
 ## Best practices and VA Scoring
