@@ -1,7 +1,7 @@
 | Lecture Title                       | Status             |
 | ----------------------------------- | ------------------ |
 | Lecture 7 - Enumeration             | :white_check_mark: |
-| Lecture 9 - Vulnerability Analysis  | :white_check_mark: | 
+| Lecture 9 - Vulnerability Analysis  | :white_check_mark: |
 | Lecture 10, 11, 12 - System Hacking | :warning:          |
 | Lecture 14, 15 - Malware Threats    | :white_check_mark: |
 
@@ -47,37 +47,33 @@
 - WindowsSysInternals
 	- Shows who has what access to directories, files and registry keys
 
-## Services and ports to Enumerate
+## Services and Ports to Enumerate
 - TCP/UDP 53 -> DNS Zone Transfer
-	- Normal request is sent over UDP. Request URL can exceed 512 octets, if so then server responds with invalid URL. Server requests for TCP. Failsafe
+	- DNS servers commonly communicate over UDP, but if the request URL exceeds 512 octets, it's invalid, prompting a TCP request. This mechanism serves as a failsafe for larger queries.
 - TCP/UDP 135 -> RPC Endpoint Mapper
-	- Authn not required, multiple attacks can be launched
+	- Authentication is not typically required, making it susceptible to multiple types of attacks.
 - TCP/UDP 389 -> LDAP
-	- Exploit misconfig for username enumeration
-- TCP/UDP 3628 -> Global Catalog server
-	- Distributed data storage stored in DC that is searchable for data stored in all DS of an AD DS network
+	- Exploiting misconfigurations can lead to username enumeration, revealing sensitive information.
+- TCP/UDP 3268 -> Global Catalog Server
+	- Acts as a distributed data storage in a domain controller, enabling searches across all domains in an Active Directory network.
 - TCP/UDP 445 -> SMB over TCP
+	- Provides file and printer sharing services among networked computers, commonly exploited for unauthorized access.
 - UDP 161 -> SNMP
-	- Send request
-	- Network managment
+	- Requests can be sent to SNMP agents for network management purposes.
 - TCP/UDP 162 -> SNMP Trap
-	- Receive Response for 161 Request
-	- Used for sending System Uptime notifications/optional variables such as time sync
-- UDP 137 -> NetBIOS name service
-	- Name resolution for local computers on the same net
+	- Receives responses for SNMP requests (port 161) and is used for system uptime notifications and time synchronization.
+- UDP 137 -> NetBIOS Name Service
+	- Provides name resolution for devices on the same local network.
 - TCP 139 -> SMB over NetBIOS
-	- Used by printers, used for file transfer
-	- Used for NULL session enumeration
+	- Primarily used for file sharing and printing services. Vulnerable to NULL session enumeration, exposing system information.
 - TCP 25 -> SMTP
-	- Commands can be exploited
-		- VRFY: Confirm name of valid user
-		- EXPN: Reveal actual address of user aliases and mailing list
+	- SMTP commands like VRFY and EXPN can be exploited to confirm valid usernames and reveal aliases or mailing lists, respectively.
 - UDP 500 -> ISAKMP
-	- Used by IPsec for negotiating crypto keys
+	- Facilitates the negotiation of cryptographic keys for IPsec VPN connections.
 - TCP 22 -> SSH
-	-
+	- Secure Shell protocol for secure remote access to systems, typically used for administration purposes.
 - TCP 2049 -> NFS
-	- Used for File sharing, can be exploited for remote access + privileged access
+	- Network File System used for sharing files between networked devices. Exploitable for unauthorized remote and privileged access.
 
 ## Microsoft tools to enumerate with (PsTools Suite)
 - PsExec -> Executes processes remotely
@@ -129,7 +125,7 @@
 # Lecture 9 - Vulnerability Analysis
 ## Concept
 - Discover weaknesses/designFlaws in an environment that can cause the OS, Application and/or Website to be misused
-- Causes
+- **Causes**
 	- Misconfigs
 	- default configs
 	- buffer overflows
@@ -209,7 +205,7 @@
 # Lecture 14, 15 - Malware Threats
 ### Malware
 - Designed for gaining access, stealing info and harming the target system
-- Modes of propagation
+- **Modes of propagation**
 	- Freeware
 		- Cracked software contains patched malicious DLLs
 	- File sharing services
