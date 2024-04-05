@@ -199,7 +199,36 @@
 	- Qualys Freescan
 # Lecture 10, 11, 12 - System Hacking
 ### Goals
+- Part of VA
+	- Includes
+		- Cracking Passwords
+		- Executing Apps
+		- Escalating Privs
+		- Hiding Files
+		- Covering tracks
+- Approach to System Hacking
+	- Bypass ACL via Password cracking/Social Engineering to gain system OS access
+	- Exploit OS vulns to escalate privs
+	- Execute malware as root/system to create a backdoor
+	- Steal info
+	- Cover up using rootkits to persist backdoor or stegno to hide logs
+	- Clear all logs or hide them
 ## Password Cracking
+### Non-Electronic Attacks
+- No technical knowledge required
+- Done via
+	- Shoulder surfing i.e. standing behind the target to observe input
+	- Social engineering
+	- Dumpster diving
+### Active Online Attacks
+- Active i.e. direct. Online i.e host is up
+- Attacks
+	- Dictionary -> Use of wordlists to bruteforce
+	- BruteForce -> Use of every possible charecter
+	- Hash Injection -> Extract LOGON HASH from SAM file via SE or some sort of technique to compromise the machine. Use hashes of other users/admins to login
+### Passive Online Attacks
+### Default Password
+### Offline Attack
 ## Priv escalation
 
 # Lecture 14, 15 - Malware Threats
