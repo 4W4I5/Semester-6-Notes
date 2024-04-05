@@ -158,7 +158,7 @@
 
 ## VA Lifecycle
 - **Creating a Baseline**
-	-
+	- Pre-Assessment. Creates inventory of all resources and assets which helps to manage, prioritize the assessment
 - **VA**
 - **Risk Assessment**
 ## Best practices and Vuln Scoring
