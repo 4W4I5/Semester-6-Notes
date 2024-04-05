@@ -147,9 +147,21 @@
 - **Tree-Based Assessments**:
 	- Use of multiple approaches to conduct the assessments for e.g. the auditor might use a technique for windows that might not be the same for ubuntu
 - **Inference-Based Assessments**:
-	- 
+	- An initial result is used to conduct a deep audit of the result
+#### Approaches to VA
+- **Product-based solutions**:
+	- Deployed within a small private network
+	- Usually dedicated for such networks
+- **Service-based solutions**:
+	- 3rd party solutions that offer security and auditing services to a network. Can be external/internal.
+	- Being internal makes it a risk to security
+
 ## VA Lifecycle
-## Best practices and VA Scoring
+- **Creating a Baseline**
+	-
+- **VA**
+- **Risk Assessment**
+## Best practices and Vuln Scoring
 ## Vuln scanning tools
 # Lecture 10, 11, 12 - System Hacking
 ### Goals
