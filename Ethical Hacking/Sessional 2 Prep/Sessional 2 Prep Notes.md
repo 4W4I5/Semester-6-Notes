@@ -227,9 +227,46 @@
 	- BruteForce -> Use of every possible charecter
 	- Hash Injection -> Extract LOGON HASH from SAM file via SE or some sort of technique to compromise the machine. Use hashes of other users/admins to login
 ### Passive Online Attacks
+- Packet capture, inspect for data from telnet, ftp, smtp, rlogin proto to get passwords
+- MITM, Use of replay attacks, setup attacker as CA and distribute SSL certs in the network. All traffic goes through attacker, can easily decode and inspect packets. Use SSLStrip, BurpSuite and BEEF. Can count as Active as well
 ### Default Password
+- DeviceIDs can be used to get service manuals or quick start guides that contain default passwords. People do not often change these
 ### Offline Attack
+- Use of precomputed hashes and a rainbow table
+	- Rainbow table: Hash dictionary of all possible password combinations
+	- Precomputed Hashes: Hash the pw and now compare with rainbow table
+	- Takes a while to compute the rainbow table
+- Distributed Network Attack
+	- Similar to a botnet use multiple computers to decrypt the hash
+	- DNA manager: Manages clients centrally. Allocates small part of the computation to each client
+	- DNA client: obvs what it dose
+- Password Guessing
+	- Trial and error
+- USB Drive
+	- Load usb with passview and an autorun script
+	- Itll attempt to decrypt any stored passwords on the connected host
+### Password cracking flowchart
+- Start
+- Check pw policy
+- SE attack
+	- Shoulder surfing
+	- Dumpster diving
+- Default password
+- Dictionary Attack
+- Bruteforce
+- Guess pw
+- Keylogger
+- Spyware
+- Hash injection
+- Wire sniffing
+- MITM Attack
+- Replay attack
+- Rainbow table
+- DNA
+
+
 ## Priv escalation
+
 
 # Lecture 14, 15 - Malware Threats
 ### Malware
