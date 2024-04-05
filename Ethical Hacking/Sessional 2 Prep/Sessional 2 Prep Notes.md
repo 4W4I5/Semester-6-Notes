@@ -318,6 +318,9 @@
 - **Exploitation:**
     - Malicious DLLs are renamed with the same name as legitimate DLLs and replaced in the directory.
     - When an application runs, it loads the malicious DLL from the application directory instead of the real DLL.
+    - An application typically looks for dll in current dir if FQP isnt setup
+	    - Then it looks in the System directory
+	    - Then the windows directory
 - **Tools:**
     - DLL hijacking tools like Metasploit can generate DLLs that return with a session with privileges.
     - These DLLs are renamed and placed in the directory, leading to the opening of a session with system privileges.
@@ -326,7 +329,7 @@
 	- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\`
 
 
-### Executing Applications:
+### Executing Applications (System Owning):
 
 - **Introduction:**
     - After gaining unauthorized access and escalating privileges, attackers execute malicious applications on the target system.
@@ -356,12 +359,16 @@
 - **Features:**
     - Tracks users, records conversations, blocks applications/services, delivers logs remotely, etc.
 
+## Hiding Files
 ### Rootkits:
 
 - **Overview:**
     - Rootkits provide privileged access to a remote user over the target system, often installed after an attack for maintaining access.
 - **Types of Rootkits:**
-    - Application level, kernel-level, hardware/firmware level, and hypervisor level.
+    - Application level -> perform manuplation of standard app files, modification of current app with code injection
+    - kernel-level -> Replace section of codes of OS kernel to allow self system access
+    - hardware/firmware level -> Built into the chipset for recovery or dealing with theft
+    - hypervisor level -> Run target os as VM and itself as hist
 - **Countermeasures:**
     - Detection methods include integrity-based, difference-based, and behavioral detection, along with tools like Rootkitrevealer and anti-rootkit software.
 
