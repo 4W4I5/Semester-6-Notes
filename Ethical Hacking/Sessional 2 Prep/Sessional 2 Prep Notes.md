@@ -202,11 +202,11 @@
 
 ## Viruses
 - Self replicating program, Execute on download, Can sleep and remain undetected by AV
-- Features
+- **Features**
 	- Infect other files
 	- Alter files, Transformation, Corruption, Encryption, Self-replication
-- Types
-	- Ransomware
+- **Types**
+	- Ransomware -> Encrypts User + System Files, Demands ransom from user to be granted the decryption key 
 	- System/Boot sector
 	- File/Multipartite
 	- Macro
@@ -231,7 +231,7 @@
 
 ### Virus attack modes
 - **Infection** -> Plant Virus, Enforce methods of propagation such as Email attachments, File infection, transfer to external media
-- **Attack**
+- **Attack** -> Triggered when the file is interacted with, however some might wait for further conditions to be fulfilled
 
 ## Worms
 - Need a trigger to be executed
