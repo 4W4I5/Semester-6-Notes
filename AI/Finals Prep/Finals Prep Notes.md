@@ -6,7 +6,7 @@
 | Chapter 2.4: Agent Structure                        | :warning:     |
 | Chapter 3.1: Problem Solving Agents                 | :warning:     |
 | Chapter 3.2: Examples                               | :warning:     |
-| Chapter 3.3: Search Algos                           | :warning:     |
+| Chapter 3.3: Search Algos                           | :exclamation: |
 | Chapter 3.4: Uninformed Searches                    | :warning:     |
 | Chapter 3.5: Informed Heuristic Searches            | :warning:     |
 | Chapter 3.6: Heuristic Functions                    | :warning:     |
@@ -24,14 +24,7 @@
 | Chapter 6.3: Backtracking Search for CSP            | :exclamation: |
 | Chapter 6.4: Local Search for CSP                   | :exclamation: |
 | Chapter 6.5: Struct of Problems                     | :exclamation: |
-| Machine Learning Slides 31                          | :exclamation: |
-| Machine Learning Slides 32                          | :exclamation: |
-| Machine Learning Slides 33                          | :exclamation: |
-| Machine Learning Slides 34                          | :exclamation: |
-| Machine Learning Slides 35                          | :exclamation: |
-| Machine Learning Slides 36                          | :exclamation: |
-| Machine Learning Slides 37                          | :exclamation: |
-| Machine Learning Slides 38                          | :exclamation: |
+| Machine Learning Slides 31,32,33,34,35,36,37,38     | :warning:     | 
 
 # Chapter 2
 ## 2.1: Agents & Environments
@@ -384,11 +377,17 @@ BidirectionalSearch(graph, start_node, goal_node):
 
 --
 
-# Machine Learning Chapter
-## Machine Learning Slides 31
-## Machine Learning Slides 32
-## Machine Learning Slides 33
-## Machine Learning Slides 34
+# Machine Learning Chapter (Slides 31+)
+## Machine Learning Slides 31 - Machine Learning
+- Definition
+	- Study of algos that improve their Performance at some Task with Experience
+		- well-defined learning task <P,T,E>
+- Preferred for
+	- Speech recognition, NLP, CV, Robot control, Computational Biology, Medical Outcome analysis
+## Machine Learning Slides 32 - Learning
+-
+## Machine Learning Slides 33 - Linear Regression + Cost Function Example
+## Machine Learning Slides 34 - Gradient Descent
 ## Machine Learning Slides 35
 ## Machine Learning Slides 36
 ## Machine Learning Slides 37
