@@ -31,9 +31,9 @@
 | Machine Learning Slides 35                          | :exclamation: |
 | Machine Learning Slides 36                          | :exclamation: |
 | Machine Learning Slides 37                          | :exclamation: |
-| Machine Learning Slides 38                          | :exclamation: | 
+| Machine Learning Slides 38                          | :exclamation: |
 
-# Chapter 2 (Shorten)
+# Chapter 2
 ## 2.1: Agents & Environments
 - Agent
 	- An agent is an entity that acts on its environment via actuators based on precept data from its sensors in the environment
@@ -44,6 +44,7 @@
 			- p<sup>*</sup> = Perceived info
 			- A = Action performed
 		- Agent = Architecture + Program, where architecture is the hardware and program is the precept sequence
+		- Can be human, robotic or just software
 ## 2.2: Good behavior: Rationality concept
 - What makes for a rational Agent
 	- Performance Measures
