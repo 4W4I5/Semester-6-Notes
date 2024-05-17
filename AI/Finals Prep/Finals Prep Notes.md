@@ -24,7 +24,7 @@
 | Chapter 6.3: Backtracking Search for CSP            | :exclamation: |
 | Chapter 6.4: Local Search for CSP                   | :exclamation: |
 | Chapter 6.5: Struct of Problems                     | :exclamation: |
-| Machine Learning Slides 31,32,33,34,35,36,37,38     | :warning:     | 
+| Machine Learning Slides 31,32,33,34,35,36,37,38     | :warning:     |
 
 # Chapter 2
 ## 2.1: Agents & Environments
@@ -368,6 +368,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 ## 5.7: Limitations of Game Search Algorithm
 
 --
+
 # Chapter 6: Constraint Satisfaction Problems
 ## 6.1: Defining Constraint Satisfaction Problems
 ## 6.2: Constraint Propagation
@@ -388,7 +389,6 @@ BidirectionalSearch(graph, start_node, goal_node):
 -
 ## Machine Learning Slides 33 - Linear Regression + Cost Function Example
 ## Machine Learning Slides 34 - Gradient Descent
-## Machine Learning Slides 35
-## Machine Learning Slides 36
-## Machine Learning Slides 37
-## Machine Learning Slides 38
+## Machine Learning Slides 35 - Decision Tree
+## Machine Learning Slides 36 - Entropy
+## Machine Learning Slides 37+38 - Clustering

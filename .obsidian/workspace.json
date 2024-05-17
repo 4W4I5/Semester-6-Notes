@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "AI/Finals Prep/Finals Prep Notes.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 281.5,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
