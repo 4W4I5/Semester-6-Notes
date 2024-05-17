@@ -1,15 +1,15 @@
 | Chapter                                             | Status        |
 | --------------------------------------------------- | ------------- |
-| Chapter 2.1: Agents & Enviros                       | :warning: |
-| Chapter 2.2: Concept of Rationality                 | :warning: |
-| Chapter 2.3: Nature of Enviros                      | :warning: |
-| Chapter 2.4: Agent Structure                        | :warning: |
-| Chapter 3.1: Problem Solving Agents                 | :warning: |
-| Chapter 3.2: Examples                               | :warning: |
-| Chapter 3.3: Search Algos                           | :warning: |
-| Chapter 3.4: Uninformed Searches                    | :warning: |
-| Chapter 3.5: Informed Heuristic Searches            | :warning: |
-| Chapter 3.6: Heuristic Functions                    | :warning: |
+| Chapter 2.1: Agents & Enviros                       | :warning:     |
+| Chapter 2.2: Concept of Rationality                 | :warning:     |
+| Chapter 2.3: Nature of Enviros                      | :warning:     |
+| Chapter 2.4: Agent Structure                        | :warning:     |
+| Chapter 3.1: Problem Solving Agents                 | :warning:     |
+| Chapter 3.2: Examples                               | :warning:     |
+| Chapter 3.3: Search Algos                           | :warning:     |
+| Chapter 3.4: Uninformed Searches                    | :warning:     |
+| Chapter 3.5: Informed Heuristic Searches            | :warning:     |
+| Chapter 3.6: Heuristic Functions                    | :warning:     |
 | Chapter 4.1: Local Search & Optimization Problems   | :exclamation: |
 | Chapter 4.2: Local Search in Continuous Spaces      | :exclamation: |
 | Chapter 4.3: Search with Nondeterministic Actions   | :exclamation: |
