@@ -6,11 +6,11 @@
 | Chapter 2.4          | :white_check_mark: |
 | Chapter 3.1          | :white_check_mark: |
 | Chapter 3.2          | :white_check_mark: |
-| Chapter 3.3          | :exclaimation:     |
+| Chapter 3.3          | :warning:          |
 | Chapter 3.4          | :white_check_mark: |
 | Need to add the rest | :warning:          |
 
-# Chapter 2
+# Chapter 2 (Shorten)
 ## 2.1: Agents & Environments
 - Agent
 	- An agent is an entity that acts on its environment via actuators based on precept data from its sensors in the environment
@@ -149,7 +149,7 @@ Some examples from the book
 
 ---
 
-# Chapter 3
+# Chapter 3 (Shorten)
 ## 3.1: Problem Solving Agents
 - Search problems & solutions
 	- A search problem has
