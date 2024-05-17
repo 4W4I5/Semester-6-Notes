@@ -353,7 +353,13 @@ BidirectionalSearch(graph, start_node, goal_node):
 	- Complexity: O(b<sup>m</sup>), where m is max depth of search space
 	- If heuristic is admissible + consistent then its basically A*
 - A* Search
-	-
+	- BFS/UCS with Cost added too
+	- `f(n) = g(n) + h(n)`
+		- H(n) can be any distance heuristic
+	- Add cost from starting node to current node i.e. if at node E and start is A.
+		- Add cumulative cost of A to E and the heuristic of E->G
+	- Optimal if heuristic is admissable
+	- Complexity: Same as BFS/UCS
 ## 3.6 Heuristic Functions
 
 --
