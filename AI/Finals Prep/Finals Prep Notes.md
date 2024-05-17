@@ -386,7 +386,20 @@ BidirectionalSearch(graph, start_node, goal_node):
 - Preferred for
 	- Speech recognition, NLP, CV, Robot control, Computational Biology, Medical Outcome analysis
 ## Machine Learning Slides 32 - Learning
--
+- If Performance is improved on future tasks after making observations -> Learning
+	- Expanded range of behaviors
+	- Accuracy to perform tasks is improved
+	- Efficiency in terms of speed is improved
+- Depends on
+	- Component to improve
+	- Prior knowledge available to the agent
+	- Representation of data and component
+	- Feedback available to learn from
+- Types
+	- Supervised
+	- Unsupervised
+	- Semi-Supervised
+	- Reinforcement
 ## Machine Learning Slides 33 - Linear Regression + Cost Function Example
 ## Machine Learning Slides 34 - Gradient Descent
 ## Machine Learning Slides 35 - Decision Tree
