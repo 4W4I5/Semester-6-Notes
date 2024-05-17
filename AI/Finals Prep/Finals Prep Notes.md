@@ -362,3 +362,34 @@ BidirectionalSearch(graph, start_node, goal_node):
 ## 4.3: Search in Non-deterministic Actions
 ## 4.4: Search in Partially Observable Enviros
 ## 4.5: Online Search Agents & Unknown Enviros
+
+--
+
+# Chapter 5: Adversarial Search & Games
+## 5.1: Game Theory
+## 5.2: Optimal Decisions in Games
+## 5.3: Heuristic AB Tree Search
+## 5.4: Monte Carlo Tree Search
+## 5.5: Stochastic Games
+## 5.6: Partially Observable Games
+## 5.7: Limitations of Game Search Algorithm
+
+--
+# Chapter 6: Constraint Satisfaction Problems
+## 6.1: Defining Constraint Satisfaction Problems
+## 6.2: Constraint Propagation
+## 6.3: Backtracking Search in CSP
+## 6.4: Local Search for CSP
+## 6.5: Structure of Problems
+
+--
+
+# Machine Learning Chapter
+## Machine Learning Slides 31
+## Machine Learning Slides 32
+## Machine Learning Slides 33
+## Machine Learning Slides 34
+## Machine Learning Slides 35
+## Machine Learning Slides 36
+## Machine Learning Slides 37
+## Machine Learning Slides 38
