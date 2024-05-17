@@ -345,6 +345,15 @@ BidirectionalSearch(graph, start_node, goal_node):
 	- 3: Cost-Optimal if all action costs are all identical
 	- 4: If both directions are Breadth-First or Uniform Cost
 ## 3.5 Informed (Heuristic) Search Strategies
+- Best First Search aka Uniform Cost Search
+	- Incomplete for tree searches, complete for graph searches in finite spaces
+	- Eval nodes based on heuristic only
+	- Gets stuck @ local minima
+	- `f(n) = h(n)`
+	- Complexity: O(b<sup>m</sup>), where m is max depth of search space
+	- If heuristic is admissible + consistent then its basically A*
+- A* Search
+	-
 ## 3.6 Heuristic Functions
 
 --
