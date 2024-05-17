@@ -380,38 +380,44 @@ BidirectionalSearch(graph, start_node, goal_node):
 
 # Machine Learning Chapter (Slides 31+)
 ## Machine Learning
-- Definition
+- **Definition**
 	- Study of algos that improve their Performance at some Task with Experience
 		- well-defined learning task <P,T,E>
-- Preferred for
+- **Preferred for**
 	- Speech recognition, NLP, CV, Robot control, Computational Biology, Medical Outcome analysis
 ## Learning
 - If Performance is improved on future tasks after making observations -> Learning
 	- Expanded range of behaviors
 	- Accuracy to perform tasks is improved
 	- Efficiency in terms of speed is improved
-- Depends on
+- **Depends on**
 	- Component to improve
 	- Prior knowledge available to the agent
 	- Representation of data and component
 	- Feedback available to learn from
-- Types
-	- Supervised
-	- Unsupervised
-	- Semi-Supervised
-	- Reinforcement
-## Supervised Learning
-- Observe input-output pair and learn a function that maps said input to output. Note that the target variable type determines learning type
-	- Known as Classification for discrete target variables
-		- MultiClass vs MultiLabel
-			- Each instance can only be part of one class when MultiClass, Each instance can be part of multiple classes when MultiLabel i.e furniture can be classified as satin and red if it is satin red in multilabel
-	- Known as Regression for continuous target variables
-- Training
-	- Input features as well as target variables are specified
-## Unsupervised Learning
-- Agent learns patterns within the input even though no explicit feedback is given
-	- No classifications are given and so the agent must make their own
+- **Types**
+	- **Supervised**
+		- Observe input-output pair and learn a function that maps said input to output. Note that the target variable type determines learning type
+			- Known as **Classification** for discrete target variables
+				- MultiClass vs MultiLabel
+					- Each instance can only be part of one class when MultiClass, Each instance can be part of multiple classes when MultiLabel i.e furniture can be classified as satin and red if it is satin red in multilabel
+			- Known as **Regression** for continuous target variables
+		- Training
+			- Input features as well as target variables are specified
+	- **Unsupervised**
+		- Agent learns patterns within the input even though no explicit feedback is given
+			- No classifications are given and so the agent must make their own
+	- **Semi-Supervised**
+		- Some data is labelled rest is not
+			- Job is to use what's available to classify/regress the unlabeled data
+	- **Reinforcement**
+		- Implement a reward system i.e. a feedback loop to guide the agent
+			- It learns a transition model
+		- Task
+			- Find an optimal policy, mapping states to actions, that maximize states to actions, that maximize long-run measure of the reinforcement
+
 ## Machine Learning Slides 33 - Linear Regression + Cost Function Example
+
 ## Machine Learning Slides 34 - Gradient Descent
 ## Machine Learning Slides 35 - Decision Tree
 ## Machine Learning Slides 36 - Entropy
