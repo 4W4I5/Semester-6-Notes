@@ -404,11 +404,13 @@ BidirectionalSearch(graph, start_node, goal_node):
 - Observe input-output pair and learn a function that maps said input to output. Note that the target variable type determines learning type
 	- Known as Classification for discrete target variables
 		- MultiClass vs MultiLabel
+			- Each instance can only be part of one class when MultiClass, Each instance can be part of multiple classes when MultiLabel i.e furniture can be classified as satin and red if it is satin red in multilabel
 	- Known as Regression for continuous target variables
 - Training
 	- Input features as well as target variables are specified
--
 ## Unsupervised Learning
+- Agent learns patterns within the input even though no explicit feedback is given
+	- No classifications are given and so the agent must make their own
 ## Machine Learning Slides 33 - Linear Regression + Cost Function Example
 ## Machine Learning Slides 34 - Gradient Descent
 ## Machine Learning Slides 35 - Decision Tree
