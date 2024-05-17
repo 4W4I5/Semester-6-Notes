@@ -379,13 +379,13 @@ BidirectionalSearch(graph, start_node, goal_node):
 --
 
 # Machine Learning Chapter (Slides 31+)
-## Machine Learning Slides 31 - Machine Learning
+## Machine Learning
 - Definition
 	- Study of algos that improve their Performance at some Task with Experience
 		- well-defined learning task <P,T,E>
 - Preferred for
 	- Speech recognition, NLP, CV, Robot control, Computational Biology, Medical Outcome analysis
-## Machine Learning Slides 32 - Learning
+## Learning
 - If Performance is improved on future tasks after making observations -> Learning
 	- Expanded range of behaviors
 	- Accuracy to perform tasks is improved
@@ -400,6 +400,14 @@ BidirectionalSearch(graph, start_node, goal_node):
 	- Unsupervised
 	- Semi-Supervised
 	- Reinforcement
+## Supervised Learning
+- Observe input-output pair and learn a function that maps said input to output. Note that the target variable type determines learning type
+	- Known as Classification for discrete target variables
+	- Known as Regression for continuous target variables
+- Training
+	- Input features as well as target variables are specified
+-
+## Unsupervised Learning
 ## Machine Learning Slides 33 - Linear Regression + Cost Function Example
 ## Machine Learning Slides 34 - Gradient Descent
 ## Machine Learning Slides 35 - Decision Tree
