@@ -424,7 +424,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 	- **Working**
 		- Choosing Regression Coefficient
 			- Least Square Method, minimize the parameters
-			- Minimize the approximation error by optimizing parameters
+			- Minimize the approximation error by optimizing parameters via cost function. Use MSE here
 				- Should be such that hypothesis of H<sub>0</sub> should be as close to Y for training examples i.e. line of best fit in a way
 ## Machine Learning Slides 34 - Gradient Descent
 ## Machine Learning Slides 35 - Decision Tree
