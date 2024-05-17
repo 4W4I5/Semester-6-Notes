@@ -1,30 +1,30 @@
-| Chapter                                                                       | Status        |
-| ----------------------------------------------------------------------------- | ------------- |
-| Chapter 2.1: Agents & Enviros                                                 | :warning:     |
-| Chapter 2.2: Concept of Rationality                                           | :warning:     |
-| Chapter 2.3: Nature of Enviros                                                | :warning:     |
-| Chapter 2.4: Agent Structure                                                  | :warning:     |
-| Chapter 3.1: Problem Solving Agents                                           | :warning:     |
-| Chapter 3.2: Examples                                                         | :warning:     |
-| Chapter 3.3: Search Algos                                                     | :exclamation: |
-| Chapter 3.4: Uninformed Searches (Practice)                                   | :warning:     |
-| Chapter 3.5: Informed Heuristic Searches (Practice)                           | :warning:     |
-| Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Math) | :warning:     |
-| Chapter 4.1: Local Search & Optimization Problems                             | :exclamation: |
-| Chapter 4.2: Local Search in Continuous Spaces                                | :exclamation: |
-| Chapter 4.3: Search with Nondeterministic Actions                             | :exclamation: |
-| Chapter 4.4: Search in Partially Observable Enviros                           | :exclamation: |
-| Chapter 4.5: Online Search Agents & Unknown Enviros                           | :exclamation: |
-| Chapter 5.1: Game Theory                                                      | :exclamation: |
-| Chapter 5.2: Optimal Decisions in Game                                        | :exclamation: |
-| Chapter 5.3: Heuristic AB Search + Pruning (Practice)                         | :exclamation: |
-| Chapter 5.7: Limitations of Game Search Algos                                 | :exclamation: |
-| Chapter 6.1: Defining CSP                                                     | :exclamation: |
-| Chapter 6.2: Inference in CSP                                                 | :exclamation: |
-| Chapter 6.3: Backtracking Search for CSP (Practice)                           | :exclamation: |
-| Chapter 6.4: Local Search for CSP                                             | :exclamation: |
-| Chapter 6.5: Struct of Problems                                               | :exclamation: |
-| Machine Learning Slides 31,32,33,34,35,36,37,38 (Practice)                    | :warning:     |
+| Chapter                                                                           | Status        |
+| --------------------------------------------------------------------------------- | ------------- |
+| Chapter 2.1: Agents & Enviros                                                     | :warning:     |
+| Chapter 2.2: Concept of Rationality                                               | :warning:     |
+| Chapter 2.3: Nature of Enviros                                                    | :warning:     |
+| Chapter 2.4: Agent Structure                                                      | :warning:     |
+| Chapter 3.1: Problem Solving Agents                                               | :warning:     |
+| Chapter 3.2: Examples                                                             | :warning:     |
+| Chapter 3.3: Search Algos                                                         | :exclamation: |
+| Chapter 3.4: Uninformed Searches (Practice)                                       | :warning:     |
+| Chapter 3.5: Informed Heuristic Searches (Practice)                               | :warning:     |
+| Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Practice) | :warning:     |
+| Chapter 4.1: Local Search & Optimization Problems                                 | :exclamation: |
+| Chapter 4.2: Local Search in Continuous Spaces                                    | :exclamation: |
+| Chapter 4.3: Search with Nondeterministic Actions                                 | :exclamation: |
+| Chapter 4.4: Search in Partially Observable Enviros                               | :exclamation: |
+| Chapter 4.5: Online Search Agents & Unknown Enviros                               | :exclamation: |
+| Chapter 5.1: Game Theory                                                          | :exclamation: |
+| Chapter 5.2: Optimal Decisions in Game                                            | :exclamation: |
+| Chapter 5.3: Heuristic AB Search + Pruning (Practice)                             | :exclamation: |
+| Chapter 5.7: Limitations of Game Search Algos                                     | :exclamation: |
+| Chapter 6.1: Defining CSP                                                         | :exclamation: |
+| Chapter 6.2: Inference in CSP                                                     | :exclamation: |
+| Chapter 6.3: Backtracking Search for CSP (Practice)                               | :exclamation: |
+| Chapter 6.4: Local Search for CSP                                                 | :exclamation: |
+| Chapter 6.5: Struct of Problems                                                   | :exclamation: |
+| Machine Learning Slides 31,32,33,34,35,36,37,38 (Practice)                        | :warning:     |
 
 # Chapter 2
 ## 2.1: Agents & Environments
@@ -367,15 +367,23 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- `h*(x)`: actual cost from currentNode to the goal
 - Consistency
 	- `h(n) - h(n') <= c(n,a,n')`
-		- `h(n)`: Heuristic of nextNode
-		- `h(n')`: Heuristic of currentNode
-		- `c(n,a,n')`:
+		- `h(n)`: Heuristic of nextNode to goalNode
+		- `h(n')`: Heuristic of currentNode to goalNode
+		- `c(n,a,n')`: Actual cost in between these two heuristics
 
 
 --
 
 # Chapter 4: Search in Complex Enviros
 ## 4.1: Local Search & Optimization Problems
+- **Local Search Algos**
+	- Use very little memory
+	- Can find reasonable solutions in large/infinite spaces, not guaranteed to find a solution however therefore cannot prove if one does not exist
+	- Optimizes i.e. finds the max or min whatever is required
+		- If elevation in a graph corresponds to cost then the goal is to find the lowest valley i.e. global minima
+		- If elevation in a graph corresponds to objective function then the goal is to find the highest peak i.e. global maxima
+	- **NOTE:: Checkout N-Queens Problem**
+- **Hill climbing search**
 ## 4.2: Local Search in Continuous Spaces
 ## 4.3: Search in Non-deterministic Actions
 ## 4.4: Search in Partially Observable Enviros
