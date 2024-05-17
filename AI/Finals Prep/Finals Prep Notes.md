@@ -1,14 +1,32 @@
-| Chapter              | Status             |
-| -------------------- | ------------------ |
-| Chapter 2.1          | :white_check_mark: |
-| Chapter 2.2          | :white_check_mark: |
-| Chapter 2.3          | :white_check_mark: |
-| Chapter 2.4          | :white_check_mark: |
-| Chapter 3.1          | :white_check_mark: |
-| Chapter 3.2          | :white_check_mark: |
-| Chapter 3.3          | :warning:          |
-| Chapter 3.4          | :white_check_mark: |
-| Need to add the rest | :warning:          |
+| Chapter     | Status             |
+| ----------- | ------------------ |
+| Chapter 2.1 | :white_check_mark: |
+| Chapter 2.2 | :white_check_mark: |
+| Chapter 2.3 | :white_check_mark: |
+| Chapter 2.4 | :white_check_mark: |
+| Chapter 3.1 | :white_check_mark: |
+| Chapter 3.2 | :white_check_mark: |
+| Chapter 3.3 | :warning:          |
+| Chapter 3.4 | :white_check_mark: |
+| Chapter 3.5 | :warning:          |
+| Chapter 3.6 | :warning:          |
+| Chapter 4.1 |                    |
+| Chapter 4.2 |                    |
+| Chapter 4.3 |                    |
+| Chapter 4.4 |                    |
+| Chapter 4.5 |                    |
+| Chapter 5.1 |                    |
+| Chapter 5.2 |                    |
+| Chapter 5.3 |                    |
+| Chapter 5.4 |                    |
+| Chapter 5.5 |                    |
+| Chapter 5.6 |                    |
+| Chapter 5.7 |                    |
+| Chapter 6.1 |                    |
+| Chapter 6.2 |                    |
+| Chapter 6.3 |                    |
+| Chapter 6.4 |                    |
+| Chapter 6.5            |                    |
 
 # Chapter 2 (Shorten)
 ## 2.1: Agents & Environments
