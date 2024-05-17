@@ -417,7 +417,15 @@ BidirectionalSearch(graph, start_node, goal_node):
 			- Find an optimal policy, mapping states to actions, that maximize states to actions, that maximize long-run measure of the reinforcement
 
 ## Machine Learning Slides 33 - Linear Regression + Cost Function Example
-
+- **Linear Regression**
+	- Map/Fit multiple input features X to output features Y
+	- Multi-Dimensional
+	- **Predicts** the missing values based on complete data in the dataset
+	- **Working**
+		- Choosing Regression Coefficient
+			- Least Square Method, minimize the parameters
+			- Minimize the approximation error by optimizing parameters
+				- Should be such that hypothesis of H<sub>0</sub> should be as close to Y for training examples i.e. line of best fit in a way
 ## Machine Learning Slides 34 - Gradient Descent
 ## Machine Learning Slides 35 - Decision Tree
 ## Machine Learning Slides 36 - Entropy
