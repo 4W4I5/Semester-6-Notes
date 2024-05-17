@@ -351,3 +351,14 @@ BidirectionalSearch(graph, start_node, goal_node):
 	- 2: Complete if all action costs are >= e > 0
 	- 3: Cost-Optimal if all action costs are all identical
 	- 4: If both directions are Breadth-First or Uniform Cost
+## 3.5 Informed (Heuristic) Search Strategies
+## 3.6 Heuristic Functions
+
+--
+
+# Chapter 4: Search in Complex Enviros
+## 4.1: Local Search & Optimization Problems
+## 4.2: Local Search in Continuous Spaces
+## 4.3: Search in Non-deterministic Actions
+## 4.4: Search in Partially Observable Enviros
+## 4.5: Online Search Agents & Unknown Enviros
