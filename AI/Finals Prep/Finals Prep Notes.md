@@ -60,7 +60,7 @@
 		- Omniscience i.e. knowing what the result of every outcome will be is impossible for a computer but it it doable based on precept history and predictions
 ## 2.3: Nature of Environments
 - Specifying Task Environments
-	- For a rational agent we need a way to classify its attributes which are
+	- For a rational agent we need a way to classify its attributes which are **PEAS**
 		- Performance Measure: The goals to keep in mind
 		- Environment: the scope of the agent which is expected to pull in data from and operate in
 		- Actuators: Action mechanisms available to the agent
