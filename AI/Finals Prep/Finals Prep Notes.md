@@ -1,32 +1,37 @@
-| Chapter     | Status             |
-| ----------- | ------------------ |
-| Chapter 2.1 | :white_check_mark: |
-| Chapter 2.2 | :white_check_mark: |
-| Chapter 2.3 | :white_check_mark: |
-| Chapter 2.4 | :white_check_mark: |
-| Chapter 3.1 | :white_check_mark: |
-| Chapter 3.2 | :white_check_mark: |
-| Chapter 3.3 | :warning:          |
-| Chapter 3.4 | :white_check_mark: |
-| Chapter 3.5 | :warning:          |
-| Chapter 3.6 | :warning:          |
-| Chapter 4.1 |                    |
-| Chapter 4.2 |                    |
-| Chapter 4.3 |                    |
-| Chapter 4.4 |                    |
-| Chapter 4.5 |                    |
-| Chapter 5.1 |                    |
-| Chapter 5.2 |                    |
-| Chapter 5.3 |                    |
-| Chapter 5.4 |                    |
-| Chapter 5.5 |                    |
-| Chapter 5.6 |                    |
-| Chapter 5.7 |                    |
-| Chapter 6.1 |                    |
-| Chapter 6.2 |                    |
-| Chapter 6.3 |                    |
-| Chapter 6.4 |                    |
-| Chapter 6.5            |                    |
+| Chapter                                             | Status        |
+| --------------------------------------------------- | ------------- |
+| Chapter 2.1: Agents & Enviros                       | :exclamation: |
+| Chapter 2.2: Concept of Rationality                 | :exclamation: |
+| Chapter 2.3: Nature of Enviros                      | :exclamation: |
+| Chapter 2.4: Agent Structure                        | :exclamation: |
+| Chapter 3.1: Problem Solving Agents                 | :exclamation: |
+| Chapter 3.2: Examples                               | :exclamation: |
+| Chapter 3.3: Search Algos                           | :exclamation: |
+| Chapter 3.4: Uninformed Searches                    | :exclamation: |
+| Chapter 3.5: Informed Heuristic Searches            | :exclamation: |
+| Chapter 3.6: Heuristic Functions                    | :exclamation: |
+| Chapter 4.1: Local Search & Optimization Problems   | :exclamation: |
+| Chapter 4.2: Local Search in Continuous Spaces      | :exclamation: |
+| Chapter 4.3: Search with Nondeterministic Actions   | :exclamation: |
+| Chapter 4.4: Search in Partially Observable Enviros | :exclamation: |
+| Chapter 4.5: Online Search Agents & Unknown Enviros | :exclamation: |
+| Chapter 5.1: Game Theory                            | :exclamation: |
+| Chapter 5.2: Optimal Decisions in Game              | :exclamation: |
+| Chapter 5.3: Heuristic AB Search + Pruning          | :exclamation: |
+| Chapter 5.7: Limitations of Game Search Algos       | :exclamation: |
+| Chapter 6.1: Defining CSP                           | :exclamation: |
+| Chapter 6.2: Inference in CSP                       | :exclamation: |
+| Chapter 6.3: Backtracking Search for CSP            | :exclamation: |
+| Chapter 6.4: Local Search for CSP                   | :exclamation: |
+| Chapter 6.5: Struct of Problems                     | :exclamation: |
+| Machine Learning Slides 31                          | :exclamation: |
+| Machine Learning Slides 32                          | :exclamation: |
+| Machine Learning Slides 33                          | :exclamation: |
+| Machine Learning Slides 34                          | :exclamation: |
+| Machine Learning Slides 35                          | :exclamation: |
+| Machine Learning Slides 36                          | :exclamation: |
+| Machine Learning Slides 37                          | :exclamation: |
+| Machine Learning Slides 38                          | :exclamation: | 
 
 # Chapter 2 (Shorten)
 ## 2.1: Agents & Environments
