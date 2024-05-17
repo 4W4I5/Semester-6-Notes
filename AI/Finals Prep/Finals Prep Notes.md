@@ -403,6 +403,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 ## Supervised Learning
 - Observe input-output pair and learn a function that maps said input to output. Note that the target variable type determines learning type
 	- Known as Classification for discrete target variables
+		- MultiClass vs MultiLabel
 	- Known as Regression for continuous target variables
 - Training
 	- Input features as well as target variables are specified
