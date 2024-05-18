@@ -464,7 +464,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 							- Same as RWS but uses multiple points instead of a single, finds out parents in one spin
 					- Ordinal Based
 						- Ranking
-							- Rank each from highest to lowest, 
+							- Rank each from highest to lowest, assign a probability to each rank and use that instead of fitness
 						- Tournament
 							- Select N parents and pick out highest in a tournament style roster
 					- Threshold Based
