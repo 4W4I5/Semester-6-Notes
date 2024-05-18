@@ -470,7 +470,17 @@ BidirectionalSearch(graph, start_node, goal_node):
 					- Threshold Based
 						- Truncation
 				- Survivor Selection i.e. after iteration
+					- Age-Based
+						- Each individual is allowed to the next population for N number of iterations
+						- Kicked out regardless of fitness
+					- Fitness-Based, eliminates weaker ones
+						- Elitism
+							- Top N are always passed to the next gen
 		- Return best after termination
+			- Conditions
+				- No improvement for N generations
+				- Max number of generations reached
+				- Objective function returns a pre-defined value
 
 --
 
