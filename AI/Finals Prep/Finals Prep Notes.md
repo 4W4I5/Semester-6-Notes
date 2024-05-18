@@ -572,7 +572,14 @@ NOTE:: Did not use the book for this, slides only
 - **Variable & value ordering heuristics**
 	- Select Unassigned Variable
 		- Minimum Remaining Value (MRV)
-			- Most constrained, likely to fail soon
+			- Most constrained, likely to fail soon hence aka as fail-first
+			- Idea is to chose the fewest legal moves
+		- Most Constraining Variable aka Degree heuristic
+			- For tie situations i.e. when cannot pick a starting state, pick the variable involved in the most constraints
+			- Resolves conflicts early on, restricts possibility of dead ends
+	- Order-Domain Values
+		- Least Constraining Values
+			- Rules out few choices for variables it is in constraints with
 ## CSP Consistency
 
 ---
