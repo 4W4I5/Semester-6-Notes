@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Finals Prep/Finals Prep Notes.md",
-                "mode": "source",
+                "file": "Forensics/Finals Prep/Finals Prep Notes.md",
+                "mode": "preview",
                 "source": true
               }
             }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 281.5
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/Finals Prep/Finals Prep Notes.md",
+                "file": "Forensics/Finals Prep/Finals Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/Finals Prep/Finals Prep Notes.md",
+                "file": "Forensics/Finals Prep/Finals Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/Finals Prep/Finals Prep Notes.md"
+                "file": "Forensics/Finals Prep/Finals Prep Notes.md"
               }
             }
           },

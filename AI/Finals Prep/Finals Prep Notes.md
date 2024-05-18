@@ -665,6 +665,8 @@ Updates values for parameters O<sub>0</sub> and O<sub>1</sub>
 	- Anomaly detection such as outliers or unusual patterns
 
 ### K-Clustering
+# NOTE:: FIX THIS BEFORE AI EXAM
+
 - **K-Means**
 	- Select K points as initial centroids randomly.
 	- do while centroids do not change
@@ -691,6 +693,20 @@ Updates values for parameters O<sub>0</sub> and O<sub>1</sub>
 			- I = Number of iterations
 			- d = Number of attributes
 - **K-Medoids**
+	- Initialization:
+	    - Select K initial medoids from the dataset. These can be randomly chosen or selected using a heuristic.
+	    - Assign each data point to the nearest medoid to form initial clusters.
+	- Update Medoids:
+	    - For each cluster, compute the total dissimilarity (or distance) between each data point and all other data points in the cluster.
+	    - Choose the data point within each cluster that minimizes the total dissimilarity as the new medoid for that cluster.
+	- Assign Data Points:
+	    - For each data point, calculate its dissimilarity to each medoid.
+	    - Assign each data point to the cluster with the nearest medoid.
+	- Repeat Until Convergence:
+	    - Repeat steps 2 and 3 until one of the stopping criteria is met:
+	        - No change in cluster assignments.
+	        - Minimum change in the set of medoids.
+	        - Minimum decrease in the total dissimilarity (e.g., Sum of Squared Error).
 - **K-Median**
 	- Same as K-Means except compute Median instead of Mean for each iteration
 - **Kernel K-Mean**
