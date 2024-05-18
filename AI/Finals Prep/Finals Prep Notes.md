@@ -581,6 +581,16 @@ NOTE:: Did not use the book for this, slides only
 		- Least Constraining Values
 			- Rules out few choices for variables it is in constraints with
 ## CSP Consistency
+- **Forward Checking**
+	- Keep track of remaining legal values for unassigned variables
+	- Terminate when a variable has no more legal values
+- **Node Consistency**
+	- Said so when all values in variable domain satisfy variable's unary constraints
+	- Essentially minimize the domain
+- **Arc Consistency**
+	- Said so when all values in domain satisfy variable's binary constraints
+	- Eliminates values that can never be part of consistent solution
+	- Kind of like `LHS==RHS`
 
 ---
 
