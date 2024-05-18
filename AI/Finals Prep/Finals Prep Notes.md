@@ -12,7 +12,7 @@
 | Chapter 3.6: Heuristic Functions + Admissibility + Consistency (Practice) | :white_check_mark: |
 | Chapter 4: Local Search & Optimization Problems (Practice HC + GA)        | :white_check_mark: |
 | Chapter 5: Adversarial Search & Game Theory                               | :white_check_mark: |
-| Chapter 6: Constraint-Satisfaction Problems (Practice)                    | :white_check_mark: | 
+| Chapter 6: Constraint-Satisfaction Problems (Practice)                    | :white_check_mark: |
 | Machine Learning Slides 31,32,33,34,35,36,37,38 (Practice)                | :warning:          |
 
 # Chapter 2
@@ -652,6 +652,14 @@ NOTE:: Did not use the book for this, slides only
 			- Minimize the approximation error by optimizing parameters via cost function. Use MSE here
 				- Should be such that hypothesis of H<sub>0</sub> should be as close to Y for training examples i.e. line of best fit in a way
 ## Machine Learning Slides 34 - Gradient Descent
+Updates values for parameters O<sub>0</sub> and O<sub>1</sub>
 ## Machine Learning Slides 35 - Decision Tree
 ## Machine Learning Slides 36 - Entropy
 ## Machine Learning Slides 37+38 - Clustering
+**Unsupervised Learning i.e. Clustering**
+- Partition dataset into groups that have data points similar to each other in some way
+	- Clusters with High Intra-Class similarity and Low Inter-Class similarity aka Don't mix the colors with the whites in the laundry but also make sure the colors aren't mixed themselves
+- Advantages
+	- Reveals hidden patterns + structures
+	- Reduce dimensionality i.e. compress the data
+	- Anomaly detection such as outliers or unusual patterns
