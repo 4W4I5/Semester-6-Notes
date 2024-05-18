@@ -400,6 +400,8 @@ BidirectionalSearch(graph, start_node, goal_node):
 	- Play bad moves often at start to minimize fail states, reduce size + frequency of bad moves
 	- Similar to Hill-Climbing
 	- Working
+		- Start with Temp T at a High value
+		- While
 		- Select Random move
 			- If move improves heuristic, do it
 			- Else, chose a bad move based on probability
