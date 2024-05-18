@@ -405,6 +405,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- Select Random move
 			- If move improves heuristic, do it
 			- Else, chose a bad move based on probability
+		- 'Cool' the temp value, reduce it slowly via some factor between 0 to 1
 	- Probability function
 		- p = e<sup>(E<sub>2</sub> - E<sub>1</sub>)/kT</sup>
 	- For questions that were given in Sessional 2, just plug the function values into E2 and E1 and use the formula accordingly
@@ -421,8 +422,10 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- Select top solutions based on improvement
 		- Loop until Termination met
 	- **Stochastic Variant**
+		- Only difference to local beam
+			- Selection: Done via probability i.e. Some value of Z and softmax sampling
 		- Pros/Cons
-			- Pros: Diversifies the search, explores broader space of solutions 
+			- Pros: Diversifies the search, explores broader space of solutions
 - **Genetic Algorithm**
 
 --
