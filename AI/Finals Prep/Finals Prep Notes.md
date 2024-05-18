@@ -493,7 +493,7 @@ NOTE:: Did not use the book for this, slides only
 	- Competing against the clock only, not each other
 	- If mario kart then yes as now you have the chance to sabotage each other. i.e. as long as there are multiagents competing with conflicting goals it is adversarial
 
-### Algorithm
+## Algorithm
 - **Minimax**
 	- Complete if tree is finite
 	- Optimal
@@ -515,15 +515,22 @@ NOTE:: Did not use the book for this, slides only
 ---
 
 # Chapter 6: Constraint Satisfaction Problems (Slides 27+)
+
 NOTE:: Did not use the book for this, slides only
+
 ## CSP
-- Constraint Types
+- **Constraint Types**
 	- Unary
+		- Restricted to a single variable i.e. some country cannot be green
 	- Binary
+		- Restricted to a pair of variable i.e. cannot be green and also cannot be red
 	- Hypergraphs
+		- Crypt-Arithmetic Column Constraints
 	- Linear
+		- Solvable, in y-intercept form
 	- Non-Linear
-- State Assignment
+		- Undecidable as not linear i.e. some form of polynomial
+- **State Assignment**
 	- Defined by assigning all values to some/all variables.
 	- Commutative i.e. order does not matter
 	- Consistent Assignment
@@ -531,15 +538,22 @@ NOTE:: Did not use the book for this, slides only
 	- Complete Assignment
 		- Every variable is assigned a value
 			- If all variables satisfy the constraint then it is a solution
-- Visualization
+- **Visualization**
 	- Constrained Graph
 		- Nodes of graph = Variables
 		- Arcs of Graph = Constraints
-
 ### Map Coloring
+- Ensure that each section of the map does not have the same color as the other
+- If a diamond pattern is observed, match the top and bottom corners. Left and right should be opposing and middle should be different
 ### Sudoku
+- Each row and col should have a unique sequence of numbers
 ### N-Queens
+- Each queen must not attack the other queens on the board
 ### Crypt-Arithmetic
+- Assign a number to each letter, ensure they add up equally
+- Use c<sub>x</sub> as carry numbers for e.g.
+	- SEND + MORE = MONEY
+	- c<sub>x</sub> will be either 0 or 1 for domain 0 to 9
 
 ## CSP as Standard Search
 ## Improving CSP Efficiency
@@ -548,7 +562,9 @@ NOTE:: Did not use the book for this, slides only
 ---
 
 # Machine Learning Chapter (Slides 31+)
+
 NOTE:: Did not use the book for this, slides only
+
 ## Machine Learning
 - **Definition**
 	- Study of algos that improve their Performance at some Task with Experience
