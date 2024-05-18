@@ -10,7 +10,7 @@
 | Chapter 3.4: Uninformed Searches (Practice)                                       | :warning:     |
 | Chapter 3.5: Informed Heuristic Searches (Practice)                               | :warning:     |
 | Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Practice) | :warning:     |
-| Chapter 4.1: Local Search & Optimization Problems                                 | :warning:     |
+| Chapter 4.1: Local Search & Optimization Problems (Practice GA)                   | :warning:     |
 | Chapter 5.1: Game Theory                                                          | :exclamation: |
 | Chapter 5.2: Optimal Decisions in Game                                            | :exclamation: |
 | Chapter 5.3: Heuristic AB Search + Pruning (Practice)                             | :exclamation: |
