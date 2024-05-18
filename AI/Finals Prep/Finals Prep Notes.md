@@ -443,12 +443,18 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- Population Initialization
 		- Do-While termination
 			- Fitness Function Calculation
-			- Crossover
+			- Crossover: B/W two chromosomes
 				- N-Point: Split two parent chromosomes and swap
 				- Uniform: Treat each gene separately and swap
-				- Weighted-Avg Recombination: 
-			- Mutation
+				- Weighted-Avg Recombination: Integer Only. Take weight and mult by both gene and add. No need to divide as this is done on a per Gene basis
+			- Mutation: Within a single chromosome
+				- Bit-Flip: Flip one or more random bits
+				- Swap: Randomly pick two positions to swap
+				- Scramble: Pick a length of the chromosome and randomize positions
+				- Inversion: Pick a length of the chromosome and reverse it
 			- Selection
+				- Parent Selection
+				- Survivor Selection i.e. after iteration
 		- Return best after termination
 
 --
