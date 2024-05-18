@@ -10,7 +10,7 @@
 | Chapter 3.4: Uninformed Searches (Practice)                                       | :warning:     |
 | Chapter 3.5: Informed Heuristic Searches (Practice)                               | :warning:     |
 | Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Practice) | :warning:     |
-| Chapter 4.1: Local Search & Optimization Problems                                 | :warning:     | 
+| Chapter 4.1: Local Search & Optimization Problems                                 | :warning:     |
 | Chapter 5.1: Game Theory                                                          | :exclamation: |
 | Chapter 5.2: Optimal Decisions in Game                                            | :exclamation: |
 | Chapter 5.3: Heuristic AB Search + Pruning (Practice)                             | :exclamation: |
@@ -397,6 +397,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 			- Spawn to a different location on fail
 			- Works well on few local minima and plateaus
 - **Simulated Annealing**
+	- Play bad moves often at start to minimize fail states, reduce size + frequency of bad moves
 - **Local Beam Search**
 - **Genetic Algorithm**
 
