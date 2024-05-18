@@ -420,6 +420,9 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- Generate neighboring solutions for each
 		- Select top solutions based on improvement
 		- Loop until Termination met
+	- **Stochastic Variant**
+		- Pros/Cons
+			- Pros: Diversifies the search, explores broader space of solutions 
 - **Genetic Algorithm**
 
 --
