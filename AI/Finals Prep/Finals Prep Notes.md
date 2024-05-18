@@ -692,4 +692,6 @@ Updates values for parameters O<sub>0</sub> and O<sub>1</sub>
 			- d = Number of attributes
 - **K-Medoids**
 - **K-Median**
+	- Same as K-Means except compute Median instead of Mean for each iteration
 - **Kernel K-Mean**
+	- Project to a higher dimension, perform K-Means clustering then map back to original dimension
