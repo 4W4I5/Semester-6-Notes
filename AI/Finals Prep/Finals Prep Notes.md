@@ -12,11 +12,7 @@
 | Chapter 3.6: Heuristic Functions + Admissibility + Consistency (Practice) | :white_check_mark: |
 | Chapter 4: Local Search & Optimization Problems (Practice HC + GA)        | :white_check_mark: |
 | Chapter 5: Adversarial Search & Game Theory                               | :white_check_mark: |
-| Chapter 6.1: Defining CSP                                                 | :warning:          |
-| Chapter 6.2: Inference in CSP                                             | :warning:          |
-| Chapter 6.3: Backtracking Search for CSP (Practice)                       | :warning:          |
-| Chapter 6.4: Local Search for CSP                                         | :warning:          |
-| Chapter 6.5: Struct of Problems                                           | :warning:          |
+| Chapter 6: Constraint-Satisfaction Problems (Practice)                    | :warning:          |
 | Machine Learning Slides 31,32,33,34,35,36,37,38 (Practice)                | :warning:          |
 
 # Chapter 2
@@ -493,24 +489,39 @@ NOTE:: Did not use the book for this, slides only
 - Instead of state-space graphs, complete game trees are defined where every outcome is calculated
 	- A game of X and Os will have every possible move lined up in a tree, each move depends on the previous
 	- Nodes are states of the games and Edges are the moves required to get to that state
+- Note that a racing game does not count as adversarial even if its multiagent
+	- Competing against the clock only, not each other
+	- If mario kart then yes as now you have the chance to sabotage each other. i.e. as long as there are multiagents competing with conflicting goals it is adversarial
 
-## Algorithm
+### Algorithm
 - **Minimax**
--
+	- Complete if tree is finite
+	- Optimal
+	- Complexity
+		- Time: O(b<sup>m</sup>)
+		- Space:
+			- O(bm) for DFS
+			- O(m) for Backtracking
+	- Working
+		- Perform DFS exploration i.e. go as far as possible into a branch and recurse back
+		- Each level has its own function i.e. Max/Min and values are taken according to said function
+	- **Alpha-Beta Pruning**
+		- Minimax is extensive, consumes resources
+		- Alpha is for Highest values, Beta is for Lowest values
+		- Condition to Prune: `Alpha >= Beta`
+		- Start from leftmost and recurse back up, update Node value on every recurse, A-B values can only be sent to child nodes
 
 
 ---
 
-# Chapter 6: Constraint Satisfaction Problems
-## 6.1: Defining Constraint Satisfaction Problems
-## 6.2: Constraint Propagation
-## 6.3: Backtracking Search in CSP
-## 6.4: Local Search for CSP
-## 6.5: Structure of Problems
+# Chapter 6: Constraint Satisfaction Problems (Slides 27+)
+NOTE:: Did not use the book for this, slides only
+
 
 ---
 
 # Machine Learning Chapter (Slides 31+)
+NOTE:: Did not use the book for this, slides only
 ## Machine Learning
 - **Definition**
 	- Study of algos that improve their Performance at some Task with Experience
