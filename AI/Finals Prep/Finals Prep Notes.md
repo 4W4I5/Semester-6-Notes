@@ -556,7 +556,19 @@ NOTE:: Did not use the book for this, slides only
 	- c<sub>x</sub> will be either 0 or 1 for domain 0 to 9
 
 ## CSP as Standard Search
+- Perform DFS
+- Each Level is a variable kind of like Minimax
+	- Every possible assignment is an edge i.e for map coloring of RGB itll have 3 edges for every node
+	- Backtrack at every bad/dumb assignment
+- Formal Algo
+	- IF
+		- Assigning x to next unassigned variable V<sub>k+1</sub> does not violate any constraints with K already assigned variables
+			- Set V<sub>k+1</sub> to X
+			- Evaluate the successors of the current state with this
+	- Else
+		- Backtrack
 ## Improving CSP Efficiency
+- Done by introducing heuristics
 ## CSP Consistency
 
 ---
