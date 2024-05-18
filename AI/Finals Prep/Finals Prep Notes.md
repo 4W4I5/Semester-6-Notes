@@ -411,6 +411,15 @@ BidirectionalSearch(graph, start_node, goal_node):
 - **Local Beam Search**
 	- Keep track of `K` number of states
 		- Generate all successors of all K states for each iteration
+		- If any of the state matches the goal state, stop
+	- If `K` == 1, its the same as Hill-Climbing
+	- If `K` == Infinite, its the same as BFS except each layer would be generated all at once i.e. all nodes for that level would be explored at the same time.
+	- **Workflow:**
+		- Start with multiple initial solutions
+		- Evaluate quality of each
+		- Generate neighboring solutions for each
+		- Select top solutions based on improvement
+		- Loop until Termination met
 - **Genetic Algorithm**
 
 --
