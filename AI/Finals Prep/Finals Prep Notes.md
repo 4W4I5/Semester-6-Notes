@@ -665,7 +665,31 @@ Updates values for parameters O<sub>0</sub> and O<sub>1</sub>
 	- Anomaly detection such as outliers or unusual patterns
 
 ### K-Clustering
-**K-Means**
-**K-Medoids**
-**K-Median**
-**Kernel K-Mean**
+- **K-Means**
+	- Select K points as initial centroids randomly.
+	- do while centroids do not change
+		- Form K Clusters by assigning all points to the closest centroid
+		- Recompute the centroid of each cluster
+	- **Workflow**
+		- Create K number of buckets filled with points
+		- Compute mean of each bucket
+		- Compute distance from mean of each element. Distance can be Euclidean, Manhattan or Chebyshev
+		- Rearrange buckets accordingly
+		- Repeat Until
+			- No change
+			- Minimum change of centroids
+			- Minimum decrease in SSE (Sum of Squared Error)
+	- **Problems**
+		- Outliers and Initial Seeds skew the clusters greatly
+		- Different Sizes, Densities and Non-Globular shapes also mess with k-means
+	- **Complexity**
+		- Time: O(n\*K\*I\*d)
+		- Space: O(d(n+K))
+		- Where
+			- n = Number of points
+			- K = Number of clusters
+			- I = Number of iterations
+			- d = Number of attributes
+- **K-Medoids**
+- **K-Median**
+- **Kernel K-Mean**
