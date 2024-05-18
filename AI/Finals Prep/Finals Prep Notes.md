@@ -12,7 +12,7 @@
 | Chapter 3.6: Heuristic Functions + Admissibility + Consistency (Practice) | :white_check_mark: |
 | Chapter 4: Local Search & Optimization Problems (Practice HC + GA)        | :white_check_mark: |
 | Chapter 5: Adversarial Search & Game Theory                               | :white_check_mark: |
-| Chapter 6: Constraint-Satisfaction Problems (Practice)                    | :warning:          |
+| Chapter 6: Constraint-Satisfaction Problems (Practice)                    | :white_check_mark: | 
 | Machine Learning Slides 31,32,33,34,35,36,37,38 (Practice)                | :warning:          |
 
 # Chapter 2
