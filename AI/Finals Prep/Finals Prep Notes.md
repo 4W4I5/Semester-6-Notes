@@ -384,6 +384,25 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- If elevation in a graph corresponds to objective function then the goal is to find the highest peak i.e. global maxima
 	- **NOTE:: Checkout N-Queens Problem**
 - **Hill climbing search**
+	- AKA greedy local search
+		- Only looks towards immediate neighbors of current state
+		- Simple do-while loop that looks either to the left or right and goes for the higher of the two until a highest point/lowest Heuristic estimate h is found in b/w left and right sides
+			- Gets stuck at local maxima i.e. there is a higher peak but its stuck on one of the lower ones
+			- 14% Success rate, 86% Fail rate
+				- Takes roughly 4 steps when it succeeds but 3 when it gets stuck therefore we can use create variants
+	- Actions on different graph types
+		- Shoulder/Plateau: Iterate through points until a higher one is found, if not then the max is current pos of point i.e. a plateau
+	- Variants
+		- Stochastic
+			- Choose randomly among potential successors i.e. if at a local minima pick one of either side to iterate
+		- First-Choice
+			- Picks first one out of random list of successors
+		- Random Restart
+			- Spawn to a different location on fail
+			- Works well on few local minima and plateaus
+- **Simulated Annealing**
+- **Local Beam Search**
+- **Genetic Algorithim**
 ## 4.2: Local Search in Continuous Spaces
 ## 4.3: Search in Non-deterministic Actions
 ## 4.4: Search in Partially Observable Enviros
