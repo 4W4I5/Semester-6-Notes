@@ -452,8 +452,23 @@ BidirectionalSearch(graph, start_node, goal_node):
 				- Swap: Randomly pick two positions to swap
 				- Scramble: Pick a length of the chromosome and randomize positions
 				- Inversion: Pick a length of the chromosome and reverse it
-			- Selection
+			- Selection, based on fitness
 				- Parent Selection
+					- Fitness Proportionate i.e. roulette wheel or Stochastic Universal Sampling (SUS)
+						- RWS
+							- Calculate sum of fitness
+							- Generate random number from 0 to Sum S
+							- Start from top of population i.e. highest fitness, keep adding finesses to P while P < S
+								- Once P crosses S, stop
+						- SUS
+							- Same as RWS but uses multiple points instead of a single, finds out parents in one spin
+					- Ordinal Based
+						- Ranking
+							- Rank each from highest to lowest, 
+						- Tournament
+							- Select N parents and pick out highest in a tournament style roster
+					- Threshold Based
+						- Truncation
 				- Survivor Selection i.e. after iteration
 		- Return best after termination
 
