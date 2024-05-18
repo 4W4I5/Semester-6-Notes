@@ -1,22 +1,22 @@
 | Chapter                                                                           | Status             |
 | --------------------------------------------------------------------------------- | ------------------ |
-| Chapter 2.1: Agents & Enviros                                                     | :warning:          |
-| Chapter 2.2: Concept of Rationality                                               | :warning:          |
-| Chapter 2.3: Nature of Enviros                                                    | :warning:          |
-| Chapter 2.4: Agent Structure                                                      | :warning:          |
-| Chapter 3.1: Problem Solving Agents                                               | :warning:          |
-| Chapter 3.2: Examples                                                             | :warning:          |
-| Chapter 3.3: Search Algos                                                         | :exclamation:      |
+| Chapter 2.1: Agents & Enviros                                                     | :white_check_mark: |
+| Chapter 2.2: Concept of Rationality                                               | :white_check_mark: |
+| Chapter 2.3: Nature of Enviros                                                    | :white_check_mark: |
+| Chapter 2.4: Agent Structure                                                      | :white_check_mark: |
+| Chapter 3.1: Problem Solving Agents                                               | :white_check_mark: |
+| Chapter 3.2: Examples                                                             | :white_check_mark: |
+| Chapter 3.3: Search Algos                                                         | :white_check_mark: |
 | Chapter 3.4: Uninformed Searches (Practice)                                       | :white_check_mark: |
 | Chapter 3.5: Informed Heuristic Searches (Practice)                               | :white_check_mark: |
 | Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Practice) | :white_check_mark: |
 | Chapter 4.1: Local Search & Optimization Problems (Practice GA)                   | :white_check_mark: |
-| Chapter 5: Adversarial Search & Game Theory                                       | :exclamation:      |
-| Chapter 6.1: Defining CSP                                                         | :exclamation:      |
-| Chapter 6.2: Inference in CSP                                                     | :exclamation:      |
-| Chapter 6.3: Backtracking Search for CSP (Practice)                               | :exclamation:      |
-| Chapter 6.4: Local Search for CSP                                                 | :exclamation:      |
-| Chapter 6.5: Struct of Problems                                                   | :exclamation:      |
+| Chapter 5: Adversarial Search & Game Theory                                       | :white_check_mark: |
+| Chapter 6.1: Defining CSP                                                         | :warning:          |
+| Chapter 6.2: Inference in CSP                                                     | :warning:          |
+| Chapter 6.3: Backtracking Search for CSP (Practice)                               | :warning:          |
+| Chapter 6.4: Local Search for CSP                                                 | :warning:          |
+| Chapter 6.5: Struct of Problems                                                   | :warning:          | 
 | Machine Learning Slides 31,32,33,34,35,36,37,38 (Practice)                        | :warning:          |
 
 # Chapter 2
@@ -159,9 +159,9 @@ Some examples from the book
 
 ---
 
-# Chapter 3 (Shorten)
+# Chapter 3
 ## 3.1: Problem Solving Agents
-- Search problems & solutions
+- **Search problems & solutions**
 	- A search problem has
 		- State space: a set of possible states the environment can be in
 		- Initial State: starting state of the agent
@@ -191,7 +191,7 @@ Some examples from the book
 - Redundant paths
 - Measuring problem-solving performance
 ## 3.4: Uninformed Search Strategies
-- Breadth-first search
+- **Breadth-first search**
 	- Start with the initial node.
 	- Enqueue it into the queue.
 	- Dequeue a node from the queue and expand it.
@@ -214,7 +214,7 @@ BFS(graph, start_node, goal_node):
 
 ```
 
-- Uniform-Cost search (Dijkstra's algo)
+- **Uniform-Cost search (Dijkstra's algo)**
 	- Start with the initial node with cost 0.
 	- Enqueue it into the priority queue.
 	- Dequeue a node from the priority queue with the lowest cost.
@@ -237,7 +237,7 @@ Dijkstra(graph, start_node):
     return "goal not found"
 ```
 
-- Depth-First search
+- **Depth-First search**
 	- Start with the initial node.
 	- Push it onto the stack.
 	- Pop a node from the stack and expand it.
@@ -259,7 +259,7 @@ DFS(graph, start_node, goal_node):
     return "goal not found"
 ```
 
-- Depth-Limited
+- **Depth-Limited**
 	- For Depth-Limited Search (DLS), set a maximum depth limit and perform DFS up to that limit.
 
 ```pseduocode
@@ -280,7 +280,7 @@ recursive_DLS(current_node, goal_node, depth_limit):
     return "cutoff"
 ```
 
-- Iterative Deepening Search
+- **Iterative Deepening Search**
 	- For Iterative Deepening Search (IDS), repeatedly perform DLS with increasing depth limits until the goal is found.
 
 ```pseduocode
@@ -291,7 +291,7 @@ IDS(graph, start_node, goal_node):
             return result
 ```
 
-- Bidirectional Search
+- **Bidirectional Search**
 	- Start BFS from both the start and goal nodes simultaneously.
 	- Meet in the middle when both searches intersect.
 	- Combine paths from both searches to form the solution path.
@@ -318,7 +318,7 @@ BidirectionalSearch(graph, start_node, goal_node):
     return "goal not found"
 ```
 
-- Comparing Uninformed Search Algorithms
+- **Comparing Uninformed Search Algorithms**
 
 | Criterion     | BFS              | UCS                                              | DFS              | DLS              | IDS              | BiS                |
 | ------------- | ---------------- | ------------------------------------------------ | ---------------- | ---------------- | ---------------- | ------------------ |
@@ -327,25 +327,25 @@ BidirectionalSearch(graph, start_node, goal_node):
 | Time          | O(b<sup>d</sup>) | O(b<sup>1 + [<sup>C\*<sup/>/<sub>e</sub>]</sup>) | O(b<sup>m</sup>) | O(b<sup>l</sup>) | O(b<sup>d</sup>) | O(b<sup>d/2</sup>) |
 | Space         | O(b<sup>d</sup>) | O(b<sup>1 + [<sup>C\*<sup/>/<sub>e</sub>]</sup>) | O(b\m)           | O(b\*l)          | O(b\*d)          | O(b<sup>d/2</sup>) |
 
-- Key
+- **Key**
 	- b = Branching factor
 	- m = Maximum Depth
 	- d = Depth of shallowest solution, M if there is no solution
 	- L = depth limit
-- Caveats
+- **Caveats**
 	- 1: Complete if b is finite
 	- 2: Complete if all action costs are >= e > 0
 	- 3: Cost-Optimal if all action costs are all identical
 	- 4: If both directions are Breadth-First or Uniform Cost
 ## 3.5 Informed (Heuristic) Search Strategies
-- Best First Search aka Uniform Cost Search
+- **Best First Search aka Uniform Cost Search**
 	- Incomplete for tree searches, complete for graph searches in finite spaces
 	- Eval nodes based on heuristic only
 	- Gets stuck @ local minima
 	- `f(n) = h(n)`
 	- Complexity: O(b<sup>m</sup>), where m is max depth of search space
 	- If heuristic is admissible + consistent then its basically A*
-- A* Search
+- **A* Search**
 	- BFS/UCS with Cost added too
 	- `f(n) = g(n) + h(n)`
 		- H(n) can be any distance heuristic
@@ -354,11 +354,11 @@ BidirectionalSearch(graph, start_node, goal_node):
 	- Optimal if heuristic is admissable
 	- Complexity: Same as BFS/UCS
 ## 3.6 Heuristic Functions (Math)
-- Admissibility
+- **Admissibility**
 	- `h(x) <= h*(x)`
 		- `h(x)`: heuristic cost from currentNode to the goal
 		- `h*(x)`: actual cost from currentNode to the goal
-- Consistency
+- **Consistency**
 	- `h(n) - h(n') <= c(n,a,n')`
 		- `h(n)`: Heuristic of nextNode to goalNode
 		- `h(n')`: Heuristic of currentNode to goalNode
@@ -485,7 +485,16 @@ BidirectionalSearch(graph, start_node, goal_node):
 
 # Chapter 5: Adversarial Search & Games
 NOTE:: Did not use the book for this, slides only
+- Essentially multiagents where agents are going against each other
+	- One is min other is max
+	- One trying to win the game by taking away the others pieces
+- Instead of state-space graphs, complete game trees are defined where every outcome is calculated
+	- A game of X and Os will have every possible move lined up in a tree, each move depends on the previous
+	- Nodes are states of the games and Edges are the moves required to get to that state
 
+### Algorithm
+- **Minimax**
+-
 ---
 
 # Chapter 6: Constraint Satisfaction Problems
