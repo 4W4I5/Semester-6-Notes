@@ -516,7 +516,33 @@ NOTE:: Did not use the book for this, slides only
 
 # Chapter 6: Constraint Satisfaction Problems (Slides 27+)
 NOTE:: Did not use the book for this, slides only
+## CSP
+- Constraint Types
+	- Unary
+	- Binary
+	- Hypergraphs
+	- Linear
+	- Non-Linear
+- Assignment
+	- Defined by assigning all values to some/all variables.
+	- Commutative i.e. order does not matter
+	- Consistent Assignment
+		- Assignment does not violate constraints
+	- Complete Assignment
+		- Every variable is assigned a value
+- Visualization
+	- Constrained Graph
+		- Nodes of graph = Variables
+		- Arcs of Graph = Constraints
 
+### Map Coloring
+### Sudoku
+### N-Queens
+### Crypt-Arithmetic
+
+## CSP as Standard Search
+## Improving CSP Efficiency
+## CSP Consistency
 
 ---
 
