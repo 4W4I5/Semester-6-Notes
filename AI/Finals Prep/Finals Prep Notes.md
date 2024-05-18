@@ -595,6 +595,8 @@ NOTE:: Did not use the book for this, slides only
 	- For EQ where say X<sub>1</sub> < X<sub>2</sub> < X<sub>3</sub>, via two binary constraints
 		- Path consistency will ensure that X<sub>1</sub> < X<sub>3</sub> by ensuring arc consistency b/w the two binary constraints
 - **K-Consistency**
+	- Generalization of Arc Consistency
+	- if K == 2 then it is essentially Path consistency where 2 constraints are being met, higher values of K would require K number of variables to be constrained for.
 
 ---
 
