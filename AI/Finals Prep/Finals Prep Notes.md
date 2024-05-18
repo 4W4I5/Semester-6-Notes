@@ -409,6 +409,8 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- p = e<sup>(E<sub>2</sub> - E<sub>1</sub>)/kT</sup>
 	- For questions that were given in Sessional 2, just plug the function values into E2 and E1 and use the formula accordingly
 - **Local Beam Search**
+	- Keep track of `K` number of states
+		- Generate all successors of all K states for each iteration
 - **Genetic Algorithm**
 
 --
