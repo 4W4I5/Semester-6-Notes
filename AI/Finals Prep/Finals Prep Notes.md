@@ -591,6 +591,10 @@ NOTE:: Did not use the book for this, slides only
 	- Said so when all values in domain satisfy variable's binary constraints
 	- Eliminates values that can never be part of consistent solution by ensuring the values do not exist for said domain involving both variables
 	- Kind of like `LHS==RHS`
+- **Path Consistency**
+	- For EQ where say X<sub>1</sub> < X<sub>2</sub> < X<sub>3</sub>, via two binary constraints
+		- Path consistency will ensure that X<sub>1</sub> < X<sub>3</sub> by ensuring arc consistency b/w the two binary constraints
+- **K-Consistency**
 
 ---
 
