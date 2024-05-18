@@ -398,6 +398,13 @@ BidirectionalSearch(graph, start_node, goal_node):
 			- Works well on few local minima and plateaus
 - **Simulated Annealing**
 	- Play bad moves often at start to minimize fail states, reduce size + frequency of bad moves
+	- Similar to Hill-Climbing
+	- Working
+		- Select Random move
+			- If move improves heuristic, do it
+			- Else, chose a bad move based on probability
+	- Probability function
+		- p = e<sup>(E<sub>2</sub> - E<sub>1</sub>)/kT</sup>
 - **Local Beam Search**
 - **Genetic Algorithm**
 

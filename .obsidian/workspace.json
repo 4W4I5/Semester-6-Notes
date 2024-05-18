@@ -86,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "AI/Finals Prep/Finals Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "AI/Finals Prep/Finals Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "AI/Finals Prep/Finals Prep Notes.md"
               }
             }
           },
@@ -169,10 +171,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "8c6d55feab7a2f1f",
   "lastOpenFiles": [
-    "AI/Finals Prep/Finals Prep Notes.md",
     "Untitled.md",
+    "AI/Finals Prep/Finals Prep Notes.md",
     "README.md",
     "Forensics/Finals Prep/Finals Prep Notes.md",
     "Forensics/Sessional 1 Prep/Sessional 1 Prep Notes.md",
