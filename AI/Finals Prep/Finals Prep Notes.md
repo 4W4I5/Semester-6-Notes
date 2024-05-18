@@ -523,13 +523,14 @@ NOTE:: Did not use the book for this, slides only
 	- Hypergraphs
 	- Linear
 	- Non-Linear
-- Assignment
+- State Assignment
 	- Defined by assigning all values to some/all variables.
 	- Commutative i.e. order does not matter
 	- Consistent Assignment
 		- Assignment does not violate constraints
 	- Complete Assignment
 		- Every variable is assigned a value
+			- If all variables satisfy the constraint then it is a solution
 - Visualization
 	- Constrained Graph
 		- Nodes of graph = Variables
