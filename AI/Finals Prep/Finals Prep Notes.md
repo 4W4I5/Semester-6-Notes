@@ -10,11 +10,7 @@
 | Chapter 3.4: Uninformed Searches (Practice)                                       | :warning:     |
 | Chapter 3.5: Informed Heuristic Searches (Practice)                               | :warning:     |
 | Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Practice) | :warning:     |
-| Chapter 4.1: Local Search & Optimization Problems                                 | :exclamation: |
-| Chapter 4.2: Local Search in Continuous Spaces                                    | :exclamation: |
-| Chapter 4.3: Search with Nondeterministic Actions                                 | :exclamation: |
-| Chapter 4.4: Search in Partially Observable Enviros                               | :exclamation: |
-| Chapter 4.5: Online Search Agents & Unknown Enviros                               | :exclamation: |
+| Chapter 4.1: Local Search & Optimization Problems                                 | :warning:     | 
 | Chapter 5.1: Game Theory                                                          | :exclamation: |
 | Chapter 5.2: Optimal Decisions in Game                                            | :exclamation: |
 | Chapter 5.3: Heuristic AB Search + Pruning (Practice)                             | :exclamation: |
@@ -402,11 +398,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 			- Works well on few local minima and plateaus
 - **Simulated Annealing**
 - **Local Beam Search**
-- **Genetic Algorithim**
-## 4.2: Local Search in Continuous Spaces
-## 4.3: Search in Non-deterministic Actions
-## 4.4: Search in Partially Observable Enviros
-## 4.5: Online Search Agents & Unknown Enviros
+- **Genetic Algorithm**
 
 --
 
