@@ -1,23 +1,23 @@
-| Chapter                                                                           | Status             |
-| --------------------------------------------------------------------------------- | ------------------ |
-| Chapter 2.1: Agents & Enviros                                                     | :white_check_mark: |
-| Chapter 2.2: Concept of Rationality                                               | :white_check_mark: |
-| Chapter 2.3: Nature of Enviros                                                    | :white_check_mark: |
-| Chapter 2.4: Agent Structure                                                      | :white_check_mark: |
-| Chapter 3.1: Problem Solving Agents                                               | :white_check_mark: |
-| Chapter 3.2: Examples                                                             | :white_check_mark: |
-| Chapter 3.3: Search Algos                                                         | :white_check_mark: |
-| Chapter 3.4: Uninformed Searches (Practice)                                       | :white_check_mark: |
-| Chapter 3.5: Informed Heuristic Searches (Practice)                               | :white_check_mark: |
-| Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Practice) | :white_check_mark: |
-| Chapter 4.1: Local Search & Optimization Problems (Practice GA)                   | :white_check_mark: |
-| Chapter 5: Adversarial Search & Game Theory                                       | :white_check_mark: |
-| Chapter 6.1: Defining CSP                                                         | :warning:          |
-| Chapter 6.2: Inference in CSP                                                     | :warning:          |
-| Chapter 6.3: Backtracking Search for CSP (Practice)                               | :warning:          |
-| Chapter 6.4: Local Search for CSP                                                 | :warning:          |
-| Chapter 6.5: Struct of Problems                                                   | :warning:          | 
-| Machine Learning Slides 31,32,33,34,35,36,37,38 (Practice)                        | :warning:          |
+| Chapter                                                                   | Status             |
+| ------------------------------------------------------------------------- | ------------------ |
+| Chapter 2.1: Agents & Enviros                                             | :white_check_mark: |
+| Chapter 2.2: Concept of Rationality                                       | :white_check_mark: |
+| Chapter 2.3: Nature of Enviros                                            | :white_check_mark: |
+| Chapter 2.4: Agent Structure                                              | :white_check_mark: |
+| Chapter 3.1: Problem Solving Agents                                       | :white_check_mark: |
+| Chapter 3.2: Examples                                                     | :white_check_mark: |
+| Chapter 3.3: Search Algos                                                 | :white_check_mark: |
+| Chapter 3.4: Uninformed Searches (Practice)                               | :white_check_mark: |
+| Chapter 3.5: Informed Heuristic Searches (Practice)                       | :white_check_mark: |
+| Chapter 3.6: Heuristic Functions + Admissibility + Consistency (Practice) | :white_check_mark: |
+| Chapter 4: Local Search & Optimization Problems (Practice HC + GA)        | :white_check_mark: |
+| Chapter 5: Adversarial Search & Game Theory                               | :white_check_mark: |
+| Chapter 6.1: Defining CSP                                                 | :warning:          |
+| Chapter 6.2: Inference in CSP                                             | :warning:          |
+| Chapter 6.3: Backtracking Search for CSP (Practice)                       | :warning:          |
+| Chapter 6.4: Local Search for CSP                                         | :warning:          |
+| Chapter 6.5: Struct of Problems                                           | :warning:          |
+| Machine Learning Slides 31,32,33,34,35,36,37,38 (Practice)                | :warning:          |
 
 # Chapter 2
 ## 2.1: Agents & Environments
@@ -484,7 +484,9 @@ BidirectionalSearch(graph, start_node, goal_node):
 --
 
 # Chapter 5: Adversarial Search & Games
+
 NOTE:: Did not use the book for this, slides only
+
 - Essentially multiagents where agents are going against each other
 	- One is min other is max
 	- One trying to win the game by taking away the others pieces
@@ -492,7 +494,7 @@ NOTE:: Did not use the book for this, slides only
 	- A game of X and Os will have every possible move lined up in a tree, each move depends on the previous
 	- Nodes are states of the games and Edges are the moves required to get to that state
 
-### Algorithm
+## Algorithm
 - **Minimax**
 -
 ---
