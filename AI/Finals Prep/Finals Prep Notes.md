@@ -568,7 +568,11 @@ NOTE:: Did not use the book for this, slides only
 	- Else
 		- Backtrack
 ## Improving CSP Efficiency
-- Done by introducing heuristics
+**Done by introducing heuristics**
+- **Variable & value ordering heuristics**
+	- Select Unassigned Variable
+		- Minimum Remaining Value (MRV)
+			- Most constrained, likely to fail soon
 ## CSP Consistency
 
 ---
