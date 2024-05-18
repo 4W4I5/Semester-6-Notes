@@ -427,6 +427,29 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- Pros/Cons
 			- Pros: Diversifies the search, explores broader space of solutions
 - **Genetic Algorithm**
+	- **Mapping**
+		- Encode the Phenotype i.e. realspace data into a Genotype i.e. virtualspace data
+	- **Terminologies**
+		- Population: Subset of all possible encoded solutions to the problem
+		- Chromosomes: One solution
+		- Gene: One element position of the chromosome
+		- Allele: Value a gene has for a particular chromosome
+		- Example (Timetable Project we did in lab):
+			- Population: The timetable
+			- Chromosome: Day
+			- Gene: Exam slots per day
+			- Allele: Features i.e. Invigilator, Course code + name, students taking the exam etc
+	- **Workflow**:
+		- Population Initialization
+		- Do-While termination
+			- Fitness Function Calculation
+			- Crossover
+				- N-Point: Split two parent chromosomes and swap
+				- Uniform: Treat each gene separately and swap
+				- Weighted-Avg Recombination: 
+			- Mutation
+			- Selection
+		- Return best after termination
 
 --
 
