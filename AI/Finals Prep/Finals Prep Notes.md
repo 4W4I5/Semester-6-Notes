@@ -663,3 +663,9 @@ Updates values for parameters O<sub>0</sub> and O<sub>1</sub>
 	- Reveals hidden patterns + structures
 	- Reduce dimensionality i.e. compress the data
 	- Anomaly detection such as outliers or unusual patterns
+
+### K-Clustering
+**K-Means**
+**K-Medoids**
+**K-Median**
+**Kernel K-Mean**
