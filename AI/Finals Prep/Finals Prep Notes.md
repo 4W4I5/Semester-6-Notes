@@ -407,6 +407,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 			- Else, chose a bad move based on probability
 	- Probability function
 		- p = e<sup>(E<sub>2</sub> - E<sub>1</sub>)/kT</sup>
+	- For questions that were given in Sessional 2, just plug the function values into E2 and E1 and use the formula accordingly
 - **Local Beam Search**
 - **Genetic Algorithm**
 
