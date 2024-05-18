@@ -7,10 +7,10 @@
 | Chapter 3.1: Problem Solving Agents                                               | :warning:     |
 | Chapter 3.2: Examples                                                             | :warning:     |
 | Chapter 3.3: Search Algos                                                         | :exclamation: |
-| Chapter 3.4: Uninformed Searches (Practice)                                       | :warning:     |
-| Chapter 3.5: Informed Heuristic Searches (Practice)                               | :warning:     |
-| Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Practice) | :warning:     |
-| Chapter 4.1: Local Search & Optimization Problems (Practice GA)                   | :warning:     |
+| Chapter 3.4: Uninformed Searches (Practice)                                       | :white_check_mark:     |
+| Chapter 3.5: Informed Heuristic Searches (Practice)                               | :white_check_mark:     |
+| Chapter 3.6: Heuristic Functions (Admissibility + Consistency as well) (Practice) | :white_check_mark:     |
+| Chapter 4.1: Local Search & Optimization Problems (Practice GA)                   | :white_check_mark:     |
 | Chapter 5.1: Game Theory                                                          | :exclamation: |
 | Chapter 5.2: Optimal Decisions in Game                                            | :exclamation: |
 | Chapter 5.3: Heuristic AB Search + Pruning (Practice)                             | :exclamation: |
@@ -427,6 +427,8 @@ BidirectionalSearch(graph, start_node, goal_node):
 		- Pros/Cons
 			- Pros: Diversifies the search, explores broader space of solutions
 - **Genetic Algorithm**
+	- **Applications**: Most are generally CSP based
+		- Robotics, Economics, Automated Design, Scheduling Tasks, Vehicle Routing, Marketing and Medicine
 	- **Mapping**
 		- Encode the Phenotype i.e. realspace data into a Genotype i.e. virtualspace data
 	- **Terminologies**
