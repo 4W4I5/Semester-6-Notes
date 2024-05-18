@@ -481,7 +481,7 @@ BidirectionalSearch(graph, start_node, goal_node):
 				- Max number of generations reached
 				- Objective function returns a pre-defined value
 
---
+---
 
 # Chapter 5: Adversarial Search & Games
 
@@ -497,6 +497,8 @@ NOTE:: Did not use the book for this, slides only
 ## Algorithm
 - **Minimax**
 -
+
+
 ---
 
 # Chapter 6: Constraint Satisfaction Problems
