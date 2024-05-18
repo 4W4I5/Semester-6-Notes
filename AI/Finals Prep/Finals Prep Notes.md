@@ -586,10 +586,10 @@ NOTE:: Did not use the book for this, slides only
 	- Terminate when a variable has no more legal values
 - **Node Consistency**
 	- Said so when all values in variable domain satisfy variable's unary constraints
-	- Essentially minimize the domain
+	- Essentially minimize the domain within the variable
 - **Arc Consistency**
 	- Said so when all values in domain satisfy variable's binary constraints
-	- Eliminates values that can never be part of consistent solution
+	- Eliminates values that can never be part of consistent solution by ensuring the values do not exist for said domain involving both variables
 	- Kind of like `LHS==RHS`
 
 ---
