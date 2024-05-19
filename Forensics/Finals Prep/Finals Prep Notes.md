@@ -3,8 +3,8 @@
 | Smart Watch Forensics                                               | :warning: |
 | Cloud Forensics                                                     | :warning: |
 | Report Writing                                                      | :warning: |
-| Mobile Forensics                                                    | :warning: |
 | Digital Forensics Analysis & Validation (Anti-Forensics Techniques) | :warning: |
+| Mobile Forensics                                                    | :warning: |
 | Assignment 1: Laws + Policies                                       | :warning: |
 | Assignment 2: Android Forensics                                     | :warning: |
 | Assignment 3: MFT + NTFS + ADS                                      | :warning: |
@@ -18,9 +18,9 @@
 ---
 # Mobile Forensics
 ---
-# Report Writing
----
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques)
+---
+# Report Writing
 ---
 # Assignments
 ## Assignment 1: Laws + Policies
