@@ -26,6 +26,10 @@
 ## Assignment 1: Laws + Policies
 ## Assignment 2: Android Forensics
 ## Assignment 3: MFT + NTFS + ADS
+- **ADS**
+	- Commands
+		- Create ADS on text.txt -> `echo hidden > text.txt:ads.txt`
+		- Read ADS on text.txt -> `more < text.txt:ads.txt`
 ## Assignment 4: Dark Web Forensics
 ## Assignment 5: Python Code to read MBR
 ## Assignment 6: Timeline Analysis using TSK
