@@ -30,7 +30,8 @@
 	- Commands
 		- Create ADS on text.txt -> `echo hidden > text.txt:ads.txt`
 		- Read ADS on text.txt -> `more < text.txt:ads.txt`
-		- Executing DLL via ADS -> ``
+		- Executing DLL via ADS -> `rundll32 test.txt:malicious.dll,EntryPoint`
+			- To view contents -> `more < test.txt:malicious.dll`
 ## Assignment 4: Dark Web Forensics
 ## Assignment 5: Python Code to read MBR
 ## Assignment 6: Timeline Analysis using TSK
