@@ -143,27 +143,88 @@
 		- Processes & Procedures
 			- Detailed docs on workflows, hardware configs, network maps and application processes
 	- Jurisdiction
+		- No uniform laws for cloud data access and handling.
+		- Challenges arise when data is stored across multiple jurisdictions.
+		- Investigators must avoid mixing other customers' data with target data.
+		- Varying privacy laws in different countries (e.g., EU’s stringent data protection regulations) complicate cross-border data access.
 	- Evidence Access
+		- Warrants and Subpoenas
+			- Mechanisms for obtaining electronic information, each with specific legal requirements.
+	    - Search Warrants
+		    - Used in criminal cases with probable cause; describe specific data to be seized. Challenges include specifying online data locations and managing impact on other customers.
+	    - Subpoenas and Court Orders
+		    - Issued in civil and criminal cases to compel information disclosure; non-government entities face more limitations than government agencies.
 - **Technical Challenges**
 	- Architecture
+		- Unique setups of CSPs complicate standard procedures.
+		- Secret data storage locations pose security challenges.
+		- Log differences complicate data tracking and evidence chain.
+		- Mixed customer data complicates identification.
 	- Data Collection
+		- Requires cross-referencing with other data and logs.
+		- Logs and metadata help piece together incidents.
+		- Server clock synchronization is crucial.
+		- Analyzing file metadata verifies access and changes.
 	- Anti-Forensics
+		- Tactics to destroy or hide evidence.
+		- Hackers may change file extensions, use malware, encrypt data, or alter metadata.
+		- Comparing file hashes detects altered files.
 	- Incident First-Responders
+		- SPs usually have trained personnel.
+		- If lacking, forensics examiners must organize and direct staff.
+		- Ensuring CSP staff follows directions is essential.
+		- Staff may need training in evidence collection and chain of custody.
 	- Role Management
+		- Understand data ownership and access.
+		- Determine if sensitive information was compromised.
+		- Identifying access permissions helps find victims or suspects.
+		- Assess if compromises were intentional or accidental.
 	- Standards + Training
+		- Organizations like CSA work on creating standards for CSPs.
+		- Cloud investigators need specialized training.
+		- Training resources include:
+		    - (ISC)² Certified Cyber Forensics Professional
+		    - INFOSEC Institute
+		    - SANS Cloud Forensics with F-Response
+		    - National Institute of Justice Digital Forensics Training (for law enforcement)
+		    - University College Dublin Centre for Cybersecurity and Cybercrime Investigation
 	- Encryption in the cloud
+		- ***In next point***
 - **Methods of data acquisition**
 	- Evidence Collection Methods
+		- Examine firewall and server logs for attacker activity.
+		- Ensure the database hasn’t been accessed or corrupted.
+		- Focus on transaction logs to track unauthorized activities.
 	- Enumeration + File Recovery
+		- Traditional methods used for specific file collections or deleted file recovery.
+		- Recovery depends on the CSP’s file system (e.g., feasible in Microsoft NTFS RAID systems, challenging with Linux/UNIX).
 	- Remote Acquisition
+		- Challenges include large data volumes and network speed limitations.
+		- May require negotiations to narrow the scope of data collection.
+		- Setting up a separate cloud system for the investigation ensures restricted and protected access.
 	- Snapshots in VE
+		- Snapshots capture system states at different times.
+		- Recreate servers from snapshots to acquire images and calculate hashes (MD5 or SHA-1).
+		- Compare hash values, file dates, and access permissions to identify alterations.
 	- Complexity of cloud systems
-	- Encryption in the cloud
-	- Handling Encrypted data
+		- Physical servers host thousands of virtual networks with virtual switches.
+		- VMs may share IP and MAC addresses across networks.
+		- CSPs must isolate data related to the incident, considering backups and logs.
 	- Encryption in the Cloud
-	- Handling Encrypted Data
+		- Types of Encrypted Data
+		    - Data at Rest: Stored on disk.
+		    - Data in Motion: Transmitted over a network.
+		    - Data in Use: In RAM.
+		- Handling Encrypted Data
+		    - Cooperation from data owner or CSP needed to decrypt data.
+		    - Legal intervention may be required if the data owner is uncooperative.
 	- Encryption Tools and Vendors
+		- Micro Focus Atalla Cloud Encryption: Key management and data encryption.
+		- Trend Micro SecureCloud: Encryption with key management, data wiping after deletion.
+		- Sophos SafeGuard Encryption: Automatic encryption/decryption, compatible with Dropbox and OneDrive.
 	- Advanced Encryption Techniques
+		- Fully Homomorphic Encryption -> Allows encrypted data processing without decryption.
+		- Blockchain Technology -> Provides a secure, traceable ledger of transactions, impacting digital forensics. (e.g., Dubai mandates blockchain in all banks by 2020).
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
 - **Data to collect/analyze during an investigation**
