@@ -283,3 +283,11 @@
 		- `tsk_gettimes /IMG_NAME.img > txtfile.txt`
 - Using mactime.pl to create a timeline. Note that we can feed the output from other files into this timeline and it will enrich the timeline
 	- `mactime.pl -b txtfile.txt > output`
+- Extra commands to use that might be helpful
+	- `tsk_comparedir`: compare localdir with contents of image/raw device
+	- `tsk_recover`: Recover file using the ils inodes
+- File System Layer tools
+	- `fsstat`: Show FS system details and statistics including layout, sizes and labels
+- File Name Layer Tools
+	- `ffind`: Find allocated/unallocated file names in given metadata structure
+	- `fls`: List allocated/unallocated filenames in a directory
