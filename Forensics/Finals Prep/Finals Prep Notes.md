@@ -27,24 +27,24 @@
 	- Calendar & Reminders
 	- Sensor Data
 	- Payment & Transaction Data
-	- System Logs & Diagnositcs
+	- System Logs & Diagnostics
 	- Voice Assistant Data (Siri)
 	- Workout & Exercise Data
 	- Fall Detection & Emergency SOS Data
-## Challenges in SmartWatch Forensics
+## Challenges in Smartwatch Forensics
 - Compact Size
 - Proprietary OS
-- Intericacies of Data sync
+- Intricacies of Data sync
 - Small storage capacity
 - Encryption & Security measures
 - Compatibility with DF tools
-- Fragmentation across modles
+- Fragmentation across models
 - Limited DF standards + Guidelines
 
 ## Tools & Techniques
 - Data Extraction
 - Data Analysis
-- Cloud Intergration
+- Cloud Integration
 
 
 
