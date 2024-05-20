@@ -14,15 +14,23 @@
 
 # Smart Watch Forensics (Lec 20)
 
-## Forensics Artifacts
-- Android
-	- Device Info
-		- Model, Serial Number, Manufacturer Details
-		- Firmware and OS versions
-		- Device Settings and Configs
-	- User ID
-		- Linked Google Account
-
+## Android & Apple Forensics Artifacts
+- Device Info
+- User ID
+- Comms Data
+- App Data
+- Sync Data
+- Location Info
+- Health & Fitness Data
+- Multimedia Files
+- Apple Only
+	- Calendar & Reminders
+	- Sensor Data
+	- Payment & Transaction Data
+	- System Logs & Diagnositcs
+	- Voice Assistant Data (Siri)
+	- Workout & Exercise Data
+	- Fall Detection & Emergency SOS Data
 ## Challenges in SmartWatch Forensics
 - Compact Size
 - Proprietary OS
@@ -32,6 +40,11 @@
 - Compatibility with DF tools
 - Fragmentation across modles
 - Limited DF standards + Guidelines
+
+## Tools & Techniques
+- Data Extraction
+- Data Analysis
+- Cloud Intergration
 
 
 
