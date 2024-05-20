@@ -126,13 +126,13 @@
 	- Hybrid -> Mix of Private + Public Glass
 - **Cloud Forensics Essentials**
 	- Organizational -> Structure of the cloud i.e. data storage location and administration of services
-	- Legal -> 
-	- Technical
+	- Legal -> Covers SLA and other legal shit as data can be located internationally
+	- Technical -> Deals with procedures + specialized applications designed to perform forensics recovery and analysis in the cloud
 - **Requirements of a Cloud Forensics Tool?**
-	- Data Collection
-	- Elastic, Static and Live forensics
-	- Evidence Segregation
-	- Investigations in Virtualized Enviros
+	- Data Collection -> Identify, label, record and Acquire data
+	- Elastic, Static and Live forensics -> Expand/Contract their data storage capabilities
+	- Evidence Segregation -> Be able to separate data mixed in from other consumer's data
+	- Investigations in Virtualized Enviros -> Capability to examine virtual systems
 - **Legal Challenges**
 	- Service Level Agreements (SLAs)
 	- Jurisdiction
