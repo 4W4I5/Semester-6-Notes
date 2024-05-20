@@ -496,4 +496,7 @@
 		- Use amcacheparser
 	- USBForensics
 	- Registry
-	-
+		- USB
+			- HKLM\\SYSTEM\\ControlSet\\ENUM\\USBSTOR
+			- Get usb name>serial number>properties
+		- System Log
