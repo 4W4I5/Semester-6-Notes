@@ -82,8 +82,8 @@
 		- /data -> aka userdata
 			- Includes contacts, messages, settings and installed apps
 			- Wiped during Factory reset, great source of forensic data
-		- /metadata ->
-		- /cache ->
+		- /metadata -> used when device is encrypted
+		- /cache -> 
 		- /misc ->
 		- /sdcard ->
 		- /sd-ext ->
