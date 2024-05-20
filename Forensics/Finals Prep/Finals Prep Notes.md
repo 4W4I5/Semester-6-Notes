@@ -290,4 +290,27 @@
 	- `fsstat`: Show FS system details and statistics including layout, sizes and labels
 - File Name Layer Tools
 	- `ffind`: Find allocated/unallocated file names in given metadata structure
-	- `fls`: List allocated/unallocated filenames in a directory
+	- `fls`: List allocated/unallocated filenames in a directory. Use switches -rpl to list long names recursively
+- Data Unit Layer Tools
+	- `blkcat`:
+	- `blkls`:
+	- `blkstat`:
+	- `blkcalc`:
+- Filesystem Journal Tools
+	- `jcat`:
+	- `jls`
+- Volume System Tools
+	- `mmls`:
+	- `mmstat`:
+	- `mmcat`:
+- Image File Tools
+	- `img_stat`:
+	- `img_cat`:
+- Disk Tools
+	- `disk_sreset`:
+	- `disk_stat`:
+- Other Tools
+	- `hfind`:
+	- `mactime`:
+	- `sorter`:
+	- `sigfind`:
