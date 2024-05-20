@@ -1,7 +1,7 @@
 | Chapter                                                                     | Status             |
 | --------------------------------------------------------------------------- | ------------------ |
 | Smart Watch Forensics - Lec 20                                              | :white_check_mark: |
-| Mobile Forensics  - Lec 16                                                  | :warning:          |
+| Mobile Forensics  - Lec 16                                                  | :white_check_mark:          |
 | Cloud Forensics - Lec 13                                                    | :warning:          |
 | Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning:          |
 | Report Writing - Lec 14                                                     | :warning:          |
@@ -13,7 +13,6 @@
 | Assignment 6: Timeline Analysis using TSK                                   | :warning:          |
 
 # Smart Watch Forensics (Lec 20)
-
 ## Android & Apple Forensics Artifacts
 - Device Info
 - User ID
@@ -40,7 +39,6 @@
 - Compatibility with DF tools
 - Fragmentation across models
 - Limited DF standards + Guidelines
-
 ## Tools & Techniques
 - Data Extraction
 	- Perform acquisition via the cloud, mobile app or direct hardware.
@@ -55,8 +53,6 @@
 		- Extract data from smartmobile devices
 		- Direct Watch Extraction -> Possible but not much data as storage is limited on smartwatches
 			- Done via mobiledit smartwatch kit that has interfaces for most smartwatches that have a debug port
-
-
 ---
 # Mobile Forensics (Lec 16)
 ## Android
@@ -268,7 +264,6 @@
 | \$Boot     | Boot Sector           | 7          | Additional code for bootstrapping, identifies partition as boot as well                    |
 | \$BadClus  | Bad Cluster file      | 8          | Bad clusters are noted here                                                                |
 | \$Secure   | Security File         | 9          | ACL maintained here                                                                        |
-
 
 #### How to read a MFT
 - Identify FILE (46 49 4C 45)
