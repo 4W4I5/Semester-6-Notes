@@ -160,7 +160,7 @@
 	- Advanced Encryption Techniques
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
-- Data to collect/analyze during an investigation
+- **Data to collect/analyze during an investigation**
 	- Investigation Types
 		- Criminal
 			- Tailored via warrants that specify what data to grab and from what media
@@ -184,11 +184,11 @@
 		- Password-Protected Files
 		- Executable Files
 		- Control and Documentation
-- Validation of Forensic Data
+- **Validation of Forensic Data**
 	- Use of Hex Editors
 	- Hashing specific data in a file
 	- Use of Forensic Tools
-- Data Hiding Techniques
+- **Data Hiding Techniques**
 	- Changing File Extensions
 	- Setting Hidden attribute
 		- .nomedia in android and hidden attribute flag on windows
