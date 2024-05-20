@@ -145,12 +145,14 @@
 	- Incident First-Responders
 	- Role Management
 	- Standards + Training
-- Methods of data acquistion
+	- Encryption in the cloud
+- Methods of data acquisition
 	- Evidence Collection Methods
 	- Enumeration + File Recovery
-	- Remote Acquistions
+	- Remote Acquisition
 	- Snapshots in VE
 	- Complexity of cloud systems
+	- Encryption in the cloud
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
 ---
