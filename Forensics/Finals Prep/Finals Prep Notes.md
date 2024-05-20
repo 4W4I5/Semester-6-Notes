@@ -2,10 +2,10 @@
 | --------------------------------------------------------------------------- | ------------------ |
 | Smart Watch Forensics - Lec 20                                              | :white_check_mark: |
 | Mobile Forensics  - Lec 16                                                  | :white_check_mark: |
-| Cloud Forensics - Lec 13                                                    | :warning:          |
+| Cloud Forensics - Lec 13                                                    | :white_check_mark: | 
 | Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning:          |
 | Report Writing - Lec 14                                                     | :warning:          |
-| Assignment 1: Laws + Policies                                               | :white_check_mark:          |
+| Assignment 1: Laws + Policies                                               | :white_check_mark: |
 | Assignment 2: Android Forensics                                             | Skipped :x:        |
 | Assignment 3: MFT + NTFS + ADS                                              | :white_check_mark: |
 | Assignment 4: Dark Web Forensics                                            | Skipped :x:        |
@@ -225,6 +225,37 @@
 	- Advanced Encryption Techniques
 		- Fully Homomorphic Encryption -> Allows encrypted data processing without decryption.
 		- Blockchain Technology -> Provides a secure, traceable ledger of transactions, impacting digital forensics. (e.g., Dubai mandates blockchain in all banks by 2020).
+- **Conducting a Cloud Investigation**
+	- Investigating CSPs
+	- CSPs often have their own incident response teams for cyberattacks and e-discovery.
+	- Key questions for investigators:
+	    - **Authority and Resources:** Permission to use cloud staff and resources?
+	    - **Knowledge Availability:** Detailed information on cloud topology, policies, data storage methods, and devices?
+	    - **Restrictions on Evidence Collection:** Limitations on collecting digital evidence from remote cloud storage?
+	    - **Data Segregation:** Can data be separated in multitenant systems without violating privacy or confidentiality?
+	    - **Data Location:** Is data local or remote? Can CSP provide a secure, forensically sound connection to remote data?
+	- Investigating Consumers
+		- Cloud customers access CSPs via computers, tablets, smartphones, websites, apps.
+		- Automatic activation of cloud storage services (e.g., iCloud, Samsung Cloud) on smart devices.
+		- Investigators should examine:
+		    - **Web Browser Cache:** Evidence might be found if the CSP’s application isn’t installed.
+		    - **Application Folders:** Evidence of file transfers in application folders under the user’s account (e.g., C:\Users\username).
+	- Understanding Prefetch
+		- Prefetch files log prefetcher events, data, and code accessed by applications.
+		- **Metadata in Prefetch Files:** Includes MAC (modified, accessed, created) times and run counter.
+		- **Offsets for Data:** Indicate creation, modification, last access dates and times, and the run counter.
+	- Examining Stored Cloud Data on PC
+		- Various vendors offer cloud storage services, creating specific folders for syncing files:
+		    - **Dropbox:** Folders like C:\Users\username\Dropbox and C:\Users\username\AppData\Roaming\Dropbox. Files encoded in base-64, readable with tools like Magnet Forensics' Internet Evidence Finder (IEF).
+		    - **Google Drive:** Installed in C:\Program Files (x86)\Google\Drive, with user-specific configuration files in C:\Users\username\AppData\Local\Google\Drive. Sync and snapshot databases (sync_config.db and snapshot.db) contain details of file activities.
+		    - **OneDrive:** Integrated into Windows, with logs and synchronized files stored in paths like C:\Users\username\AppData\Local\Microsoft\OneDrive\logs. Prefetch files stored in C:\Windows\Prefetch, named based on the application.
+- **Steps of a Cloud Investigation**
+	- Determine Incident Type if it is a cyberattack or data recovery
+	- Identify relevant tools and techniques based on Incident Type
+	- Coordinate with CSPs to get a layout of their setup, resources and restrictions
+	- Collect Evidence from browser cache, app folders, prefetch files
+	- Analyze prefetch to get app usage data
+	- Examine cloud storage data to observe logs, config files and specific folders
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
 - **Data to collect/analyze during an investigation**
