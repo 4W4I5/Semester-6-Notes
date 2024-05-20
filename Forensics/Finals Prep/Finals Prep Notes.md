@@ -163,10 +163,13 @@
 - Data to collect/analyze during an investigation
 	- Investigation Types
 		- Criminal
-			- Tailored via warrants
+			- Tailored via warrants that specify what data to grab and from what media
 		- Civil
-			- Tailored via warrants
+			- Limited by court orders, only data relevant to the case is gathered
+			- Tailored via warrants that specify what data to grab and from what media
 		- Private-Sector
+			- Involves internal Policy violations and/or litigations
+			- Broad scope involving internal company comms channels such as email, company provided phones and laptops, company emails and etc.
 			- Tailor the investigation by ensuring it is comprehensive but focused i.e. the scope is fine-tuned
 	- Outlining an Investigation
 		- Handling Scope Creep
@@ -182,7 +185,7 @@
 		- Executable Files
 		- Control and Documentation
 - Validation of Forensic Data
-	- Use of HexEditors
+	- Use of Hex Editors
 	- Hashing specific data in a file
 	- Use of Forensic Tools
 - Data Hiding Techniques
@@ -192,7 +195,7 @@
 	- Hiding Partitions
 		- Taking advantage of file slack
 	- Marking Bad clusters
-	- Bit-Shfiting
+	- Bit-Shifting
 	- Steganalysis Methods
 	- Steganalysis Attacks
 	- Examining Encrypted Files
