@@ -120,13 +120,13 @@
 ---
 # Cloud Forensics (Lec 13)
 - **Types of Cloud Deployment**
-	- Public
-	- Private
-	- Community
-	- Hybrid
+	- Public -> Accessible to the public internet, Best for ease of use
+	- Private -> Internal Cloud deployment, used by orgs
+	- Community -> Purpose based sponsored by big orgs that want to fulfil a purpose via a business license
+	- Hybrid -> Mix of Private + Public Glass
 - **Cloud Forensics Essentials**
-	- Organizational
-	- Legal
+	- Organizational -> Structure of the cloud i.e. data storage location and administration of services
+	- Legal -> 
 	- Technical
 - **Requirements of a Cloud Forensics Tool?**
 	- Data Collection
