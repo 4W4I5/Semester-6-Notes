@@ -278,39 +278,39 @@
 ## Assignment 6: Timeline Analysis using TSK
 - After creating an image via an imaging tool such as FTKImager
 - Creating a filesystem log with MAC times
-	- `fls -rpl -m /IMG_NAME.img > txtfile.txt`
-	- Can try tsk custom scripts too, the output is similar
-		- `tsk_gettimes /IMG_NAME.img > txtfile.txt`
+    - `fls -rpl -m /IMG_NAME.img > txtfile.txt`
+    - Can try tsk custom scripts too, the output is similar
+        - `tsk_gettimes /IMG_NAME.img > txtfile.txt`
 - Using mactime.pl to create a timeline. Note that we can feed the output from other files into this timeline and it will enrich the timeline
-	- `mactime.pl -b txtfile.txt > output`
+    - `mactime.pl -b txtfile.txt > output`
 - Extra commands to use that might be helpful
-	- `tsk_comparedir`: compare localdir with contents of image/raw device
-	- `tsk_recover`: Recover file using the ils inodes
+    - `tsk_comparedir`: compare localdir with contents of image/raw device
+    - `tsk_recover`: Recover file using the ils inodes
 - File System Layer tools
-	- `fsstat`: Show FS system details and statistics including layout, sizes and labels
+    - `fsstat`: Show FS system details and statistics including layout, sizes and labels
 - File Name Layer Tools
-	- `ffind`: Find allocated/unallocated file names in given metadata structure
-	- `fls`: List allocated/unallocated filenames in a directory. Use switches -rpl to list long names recursively
+    - `ffind`: Find allocated/unallocated file names in given metadata structure
+    - `fls`: List allocated/unallocated filenames in a directory. Use switches -rpl to list long names recursively
 - Data Unit Layer Tools
-	- `blkcat`:
-	- `blkls`:
-	- `blkstat`:
-	- `blkcalc`:
+    - `blkcat`: Display contents of a data unit
+    - `blkls`: List data units in a disk image
+    - `blkstat`: Display details about a specific data unit
+    - `blkcalc`: Calculate which data unit contains a specific byte
 - Filesystem Journal Tools
-	- `jcat`:
-	- `jls`
+    - `jcat`: Display the contents of a journal data unit
+    - `jls`: List the contents of a file system journal
 - Volume System Tools
-	- `mmls`:
-	- `mmstat`:
-	- `mmcat`:
+    - `mmls`: Display partition layout of a volume system
+    - `mmstat`: Display volume system statistics
+    - `mmcat`: Extract data from a specific volume system
 - Image File Tools
-	- `img_stat`:
-	- `img_cat`:
+    - `img_stat`: Display details about an image file
+    - `img_cat`: Extract data from an image file
 - Disk Tools
-	- `disk_sreset`:
-	- `disk_stat`:
+    - `disk_sreset`: Reset disk to a known state
+    - `disk_stat`: Display disk statistics
 - Other Tools
-	- `hfind`:
-	- `mactime`:
-	- `sorter`:
-	- `sigfind`:
+    - `hfind`: Find hash values in a hash database
+    - `mactime`: Create a timeline from a body file
+    - `sorter`: Sort file system data into categories
+    - `sigfind`: Find a signature in a file or data stream
