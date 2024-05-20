@@ -24,7 +24,7 @@
 | ----------------------------------------------------------------------------- | ------------------ |
 | [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
 | [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :white_check_mark: |
-| [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :warning:          |
+| [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark: | 
 
 # AI
 
