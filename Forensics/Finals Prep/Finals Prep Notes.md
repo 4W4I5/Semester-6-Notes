@@ -202,6 +202,22 @@
 	- Recovering Passwords
 ---
 # Report Writing (Lec 14)
+- Report Types
+	- Formal Report
+	- Examination Plan
+	- Verbal Report
+	- Preliminary Written Report
+	- Written Report
+- Guidelines to writing a report
+	- Expressing an Opinion
+	- Preliminary Reports
+	- Report Structure
+	- Writing Reports Clearly
+	- Layout & Presentation
+	- Examination & Data Collection Methods
+	- Results & Conclusions
+	- References & Appendixes
+	- Writing Style
 ---
 # Assignments
 ## Assignment 1: Laws + Policies
