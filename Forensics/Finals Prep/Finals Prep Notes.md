@@ -1,16 +1,16 @@
 | Chapter                                                                     | Status             |
 | --------------------------------------------------------------------------- | ------------------ |
 | Smart Watch Forensics - Lec 20                                              | :white_check_mark: |
-| Mobile Forensics  - Lec 16                                                  | :white_check_mark:          |
+| Mobile Forensics  - Lec 16                                                  | :white_check_mark: |
 | Cloud Forensics - Lec 13                                                    | :warning:          |
 | Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning:          |
 | Report Writing - Lec 14                                                     | :warning:          |
 | Assignment 1: Laws + Policies                                               | :warning:          |
 | Assignment 2: Android Forensics                                             | :warning:          |
-| Assignment 3: MFT + NTFS + ADS                                              | :white_check_mark:          |
+| Assignment 3: MFT + NTFS + ADS                                              | :white_check_mark: |
 | Assignment 4: Dark Web Forensics                                            | :warning:          |
-| Assignment 5: Python code to read MBR                                       | :warning:          |
-| Assignment 6: Timeline Analysis using TSK                                   | :white_check_mark:          |
+| Assignment 5: Python code to read MBR                                       | :white_check_mark: | 
+| Assignment 6: Timeline Analysis using TSK                                   | :white_check_mark: |
 
 # Smart Watch Forensics (Lec 20)
 ## Android & Apple Forensics Artifacts
@@ -331,6 +331,8 @@
     - ReFS utilizes disk structures similar to the Master File Table (MFT) in NTFS.
 ## Assignment 4: Dark Web Forensics
 ## Assignment 5: Python Code to read MBR
+- Essentially read the first 446 bytes of the first sector and hash
+- Compared hash later on using winhex
 ## Assignment 6: Timeline Analysis using TSK
 - After creating an image via an imaging tool such as FTKImager
 - Creating a filesystem log with MAC times
