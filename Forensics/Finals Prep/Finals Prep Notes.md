@@ -135,6 +135,13 @@
 	- Investigations in Virtualized Enviros -> Capability to examine virtual systems
 - **Legal Challenges**
 	- Service Level Agreements (SLAs)
+		- Contracts binding CSP and Consumer
+		- CSP Contract spec
+			- Policies -> Detailed rules for internal ops, covers responsibilities, management and data protection
+			- Standards -> Guidance for day to day ops, hardware/software security
+			- Guidelines -> best cloud practices for staff
+		- Processes & Procedures
+			- Detailed docs on workflows, hardware configs, network maps and application processes
 	- Jurisdiction
 	- Evidence Access
 - **Technical Challenges**
