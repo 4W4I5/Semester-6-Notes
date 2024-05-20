@@ -6,7 +6,7 @@
 | Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning:          |
 | Report Writing - Lec 14                                                     | :warning:          |
 | Assignment 1: Laws + Policies                                               | :warning:          |
-| Assignment 2: Android Forensics                                             | Skipped :x: |
+| Assignment 2: Android Forensics                                             | Skipped :x:        |
 | Assignment 3: MFT + NTFS + ADS                                              | :white_check_mark: |
 | Assignment 4: Dark Web Forensics                                            | :warning:          |
 | Assignment 5: Python code to read MBR                                       | :white_check_mark: |
