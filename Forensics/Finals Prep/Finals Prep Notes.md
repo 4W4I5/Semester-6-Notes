@@ -73,12 +73,15 @@
 	- SQLite Database
 	- Network(Cloud)
 - Filesystem partitions
-	- Logical
+	- Logical, some phones support failover partitions such as A/B slots
 	- Types
 		- /boot -> Boot partition, holds boot image as well as ramdisk if supported
-		- /recovery ->
+		- /recovery -> Alternate (Not Failover) boot partition should regular boot sequence fail, allows for factory reset or cache clearing.
+			- Further functionality such as System-wide Root and Flashing a new rom/sideloading via adb requires a custom recovery such as TWRP or orangefox
 		- /system -> Android OS, does not include Google GMS/GSF
-		- /data ->
+		- /data -> aka userdata
+			- Includes contacts, messages, settings and installed apps
+			- Wiped during Factory reset, great source of forensic data
 		- /metadata ->
 		- /cache ->
 		- /misc ->
