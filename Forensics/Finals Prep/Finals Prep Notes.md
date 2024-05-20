@@ -56,19 +56,19 @@
 ---
 # Mobile Forensics (Lec 16)
 ## Android
-- Levels of security
+- **Levels of security**
 	- SELinux-based OS level controls
 		- Ensures every app is sandboxed via user-based protection model
 	- Google Safety checks, updates, play protect
 	- OEM based security and patches
-- Data storage location
+- **Data storage location**
 	- Internal/External storage
 		- External i.e. a mounted sdcard or these days in modern phones its a virtual card thats symlinked
 		- Internal i.e. /data
 	- Shared preferences
 	- SQLite Database
 	- Network(Cloud)
-- Filesystem partitions
+- **Filesystem partitions**
 	- Logical, some phones support failover partitions such as A/B slots
 	- Types
 		- /boot -> Boot partition, holds boot image as well as ramdisk if supported
@@ -85,7 +85,7 @@
 		- /sd-ext -> Used widely in custom ROMs, used to simulate an sdcard to offload apps
 		- /product -> Vendor/Carriers customizations to the OS
 		- /vendor -> Vendor specific binary i.e. tmobile custom binary, can also contain firmware specific to a SOC
-- Forensic Acquisitions
+- **Forensic Acquisitions**
 	- Physical
 		- Read the chip itself to gather Files bit by bit, Hidden files and deleted data
 	- Logical
@@ -101,7 +101,7 @@
 		- HexDump/JTAG
 		- ChipOff
 		- MicroRead
-- Tools for Android
+- **Tools for Android**
 	- CLI-Based
 		- Andriller, by images it seems like it uses adb
 		- Foroboto, similar to andriller
@@ -110,7 +110,7 @@
 	- GUI-Based
 		- XRY, Does both physical and logical analysis. If device is not supported then root access is required
 		- Autopsy, Generates dd image
-- Challenges/Future research for Forensics
+- **Challenges/Future research for Forensics**
 	- Social networking apps
 	- Evaluation of existing tools for extracting e-evidence from mobile
 	- Automated Data collection + reporting
@@ -119,26 +119,25 @@
 	- Efficient Generalized Forensics Framework for Mobile Devices (No clue what this is)
 ---
 # Cloud Forensics (Lec 13)
-
-- Types of Cloud Deployment
+- **Types of Cloud Deployment**
 	- Public
 	- Private
 	- Community
 	- Hybrid
-- Cloud Forensics Essentials
+- **Cloud Forensics Essentials**
 	- Organizational
 	- Legal
 	- Technical
-- Requirements of a Cloud Forensics Tool?
+- **Requirements of a Cloud Forensics Tool?**
 	- Data Collection
 	- Elastic, Static and Live forensics
 	- Evidence Segregation
 	- Investigations in Virtualized Enviros
-- Legal Challenges
+- **Legal Challenges**
 	- Service Level Agreements (SLAs)
 	- Jurisdiction
 	- Evidence Access
-- Technical Challenges
+- **Technical Challenges**
 	- Architecture
 	- Data Collection
 	- Anti-Forensics
@@ -146,7 +145,7 @@
 	- Role Management
 	- Standards + Training
 	- Encryption in the cloud
-- Methods of data acquisition
+- **Methods of data acquisition**
 	- Evidence Collection Methods
 	- Enumeration + File Recovery
 	- Remote Acquisition
