@@ -13,6 +13,23 @@
 | Assignment 6: Timeline Analysis using TSK                                   | :warning: |
 
 # Smart Watch Forensics (Lec 20)
+
+## Forensics Artifacts
+- Android
+	- 
+
+## Challenges in SmartWatch Forensics
+- Compact Size
+- Proprietary OS
+- Intericacies of Data sync
+- Small storage capacity
+- Encryption & Security measures
+- Compatibility with DF tools
+- Fragmentation across modles
+- Limited DF standards + Guidelines
+
+
+
 ---
 # Cloud Forensics (Lec 13)
 ---
