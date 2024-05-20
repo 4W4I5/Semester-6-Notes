@@ -119,6 +119,33 @@
 	- Efficient Generalized Forensics Framework for Mobile Devices (No clue what this is)
 ---
 # Cloud Forensics (Lec 13)
+
+- Types of Cloud Deployment
+	- Public
+	- Private
+	- Community
+	- Hybrid
+- Cloud Forensics Essentials
+	- Organizational
+	- Legal
+	- Technical
+- Requirements of a Cloud Forensics Tool?
+	- Data Collection
+	- Elastic, Static and Live forensics
+	- Evidence Segregation
+	- Investigations in Virtualized Enviros
+- Legal Challenges
+	- Service Level Agreements (SLAs)
+	- Jurisdiction
+	- Evidence Access
+- Technical Challenges
+	- Architecture
+	- Data Collection
+	- Anti-Forensics
+	- Incident First-Responders
+	- Role Management
+	- Standards + Training
+- 
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
 ---
@@ -287,7 +314,7 @@
 	- **ObjectID Attribute 0x40**
 		- 0x04 to 0x05 -> Length of attribute
 		- 0x14 -> Offset for GUID
-			- Whatever value 0x14 points to is where the GUID starts
+			- Whatever value 0x14 points to is where the GUID starts. Length of GUID is 16 bytes
 	- **Data Attribute 0x80**
 		- 0x04 to 0x05 -> Length of attribute
 		- 0x08 -> Resident/Non-Resident Flag set to 1 or 0 respectively
