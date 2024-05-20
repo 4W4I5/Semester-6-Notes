@@ -517,3 +517,88 @@
 				- 3:manual
 				- 4:disabled
 		- DHCP Config ->HKLM\\SYSTEM\\ControlSet00#\\Services\\Tcpip\\Parameters\\Interfaces\\{GUID}\\DhcpIPAddress
+		- Legal Notice & Text
+		    - Notice which appears to the user at logon screen (Legalnoticetext, Legalnoticecaption)
+		    - `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\`
+		- NTFS Last Accessed
+		    - Last access time in registry is updated or not
+		    - `HKLM\SYSTEM\ControlSet###\Control\FileSystem\NTFSDisableLastAccess` → (0: not updated, 1: updated)
+		- Autoruns
+		    - Places where startup apps are running found
+		    - `HKLM\Software\Microsoft\Windows\CurrentVersion\Run`
+		    - `HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce`
+		    - Note that we can use AutoRuns tool
+		- Installed Applications
+		    - Helps us when installed application does not appear on desktop or has been uninstalled
+		    - `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall`
+		    - `HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall`
+		- Windows Firewall
+		    - Firewall is on state by default and we can look for its state in some registry keys:
+		        - Private environment: `HKLM\SYSTEM\ControlSet###\Services\SharedAccess\Parameters\Firewallpolicy\StandardProfile\EnableFirewall`
+		        - Public environment: `HKLM\SYSTEM\ControlSet###\Services\SharedAccess\Parameters\Firewallpolicy\PublicProfile\EnableFirewall`
+		        - Domain environment: `HKLM\SYSTEM\ControlSet###\Services\SharedAccess\Parameters\Firewallpolicy\DomainProfile\EnableFirewall`
+		    - `EnableFirewall` → (0: off, 1: on)
+		- Remote Desktop
+		    - `HKLM\SYSTEM\ControlSet###\Control\TerminalServer\fDenyTSConnections`
+		    - `fDenyTSConnections` → (0: off, 1: on)
+		- Network Profiles
+		    - Include network and connection type
+		    - `HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\profiles`
+		    - We can find keys under profiles which are network profiles and each one of renamed with its GUID.
+		- Network History
+		    - Network history cache: `HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\Nla\Cache`
+		    - Place tells me that networks not part of domain: `HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\Nla\Signatures\Unmanaged\`
+		    - Place tells me that networks part of domain: `HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\Nla\Signatures\managed\`
+		- Network Interfaces and Past Networks
+		    - Network interfaces and their info such as IP address, subnets, Domain, DHCP, etc.
+		    - `HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`
+		- Shutdown details
+		    - `HKLM\SYSTEM\Controlset001\control\windows`
+		- AppInit_DLLs
+		    - Includes list of DLLs which is called automatically when app is run
+		    - `HKLM\Software\Microsoft\WindowsNT\CurrentVersion\Windows\Applnit_DLLs`
+		- Windows Recycle Bin
+		    - We can find that if file has been bypassed recycle bin or just moved to
+		    - `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\BitBucket\Volume\{GUID}\NukeOnDelete`
+		    - `NukeOnDelete` → (0: move to Recycle Bin, 1: bypass Recycle Bin)
+		- Last User Logged In
+		    - We can know when was the last time a logging in was occurred and who was the user
+		    - `SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\LastLoggedOnUser`
+		- User Sessions
+		    - During a live Windows session, the logged on user are recorded in this volatile path
+		    - `SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\SessionData\<session number>\LastLoggedOnSamUser`
+		- Local Users
+		    - Where we can find name, login date\time, passwords hints, etc
+		    - `HKLM\SAM\Domains\Account\Users`
+		- User Account Control (UAC)
+		    - Enable Users to perform common tasks as non-admins, it is on state by default and we can check that at:
+		    - `HKLM\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Policies\System\EnableLUA`
+		    - `EnableLUA` → (0: disabled, 1: enabled)
+		- User Assist Keys
+		    - Registry value which tracks user’s interactions via Windows Explorer
+		    - `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist`
+		- What key last viewed
+		    - Last registry key opened by user
+		    - `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\LastKey`
+		- Hidden file setting and extension
+		    - (Show\Hide) files and extensions are options for user customization in file explorer
+		    - `NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\Advances\(Hidden or HidefileExt)`
+		- Most recently used and opened
+		    - OS keeps track for MRU (Most Recently Used) files and apps which are stored in NTUSER.DAT
+		        - `CIDSizeMRU`: Tracks size, position of file explorer screen
+		        - `Start menu run MRUs`: Tracks list of apps which ran before
+		            - `HKU\{SID}\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU`
+		        - `RecentDocs MRUs`: Includes no of recently opened files and extension
+		            - `HKU\{SID}\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`
+		        - `Remote Desktop MRUs`: Recent connection history and configuration data for RDP
+		            - `HKEY_USERS\{SID}\Software\Microsoft\Terminal Server\Client\(Default or Servers)\`
+		- Most recently opened
+		    - Applications and files that have been opened
+		    - `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32`
+		        - `LastVisitedPidlMRU`: Applications
+		        - `OpenSavePidlMRU`: Files
+		- IE typed URLs and Setting
+		    - Typed URLs by user in Internet Explorer
+		    - `NTUSER.DAT\Software\Microsoft\Internet Explorer\Main\TypedURLs`
+		    - Internet explorer settings such as (local page, start page, tabs, etc)
+		    - `NTUSER.DAT\Software\Microsoft\Internet Explorer\Main`
