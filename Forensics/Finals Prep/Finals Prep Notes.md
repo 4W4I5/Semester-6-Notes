@@ -269,14 +269,14 @@
 - Identify FILE (46 49 4C 45)
 - Offsets from start of FILE
 	- 0x14 -> Length of MFT Header. Should point to start of StandardInformation Attribute 0x10 (Generally it is at 0x38)
-	- StandardInformation Attribute 0x10
+	- **StandardInformation Attribute 0x10**
 		- 0x04 to 0x05 -> Length of attribute
 		- Timestamps at:
 			- 0x18 to 0x1F -> Last Creation Time Time/Date
 			- 0x20 to 0x27 -> Last Modified Time Time/Date
 			- 0x28 to 0x2F -> Last Accessed Time Time/Date
 			- 0x30 to 0x37 -> Last Updated Time/Date
-	- Filename Attribute 0x30
+	- **Filename Attribute 0x30**
 		- 0x04 to 0x05 -> Length of attribute
 		- Timestamps at:
 			- 0x20 to 0x27 -> Last Creation Time Time/Date
@@ -284,11 +284,11 @@
 			- 0x30 to 0x37 -> Last Accessed Time Time/Date
 			- 0x38 to 0x3F -> Last Updated Time/Date
 		- 0x5A to Length of Attribute -> ShortFilename in Unicode (Should Notice ASCII with 00 gaps. For e.g. 'A' would be 41 00)
-	- ObjectID Attribute 0x40
+	- **ObjectID Attribute 0x40**
 		- 0x04 to 0x05 -> Length of attribute
 		- 0x14 -> Offset for GUID
 			- Whatever value 0x14 points to is where the GUID starts
-	- Data Attribute 0x80
+	- **Data Attribute 0x80**
 		- 0x04 to 0x05 -> Length of attribute
 		- 0x08 -> Resident/Non-Resident Flag set to 1 or 0 respectively
 			- Understanding DataRuns
@@ -300,14 +300,14 @@
 				- 0x18 -> Start of Data run
 			- If NonResident
 				- 0x40 -> Start of Data Run. First Logical Cluster Number (Logical Cluster Number)
-	- DDF Attribute 0x0100 (LECTURE 7 EFS CONTENT)
+	- **DDF Attribute 0x0100 (LECTURE 7 EFS CONTENT)**
 		- Contains FEK and FEKI
 			- FEK is a symmetric encryption key, FEKI contains info on FEK that is the version num, algo used and length of FEK
 		- 0x20 -> FEK
 		- 0x20 + FEK Len(normally 32bytes) -> FEKI
-	- Checksum
+	- **Checksum**
 		- 0x01FE and 0x01FF -> Sector checksum value
-	- End of Sector
+	- **End of Sector**
 		- Identified by `FF FF FF FF`
 - **Encrypting File System (EFS):**
     - **Introduction:**
