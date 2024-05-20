@@ -86,9 +86,27 @@
 		- /cache -> Self-explanatory, good source of forensic data provided it is wiped
 		- /misc -> Boolean switches for a lot of settings on the phone, device features may not function correctly if missing/corrupted
 		- /sdcard -> All data seen in the file manager app on android is stored here, symlinked to /storage/emulated/0
-		- /sd-ext ->
-		- /product ->
-		- /vendor ->
+		- /sd-ext -> Used widely in custom ROMs, used to simulate an sdcard to offload apps
+		- /product -> Vendor/Carriers customizations to the OS
+		- /vendor -> Vendor specific binary i.e. tmobile custom binary, can also contain firmware specific to a SOC
+- Forensic Acquisitions
+	- Physical
+		- Read the chip itself to gather Files bit by bit, Hidden files and deleted data
+	- Logical
+		- Dump the data via ADB or if root is available create a raw image using dd
+			- `adb shell` -> Get a shell in the system, if root needed use su but need rooted OS
+			- `adb push apkName.apk` -> Copy file to the device, use pull to get files off the device
+			- `adb backup -apk -shared -all -f <PATH>`-> Copy all directories and apps off of the device
+		- Use an app to gather appdata, userdata and system settings available to the user
+		- Custom recoveries such as TWRP allow for dd backup and restores from within the recovery
+	- Approaches
+		- Manual Extraction
+		- Logical Extraction
+		- HexDump/JTAG
+		- ChipOff
+		- MicroRead
+- Tools for Android
+	- Andriller
 ---
 # Cloud Forensics (Lec 13)
 ---
