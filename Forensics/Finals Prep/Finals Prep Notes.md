@@ -279,4 +279,7 @@
 - After creating an image via an imaging tool such as FTKImager
 - Creating a filesystem log with MAC times
 	- `fls -rpl -m /IMG_NAME.img > txtfile.txt`
-- Using mactime.pl 
+	- Can try tsk custom scripts too, the output is similar
+		- `tsk_gettimes /IMG_NAME.img > txtfile.txt`
+- Using mactime.pl to create a timeline. Note that we can feed the output from other files into this timeline and it will enrich the timeline
+	- `mactime.pl -b txtfile.txt > output`
