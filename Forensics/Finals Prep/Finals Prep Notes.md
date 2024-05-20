@@ -2,7 +2,7 @@
 | --------------------------------------------------------------------------- | ------------------ |
 | Smart Watch Forensics - Lec 20                                              | :white_check_mark: |
 | Mobile Forensics  - Lec 16                                                  | :white_check_mark: |
-| Cloud Forensics - Lec 13                                                    | :white_check_mark: | 
+| Cloud Forensics - Lec 13                                                    | :white_check_mark: |
 | Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning:          |
 | Report Writing - Lec 14                                                     | :warning:          |
 | Assignment 1: Laws + Policies                                               | :white_check_mark: |
@@ -300,22 +300,56 @@
 	- Recovering Passwords
 ---
 # Report Writing (Lec 14)
-- Report Types
-	- Formal Report
-	- Examination Plan
-	- Verbal Report
-	- Preliminary Written Report
-	- Written Report
-- Guidelines to writing a report
-	- Expressing an Opinion
-	- Preliminary Reports
-	- Report Structure
-	- Writing Reports Clearly
-	- Layout & Presentation
-	- Examination & Data Collection Methods
-	- Results & Conclusions
-	- References & Appendixes
-	- Writing Style
+- **Report Types**
+	- **Formal Report**
+	    - Documents facts and findings.
+	    - Detailed, structured, legal use.
+	- **Examination Plan**
+	    - Guides attorney for testimony.
+	    - Includes outline, modifications, educational content.
+	- **Verbal Report**
+	    - Provides preliminary findings.
+	    - Informal, discusses ongoing investigations.
+	- **Preliminary Written Report**
+	    - Tentative summary of findings.
+	    - Subject to change with new information.
+	- **Written Report**
+	    - Detailed, sworn account.
+	    - Accurate, documented, legal use.
+- **Guidelines to writing a report**
+	- **Expressing an Opinion**
+	    - **Hypothetical Questions**: Provide expert opinion based on facts.
+	    - **Structure and Facts**: Grounded in evidence, state necessary facts.
+	- **Preliminary Reports**
+	    - **Discovery Risks**: Avoid terms like "preliminary copy" or "draft copy".
+	    - **Retention of Documents**: Do not destroy preliminary reports before case resolution.
+	    - **Content**: Include assignment, accomplished tasks, systems examined, tools used, evidence preservation, billing summary, tentative conclusions, and further investigation areas.
+	- **Report Structure**
+	    - **Abstract**: Summary of key points.
+	    - **Table of Contents**: Easy navigation.
+	    - **Body**: Detailed findings and analysis.
+	    - **Conclusion**: Summarizes findings.
+	    - **References**: Cited sources.
+	    - **Glossary**: Technical terms.
+	    - **Acknowledgments**: Credits.
+	    - **Appendixes**: Supporting material.
+	- **Writing Reports Clearly**
+	    - **Quality Criteria**: Easy to read, relevant, well-organized.
+	    - **Style**: Clear, specific, objective.
+	    - **Layout and Presentation**: Consistent formatting, clear titles and headings, labeled figures and tables.
+	- **Examination and Data Collection Methods**
+	    - **Explanation**: Detail methods used.
+	    - **Calculations**: Use hashing algorithms, cite tools.
+	    - **Uncertainty and Error Analysis**: Acknowledge limitations.
+	- **Results and Conclusions**
+	    - **Discussion**: Summarize objectives and findings clearly.
+	- **References and Appendixes**
+	    - **References**: Cite all sources.
+	    - **Appendixes**: Include raw data, additional figures, and exhibits.
+	- **Writing Style**
+	    - **Signposts**: Guide readers.
+	    - **Clear Layout**: Consistent titles and headings.
+	    - **Presentation**: Label and integrate figures and tables effectively.
 ---
 # Assignments
 ## Assignment 1: Laws + Policies
