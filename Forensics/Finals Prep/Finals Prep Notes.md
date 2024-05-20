@@ -160,6 +160,15 @@
 	- Advanced Encryption Techniques
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
+- Data to collect/analyze during an investigation
+	- Investigation Types
+		- Criminal
+		- Civil
+		- Private-Sector
+	- Diffculties during an investigation
+		- Handling Scope Creep
+		- Investigation Plan
+	- 
 ---
 # Report Writing (Lec 14)
 ---
