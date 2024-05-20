@@ -10,7 +10,7 @@
 | Assignment 3: MFT + NTFS + ADS                                              | :white_check_mark:          |
 | Assignment 4: Dark Web Forensics                                            | :warning:          |
 | Assignment 5: Python code to read MBR                                       | :warning:          |
-| Assignment 6: Timeline Analysis using TSK                                   | :warning:          |
+| Assignment 6: Timeline Analysis using TSK                                   | :white_check_mark:          |
 
 # Smart Watch Forensics (Lec 20)
 ## Android & Apple Forensics Artifacts
