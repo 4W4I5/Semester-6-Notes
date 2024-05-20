@@ -16,7 +16,12 @@
 
 ## Forensics Artifacts
 - Android
-	- 
+	- Device Info
+		- Model, Serial Number, Manufacturer Details
+		- Firmware and OS versions
+		- Device Settings and Configs
+	- User ID
+		- Linked Google Account
 
 ## Challenges in SmartWatch Forensics
 - Compact Size
