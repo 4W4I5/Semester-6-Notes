@@ -83,9 +83,9 @@
 			- Includes contacts, messages, settings and installed apps
 			- Wiped during Factory reset, great source of forensic data
 		- /metadata -> used when device is encrypted
-		- /cache -> 
-		- /misc ->
-		- /sdcard ->
+		- /cache -> Self-explanatory, good source of forensic data provided it is wiped
+		- /misc -> Boolean switches for a lot of settings on the phone, device features may not function correctly if missing/corrupted
+		- /sdcard -> All data seen in the file manager app on android is stored here, symlinked to /storage/emulated/0
 		- /sd-ext ->
 		- /product ->
 		- /vendor ->
