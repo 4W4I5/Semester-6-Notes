@@ -5,7 +5,7 @@
 | Cloud Forensics - Lec 13                                                    | :warning:          |
 | Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning:          |
 | Report Writing - Lec 14                                                     | :warning:          |
-| Assignment 1: Laws + Policies                                               | :warning:          |
+| Assignment 1: Laws + Policies                                               | :white_check_mark:          |
 | Assignment 2: Android Forensics                                             | Skipped :x:        |
 | Assignment 3: MFT + NTFS + ADS                                              | :white_check_mark: |
 | Assignment 4: Dark Web Forensics                                            | Skipped :x:        |
@@ -220,6 +220,73 @@
 ---
 # Assignments
 ## Assignment 1: Laws + Policies
+- **Scope of Digital Forensics in Pakistan**
+    - **Cybercrime Investigation**
+        - Investigates cybercrimes like hacking, phishing, malware attacks, and identity theft.
+        - Analyzes digital evidence to trace attacks and identify perpetrators.
+    - **Data Breach Response**
+        - Determines extent of breaches, identifies compromised data, and mitigates impact.
+        - Preserves evidence and implements security measures.
+    - **Legal Proceedings**
+        - Digital evidence is admissible in court for criminal prosecutions, civil litigation, and regulatory investigations.
+        - Ensures evidence integrity and authenticity.
+    - **Incident Response Planning**
+        - Develops response plans, conducts assessments, and establishes incident handling protocols.
+    - **Cybersecurity Compliance**
+        - Supports compliance with laws like the Prevention of Electronic Crimes Act (2016) and standards like ISO/IEC 27001.
+- **General Cases**
+    - **Corporate Sector**
+        - **Employee Misconduct**
+            - Investigates unauthorized data access and misuse of resources.
+        - **Intellectual Property Theft**
+            - Tracks theft, identifies culprits, and traces stolen data.
+        - **Data Breaches**
+            - Determines breach cause and extent, identifies compromised data, and helps compliance and mitigation.
+    - **Public Sector**
+        - **Cybercrime Investigations**
+            - Assists law enforcement in investigating hacking, fraud, and child exploitation.
+        - **Financial Fraud**
+            - Uncovers activities like embezzlement and money laundering.
+        - **Public Safety Incidents**
+            - Identifies the source and impact of cyberattacks on critical infrastructure.
+- **Policies, Laws, and Regulations of Pakistan**
+    - **Prevention of Electronic Crimes Act (PECA) 2016**
+        - Addresses various cybercrimes, legal mechanisms for investigation, and digital evidence collection.
+        - Federal Investigation Agency (FIA) as the primary enforcing agency.
+    - **National Cyber Security Policy (NCSP) 2021**
+        - Outlines objectives for cybersecurity and protection of critical infrastructure.
+        - Promotes collaboration between government, private sector, and international partners.
+    - **Telecommunication (Re-organization) Act 1996**
+        - Regulatory oversight of telecommunications services.
+        - Pakistan Telecommunication Authority (PTA) regulates and monitors compliance.
+    - **Digital Forensic Science Lab (DFSL) Rules 2018**
+        - Guidelines for digital evidence examination and reporting.
+    - **Payment Systems and Electronic Fund Transfers Act (PEFTA) 2007**
+        - Regulates electronic transactions and investigates financial crimes using digital forensics.
+- **Comparative Analysis**
+    - **General Data Protection Regulation (GDPR)**
+        - Pakistan lacks specific GDPR-like law; PECA addresses data protection.
+        - UK has GDPR via Data Protection Act 2018.
+    - **Computer Misuse Act**
+        - PECA criminalizes unauthorized access and data interference.
+        - UK has the Computer Misuse Act 1990.
+    - **Freedom of Information Act**
+        - Pakistan lacks an equivalent law.
+        - UK has the Freedom of Information Act 2000.
+    - **Prevention of Electronic Crimes Act (PECA)**
+        - Comprehensive legislation against cybercrimes in Pakistan.
+- **Limitations**
+    - **Enforcement Challenges**
+        - Limited resources and expertise hinder effective implementation.
+    - **Lack of Coordination**
+        - Fragmentation among agencies impedes information exchange.
+    - **Legal Gaps**
+        - Rapid technological advancements expose gaps in laws.
+    - **Privacy Concerns**
+        - Digital surveillance raises privacy concerns.
+    - **International Cooperation**
+        - Limited frameworks hinder cross-border investigations.
+
 
 ## Assignment 3: MFT + NTFS + ADS
 - **ADS**
@@ -423,10 +490,13 @@
     - ReFS is designed to address large data storage needs, especially in cloud environments.
     - Features include maximized data availability, improved integrity, and scalability.
     - ReFS utilizes disk structures similar to the Master File Table (MFT) in NTFS.
-## Assignment 4: Dark Web Forensics
+
+
 ## Assignment 5: Python Code to read MBR
 - Essentially read the first 446 bytes of the first sector and hash
 - Compared hash later on using winhex
+
+
 ## Assignment 6: Timeline Analysis using TSK
 - **After creating an image via an imaging tool such as FTKImager**
 - **Creating a filesystem log with MAC times**
