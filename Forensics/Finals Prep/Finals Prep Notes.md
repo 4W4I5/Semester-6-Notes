@@ -45,6 +45,8 @@
 - Data Extraction
 - Data Analysis
 - Cloud Integration
+	- Gaining access to synced data on the cloud
+	- More comprehensive insight into user's data footprint
 
 
 
