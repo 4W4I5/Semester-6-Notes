@@ -1,16 +1,16 @@
-| Chapter                                                                     | Status    |
-| --------------------------------------------------------------------------- | --------- |
-| Smart Watch Forensics - Lec 20                                              | :warning: |
-| Mobile Forensics  - Lec 16                                                  | :warning: |
-| Cloud Forensics - Lec 13                                                    | :warning: |
-| Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning: |
-| Report Writing - Lec 16                                                     | :warning: |
-| Assignment 1: Laws + Policies                                               | :warning: |
-| Assignment 2: Android Forensics                                             | :warning: |
-| Assignment 3: MFT + NTFS + ADS                                              | :warning: |
-| Assignment 4: Dark Web Forensics                                            | :warning: |
-| Assignment 5: Python code to read MBR                                       | :warning: |
-| Assignment 6: Timeline Analysis using TSK                                   | :warning: |
+| Chapter                                                                     | Status             |
+| --------------------------------------------------------------------------- | ------------------ |
+| Smart Watch Forensics - Lec 20                                              | :white_check_mark: |
+| Mobile Forensics  - Lec 16                                                  | :warning:          |
+| Cloud Forensics - Lec 13                                                    | :warning:          |
+| Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning:          |
+| Report Writing - Lec 14                                                     | :warning:          |
+| Assignment 1: Laws + Policies                                               | :warning:          |
+| Assignment 2: Android Forensics                                             | :warning:          |
+| Assignment 3: MFT + NTFS + ADS                                              | :warning:          |
+| Assignment 4: Dark Web Forensics                                            | :warning:          |
+| Assignment 5: Python code to read MBR                                       | :warning:          |
+| Assignment 6: Timeline Analysis using TSK                                   | :warning:          |
 
 # Smart Watch Forensics (Lec 20)
 
