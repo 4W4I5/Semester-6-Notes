@@ -489,7 +489,11 @@
 		- c/windows/prefetch
 	- ShellBags
 		- Windows registries NTuser.dat
+		- If it exists i.e. it has been accessed before, used to track user behaviour
 	- ShimCache
+		- Provides compatibility to old windows apps
+		- HKLM\\SYSTEM\\CurrentControlSet\\Control\\SessionManager\\AppCompatCache\\AppCompatCache
+		- Use amcacheparser
 	- USBForensics
 	- Registry
 	-
