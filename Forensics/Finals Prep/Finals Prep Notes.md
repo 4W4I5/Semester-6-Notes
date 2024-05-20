@@ -495,8 +495,25 @@
 		- HKLM\\SYSTEM\\CurrentControlSet\\Control\\SessionManager\\AppCompatCache\\AppCompatCache
 		- Use amcacheparser
 	- USBForensics
-	- Registry
-		- USB
+		- Registry
 			- HKLM\\SYSTEM\\ControlSet\\ENUM\\USBSTOR
 			- Get usb name>serial number>properties
 		- System Log
+			- c/windows/inf
+				- setup.offline.log
+				- setupapi.dev\/upgrade\/setup.log (dev setup and upgrade are diff options)
+			- c/windows
+				- setupact.log
+				- setup.err.log
+	- Registry
+		- Timezone ->HKLM\\SYSTEM\\ControlSet\\Control\\TimeZoneInformation
+		- Windows product info ->HKLM\\SOFTWARE\\Microsoft\\WindowsNT\\CurrentVersion
+		- Windows Computer Name -> HKLM\\SYSTEM\\ControlSet\\Control\\ComputerName\\ComputerName
+		- Windows Services ->HKLM\\SYSTEM\\ControlSet\\Service
+			- Start key with values 0,1,2,3,4
+				- 0:boot
+				- 1:system
+				- 2:auto
+				- 3:manual
+				- 4:disabled
+		- DHCP Config ->
