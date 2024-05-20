@@ -153,6 +153,8 @@
 	- Snapshots in VE
 	- Complexity of cloud systems
 	- Encryption in the cloud
+	- Handling Encrypted data
+	- Encr
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
 ---
