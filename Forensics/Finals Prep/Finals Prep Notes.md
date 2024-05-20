@@ -163,12 +163,40 @@
 - Data to collect/analyze during an investigation
 	- Investigation Types
 		- Criminal
+			- Tailored via warrants
 		- Civil
+			- Tailored via warrants
 		- Private-Sector
-	- Diffculties during an investigation
+			- Tailor the investigation by ensuring it is comprehensive but focused i.e. the scope is fine-tuned
+	- Outlining an Investigation
 		- Handling Scope Creep
 		- Investigation Plan
-	- 
+	- Procedure
+		- Prepare Target Drives
+		- Inventory hardware
+		- Static Acquisitions
+		- Data Acquisitions
+		- Examine Data methodically
+		- File analysis
+		- Password-Protected Files
+		- Executable Files
+		- Control and Documentation
+- Validation of Forensic Data
+	- Use of HexEditors
+	- Hashing specific data in a file
+	- Use of Forensic Tools
+- Data Hiding Techniques
+	- Changing File Extensions
+	- Setting Hidden attribute
+		- .nomedia in android and hidden attribute flag on windows
+	- Hiding Partitions
+		- Taking advantage of file slack
+	- Marking Bad clusters
+	- Bit-Shfiting
+	- Steganalysis Methods
+	- Steganalysis Attacks
+	- Examining Encrypted Files
+	- Recovering Passwords
 ---
 # Report Writing (Lec 14)
 ---
