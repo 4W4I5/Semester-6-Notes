@@ -8,7 +8,7 @@
 | Assignment 1: Laws + Policies                                               | :warning:          |
 | Assignment 2: Android Forensics                                             | Skipped :x:        |
 | Assignment 3: MFT + NTFS + ADS                                              | :white_check_mark: |
-| Assignment 4: Dark Web Forensics                                            | :warning:          |
+| Assignment 4: Dark Web Forensics                                            | Skipped :x:        |
 | Assignment 5: Python code to read MBR                                       | :white_check_mark: |
 | Assignment 6: Timeline Analysis using TSK                                   | :white_check_mark: |
 
@@ -428,41 +428,68 @@
 - Essentially read the first 446 bytes of the first sector and hash
 - Compared hash later on using winhex
 ## Assignment 6: Timeline Analysis using TSK
-- After creating an image via an imaging tool such as FTKImager
-- Creating a filesystem log with MAC times
+- **After creating an image via an imaging tool such as FTKImager**
+- **Creating a filesystem log with MAC times**
     - `fls -rpl -m /IMG_NAME.img > txtfile.txt`
     - Can try tsk custom scripts too, the output is similar
         - `tsk_gettimes /IMG_NAME.img > txtfile.txt`
-- Using mactime.pl to create a timeline. Note that we can feed the output from other files into this timeline and it will enrich the timeline
+- **Using mactime.pl to create a timeline. Note that we can feed the output from other files into this timeline and it will enrich the timeline**
     - `mactime.pl -b txtfile.txt > output`
-- Extra commands to use that might be helpful
-    - `tsk_comparedir`: compare localdir with contents of image/raw device
-    - `tsk_recover`: Recover file using the ils inodes
-- File System Layer tools
-    - `fsstat`: Show FS system details and statistics including layout, sizes and labels
-- File Name Layer Tools
-    - `ffind`: Find allocated/unallocated file names in given metadata structure
-    - `fls`: List allocated/unallocated filenames in a directory. Use switches -rpl to list long names recursively
-- Data Unit Layer Tools
-    - `blkcat`: Display contents of a data unit
-    - `blkls`: List data units in a disk image
-    - `blkstat`: Display details about a specific data unit
-    - `blkcalc`: Calculate which data unit contains a specific byte
-- Filesystem Journal Tools
-    - `jcat`: Display the contents of a journal data unit
-    - `jls`: List the contents of a file system journal
-- Volume System Tools
-    - `mmls`: Display partition layout of a volume system
-    - `mmstat`: Display volume system statistics
-    - `mmcat`: Extract data from a specific volume system
-- Image File Tools
-    - `img_stat`: Display details about an image file
-    - `img_cat`: Extract data from an image file
-- Disk Tools
-    - `disk_sreset`: Reset disk to a known state
-    - `disk_stat`: Display disk statistics
-- Other Tools
-    - `hfind`: Find hash values in a hash database
-    - `mactime`: Create a timeline from a body file
-    - `sorter`: Sort file system data into categories
-    - `sigfind`: Find a signature in a file or data stream
+- **Extra commands to use that might be helpful**
+	- TSK Automated Tools
+	    - `tsk_comparedir`: compare localdir with contents of image/raw device
+	    - `tsk_recover`: Recover file using the ils inodes
+	- File System Layer tools
+	    - `fsstat`: Show FS system details and statistics including layout, sizes and labels
+	- File Name Layer Tools
+	    - `ffind`: Find allocated/unallocated file names in given metadata structure
+	    - `fls`: List allocated/unallocated filenames in a directory. Use switches -rpl to list long names recursively
+	- Data Unit Layer Tools
+	    - `blkcat`: Display contents of a data unit
+	    - `blkls`: List data units in a disk image
+	    - `blkstat`: Display details about a specific data unit
+	    - `blkcalc`: Calculate which data unit contains a specific byte
+	- Filesystem Journal Tools
+	    - `jcat`: Display the contents of a journal data unit
+	    - `jls`: List the contents of a file system journal
+	- Volume System Tools
+	    - `mmls`: Display partition layout of a volume system
+	    - `mmstat`: Display volume system statistics
+	    - `mmcat`: Extract data from a specific volume system
+	- Image File Tools
+	    - `img_stat`: Display details about an image file
+	    - `img_cat`: Extract data from an image file
+	- Disk Tools
+	    - `disk_sreset`: Reset disk to a known state
+	    - `disk_stat`: Display disk statistics
+	- Other Tools
+	    - `hfind`: Find hash values in a hash database
+	    - `mactime`: Create a timeline from a body file
+	    - `sorter`: Sort file system data into categories
+	    - `sigfind`: Find a signature in a file or data stream
+- **Windows Artifacts to recover**
+	- LNK files -> Shortcut file, stored in appdata/roaming/microsoft/windows/recentitems
+	- Thumbnails -> .db extension. stored in /appdata/local/microsoft/windows/explorer
+	- JumpLists
+		- Can be OS generated or Custom, Uses MRU values
+		- Stored in /appdata/roaming/microsoft/windows/recent/automaticdestinations or customdestinations
+	- Libraries
+		- Folder libs not code libs, stored in /appdata/roaming/microsoft/windows/libraries
+	- Windows Search History
+		- /appdata/local/microsoft/windows/connectedsearch/history
+	- Recycle Bin
+		- Renames files to `<SID>/RandomFilename.png`
+		- if $i then it has the metadata
+		- if $r then it has the actual file
+	- VSS
+		- Holds restore points
+		- c/SystemVolumeInformation
+	- Prefetch
+		- Holds files required to boot application up faster
+		- c/windows/prefetch
+	- ShellBags
+		- Windows registries NTuser.dat
+	- ShimCache
+	- USBForensics
+	- Registry
+	-
