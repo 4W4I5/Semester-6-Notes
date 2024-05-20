@@ -1,8 +1,8 @@
 | Chapter                                                                     | Status    |
 | --------------------------------------------------------------------------- | --------- |
 | Smart Watch Forensics - Lec 20                                              | :warning: |
-| Cloud Forensics - Lec 13                                                    | :warning: |
 | Mobile Forensics  - Lec 16                                                  | :warning: |
+| Cloud Forensics - Lec 13                                                    | :warning: |
 | Digital Forensics Analysis & Validation (Anti-Forensics Techniques) - Lec 9 | :warning: |
 | Report Writing - Lec 16                                                     | :warning: |
 | Assignment 1: Laws + Policies                                               | :warning: |
@@ -57,11 +57,11 @@
 			- Done via mobiledit smartwatch kit that has interfaces for most smartwatches that have a debug port
 
 
+---
+# Mobile Forensics (Lec 16)
 
 ---
 # Cloud Forensics (Lec 13)
----
-# Mobile Forensics (Lec 16)
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
 ---
