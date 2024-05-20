@@ -516,4 +516,4 @@
 				- 2:auto
 				- 3:manual
 				- 4:disabled
-		- DHCP Config ->
+		- DHCP Config ->HKLM\\SYSTEM\\ControlSet00#\\Services\\Tcpip\\Parameters\\Interfaces\\{GUID}\\DhcpIPAddress
