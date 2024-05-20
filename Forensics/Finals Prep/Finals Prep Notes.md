@@ -96,11 +96,11 @@
 		- Use an app to gather appdata, userdata and system settings available to the user
 		- Custom recoveries such as TWRP allow for dd backup and restores from within the recovery
 	- Approaches
-		- Manual Extraction
-		- Logical Extraction
-		- HexDump/JTAG
-		- ChipOff
-		- MicroRead
+		- Manual Extraction -> Invasive, requires human intervention to copy data
+		- Logical Extraction -> Non-Invasive, copies userdata and sdcard data. Cannot access System unless root
+		- HexDump/JTAG -> Hijack debug port/UART port on the memory. Get bit by bit image directly with the chip intact
+		- ChipOff -> Remove memory from SOC and plug into a reader, iterate through addresses and create a dd image
+		- MicroRead -> Destroy chip, use electron microscope to create a bitmap of the silicon to read data
 - **Tools for Android**
 	- CLI-Based
 		- Andriller, by images it seems like it uses adb
