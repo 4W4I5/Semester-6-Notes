@@ -43,10 +43,18 @@
 
 ## Tools & Techniques
 - Data Extraction
+	- Perform acquisition via the cloud, mobile app or direct hardware.
+	- Gather health metric, GPS records, notification history and communication records
 - Data Analysis
+	- Correlate and compose a result based on data extracted
 - Cloud Integration
 	- Gaining access to synced data on the cloud
 	- More comprehensive insight into user's data footprint
+	- Use OxygenForensics toolkit to
+		- Extract data from the cloud
+		- Extract data from smartmobile devices
+		- Direct Watch Extraction -> Possible but not much data as storage is limited on smartwatches
+			- Done via mobiledit smartwatch kit that has interfaces for most smartwatches that have a debug port
 
 
 
