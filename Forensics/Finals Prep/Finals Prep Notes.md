@@ -7,7 +7,7 @@
 | Report Writing - Lec 14                                                     | :warning:          |
 | Assignment 1: Laws + Policies                                               | :warning:          |
 | Assignment 2: Android Forensics                                             | :warning:          |
-| Assignment 3: MFT + NTFS + ADS                                              | :warning:          |
+| Assignment 3: MFT + NTFS + ADS                                              | :white_check_mark:          |
 | Assignment 4: Dark Web Forensics                                            | :warning:          |
 | Assignment 5: Python code to read MBR                                       | :warning:          |
 | Assignment 6: Timeline Analysis using TSK                                   | :warning:          |
@@ -77,6 +77,206 @@
 		- Read ADS on text.txt -> `more < text.txt:ads.txt`
 		- Executing DLL via ADS -> `rundll32 test.txt:malicious.dll,EntryPoint`
 			- To view contents -> `more < test.txt:malicious.dll`
+
+### Comparison of MBR and GPT
+- **MBR**
+	- Resides in Sector 0
+	- 446(01 BE) bytes long bootcode
+	- 2 Byte signature
+	- Limitations
+		- Max space 2TB
+		- Not tamper-proof
+	- Example partition that is 16 bytes long will have
+		- 1 Byte bootable flag
+		- 3 bytes for CHS Starting address
+		- 1 Byte for Filesystem
+		- 3 Bytes for CHS Ending address
+		- 4 Bytes LBA Starting address
+		- 4 Bytes LBA Size of partition
+- **GPT**
+	- Storage Limit -> 8ZiB `2^64 * 512 = 9.44ZB`
+	- Redundancy -> Backup of GPT headers and partition tables in last sectors of a disk. Fetched when main information is corrupted
+	- Security -> CRC32 Checksum
+	- Primary Partitions -> No extended partitions. All partitions are main partitions. Max 128 allowed by windows.
+	- No hidden sectors -> First partition starts right after the partition table
+		- Data can still be hidden in
+			- MS reserved partition (sizes range from 32mb to 128mb)
+			- Partition Gap (sizes range from 47KB to 1MB)
+			- Unused Sector 0, 1 + Unused partitions can be used to hide data
+			- Start sector. Size = 17KB
+
+#### Comparison Table of MBR and GPT (Repeated data i know)
+
+| Feature                               | MBR     | GPT                       |
+| ------------------------------------- | ------- | ------------------------- |
+| Backup Partition Table                | No      | Yes                       |
+| Integrity Protection                  | No      | Yes                       |
+| \# of Primary Partitions              | 4       | 128                       |
+| Partition Gap                         | No      | Yes                       |
+| Max Size                              | 2TB     | 8ZiB                      |
+| Legacy Boot                           | Yes     | Need to enable UEFI       |
+| Tampering resistance                  | No      | One table can be tampered |
+| Hidden Sectors                        | Allowed | Not Allowed               |
+| MS Reserved?                          | No      | Yes                       |
+| Minimum Size                          | 3MB     | 128MB                     |
+| CHS Addressing?                       | Yes     | No                        |
+| Compatibility With Forensic software? | Yes     | Limited                   |
+
+#### GPT Layout
+- **LBA 0**
+	- Protective MBR -> Legacy systems see that the disk has a MBR partition in use and therefore do not attempt to overwrite
+	- Type i.e 0x4 offset is set to 0xEEh if Protective MBR
+- **LBA 1**
+	- Header
+		- 0x00 -> 8Bytes Length, Signature, "EFI PART"
+		- 0x08 -> 4Bytes Length, Revision Number
+		- 0x0C -> 4Bytes Length, Header Size in LE
+		- 0x10 -> 4Bytes Length, Header CRC
+		- 0x14 -> 4Bytes Length, Reserved, Set to 0
+		- 0x18 -> 8Bytes Length, Current LBA where Header is placed
+		- 0x20 -> 8Bytes Length, Backup LBA of other Header
+		- 0x28 -> 8Bytes Length, First Useable LBA for Partition
+		- 0x30 -> 8Bytes Length, Last Useable LBA for Partition
+		- 0x38 -> 16Bytes Length, Disk GUID
+		- 0x48 -> 8Bytes Length, Starting LBA of array of partition entries
+		- 0x50 -> 4Bytes Length, Number of partition entries
+		- 0x54 -> 4Bytes Length, Size of single partition entry
+		- 0x58 -> 4Bytes Length, CRC of partition entries
+		- 0x5C -> \* Bytes Length, Starting LBA of array of partition entries
+- **LBA 2 to 33**
+	- Partition entries
+		- 0x00 -> 16Bytes Length, Partition Type GUID
+		- 0x10 -> 16Bytes Length, Unique Partition GUID
+		- 0x20 -> 8Bytes Length, First LBA in LE
+		- 0x28 -> 8Bytes Length, Last LBA
+		- 0x30 -> 8Bytes Length, Attribute Flags
+			- Bit 0 -> OEM Partition
+			- Bit 1 -> Ignore bit, DO NOT READ
+			- Bit 2 -> Legacy BIOS Bootable
+			- Bits 3-47 -> Reserved
+			- Bits 48-63 -> Used by partition
+		- 0x38 -> 72Bytes Length, Partition Name in unicode
+- **LBA 34 to -34**
+	- Holds Partitions i.e the data
+- **LBA -33 to -2**
+	- Backup of Partition Entries
+- **LBA -1**
+	- Other GPT Header (Secondary)
+
+#### Understanding File Slack
+- Consists of Drive and RAM slack
+	- **Drive Slack**
+		- Result of Windows allocating space in clusters. Leaves unused space from EOF active file to end of cluster
+		- Cluster size for e.g. is generally 4KB so a file that uses a single sector leaves 7 sectors unused
+	- **Ram Slack**
+		- For last sector the OS includes random data from the ram to fill the slack
+		- Now its just 0's
+
+#### Files in FAT
+- Starting Cluster position assigned to file
+	- First sector written here
+- Next available cluster used when first is filled
+	- If not contiguous, then file becomes fragmented
+- Deletions
+	- First letter of filename is replaced with 0xE5
+		- For both RecycleBin and PermaDelete
+	- File space used now becomes unallocated and is overwritable
+
+#### NTFS
+- Journaling FS
+- PBS (Partition Boot Sector) is set first and then the MFT (Master File Table)
+- Use of Unicode as well as Smaller cluster sizes for small disk drives
+
+#### MFT
+- Contains info on all files on disk, essentially a metadata file
+	- First 15 records reserved for system files
+- All files are contained in 1KB records
+	- A record can be resident or non-resident
+- Files larger than 512 bytes are stored outside of the MFT
+	- It becomes nonresident and now contains data runs
+
+| Filename   | SystemFile            | Record Pos | Description                                                                                |
+| ---------- | --------------------- | ---------- | ------------------------------------------------------------------------------------------ |
+| \$\MFT     | MFT                   | 0          | Base file record for each folder on NTFS                                                   |
+| \$\MFTMirr | MFT2                  | 1          | First four records of MFT saved here, Used to restore MFT as well if a single sector fails |
+| \$\LogFile | LogFile               | 2          | Previous transactions are stored here for recovery after volume failure                    |
+| \$Volume   | Volume                | 3          | Label, version of volume is stored here                                                    |
+| \$AttrDef  | Attribute Definitions | 4          | Table listing attribute names, numbers and definitions                                     |
+| \$         | RootFilename Index    | 5          | Root folder on the volume                                                                  |
+| \$Bitmap   | Boot Sector           | 6          | Map of the partition shows which clusters are used/available                               |
+| \$Boot     | Boot Sector           | 7          | Additional code for bootstrapping, identifies partition as boot as well                    |
+| \$BadClus  | Bad Cluster file      | 8          | Bad clusters are noted here                                                                |
+| \$Secure   | Security File         | 9          | ACL maintained here                                                                        |
+
+
+#### How to read a MFT
+- Identify FILE (46 49 4C 45)
+- Offsets from start of FILE
+	- 0x14 -> Length of MFT Header. Should point to start of StandardInformation Attribute 0x10 (Generally it is at 0x38)
+	- StandardInformation Attribute 0x10
+		- 0x04 to 0x05 -> Length of attribute
+		- Timestamps at:
+			- 0x18 to 0x1F -> Last Creation Time Time/Date
+			- 0x20 to 0x27 -> Last Modified Time Time/Date
+			- 0x28 to 0x2F -> Last Accessed Time Time/Date
+			- 0x30 to 0x37 -> Last Updated Time/Date
+	- Filename Attribute 0x30
+		- 0x04 to 0x05 -> Length of attribute
+		- Timestamps at:
+			- 0x20 to 0x27 -> Last Creation Time Time/Date
+			- 0x28 to 0x2F  -> Last Modified Time Time/Date
+			- 0x30 to 0x37 -> Last Accessed Time Time/Date
+			- 0x38 to 0x3F -> Last Updated Time/Date
+		- 0x5A to Length of Attribute -> ShortFilename in Unicode (Should Notice ASCII with 00 gaps. For e.g. 'A' would be 41 00)
+	- ObjectID Attribute 0x40
+		- 0x04 to 0x05 -> Length of attribute
+		- 0x14 -> Offset for GUID
+			- Whatever value 0x14 points to is where the GUID starts
+	- Data Attribute 0x80
+		- 0x04 to 0x05 -> Length of attribute
+		- 0x08 -> Resident/Non-Resident Flag set to 1 or 0 respectively
+			- Understanding DataRuns
+				- For `0x32`, 3 means \# of Bytes to store starting LCN and 2 is \# of Bytes to store Clusters assigned to this data run
+				- IF NumOfClusters = 1 then VCN == LCN
+					- Otherwise if First byte of VCN is 0x80 or greater then the VCN is a negative number. Use 2's complement to calculate
+			- If resident
+				- 0x10 -> Length of Resident Data run
+				- 0x18 -> Start of Data run
+			- If NonResident
+				- 0x40 -> Start of Data Run. First Logical Cluster Number (Logical Cluster Number)
+	- DDF Attribute 0x0100 (LECTURE 7 EFS CONTENT)
+		- Contains FEK and FEKI
+			- FEK is a symmetric encryption key, FEKI contains info on FEK that is the version num, algo used and length of FEK
+		- 0x20 -> FEK
+		- 0x20 + FEK Len(normally 32bytes) -> FEKI
+	- Checksum
+		- 0x01FE and 0x01FF -> Sector checksum value
+	- End of Sector
+		- Identified by `FF FF FF FF`
+- **Encrypting File System (EFS):**
+    - **Introduction:**
+	    - EFS was introduced with Windows 2000, providing a method for encrypting files, folders, or disk volumes.
+  - **Functionality:**
+    - EFS implements a public key and private key method for encryption.
+    - Users can apply EFS to files stored on local workstations or remote servers.
+    - A recovery certificate is generated and sent to the local Windows administrator account.
+  - **Recovery Key Agent:**
+    - This component implements the recovery certificate stored in the Windows administrator account.
+    - Windows administrators can recover keys through Windows or from a command prompt.
+  - **EFS Keys:**
+    - EFS utilizes the Data Decryption Field (DDF), which consists of the File Encryption Key (FEK) and File Encryption Key Information (FEKI).
+    - The FEK encrypts file data using the user's public key, while Feki stores information about FEK.
+    - When accessing an EFS-encrypted file, the OS retrieves the FEK and decrypts it using the user's private key.
+- **NTFS File Deletion:**
+    - When a file is deleted in Windows NT and later, the OS renames it and moves it to the Recycle Bin.
+- **Resilient File System (ReFS):**
+    - ReFS is designed to address large data storage needs, especially in cloud environments.
+    - Features include maximized data availability, improved integrity, and scalability.
+    - ReFS utilizes disk structures similar to the Master File Table (MFT) in NTFS.
 ## Assignment 4: Dark Web Forensics
 ## Assignment 5: Python Code to read MBR
 ## Assignment 6: Timeline Analysis using TSK
+- After creating an image via an imaging tool such as FTKImager
+- Creating a filesystem log with MAC times
+	- `fls -rpl -m /IMG_NAME.img > txtfile.txt`
+- Using mactime.pl 
