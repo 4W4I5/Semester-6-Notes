@@ -154,7 +154,10 @@
 	- Complexity of cloud systems
 	- Encryption in the cloud
 	- Handling Encrypted data
-	- Encr
+	- Encryption in the Cloud
+	- Handling Encrypted Data
+	- Encryption Tools and Vendors
+	- Advanced Encryption Techniques
 ---
 # Digital Forensics Analysis & Validation (Anti-Forensics Techniques) (Lec 9)
 ---
