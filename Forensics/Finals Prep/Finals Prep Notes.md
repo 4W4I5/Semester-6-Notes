@@ -106,7 +106,21 @@
 		- ChipOff
 		- MicroRead
 - Tools for Android
-	- Andriller
+	- CLI-Based
+		- Andriller, by images it seems like it uses adb
+		- Foroboto, similar to andriller
+		- AFLogicial OSE
+		- Dazai, extracts dd images
+	- GUI-Based
+		- XRY, Does both physical and logical analysis. If device is not supported then root access is required
+		- Autopsy, Generates dd image
+- Challenges/Future research for Forensics
+	- Social networking apps
+	- Evaluation of existing tools for extracting e-evidence from mobile
+	- Automated Data collection + reporting
+	- Interpretation of timestamps
+	- Preservation of digital evidence
+	- Efficient Generalized Forensics Framework for Mobile Devices (No clue what this is)
 ---
 # Cloud Forensics (Lec 13)
 ---
