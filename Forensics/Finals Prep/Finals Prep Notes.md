@@ -59,7 +59,33 @@
 
 ---
 # Mobile Forensics (Lec 16)
-
+## Android
+- Levels of security
+	- SELinux-based OS level controls
+		- Ensures every app is sandboxed via user-based protection model
+	- Google Safety checks, updates, play protect
+	- OEM based security and patches
+- Data storage location
+	- Internal/External storage
+		- External i.e. a mounted sdcard or these days in modern phones its a virtual card thats symlinked
+		- Internal i.e. /data
+	- Shared preferences
+	- SQLite Database
+	- Network(Cloud)
+- Filesystem partitions
+	- Logical
+	- Types
+		- /boot -> Boot partition, holds boot image as well as ramdisk if supported
+		- /recovery ->
+		- /system -> Android OS, does not include Google GMS/GSF
+		- /data ->
+		- /metadata ->
+		- /cache ->
+		- /misc ->
+		- /sdcard ->
+		- /sd-ext ->
+		- /product ->
+		- /vendor ->
 ---
 # Cloud Forensics (Lec 13)
 ---
