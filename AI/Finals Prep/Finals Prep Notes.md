@@ -218,7 +218,7 @@ BFS(graph, start_node, goal_node):
 	- Repeat until the goal node is found or the priority queue is empty.
 
 ```pseduocode
-Dijkstra(graph, start_node):
+UCS(graph, start_node):
     initialize an empty priority queue
     enqueue start_node with priority 0
     while priority queue is not empty:
@@ -231,6 +231,11 @@ Dijkstra(graph, start_node):
                 update cost_to_neighbor
                 enqueue neighbor with priority new_cost
     return "goal not found"
+
+
+
+Dumbed Down Verison
+- Just use heuristic values and pick the min
 ```
 
 - **Depth-First search**
