@@ -232,11 +232,6 @@ UCS(graph, start_node):
                 enqueue neighbor with priority new_cost
     return "goal not found"
 
-
-
-Dumbed Down Verison
-- Just Pick whatever path length is the shortest
-- Expand it and keep a comparision with the rest i.e. a priority queue
 ```
 
 - **Depth-First search**
