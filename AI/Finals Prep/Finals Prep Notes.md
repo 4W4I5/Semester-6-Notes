@@ -235,7 +235,8 @@ UCS(graph, start_node):
 
 
 Dumbed Down Verison
-- Just use heuristic values and pick the min
+- Just Pick whatever path length is the shortest
+- Expand it
 ```
 
 - **Depth-First search**
