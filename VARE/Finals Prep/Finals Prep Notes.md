@@ -1,12 +1,21 @@
-| Lecture Number                         | Status             |
-| -------------------------------------- | ------------------ |
-| Lecture 2: History of malware          | :white_check_mark: |
-| Lecture 3: Setting up a malware lab    | :white_check_mark: |
-| Reading Article-1                      | :white_check_mark: |
-| Lecture 4: Static malware analysis - 1 | :white_check_mark: |
-| Lecture 5: PE + COFF                   | :white_check_mark: |
-| Lecture 6: String Analysis             | :white_check_mark: |
-| Lecture 7: YARA                        | :white_check_mark: |
+NOTE:: Skipped introduction
+
+| Lecture Number                                               | Status                                                            |
+| ------------------------------------------------------------ | ----------------------------------------------------------------- |
+| Lecture 2: History of malware                                | :white_check_mark:                                                |
+| Lecture 3: Setting up a malware lab                          | :white_check_mark:                                                |
+| Reading Article-1                                            | :white_check_mark:                                                |
+| Lecture 4: Static malware analysis - 1                       | :white_check_mark:                                                |
+| Lecture 5: PE + COFF + Windows Internal - 1                  | :white_check_mark:                                                |
+| Lecture 6: String Analysis - 1                               | :white_check_mark:                                                |
+| Lecture 7: String Analysis - 2 + YARA                        | :white_check_mark:                                                |
+| Lecture 8 & 9: Reverse Engineering                           | :white_check_mark:                                                |
+| Lecture 10 & 11: Windows Internal - 2/3 + DLLs & Registry    | :white_check_mark:                                                |
+| Lecture 12: IDA                                              | :x: Would be Regurgitating Info, Go through the slides (42 Pages) |
+| Lecture 13: Basic Dynamic Analysis                           | :white_check_mark:                                                |
+| Lecture 14: Windows Internal - 4 + Advanced Dynamic Analysis | :warning:                                                         |
+| Lecture 15: Vulnerability Assessment                         | :warning:                                                         |
+| Lecture 16: Assessment Environment                           | :warning:                                                         |
 
 <!--
 :x:
@@ -14,7 +23,6 @@
 :white_check_mark:
 -->
 
-NOTE:: Skipped introduction
 # Lecture 2: History of malware
 - Malware is a software that is written with the intention of disrupting networks, causing harm to user/computer
 	- Without the knowledge of the user (Ransomware only reveals itself when the data is encrypted)
@@ -92,6 +100,9 @@ NOTE:: Skipped introduction
 	- Coverage
 	- Shelf life
 
+
+---
+
 # Lecture 3: Setting up a malware lab
 - Precautions
 	- Virtualization software must be kept UpToDate
@@ -101,7 +112,9 @@ NOTE:: Skipped introduction
 	- No removeable media must be connected
 	- Different Host OS to Guest OS
 # Reading Article till page 14
+
 Skipped taxonomy of malware. Added some extra types though
+
 - Scareware
 	- Designed to trick a user into buying and downloading unnecessary and potentially dangerous software
 - Bots
@@ -111,7 +124,7 @@ Skipped taxonomy of malware. Added some extra types though
 - Hybrid malware
 	- A malware that can belong to two or multiple types simultaneously. Such as spamware, adware and the like
 
-### Development of the malware industry
+## Development of the malware industry
 -  Malware originated to expose security flaws or showcase technical prowess.
 - Tactics like encryption, packing, obfuscation, polymorphism, and metamorphism are used to evade detection.
 - Initially driven by curiosity, malware development shifted to profit-driven motives, exploiting the booming e-commerce sector.
@@ -120,7 +133,7 @@ Skipped taxonomy of malware. Added some extra types though
 - This led to a flood of variants that mutate rapidly, overwhelming anti-malware systems.
 - The exponential growth of malware is evident, posing a persistent threat to cybersecurity.
 
-### Progress in malware detection
+## Progress in malware detection
 - **Signature-based Malware Detection**:
 	- Anti-malware products like Comodo, Kaspersky, and others use signature-based methods to detect known threats.
 	- Signatures are unique sequences of bytes specific to each malware, allowing for accurate identification.
@@ -134,7 +147,7 @@ Skipped taxonomy of malware. Added some extra types though
 	- The workflow involves scanning files locally, sending information about unknown files to the cloud server, classification by classifiers, and sending verdicts back to clients.
 	- This approach ensures up-to-date security solutions and addresses the increasing number of unknown files.
 
-### Malware detection by applying datamining techniques
+## Malware detection by applying datamining techniques
 - **Data Mining Techniques for Malware Detection**:
 	- These techniques classify unseen malware samples, identify malware families, or infer signatures.
 	- Detection involves feature extraction and classification/clustering.
@@ -153,7 +166,7 @@ Skipped taxonomy of malware. Added some extra types though
 	- Clustering-based methods are evaluated using Macro-F1 and Micro-F1 measures, emphasizing performance on rare and common categories, respectively.
 
 
-### Feature Extraction
+## Feature Extraction
 - **Feature Extraction Methods**:
 	- **Static Analysis**:
 		- Analyzes PE files without execution.
@@ -176,7 +189,7 @@ Skipped taxonomy of malware. Added some extra types though
 	- Analysis of file relationships and interdependence.
 	- Example features: instruction sequences, file-to-machine relations, file placements.
 
-
+---
 
 # Lecture 4: Static malware analysis - 1
 - Initial analysis method that involves
@@ -192,6 +205,8 @@ Skipped taxonomy of malware. Added some extra types though
 	- Extracting strings, function + metadata
 	- Unpacking
 	- Classifying and Comparing
+
+---
 
 # Lecture 5: PE + COFF
 - PE aka COFF (Common Object File format)
@@ -228,6 +243,8 @@ Skipped taxonomy of malware. Added some extra types though
 			- RELOCATE
 				- .reloc: Holds information on how to relocate the exe in memory to a different address from the time it was linked
 
+---
+
 # Lecture 6: String Analysis
 - Obfuscation/Packing
 	- Used to protect the inner workings of the malware from security researchers, malware analysts + RE
@@ -240,9 +257,13 @@ Skipped taxonomy of malware. Added some extra types though
 		- IP addresses
 		- Commands i.e. attack commands
 		- Registry keys
+
+---
+
 # Lecture 7: YARA
 
 Why YARA and not AWKSCRIPT
+
 - Yara is specifically tailored for string matching
 - AWK is tailored for log processing
 
@@ -251,7 +272,6 @@ to run a yara file use the following
 
 $ yara32 -r yaraRule.yara fileToTestRule.exe
 ```
-
 
 - Using hexadecimal strings
 	- Good for using Jumps, Wildcards and alternatives.
@@ -272,6 +292,7 @@ $ yara32 -r yaraRule.yara fileToTestRule.exe
 	- This code checks if the first 3 letters of A are spaced 10 bytes apart from the first 3 letters of B and if they match or not
 
 ---
+
 Copied from mattnotmax on github
 
 ## Basic Rule
@@ -329,6 +350,7 @@ rule specifc_name       // e.g. APT_CN_Winnti_exploit or crimeware_ZZ_RAT
  - Hexadecimal strings allow three special constructions that make them more flexible: wild-cards, jumps, and alternatives.
 
 ### Wildcards
+
 Wild-cards are just placeholders that you can put into the string indicating that some bytes are unknown and they should match anything.
 
 The placeholder character is the question mark (?).
@@ -396,6 +418,7 @@ rule CountExample
         #a == 6 and #b > 10
 }
 ```
+
 This rule matches any file or process containing the string $a exactly six times, and more than ten occurrences of string $b.
 
 ## File Size
@@ -433,9 +456,11 @@ Conditions are nothing more than Boolean expressions as those that can be found 
 Examples:
 
 PE Header
+
 `uint16(0) == 0x5A4D`
 
 ELF Header
+
 `uint32(0) == 0x464c457f`
 
 ## Comments
@@ -457,7 +482,6 @@ The PE module allows you to create more fine-grained rules for PE files by using
 Preface fule with `import "pe"`
 
 see [PE Module](https://yara.readthedocs.io/en/stable/modules/pe.html#pe-module)
-
 
 ## Math Module
 
@@ -485,13 +509,14 @@ Useful examples:
 - Internal module names
 - Encoded or encrypted configuration strings
 
-
 Use clusters of groups (See example at start). Eg:
+
 - unique artifacts found in malware
 - Win APIs
 - File properties and structure (sections, entropy, timestamp, filesize etc.)
 
 Then use these clusters to create the `condition`:
+
 - `any of $a* or 5 of $b* or 2 of $c*`
 
 ## Random Tips
@@ -529,21 +554,18 @@ condition:
 ## Resouces
 
 [Yara Binaries](https://github.com/VirusTotal/yara/releases)
+
 [Yara Readthedocs](https://yara.readthedocs.io/en/stable/)
+
 [Yara Git Repo](https://github.com/VirusTotal/yara)
+
 [Kaspersky Yara Webinar](https://securelist.com/yara-webinar-follow-up/96505/)
+
 [yaraPCAP](https://github.com/kevthehermit/YaraPcap)
+
 [Kaspersky Klara](https://github.com/KasperskyLab/klara)
+
 [YarGen](https://github.com/Neo23x0/yarGen)
-
-
-
-| Lecture Number                                      | Status                                                            |
-| --------------------------------------------------- | ----------------------------------------------------------------- |
-| Lecture 8 & 9: Reverse Engineering                  | :white_check_mark:                                                |
-| Lecture 10 & 11: Windows Internal - DLLs & Registry | :white_check_mark:                                                |
-| Lecture 12: IDA                                     | :x: Would be Regurgitating Info, Go through the slides (42 Pages) |
-| Lecture 13: Basic Dynamic Analysis                  | :white_check_mark:                                                |
 
 <!--
 :x:
@@ -551,6 +573,7 @@ condition:
 :white_check_mark:
 -->
 
+---
 
 # Lecture 8 & 9: Reverse Engineering
 ## Why?
@@ -696,6 +719,8 @@ condition:
 | Instruction length       | Computes the length of each instruction to determine the next | Considers how instructions affect the CPU instruction pointer |
 | Ease of disassembly      | Challenging for complex control flows                         | Better suited for understanding complex control flow          |
 
+---
+
 # Lecture 10 & 11: Windows Internal - DLLs & Registry
 ## Static VS Dynamic
 
@@ -815,6 +840,8 @@ condition:
 	- Append their own data to achieve persistence or bypass AV
 		- This is done via WinAPI calls for RegCreateKey, RegDeleteKey, RegSetValue
 
+---
+
 # Lecture 13: Basic Dynamic Analysis
 ## Basics
 - Dynamic analysis involves
@@ -868,3 +895,15 @@ condition:
 - **Execute Malware for a set interval**
 - **Stop monitoring tools, take another RegShot**
 - **Analyze results from tools and compare RegShot shots**
+
+---
+
+# Lecture 14: Windows Internal - 4 + Advanced Dynamic Analysis
+
+---
+
+# Lecture 15: Vulnerability Assessment
+
+---
+
+# Lecture 16: Assessment Environment
