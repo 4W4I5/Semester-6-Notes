@@ -264,16 +264,24 @@ Skipped taxonomy of malware. Added some extra types though
 - WinRT (Windows RunTime)
 - .NET framework
 - Services, Functions & Routines
-	- WinAPI calls
+	- WinAPI calls -> Documented + Callable subroutines
 		- COM
-	- System calls
-	- Routines (Kernel Functions)
+	- System calls -> Undocumented/Hidden function calls + Callable from usermode
+	- Routines (Kernel Functions) -> Callable routines in kernel-mode
 - Windows Services
+	- Contains processes run by the service control manager
+	- Provides kernel interface to such programs
 - DLLs
+	- PE files marked as DLLs
+	- Used extensively by user-mode processes
+	- .NET assemblies are also compiled as DLLs but without any unmanaged exported subroutines
 - Processes
 	- Static Sequence of instructions
 	- Contains
-		- 
+		- Private address space
+		- Security Context
+		- ProcessID
+		- At least one thread for execution
 - Threads
 	- Scheduled process entity
 	- Contains
