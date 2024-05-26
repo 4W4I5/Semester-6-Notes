@@ -6,7 +6,7 @@ NOTE:: Skipped introduction
 | Lecture 3: Setting up a malware lab                          | :white_check_mark:                                                |
 | Reading Article-1                                            | :white_check_mark:                                                |
 | Lecture 4: Static malware analysis - 1                       | :white_check_mark:                                                |
-| Lecture 5: PE + COFF + Windows Internal - 1                  | :warning:                                                         |
+| Lecture 5: PE + COFF + Windows Internal - 1                  | :white_check_mark:                                                | 
 | Lecture 6: String Analysis - 1                               | :white_check_mark:                                                |
 | Lecture 7: String Analysis - 2 + YARA                        | :white_check_mark:                                                |
 | Lecture 8 & 9: Reverse Engineering                           | :white_check_mark:                                                |
@@ -261,11 +261,29 @@ Skipped taxonomy of malware. Added some extra types though
 		- Monolithic in nature
 		- Runs in Kernel/User Mode
 	- Layered Design
+- WinAPI
+	- Expose Kernel functions to the OS
+	- Provide
+		- Base/Advanced Services -> Basic resource + Kernel resource access
+		- GUI
+		- Common Control/Dialog Box Library -> Basic GUI such as dialog boxes, progress bars, etc
+		- Windows Shell
+		- Network Services
+- COM
+	- DLL/EXE where COM classes are implemented
+	- Language neutral
+	- Loaded dynamically
+	- Virtual Table Dispatch
+		- Interface clients and objects via contracts
 - WinRT (Windows RunTime)
+	- Platform services for Windows Apps which can use both WinAPI and COM APIs
+	- Sandboxed
+	- Built on top of COM
 - .NET framework
+	- Provides Common Language Runtime
+	- Interface WinAPI with .NET apps
 - Services, Functions & Routines
 	- WinAPI calls -> Documented + Callable subroutines
-		- COM
 	- System calls -> Undocumented/Hidden function calls + Callable from usermode
 	- Routines (Kernel Functions) -> Callable routines in kernel-mode
 - Windows Services
