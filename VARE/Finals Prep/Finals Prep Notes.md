@@ -271,6 +271,9 @@ Skipped taxonomy of malware. Added some extra types though
 - Windows Services
 - DLLs
 - Processes
+	- Static Sequence of instructions
+	- Contains
+		- 
 - Threads
 	- Scheduled process entity
 	- Contains
