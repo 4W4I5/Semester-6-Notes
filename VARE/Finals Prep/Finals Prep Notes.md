@@ -286,10 +286,14 @@ Skipped taxonomy of malware. Added some extra types though
 		- Device Drivers -> Virtual and Hardware
 		- Hardware Abstraction Layer (HAL) -> Isolate platform specific hardware
 		- Windowing + graphic system -> Windows user + GDI functions
-		- Hypervisor layer -> Passthru certain PCI-E devices
-- Virtualization
-	- Hyper-V
+		- Hypervisor layer -> Passthru certain PCI-E devices for virtualization
 - Windows Registry
+	- Contains
+		- Boot information
+		- Configuration information
+		- Security DB
+		- Performance Counters
+		- In-Memory Volatile data
 
 ---
 
