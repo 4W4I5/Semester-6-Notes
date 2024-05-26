@@ -6,7 +6,7 @@ NOTE:: Skipped introduction
 | Lecture 3: Setting up a malware lab                          | :white_check_mark:                                                |
 | Reading Article-1                                            | :white_check_mark:                                                |
 | Lecture 4: Static malware analysis - 1                       | :white_check_mark:                                                |
-| Lecture 5: PE + COFF + Windows Internal - 1                  | :white_check_mark:                                                | 
+| Lecture 5: PE + COFF + Windows Internal - 1                  | :white_check_mark:                                                |
 | Lecture 6: String Analysis - 1                               | :white_check_mark:                                                |
 | Lecture 7: String Analysis - 2 + YARA                        | :white_check_mark:                                                |
 | Lecture 8 & 9: Reverse Engineering                           | :white_check_mark:                                                |
@@ -371,12 +371,32 @@ $ yara32 -r yaraRule.yara fileToTestRule.exe
 		- Simple strings can also use wildcards but that involves regex
 	- Wildcards = Use a "?" for each 4bits to guess
 	- Jumps = Use when length of string is unknown. use \[3-5\] where 3 is minLen and 5 is maxLen
+- Sets of strings
+	- Can select strings from a set of strings
+	- Example:
+		- 2 of them or all of them or any of them
+		- 2 of ($1, $2, $3, $4)
+		- 2 of ($*)
+- Counting Strings
+	- Use # to specific counts
+	- Example:
+		- /#a == 6 and /#b < 10 -> A should be exactly 6 and B should be less than 10
+- Offsets
+	- Specify offset from entrypoint in bytes
+	- Example:
+		- $a at 100 and $b at 300
+	- Can be ranged
+	- Example:
+		- $a in (0..100) or $b in (100..filesize)
 - Anonymous strings
 	- Just use a \$. No need to name. Can only use the 'of them' condition for this though
 - Global Rule
 	- Impose restrictions on all rules within the file
 - Private Rule
 	- Disable the rule
+- Referencing other rules
+	- Example:
+		- $a and Rule1
 - Iterative
 	- same syntax as python.
 	- example
