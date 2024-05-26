@@ -272,6 +272,13 @@ Skipped taxonomy of malware. Added some extra types though
 - DLLs
 - Processes
 - Threads
+	- Scheduled process entity
+	- Contains
+		- Register contents
+		- Two Stacks, one each for operating mode of kernel
+		- TLS i.e. thread level storage
+		- ThreadID
+	- Fiber: App-Specific threads
 - Jobs
 	- Group of processes managed in a unit
 	- Allow management/manipulation + basic accounting i.e. MAC times
