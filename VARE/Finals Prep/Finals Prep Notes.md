@@ -130,13 +130,18 @@ Skipped taxonomy of malware. Added some extra types though
 	- A malware that can belong to two or multiple types simultaneously. Such as spamware, adware and the like
 
 ## Development of the malware industry
--  Malware originated to expose security flaws or showcase technical prowess.
-- Tactics like encryption, packing, obfuscation, polymorphism, and metamorphism are used to evade detection.
-- Initially driven by curiosity, malware development shifted to profit-driven motives, exploiting the booming e-commerce sector.
-- Trojans surged, constituting 73% of malware, forming a lucrative underground industry.
-- Despite increased complexity, the barrier to entry for creating malware has lowered due to user-friendly toolkits like Zeus and SpyEye.
-- This led to a flood of variants that mutate rapidly, overwhelming anti-malware systems.
-- The exponential growth of malware is evident, posing a persistent threat to cybersecurity.
+- **Origins and Evolution**
+    - Malware originated to expose security flaws or showcase technical prowess.
+    - Uses tactics like encryption, packing, obfuscation, polymorphism, and metamorphism to evade detection.
+- **Shift to Profit-Driven Motives**
+    - Shifted from curiosity-driven to profit-driven, exploiting the booming e-commerce sector.
+    - Trojans now constitute 73% of malware, forming a lucrative underground industry.
+- **Lowered Barrier to Entry**
+    - Barrier to entry has lowered due to user-friendly toolkits like Zeus and SpyEye.
+- **Proliferation of Variants**
+    - Flood of rapidly mutating variants overwhelms anti-malware systems.
+- **Persistent Threat**
+    - Exponential growth of malware poses a persistent cybersecurity threat.
 
 ## Progress in malware detection
 - **Signature-based Malware Detection**:
@@ -169,7 +174,6 @@ Skipped taxonomy of malware. Added some extra types though
 	- Accuracy (ACY): Rate of correctly classified instances (both positive and negative).
 	- Evaluation can be instance-level (cumulative approach) or transaction-level (interactive-based approach).
 	- Clustering-based methods are evaluated using Macro-F1 and Micro-F1 measures, emphasizing performance on rare and common categories, respectively.
-
 
 ## Feature Extraction
 - **Feature Extraction Methods**:
