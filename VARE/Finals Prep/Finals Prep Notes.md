@@ -6,7 +6,7 @@ NOTE:: Skipped introduction
 | Lecture 3: Setting up a malware lab                          | :white_check_mark:                                                |
 | Reading Article-1                                            | :white_check_mark:                                                |
 | Lecture 4: Static malware analysis - 1                       | :white_check_mark:                                                |
-| Lecture 5: PE + COFF + Windows Internal - 1                  | :white_check_mark:                                                |
+| Lecture 5: PE + COFF + Windows Internal - 1                  | :warning:                                                         | 
 | Lecture 6: String Analysis - 1                               | :white_check_mark:                                                |
 | Lecture 7: String Analysis - 2 + YARA                        | :white_check_mark:                                                |
 | Lecture 8 & 9: Reverse Engineering                           | :white_check_mark:                                                |
@@ -218,7 +218,7 @@ Skipped taxonomy of malware. Added some extra types though
 
 ---
 
-# Lecture 5: PE + COFF
+# Lecture 5: PE + COFF + Windows Internal - 1
 - PE aka COFF (Common Object File format)
 - PE files do not contain PIE
 - **PE contains**
