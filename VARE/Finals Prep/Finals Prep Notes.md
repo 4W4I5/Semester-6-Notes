@@ -85,7 +85,7 @@ NOTE:: Skipped introduction
 			- Drive-by Downloads
 - **Exploits**
 	- Small piece of code input into programs to target their vulns
-	- Patches
+	- **Patches**
 		- Identify and fix vulns before they can be exploits
 		- Done via updates by vendors
 		- Zero-Day = Vuln is not patched
@@ -99,6 +99,11 @@ NOTE:: Skipped introduction
 	- Stealth
 	- Coverage
 	- Shelf life
+- **Malware Attack LifeCycle (Missed out in Sessional 1)**
+	- Development
+	- Distribution
+	- Infection
+	- Post-Infection
 
 
 ---
