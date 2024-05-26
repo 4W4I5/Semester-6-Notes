@@ -5,7 +5,7 @@ NOTE:: Skipped introduction
 | Lecture 2: History of malware                                | :white_check_mark:                                                |
 | Lecture 3: Setting up a malware lab                          | :white_check_mark:                                                |
 | Reading Article-1                                            | :white_check_mark:                                                |
-| Lecture 4: Static malware analysis - 1                       | :warning:                                                         | 
+| Lecture 4: Static malware analysis - 1                       | :warning:                                                         |
 | Lecture 5: PE + COFF + Windows Internal - 1                  | :white_check_mark:                                                |
 | Lecture 6: String Analysis - 1                               | :white_check_mark:                                                |
 | Lecture 7: String Analysis - 2 + YARA                        | :white_check_mark:                                                |
@@ -26,7 +26,7 @@ NOTE:: Skipped introduction
 # Lecture 2: History of malware
 - Malware is a software that is written with the intention of disrupting networks, causing harm to user/computer
 	- Without the knowledge of the user (Ransomware only reveals itself when the data is encrypted)
-- Taxonomy of malware
+- **Taxonomy of malware**
 	- Malicious programs aka malware
 		- Needs a host
 			- Trapdoors, basically backdoors, allow to bypass normal authentication means
@@ -36,7 +36,7 @@ NOTE:: Skipped introduction
 		- Independent
 			- Worm
 			- Zombie, basically bots
-- Goals of MA&RE
+- **Goals of MA&RE**
 	- Determine capability of Malware
 	- Detect
 	- Contain
@@ -51,7 +51,7 @@ NOTE:: Skipped introduction
 | Coverage           | Provides comprehensive coverage of the codebase          | Coverage depends on the executed test cases                     |
 | Resource           | Requires fewer resources                                 | Can be more resource-intensive, especially for complex programs |
 
-- Advanced Persistent Threat (APT)
+- **Advanced Persistent Threat (APT)**
 	- Malware created to infect a particular individual, company or organization
 	- Targeted campaigns against
 		- Platforms
@@ -66,7 +66,7 @@ NOTE:: Skipped introduction
 		- Installation
 		- C2
 		- Action on Objectives
-- Components of Malware
+- **Components of Malware**
 	- **Stealth**
 		- **Packer**: Techniques used to compress/encrypt malware code to evade detection by antivirus or other security measures
 	- **Armoring**
@@ -83,18 +83,18 @@ NOTE:: Skipped introduction
 			- Email
 			- Clicking on links
 			- Drive-by Downloads
-- Exploits
+- **Exploits**
 	- Small piece of code input into programs to target their vulns
 	- Patches
 		- Identify and fix vulns before they can be exploits
 		- Done via updates by vendors
 		- Zero-Day = Vuln is not patched
-	- Exploit Kit
+	- **Exploit Kit**
 		- Baits and traps using malicious servers, observes connected hosts and deploys malware accordingly
 		- Devised to attack computers that are hidden behind their home network
 		- Automatically managing and deploying exploits against a target computer
 		- Wait for users to contact these malicious server
-- Dimensions of infection vectors
+- **Dimensions of infection vectors**
 	- Speed
 	- Stealth
 	- Coverage
