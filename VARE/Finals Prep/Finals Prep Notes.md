@@ -273,7 +273,12 @@ Skipped taxonomy of malware. Added some extra types though
 - Processes
 - Threads
 - Jobs
+	- Group of processes managed in a unit
+	- Allow management/manipulation + basic accounting i.e. MAC times
+	- Provide control over certain attributes
+	- Provide limits for process(es) associated with the jo
 - Virtual Memory
+	- SWAP space for processes suspended or requiring memory much larger than available physical memory
 - Kernel Modes
 	- User
 		- Grants 4 process types
