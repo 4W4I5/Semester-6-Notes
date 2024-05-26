@@ -6,7 +6,7 @@ NOTE:: Skipped introduction
 | Lecture 3: Setting up a malware lab                          | :white_check_mark:                                                |
 | Reading Article-1                                            | :white_check_mark:                                                |
 | Lecture 4: Static malware analysis - 1                       | :white_check_mark:                                                |
-| Lecture 5: PE + COFF + Windows Internal - 1                  | :warning:                                                         | 
+| Lecture 5: PE + COFF + Windows Internal - 1                  | :warning:                                                         |
 | Lecture 6: String Analysis - 1                               | :white_check_mark:                                                |
 | Lecture 7: String Analysis - 2 + YARA                        | :white_check_mark:                                                |
 | Lecture 8 & 9: Reverse Engineering                           | :white_check_mark:                                                |
@@ -219,6 +219,7 @@ Skipped taxonomy of malware. Added some extra types though
 ---
 
 # Lecture 5: PE + COFF + Windows Internal - 1
+### Portable Executables + COFF
 - PE aka COFF (Common Object File format)
 - PE files do not contain PIE
 - **PE contains**
@@ -252,6 +253,33 @@ Skipped taxonomy of malware. Added some extra types though
 				- .debug: Debugging information such as symbol tables, line numbers
 			- RELOCATE
 				- .reloc: Holds information on how to relocate the exe in memory to a different address from the time it was linked
+
+
+## Windows Internals - 1
+- Windows Architecture
+	- WinAPI
+	- COM
+	- WinRT (Windows RunTime)
+	- .NET framework
+- Services, Functions & Routines
+	- WinAPI calls
+	- System calls
+	- Routines (Kernel Functions)
+- Windows Services
+- DLLs
+- Processes
+- Threads
+- Jobs
+- Virtual Memory
+- Kernel Modes
+	- User
+		- Grants 4 process types
+			- User processes -> Windows apps running on WinRT
+			- Service processes -> 
+	- Kernel
+- Virtualization
+	- Hyper-V
+- Windows Registry
 
 ---
 
