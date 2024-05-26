@@ -257,12 +257,15 @@ Skipped taxonomy of malware. Added some extra types though
 
 ## Windows Internals - 1
 - Windows Architecture
-	- WinAPI
-	- COM
-	- WinRT (Windows RunTime)
-	- .NET framework
+	- Kernel
+		- Monolithic in nature
+		- Runs in Kernel/User Mode
+	- Layered Design
+- WinRT (Windows RunTime)
+- .NET framework
 - Services, Functions & Routines
 	- WinAPI calls
+		- COM
 	- System calls
 	- Routines (Kernel Functions)
 - Windows Services
@@ -275,8 +278,15 @@ Skipped taxonomy of malware. Added some extra types though
 	- User
 		- Grants 4 process types
 			- User processes -> Windows apps running on WinRT
-			- Service processes -> 
+			- Service processes -> Host windows services i.e. task scheduler
+			- System processes -> Hardwired i.e. the logon process
+			- Environment Subsystem Server process -> Presented to user/programmer + implement support for OS enviro
 	- Kernel
+		- Executive -> Contains all managers
+		- Device Drivers -> Virtual and Hardware
+		- Hardware Abstraction Layer (HAL) -> Isolate platform specific hardware
+		- Windowing + graphic system -> Windows user + GDI functions
+		- Hypervisor layer -> Passthru certain PCI-E devices
 - Virtualization
 	- Hyper-V
 - Windows Registry
