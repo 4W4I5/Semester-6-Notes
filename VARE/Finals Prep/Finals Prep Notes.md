@@ -5,7 +5,7 @@ NOTE:: Skipped introduction
 | Lecture 2: History of malware                                | :white_check_mark:                                                |
 | Lecture 3: Setting up a malware lab                          | :white_check_mark:                                                |
 | Reading Article-1                                            | :white_check_mark:                                                |
-| Lecture 4: Static malware analysis - 1                       | :white_check_mark:                                                |
+| Lecture 4: Static malware analysis - 1                       | :warning:                                                         | 
 | Lecture 5: PE + COFF + Windows Internal - 1                  | :white_check_mark:                                                |
 | Lecture 6: String Analysis - 1                               | :white_check_mark:                                                |
 | Lecture 7: String Analysis - 2 + YARA                        | :white_check_mark:                                                |
