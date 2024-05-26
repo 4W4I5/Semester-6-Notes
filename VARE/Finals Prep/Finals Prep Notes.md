@@ -5,7 +5,7 @@ NOTE:: Skipped introduction
 | Lecture 2: History of malware                                | :white_check_mark:                                                |
 | Lecture 3: Setting up a malware lab                          | :white_check_mark:                                                |
 | Reading Article-1                                            | :white_check_mark:                                                |
-| Lecture 4: Static malware analysis - 1                       | :warning:                                                         |
+| Lecture 4: Static malware analysis - 1                       | :white_check_mark:                                                |
 | Lecture 5: PE + COFF + Windows Internal - 1                  | :white_check_mark:                                                |
 | Lecture 6: String Analysis - 1                               | :white_check_mark:                                                |
 | Lecture 7: String Analysis - 2 + YARA                        | :white_check_mark:                                                |
@@ -201,12 +201,13 @@ Skipped taxonomy of malware. Added some extra types though
 ---
 
 # Lecture 4: Static malware analysis - 1
-- Initial analysis method that involves
+- **Initial analysis method that involves**
 	- Extraction of useful information
 	- Classification via informed decisions
 	- Base for subsequent analysis
-- Basic Static Analysis (I.F.E.U.C2)
+- **Basic Static Analysis (I.F.E.U.C2)**
 	- Identifying a file
+		- OS only checks the extension
 		- Analyze extension, magic byte, PE type,
 	- Fingerprinting
 		- Calculating SHA1, SHA256 & MD5 hashes.
@@ -220,19 +221,19 @@ Skipped taxonomy of malware. Added some extra types though
 # Lecture 5: PE + COFF
 - PE aka COFF (Common Object File format)
 - PE files do not contain PIE
-- PE contains
+- **PE contains**
 	- Specifices where the exe needs to be loaded in memory
 	- Reference for linking DLLs
 	- Import/Export tables
 	- Thread-Local Storage + Resource management data
-- Components
-	- Header
-		- Structure
+- **Components**
+	- **Header**
+		- **Structure**
 			- MZDOS > DOS STUB > PE FileHeader > Optional > Section Tables > Section
-		- Metadata
+		- **Metadata**
 			- Date, time, versions
 			- Points + Offsets(RVAs) into sections where code and data are located
-	- Sections
+	- **Sections**
 		- Stores data, code resources, directories + debug info
 		- Important sections to note
 			- DATA
