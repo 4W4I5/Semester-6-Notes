@@ -1096,6 +1096,25 @@ condition:
 		- To scope creep
 		- Customer Dissatisfaction + Legal Trouble
 - **Gathering Requirements**
+	- Clarity about customer requirements and expectations
+	- Customer may be internal or external to the organization
+	- Document customer requirements (checklists)
+	    - Security compliance
+	    - Requirements and code of conduct
+	    - Network segment
+	    - Security devices
+	    - Assets to scan (list of assets exposed, list of business-critical assets)
+	    - Tools (licensed, prohibited)
+	    - Reporting mechanism (recent VA report if available)
+	- Suitable time frame and testing hours
+	- Identifying stakeholders
+	    - Executives
+	    - IT Security head
+	    - VA Lead Tester (SPOC)
+	    - VA Tester (PoC)
+	    - Asset owner
+	    - Third-party service provider
+	    - End users
 - **Decision on type of vulnerability assessment**
 	- Based on location
 	    - External
@@ -1134,3 +1153,7 @@ condition:
 		- Liabilities
 		- Authorized approval and signatures
 - **Getting Approval & Signing NDA's**
+	- Must be approved by senior management.
+	- Preapproved support from senior management in case of disruptions.
+	- Sign confidentiality and nondisclosure agreements.
+	- Provide coverage for various areas such as negligence and liability in case of mishaps.
