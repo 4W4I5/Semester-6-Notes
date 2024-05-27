@@ -1059,7 +1059,31 @@ condition:
 
 
 ### Industry Standards
-
+- **Open Web Application Security Project Testing Guide**
+	- Provide specific instructions on how to identify, verify, and remediate each vulnerability in an application.
+	- Community Project publishes top 10’s for awareness.
+	- Integrate throughout all the phases of SDLC.
+	- **Benefits**
+		- Ensure minimum security requirements.
+		- OWASP community has developed many security tools.
+		- Provides testing guidelines (Technology/vendor).
+		- Helps in designing and implementing security controls.
+		- Industry-wise visibility and acceptance.
+- **Penetration Testing Execution Standard (PTES)**
+	- **Consists of seven stages:**
+		- Pre-engagement Interactions
+		- Intelligence Gathering
+		- Threat Modeling
+		- Vulnerability Analysis
+		- Exploitation
+		- Post Exploitation
+		- Reporting
+	- **Benefits**
+		- Thorough pen-testing framework.
+		- Detailed instructions to perform testing tasks.
+		- Created by best testers who perform pen-testing on a daily basis.
+		- Simple to understand and adaptable.
+		- Industry-wise visibility and acceptance.
 ### Security Assessment Prerequisites
 - **Planning & Target Scoping**
 - **Gathering Requirements**
