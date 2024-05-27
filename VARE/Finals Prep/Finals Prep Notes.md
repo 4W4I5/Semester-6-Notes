@@ -13,9 +13,9 @@ NOTE:: Skipped introduction
 | Lecture 10 & 11: Windows Internal - 2/3 + DLLs & Registry    | :white_check_mark:                                                |
 | Lecture 12: IDA                                              | :x: Would be Regurgitating Info, Go through the slides (42 Pages) |
 | Lecture 13: Basic Dynamic Analysis                           | :white_check_mark:                                                |
-| Lecture 14: Windows Internal - 4 + Advanced Dynamic Analysis | :warning:                                                         |
-| Lecture 15: Vulnerability Assessment                         | :warning:                                                         |
-| Lecture 16: Assessment Environment                           | :warning:                                                         |
+| Lecture 14: Windows Internal - 4 + Advanced Dynamic Analysis | :white_check_mark:                                                |
+| Lecture 15: Vulnerability Assessment                         | :white_check_mark:                                                |
+| Lecture 16: Assessment Environment                           | :white_check_mark:                                                | 
 
 <!--
 :x:
@@ -1013,6 +1013,71 @@ condition:
 
 # Lecture 14: Windows Internal - 4 + Advanced Dynamic Analysis
 
+- **User Defined DLL**
+  - Attackers implement malicious code as DLLs
+  - Advantages:
+    - Load into any process, including legitimate ones (e.g., Explorer.exe, winlogon.exe)
+    - Persistence on the system
+    - Manipulate process functionality
+  - Challenges:
+    - Analyzing DLLs is more complex than executables
+- **Analyzing the DLL**
+  - Understanding DLL execution is essential
+  - Windows tool: `rundll32.exe` can launch DLLs and invoke exported functions
+- **Launching a DLL with rundll32.exe**
+  - Syntax: `rundll32.exe <full path to dll>,<export function> <optional arguments>`
+    - Full path to DLL: No spaces or special characters
+    - Export function: Function in the DLL to be called
+    - Optional arguments: Passed to the export function
+    - Comma: Separates the DLL path and export function
+- **Debugging Malicious Binaries: Advanced Dynamic Analysis**
+- **What is Debugging?**
+  - Controlled execution of malicious code
+  - Benefits:
+    - Inspect code at a granular level
+    - Full control over runtime behavior
+    - Execute single/multiple instructions or specific functions
+  - Environment: Conduct in a malware lab or isolated environment
+- **Popular Debuggers**
+  - IDA Pro, X64dbg
+  - Others: radare2, WinDbg, Ollydbg, Immunity Debugger, Hopper, Binary Ninja
+- **Steps in Debugging**
+  - Not standalone; involves multiple steps:
+    1. **Launching and Attaching to Process**
+       - Select the program to debug
+       - Methods: Attach to a running process or launch a new one
+    2. **Controlling Process Execution**
+       - Modify behavior during execution
+       - Capabilities:
+         - Control execution: Continue (Run), Step into/over, Execute till Return, Run to cursor
+         - Interrupt execution: Use breakpoints
+    3. **Interrupting a Program with Breakpoints**
+       - Breakpoint: Interrupts execution at specific locations
+       - Uses:
+         - Pause at a particular instruction
+         - When a function/API is called
+         - When memory is accessed
+       - Types: Software, Hardware, Memory, Conditional
+       - Monitoring/modifying aspects of the process upon reaching breakpoints
+    4. **Tracing Program Execution**
+       - Recording specific events during execution
+       - Provides detailed information about the binary
+- **Kernel-related Information**
+  - Inquiry about methods to access kernel info
+- **Semester Projects**
+- **Debugging a Binary Using x64dbg**
+  - Open-source debugger for 32-bit and 64-bit applications
+- **x64dbg Debugger Interface**
+  - Components:
+    1. Disassembly Window (CPU Window)
+    2. Registers Window
+    3. Stack Window
+    4. Dump Window
+    5. Memory Map Window
+    6. References Window
+    7. Handles Window
+    8. Threads Window
+
 ---
 
 # Lecture 15: Vulnerability Assessment
@@ -1071,29 +1136,29 @@ condition:
 	- **Security Audits**: Conducted by third parties for an unbiased review of security posture.
 		- Types: internal audits and external audits.
 - **Vulnerability Management**
-  - Cyclical practice of identifying, classifying, remediating, and mitigating security vulnerabilities.
-  - Essential elements include detection, assessment, and remediation.
-  - Programs can be bottom-up or top-down.
+	- Cyclical practice of identifying, classifying, remediating, and mitigating security vulnerabilities.
+	- Essential elements include detection, assessment, and remediation.
+	- Programs can be bottom-up or top-down.
 - **Detection Methods**
-  - **Vulnerability Scanning**: Software assessing computers, networks, or applications for known vulnerabilities.
-    - **Authenticated Scans**: Direct access to networked assets using system credentials.
-    - **Unauthenticated Scans**: External scans often used by attackers to gauge security posture.
-  - **Penetration Testing**: Also known as ethical hacking, it tests IT assets for exploitable vulnerabilities.
-    - Can be automated or manual, testing security policies, compliance, and incident response.
-  - **Google Hacking**: Using search engines to find vulnerabilities due to misconfigurations or exposed information.
-    - Common issues include software vulnerabilities and cloud service misconfigurations.
+	- **Vulnerability Scanning**: Software assessing computers, networks, or applications for known vulnerabilities.
+	- **Authenticated Scans**: Direct access to networked assets using system credentials.
+	- **Unauthenticated Scans**: External scans often used by attackers to gauge security posture.
+- **Penetration Testing**: Also known as ethical hacking, it tests IT assets for exploitable vulnerabilities.
+	- Can be automated or manual, testing security policies, compliance, and incident response.
+- **Google Hacking**: Using search engines to find vulnerabilities due to misconfigurations or exposed information.
+	- Common issues include software vulnerabilities and cloud service misconfigurations.
 - **Common Vulnerabilities**
-  - **Initial Deployment Failure**: Insufficient testing leading to exploitable flaws.
-  - **SQL Injection**: Common database attack recorded in vulnerability databases.
-  - **Misconfiguration**: Improperly configured services leading to vulnerabilities.
-  - **Inadequate Auditing**: Lack of audit trails making it hard to detect data alterations or breaches.
+	- **Initial Deployment Failure**: Insufficient testing leading to exploitable flaws.
+	- **SQL Injection**: Common database attack recorded in vulnerability databases.
+	- **Misconfiguration**: Improperly configured services leading to vulnerabilities.
+	- **Inadequate Auditing**: Lack of audit trails making it hard to detect data alterations or breaches.
 - **Security Basics**
-  - **CIA Triad**: Confidentiality, Integrity, Availability.
-  - **Identification and Authentication**: Ensuring proper access controls.
-  - **Authorization and Accountability**: Ensuring actions can be traced.
-  - **Monitoring and Auditing**: Keeping track of security events and actions.
-  - **Nonrepudiation**: Ensuring actions cannot be denied.
-  - **Safeguards and Attack Vectors**: Implementing measures to protect against threats.
+	- **CIA Triad**: Confidentiality, Integrity, Availability.
+	- **Identification and Authentication**: Ensuring proper access controls.
+	- **Authorization and Accountability**: Ensuring actions can be traced.
+	- **Monitoring and Auditing**: Keeping track of security events and actions.
+	- **Nonrepudiation**: Ensuring actions cannot be denied.
+	- **Safeguards and Attack Vectors**: Implementing measures to protect against threats.
 
 ---
 
