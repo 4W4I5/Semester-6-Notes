@@ -1017,6 +1017,84 @@ condition:
 
 # Lecture 15: Vulnerability Assessment
 
+- **Key Terms**
+	- **Vulnerability**: A weakness exploitable by cybercriminals to gain unauthorized access to systems.
+	- **Exploit**: Code that takes advantage of a software vulnerability or security flaw.
+	- **Patch**: Software update that fixes vulnerabilities and security flaws.
+	- **Threat**: Potential cause of an unwanted incident that may result in harm to a system or organization.
+- **Types of Vulnerabilities**
+	- Flaws in software or protocol design.
+	- Weaknesses in how protocols and software are implemented.
+	- Weaknesses in system and network configurations.
+	- DOS (Denial of Service) vulnerabilities.
+	- User information disclosure.
+	- Insecure data storage.
+	- Outdated or unpatched systems.
+	- Man-in-the-Middle (MITM) and spoofing attacks.
+	- Poor code quality.
+	- Weak cryptography.
+	- Flawed or insufficient authentication mechanisms.
+- **Causes of Vulnerabilities**
+	- **Complexity**: Increased complexity leads to more potential security gaps.
+	- **Familiarity**: Widely used software can be more attractive targets.
+	- **Connectivity**: Increased connections expand the attack surface.
+	- **Poor Password Management**: Weak passwords create easy entry points.
+	- **Operating System Flaws**: OS vulnerabilities provide entry points for attacks.
+	- **Internet Usage**: Browsing and internet activity expose systems to risks.
+	- **Software Bugs**: Coding errors can lead to security vulnerabilities.
+	- **Unchecked User Input**: Lack of input validation can lead to code injection.
+	- **Human Factors**: Users can be tricked or make mistakes that compromise security.
+- **Locations of Vulnerabilities**
+	- Found at various levels: application, user, network, OS, storage, device, client-server, code, and database.
+	- Specific to system types such as IoT devices, Android applications, digital surveillance systems, and cloud-based systems.
+- **Exploitation of Vulnerabilities**
+	- Through writing exploits, programming, and using tools.
+	- By targeting known vulnerabilities and security weaknesses in web applications.
+- **Vulnerability Databases**
+	- Platforms that collect, maintain, and share information on discovered vulnerabilities.
+	- Examples include CVE (Common Vulnerabilities and Exposures), NVD (National Vulnerability Database), VulDB, and Snyk Security.
+- **Categories of Vulnerabilities**
+	- **Hardware**: Susceptibility to physical damage, poor encryption, or firmware issues.
+	- **Network**: Unprotected communication lines, MITM attacks, insecure network architecture.
+	- **Personnel**: Poor recruiting policies, lack of security awareness, poor password management.
+	- **Physical Site**: Exposure to natural disasters, unreliable power sources, inadequate physical security.
+	- **Software**: Insufficient testing, design flaws, memory safety violations, input validation errors, cross-site scripting, SQL injection.
+	- **Organizational**: Lack of audit, continuity plans, and incident response plans.
+- **Need for Security Assessment**
+	- Deploying state-of-the-art security solutions and implementing strong security controls are not enough.
+	- Regular security tests are required, similar to quality assurance in other fields.
+- **Types of Security Tests**
+	- **Security Testing**: Ensures security controls function properly through automated scans, pen-testing tools, and manual attempts.
+		- Considerations: resources, protected applications, technical failure probability, impact on business, and testing difficulty.
+	- **Security Assessment**: Detailed review of a system's security by a trained professional, including risk assessments and threat analysis.
+		- Includes comprehensive reviews of threat environments, risks, and asset values.
+	- **Security Audits**: Conducted by third parties for an unbiased review of security posture.
+		- Types: internal audits and external audits.
+- **Vulnerability Management**
+  - Cyclical practice of identifying, classifying, remediating, and mitigating security vulnerabilities.
+  - Essential elements include detection, assessment, and remediation.
+  - Programs can be bottom-up or top-down.
+- **Detection Methods**
+  - **Vulnerability Scanning**: Software assessing computers, networks, or applications for known vulnerabilities.
+    - **Authenticated Scans**: Direct access to networked assets using system credentials.
+    - **Unauthenticated Scans**: External scans often used by attackers to gauge security posture.
+  - **Penetration Testing**: Also known as ethical hacking, it tests IT assets for exploitable vulnerabilities.
+    - Can be automated or manual, testing security policies, compliance, and incident response.
+  - **Google Hacking**: Using search engines to find vulnerabilities due to misconfigurations or exposed information.
+    - Common issues include software vulnerabilities and cloud service misconfigurations.
+- **Common Vulnerabilities**
+  - **Initial Deployment Failure**: Insufficient testing leading to exploitable flaws.
+  - **SQL Injection**: Common database attack recorded in vulnerability databases.
+  - **Misconfiguration**: Improperly configured services leading to vulnerabilities.
+  - **Inadequate Auditing**: Lack of audit trails making it hard to detect data alterations or breaches.
+- **Security Basics**
+  - **CIA Triad**: Confidentiality, Integrity, Availability.
+  - **Identification and Authentication**: Ensuring proper access controls.
+  - **Authorization and Accountability**: Ensuring actions can be traced.
+  - **Monitoring and Auditing**: Keeping track of security events and actions.
+  - **Nonrepudiation**: Ensuring actions cannot be denied.
+  - **Safeguards and Attack Vectors**: Implementing measures to protect against threats.
+
 ---
 
 # Lecture 16: Assessment Environment
