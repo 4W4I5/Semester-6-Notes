@@ -1087,6 +1087,7 @@ condition:
 
 ## Security Assessment Prerequisites
 - **Planning & Target Scoping**
+	- 
 - **Gathering Requirements**
 - **Decision on type of vulnerability assessment**
 - **Estimating the resources & deliverables**
