@@ -1020,3 +1020,31 @@ condition:
 ---
 
 # Lecture 16: Assessment Environment
+
+### Policy Template
+- Company name
+- Vulnerability Assessment Policy
+	- Created by
+	- Reviewed by
+	- Approved by
+- Overview
+- Purpose
+- Scope
+- Policy
+- Vulnerability assessment process
+- Expectation
+- Enforcement
+- Related Documents
+- Revision History
+- Glossary
+
+### Penetration Testing Lifecycle (Bold are main points)
+- **Information Gathering**
+- **Enumeration**
+- Vulnerability Assessment
+- **Gaining Access**
+- **Privilege Escalation**
+- **Maintaining Access**
+- **Covering Tracks**
+- WebApp Security Testing
+- Reporting
