@@ -1087,7 +1087,14 @@ condition:
 
 ## Security Assessment Prerequisites
 - **Planning & Target Scoping**
-	- 
+	- Deciding and Defining a Formal Scope
+		- Precisely define what to test
+		- Cannot test every aspect of the target i.e. the Network
+	- Important factor that is often overlooked
+	- State team plan, resources + timelines
+	- Invalid scoping results
+		- To scope creep
+		- Customer Dissatisfaction + Legal Trouble
 - **Gathering Requirements**
 - **Decision on type of vulnerability assessment**
 - **Estimating the resources & deliverables**
