@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5,
-    "collapsed": true
+    "width": 281.5
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -173,10 +172,10 @@
   },
   "active": "8c6d55feab7a2f1f",
   "lastOpenFiles": [
-    "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
-    "VARE/Finals Prep/Finals Prep Notes.md",
-    "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "README.md",
+    "VARE/Finals Prep/Finals Prep Notes.md",
+    "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
+    "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "VARE/Finals Prep",
     "AI/Finals Prep/Finals Prep Notes.md",
     "Forensics/Finals Prep/Finals Prep Notes.md",
