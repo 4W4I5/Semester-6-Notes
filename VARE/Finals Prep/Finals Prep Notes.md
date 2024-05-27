@@ -219,7 +219,7 @@ Skipped taxonomy of malware. Added some extra types though
 ---
 
 # Lecture 5: PE + COFF + Windows Internal - 1
-### Portable Executables + COFF
+## Portable Executables + COFF
 - PE aka COFF (Common Object File format)
 - PE files do not contain PIE
 - **PE contains**
@@ -1021,7 +1021,7 @@ condition:
 
 # Lecture 16: Assessment Environment
 
-### Policy Template
+## Policy Template
 - Company name
 - Vulnerability Assessment Policy
 	- Created by
@@ -1038,7 +1038,7 @@ condition:
 - Revision History
 - Glossary
 
-### Penetration Testing Lifecycle (Bold are main points)
+## Penetration Testing Lifecycle (Bold are main points)
 - **Information Gathering**
 	- NMAP, Shodan, Maltego, SPART
 - **Enumeration**
@@ -1057,8 +1057,7 @@ condition:
 - Reporting
 	- Keepnote, Draidis
 
-
-### Industry Standards
+## Industry Standards
 - **Open Web Application Security Project Testing Guide**
 	- Provide specific instructions on how to identify, verify, and remediate each vulnerability in an application.
 	- Community Project publishes top 10’s for awareness.
@@ -1084,7 +1083,9 @@ condition:
 		- Created by best testers who perform pen-testing on a daily basis.
 		- Simple to understand and adaptable.
 		- Industry-wise visibility and acceptance.
-### Security Assessment Prerequisites
+
+
+## Security Assessment Prerequisites
 - **Planning & Target Scoping**
 - **Gathering Requirements**
 - **Decision on type of vulnerability assessment**
