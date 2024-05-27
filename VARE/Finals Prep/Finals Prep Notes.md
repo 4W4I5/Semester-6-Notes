@@ -1097,7 +1097,28 @@ condition:
 		- Customer Dissatisfaction + Legal Trouble
 - **Gathering Requirements**
 - **Decision on type of vulnerability assessment**
+	- Based on location
+	    - External
+	    - Internal
+	- Based on knowledge about environment/infrastructure
+	    - Black box
+	    - White box
+	    - Gray box
+	- Announced and unannounced
+	- Automated testing
+	    - Authenticated vs unauthenticated
+	    - Agent-based vs agent-less
+	- Manual testing
 - **Estimating the resources & deliverables**
+	- Success of vulnerability assessment depends on accurate estimation.
+	- **Challenges**
+	    - Network security devices blocking.
+	    - Assets not responding.
+	    - Scan impacting business-critical services.
+	    - Blocking user IDs allocated for scanning.
+	    - Slowing down of network.
+	- Time padding should be considered (usually 20%).
+		- If padding is not completely utilized, tester can use extra time for more in-depth findings.
 - **Preparing Test plans & Test boundaries**
 	- A comprehensive test plan is known as a Statement of Work (SoW)
 		- Overview
