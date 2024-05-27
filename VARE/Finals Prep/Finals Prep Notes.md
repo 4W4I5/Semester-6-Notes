@@ -1040,11 +1040,30 @@ condition:
 
 ### Penetration Testing Lifecycle (Bold are main points)
 - **Information Gathering**
+	- NMAP, Shodan, Maltego, SPART
 - **Enumeration**
+	- NMAP, Unicornscan
 - Vulnerability Assessment
+	- OpenVAS, Nexpose, Nessus
 - **Gaining Access**
+	- Metasploit, John the ripper, Hydra
 - **Privilege Escalation**
+	- Metasploit
 - **Maintaining Access**
 - **Covering Tracks**
+	- Metasploit
 - WebApp Security Testing
+	- w2af, Burpsuite, ZAP Proxy
 - Reporting
+	- Keepnote, Draidis
+
+
+### Industry Standards
+
+### Security Assessment Prerequisites
+- **Planning & Target Scoping**
+- **Gathering Requirements**
+- **Decision on type of vulnerability assessment**
+- **Estimating the resources & deliverables**
+- **Preparing Test plans & Test boundaries**
+- **Getting Approval & Signing NDA's**
