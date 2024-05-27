@@ -1099,4 +1099,17 @@ condition:
 - **Decision on type of vulnerability assessment**
 - **Estimating the resources & deliverables**
 - **Preparing Test plans & Test boundaries**
+	- A comprehensive test plan is known as a Statement of Work (SoW)
+		- Overview
+		- Purpose
+		- Applicable laws and regulations
+		- Applicable standards and guidelines
+		- Scope
+		- Assumptions
+		- Methodology
+		- Test plans
+		- Rules of engagement
+		- Stakeholders communication
+		- Liabilities
+		- Authorized approval and signatures
 - **Getting Approval & Signing NDA's**
