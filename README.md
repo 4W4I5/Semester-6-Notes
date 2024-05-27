@@ -16,7 +16,7 @@
 | ------------------------------------------------------------------------ | ------------------ |
 | [Sessional 1](VARE/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
 | [Sessional 2](VARE/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :white_check_mark: |
-| [Finals](VARE/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :warning:          |
+| [Finals](VARE/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark: |
 
 # Digital Forensics
 
@@ -24,15 +24,15 @@
 | ----------------------------------------------------------------------------- | ------------------ |
 | [Sessional 1](Forensics/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
 | [Sessional 2](Forensics/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :white_check_mark: |
-| [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark: | 
+| [Finals](Forensics/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark: |
 
 # AI
 
 | Exam                                                                   | Status             |
 | ---------------------------------------------------------------------- | ------------------ |
 | [Sessional 1](AI/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
-| [Sessional 2](AI/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :x:                |
-| [Finals](AI/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark:          |
+| [Sessional 2](AI/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :x:                | 
+| [Finals](AI/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark: |
 
 # Information Security
 
