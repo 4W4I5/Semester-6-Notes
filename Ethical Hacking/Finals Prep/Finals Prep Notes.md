@@ -398,16 +398,91 @@
 ---
 
 # Lecture 22: IDS, IPS, Firewall Evasion
-#### **Difference between IDS, IPS, FW, NGFW:**
-- **NGFW Capabilities**:
-    - Application awareness and control.
-    - Web content filtering.
-    - SSL inspection.
-    - User identity awareness.
-- **IPS Capabilities**:
-    - Signature-based intrusion detection and prevention.
-    - Network-based anomaly detection.
-    - Network-based vulnerability assessment.
+### Difference between IDS, IPS, FW, NGFW
+#### **IDS (Intrusion Detection System):**
+- **Function:**
+    - Monitors network traffic for suspicious activity and potential threats.
+    - Generates alerts when potential intrusions are detected.
+- **Deployment:**
+    - Can be network-based (NIDS) or host-based (HIDS).
+- **Response:**
+    - Passive: Alerts administrators but does not take action to block threats.
+- **Advantages:**
+    - Good for detecting a wide range of threats.
+    - Provides detailed information on potential security incidents.
+- **Limitations:**
+    - Cannot prevent or block attacks.
+    - Requires manual intervention to respond to threats.
+
+#### **IPS (Intrusion Prevention System):**
+- **Function:**
+    - Monitors network traffic for suspicious activity and potential threats.
+    - Takes action to block or prevent identified threats in real-time.
+- **Deployment:**
+    - Can be network-based (NIPS) or host-based (HIPS).
+- **Response:**
+    - Active: Automatically blocks or mitigates detected threats.
+- **Advantages:**
+    - Proactively prevents attacks from causing harm.
+    - Provides real-time threat mitigation.
+- **Limitations:**
+    - Can cause false positives, blocking legitimate traffic.
+    - May impact network performance due to real-time traffic inspection.
+
+#### **FW (Firewall):**
+- **Function:**
+    - Controls incoming and outgoing network traffic based on predetermined security rules.
+    - Acts as a barrier between a trusted internal network and untrusted external networks.
+- **Deployment:**
+    - Typically placed at the network perimeter or between network segments.
+- **Response:**
+    - Static: Filters traffic based on rules set by administrators.
+- **Advantages:**
+    - Provides a first line of defense against external threats.
+    - Can block known malicious IP addresses and ports.
+- **Limitations:**
+    - Does not inspect the contents of traffic beyond basic header information.
+    - Cannot detect or prevent sophisticated attacks that bypass basic filtering.
+
+#### **NGFW (Next-Generation Firewall):**
+- **Function:**
+    - Combines traditional firewall capabilities with advanced security features.
+    - Inspects traffic at a deeper level, including application layer.
+- **Deployment:**
+    - Placed at the network perimeter, similar to traditional firewalls.
+- **Response:**
+    - Dynamic: Uses advanced techniques to detect and block threats in real-time.
+- **Advantages:**
+    - Provides comprehensive security by combining multiple functions.
+    - Can inspect encrypted traffic and user-specific activity.
+- **Limitations:**
+    - More complex to configure and manage compared to traditional firewalls.
+    - Higher cost due to advanced capabilities and features.
+
+### NGFW Capabilities:
+- **Application Awareness and Control:**
+    - Identifies and controls applications regardless of port, protocol, or IP address used.
+    - Enables granular policy enforcement based on application and user.
+- **Web Content Filtering:**
+    - Filters web traffic to block access to malicious or inappropriate websites.
+    - Protects against web-based threats like malware and phishing.
+- **SSL Inspection:**
+    - Inspects encrypted traffic (SSL/TLS) to detect and block threats hidden within encrypted sessions.
+    - Ensures security policies are enforced even on encrypted traffic.
+- **User Identity Awareness:**
+    - Associates network traffic with specific users, enabling user-based policies.
+    - Enhances visibility and control over user activity on the network.
+
+### IPS Capabilities:
+- **Signature-based Intrusion Detection and Prevention:**
+    - Uses predefined signatures to identify known threats.
+    - Effective at detecting well-known attacks quickly.
+- **Network-based Anomaly Detection:**
+    - Monitors network traffic patterns to identify deviations from normal behavior.
+    - Detects unknown or new threats by identifying anomalous activity.
+- **Network-based Vulnerability Assessment:**
+    - Scans the network for vulnerabilities that could be exploited by attackers.
+    - Helps in proactively identifying and addressing security weaknesses before they can be exploited.
 
 #### **Intrusion Detection System (IDS):**
 - **How an IDS Detects an Intrusion**:
