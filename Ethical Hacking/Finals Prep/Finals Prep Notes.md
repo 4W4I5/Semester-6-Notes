@@ -732,17 +732,14 @@
     - Bypass lower-layer IDS/IPS that focus on network or transport layer attacks.
 - **Desynchronization**
 	- **Pre-Connection SYN**
-		- This attack is performed by sending an initial SYN before the real connection is established, but with an invalid TCP checksum
-		- If a SYN packet is received after the TCP control block is opened, the IDS resets the appropriate sequence number to match that of the newly received SYN packet
-		- Attackers send fake SYN packets with a completely invalid sequence number to desynchronize the IDS
-		- This stops the IDS from monitoring all legitimate and attack traffic
+		- **Mechanism**: Send an initial SYN with an invalid TCP checksum before the real connection.
+		- **Impact on IDS**: If the IDS sees this SYN after opening the TCP control block, it resets the sequence number to match the fake SYN.
+		- **Objective**: Attackers use invalid sequence numbers to desynchronize the IDS, preventing it from monitoring legitimate and attack traffic.
 	- **Post-Connection SYN**
-		- In this technique, attackers attempt to desynchronize the IDS from the actual sequence numbers that the kernel is honoring
-		- Attackers send a post connection SYN packet in the data stream, which will have divergent sequence numbers
-		- However, the target host will ignore this SYN packet, as it references an already established connection
-		- The intent of this attack is to get the IDS to resynchronize its notion of the sequence numbers to the new SYN packet
-		- It will then ignore any data that is a legitimate part of the original stream, because it will be awaiting a different sequence number
-		- After successfully resynchronizing the IDS with a SYN packet, attackers send an RST packet with the new sequence number and thus close its notion of the connection
+		- **Mechanism**: Send a SYN packet within an established connection, causing divergent sequence numbers.
+		- **Impact on Target Host**: Ignores the SYN as the connection is already established.
+		- **Impact on IDS**: Resynchronizes to the new SYN packet's sequence numbers, ignoring legitimate data from the original stream.
+		- **Follow-Up**: Attackers send an RST packet with the new sequence number to close the IDS's notion of the connection, fully desynchronizing it.
 - **Other Types of Evasion**
     - Various advanced techniques to avoid detection.
     - **Examples**:
