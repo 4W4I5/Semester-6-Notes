@@ -707,9 +707,12 @@
     - Multiple representations of the same character
     - Convert attack strings to Unicode to avoid pattern and signature matching
 - **Fragmentation Attack**
-    - Split malicious payload into fragments.
-    - Break down the payload into smaller packets.
-    - Avoid detection by signature-based IDS that check for known attack patterns in single, larger packets.
+	- Both the victim and IDS receive fragments 2 and 4 (out of 4) with a false payload.
+	- The victim drops these fragments after 30 seconds without sending an ICMP message, as fragment 1 was never received.
+	- Both the victim and IDS receive fragments 1 and 3 (out of 4).
+	- The IDS attempts to reassemble the four received fragments but drops the packet due to an invalid checksum.
+	- Both the victim and IDS receive the real fragments 2 and 4 (out of 4).
+	- The victim reassembles the four fragments and is successfully attacked, while the IDS times out and drops fragments 2 and 4.
 - **Time-To-Live Attack**
     - Manipulate TTL to bypass network security.
     - Set the TTL value of packets to expire before reaching the IDS. Frag malicious packet into 3 frags
