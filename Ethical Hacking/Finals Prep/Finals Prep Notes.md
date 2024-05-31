@@ -40,7 +40,6 @@
 	- For Networks connected via a Hub it is easy to listen in on traffic as all packets are multicast by the hub
 	- However for Switches maintain a mac table linking each mac address to a specific port on the switch so therefore techniques like port mirroring or SPAN are used (NOTE:: Both are the same thing)
 	    - **Port Mirroring**: Similar to port forwarding, the difference here is that packets are simply duplicated for debugging purposes i.e. the original flow of traffic is not affected
-	    - **Switch Port Analyzer (SPAN)**: A port on the switch that will always mirror traffic to another supported port on the switch
 - **Hardware Protocol Analyzers**
     - Used to capture and analyze network traffic without interference.
     - Advantages include mobility, flexibility, and high throughput.
