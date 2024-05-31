@@ -716,7 +716,9 @@
     - Ensure that the IDS does not see the packet while the target does.
 - **Invalid RST Packets**
     - Send invalid reset packets to disrupt connections.
-    - Send reset (RST) packets with invalid or unexpected sequence numbers.
+    - Send reset (RST) packets with invalid checksum
+    - IDS does not process as it assumes connection is closed but the data is still sent
+    - 
     - Confuse the IDS and disrupt legitimate connections or avoid detection.
 - **Urgency Flag**
     - Use urgent flags in TCP packets for evasion.
