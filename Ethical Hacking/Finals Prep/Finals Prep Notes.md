@@ -291,7 +291,111 @@
 ---
 
 # Lecture 21: DoS & DDoS
+#### Overview of DoS/DDoS
+- **Denial of Service (DoS) Attack**
+    - Definition: An attack on a computer or network that reduces, restricts, or prevents access to system resources for legitimate users.
+    - Goal: To make a system or network resource unavailable to its intended users.
+    - Methods: Flooding the victim’s system with non-legitimate service requests or traffic.
+- **Distributed Denial of Service (DDoS) Attack**
+    - Definition: A coordinated attack that involves multiple compromised systems (botnet) attacking a single target, denying service to users of the targeted system.
+    - Mechanism: Utilizes a botnet to launch attacks from numerous sources.
 
+#### Types of DoS Attacks
+- **Flooding Attacks**
+    - Overloading a system with more traffic than it can handle.
+- **Service Flooding**
+    - Overloading a service (e.g., IRC) with more events than it can handle.
+- **Corrupt Packet Attacks**
+    - Crashing a TCP/IP stack by sending corrupt packets.
+- **Unexpected Interactions**
+    - Crashing a service by interacting with it in unexpected ways.
+- **Infinite Loops**
+    - Hanging a system by causing it to enter an infinite loop.
+
+#### Impact of DoS Attacks
+- Consumption of resources (bandwidth, disk space, CPU time).
+- Physical destruction or alteration of network components.
+- Destruction of programs and files in a computer system.
+
+#### Categories of DoS/DDoS Attack Vectors
+- **Volumetric Attacks**
+    - **Definition**: Exhaust bandwidth either within the target network or between the target and the rest of the Internet.
+    - **Magnitude**: Measured in bits per second (bps).
+    - **Techniques**:
+        - **Flood Attack**: Zombies send large volumes of traffic to exhaust the target’s bandwidth.
+        - **Amplification Attack**: Attacker sends messages to a broadcast IP address to amplify malicious traffic.
+        - **Examples**:
+            - UDP flood attack
+            - ICMP flood attack
+            - Ping of Death (PoD) attack
+            - Smurf attack
+            - Pulse wave attack
+            - Zero-day attack
+            - Malformed IP packet flood attack
+            - Spoofed IP packet flood attack
+- **Protocol Attacks**
+    - **Definition**: Consume resources other than bandwidth, such as connection state tables.
+    - **Magnitude**: Measured in packets per second (pps) or connections per second (cps).
+    - **Techniques**:
+        - SYN flood attack
+        - Fragmentation attack
+        - Spoofed session flood attack
+        - ACK flood attack
+        - TCP state exhaustion attack
+        - RST attack
+- **Application Layer Attacks**
+    - **Definition**: Exploit vulnerabilities in the application layer protocol or application itself.
+    - **Magnitude**: Measured in requests per second (rps).
+    - **Techniques**:
+        - HTTP flood attack
+        - Slowloris attack
+        - UDP application layer flood attack
+        - HTTPS GET/POST attack
+        - Multi-vector attack
+        - Peer-to-peer attack
+        - Permanent DoS (PDoS) attack
+        - Distributed reflection DoS (DRDoS) attack
+
+#### Botnets in DDoS Attacks
+- **Botnets**: Networks of compromised systems used to perform various malicious activities including DDoS attacks, spamming, keylogging, and more.
+- **Typical Botnet Setup**:
+    - Scanning for vulnerable machines.
+    - Propagation of malicious code.
+    - Use of mobile devices for launching attacks.
+
+#### Case Studies
+- **DDoS Attack on GitHub**
+    - Demonstrates the impact of DDoS attacks and response strategies.
+
+#### DoS/DDoS Attack Techniques
+- **UDP Flooding Attack**: Overwhelming a target with UDP packets.
+- **ICMP Flooding Attack**: Overloading a target with ICMP packets.
+- **Ping of Death**: Sending oversized packets causing buffer overflow.
+- **Smurf Attack**: Using IP broadcast with ICMP requests to flood a target.
+- **Pulse Wave Attack**: Alternating high-volume attacks to bypass mitigation strategies.
+- **Zero-Day Attack**: Exploiting unknown vulnerabilities.
+- **SYN Flood Attack**: Exploiting TCP connection sequence by sending SYN requests and not responding to SYN-ACK.
+
+#### Countermeasures for SYN Flood Attacks
+- Decrease the time-out period for pending connections.
+- Use SYN cookies and SynAttackProtect.
+
+#### Detection and Countermeasures
+- **Detection Techniques**: Identify unusual traffic patterns, implement rate-limiting, and use anomaly detection systems.
+- **Countermeasure Strategies**:
+    - Protect secondary victims.
+    - Neutralize handlers.
+    - Prevent potential attacks.
+    - Deflect attacks.
+    - Mitigate ongoing attacks.
+    - Perform post-attack forensics.
+
+#### ISP Level Protection
+- **Collaboration**: Work with ISPs to implement large-scale defenses.
+
+#### Protection Tools and Techniques
+- **Tools**: Firewalls, intrusion detection systems (IDS), honeypots (e.g., SSHHiPot, Artillery).
+- **Techniques**: Rate limiting, IP blacklisting, traffic analysis, and behavior-based detection.
 ---
 
 # Lecture 22: IDS, IPS, Firewall Evasion
