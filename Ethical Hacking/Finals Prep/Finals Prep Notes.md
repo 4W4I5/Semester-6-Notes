@@ -70,9 +70,11 @@
         - Overloads CAM table with fake MAC addresses to fake IP Addresses causing the switch to broadcast packets as there is no direct route to the target device anymore.
         - Tool -> MACOF
     - **Switch Port Stealing (MITM Impersonation)**:
+	    - LAN-Only
         - Involves sending bogus ARP packets to update CAM table, redirecting traffic to the attacker.
         - Attacker sends a packet
-	        - Source 
+	        - Source ->Stolen Host MAC
+	        - Destination -> Target MAC for another device
 - **Defending Against MAC Attacks**
     - **Port Security**: Limits the number of MAC addresses per port and sets violation actions.
     - **Dynamic Port Security**: Configures allowed number of MAC addresses dynamically.
