@@ -363,8 +363,20 @@
 - **Botnets**: Networks of compromised systems used to perform various malicious activities including DDoS attacks, spamming, keylogging, and more.
 - **Typical Botnet Setup**:
     - **Scanning for Vulnerable Machines**: Identifying and compromising vulnerable systems.
+	    - Scanning Types
+		    - Random
+		    - Hit-List
+		    - Topological
+		    - Local Subnet
+		    - Permutation
+    - **Setup Handler:** C2 for zombies
     - **Propagation of Malicious Code**: Distributing malware to establish control over compromised systems.
-    - **Use of Mobile Devices**: Leveraging mobile devices to launch attacks.
+	    - Types
+		    - Central Source -> Setup a deployment server outside of attacker system
+		    - Back-Chaining -> Use attacker system as deployment server
+		    - Autonomous -> Send toolkit as soon as target is infected
+    - **Recruit Zombies:** Self explanatory
+    - **Start Attack:** Send commands to the C2 handler for disrupting services on a target
 
 #### Case Studies
 - **DDoS Attack on GitHub**
