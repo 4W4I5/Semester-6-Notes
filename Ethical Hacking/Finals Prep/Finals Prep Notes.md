@@ -145,8 +145,8 @@
     - Human-Based:
         - Impersonation/Reverse Social Engineering: Pretending to be someone else to gain information.
 	        - Honey Traps
-	        - Baiting
-	        - Quid Pro Quo
+		    - Baiting: Offering something enticing to get information or infect a system.
+		    - Quid Pro Quo: Offering a service in exchange for information.
 	        - Elicitation
         - Eavesdropping: Listening to private conversations to gather information.
         - Shoulder Surfing: Observing someone entering confidential information.
@@ -259,8 +259,6 @@
 - **Examples of Social Engineering Attacks**
     - Phishing: Deceptive emails or websites to steal information.
     - Pretexting: Creating a fabricated scenario to obtain information.
-    - Baiting: Offering something enticing to get information or infect a system.
-    - Quid Pro Quo: Offering a service in exchange for information.
     - Tailgating: Following someone into a restricted area.
 - **Additional Information (Not in PPT)**
     - Social Engineering in Cybersecurity Context:
