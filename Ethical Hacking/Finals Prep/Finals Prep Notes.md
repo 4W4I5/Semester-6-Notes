@@ -4,8 +4,7 @@
 | Lecture 17: Social Engineering                  | :white_check_mark: |
 | Lecture 21: DoS & DDoS                          | :white_check_mark: |
 | Lecture 22: IDS, IPS, Firewall Evasion          | :white_check_mark: |
-| Assignment 3: Host Discovery                    | :warning:          |
-| Assignment 4: Port Discovery                    | :warning:          |
+| Assignment 3 & 4: Host + Port Discovery         | :warning:          |
 | Assignment 5: Post Exploitation (RID Hijacking) | :warning:          |
 
 # Lecture 16: Sniffing
@@ -530,11 +529,7 @@
 
 ---
 
-# Assignment 3: Host Discovery
-
----
-
-# Assignment 4: Port Discovery
+# Assignment 3 + 4: Host + Port Discovery
 
 ---
 
