@@ -109,7 +109,134 @@
 ---
 
 # Lecture 22: IDS, IPS, Firewall Evasion
+#### **Difference between IDS, IPS, FW, NGFW:**
+- **NGFW Capabilities**:
+    - Application awareness and control.
+    - Web content filtering.
+    - SSL inspection.
+    - User identity awareness.
+- **IPS Capabilities**:
+    - Signature-based intrusion detection and prevention.
+    - Network-based anomaly detection.
+    - Network-based vulnerability assessment.
 
+#### **Intrusion Detection System (IDS):**
+- **How an IDS Detects an Intrusion**:
+    - Monitors network traffic.
+    - Identifies suspicious activities based on signatures and behavior.
+- **General Indications of Intrusions**:
+    - Unusual login attempts.
+    - Unauthorized file access.
+    - Suspicious network traffic patterns.
+- **Types of Intrusion Detection Systems**:
+    - Network-based IDS (NIDS).
+    - Host-based IDS (HIDS).
+- **Types of IDS Alerts**:
+    - True Positive.
+    - False Positive.
+    - True Negative.
+    - False Negative.
+
+#### **Intrusion Prevention System (IPS):**
+- Similar to IDS but can actively block and prevent intrusions.
+
+#### **Firewalls:**
+- **Firewall Architecture**:
+    - Packet filtering.
+    - Stateful inspection.
+    - Application-layer proxies.
+    - NAT (Network Address Translation).
+- **Types of Firewalls**:
+    - Packet Filtering Firewalls.
+    - Circuit-Level Gateways.
+    - Application-Level Firewalls.
+    - Stateful Multilayer Inspection Firewalls.
+    - Application Proxy.
+    - Network Address Translation (NAT).
+- **Firewall Technologies by OSI Layer**:
+    - Application: VPN, Application Proxies.
+    - Presentation: VPN.
+    - Session: VPN, Circuit-Level Gateways.
+    - Transport: VPN, Packet Filtering.
+    - Network: VPN, NAT, Packet Filtering, Stateful Multilayer Inspection.
+    - Data Link: VPN, Packet Filtering.
+
+#### **Honeypots:**
+- **Types of Honeypots by Deployment Strategy**:
+    - **Production Honeypots**:
+        - Deployed inside production networks.
+        - Capture limited adversary information.
+        - Help find internal flaws and attackers.
+    - **Research Honeypots**:
+        - Deployed by research institutes and governments.
+        - High interaction to gain detailed adversary knowledge.
+- **Types of Honeypots by Deception Technology**:
+    - **Malware Honeypots**:
+        - Trap malware campaigns.
+        - Emulate vulnerabilities to lure attackers.
+    - **Database Honeypots**:
+        - Fake databases for SQL injection and enumeration attacks.
+    - **Spam Honeypots**:
+        - Target spammers abusing open mail relays.
+    - **Email Honeypots**:
+        - Fake email addresses to attract malicious emails.
+    - **Spider Honeypots**:
+        - Trap web crawlers extracting sensitive information.
+    - **Honeynets**:
+        - Networks of honeypots to determine adversaries' capabilities.
+
+#### **Intrusion Detection Tools:**
+- **Snort**:
+    - Rule-based intrusion detection system.
+    - Capabilities include rule actions, IP protocols, direction operator, IP addresses, and port numbers.
+- **Suricata and AlienVault OSSIM**:
+    - Alternative IDS tools with various detection capabilities.
+
+#### **Intrusion Detection Tools for Mobile Devices:**
+- **Zimperium’s zIPS**:
+    - Mobile intrusion prevention system for iOS and Android.
+    - Detects known and unknown threats by analyzing device behavior.
+- **Wifi Inspector**:
+    - Identifies devices connected to the network.
+    - Provides IP addresses, device names, and MAC addresses.
+- **Wifi Intruder Detect**:
+    - Detects intruders accessing the network without consent.
+
+#### **Evasion Techniques:**
+- **Insertion and Evasion**:
+    - Techniques to bypass IDS/IPS detection.
+- **Denial-of-Service Attack (DoS)**:
+    - Overload the system to disrupt service.
+- **Obfuscating**:
+    - Hiding attack details to avoid detection.
+- **False Positive Generation**:
+    - Create noise to cause false alarms.
+- **Session Splicing**:
+    - Split attack data into smaller packets.
+- **Unicode Evasion Technique**:
+    - Use unicode characters to bypass detection.
+- **Fragmentation Attack**:
+    - Split malicious payload into fragments.
+- **Time-To-Live Attack**:
+    - Manipulate TTL to bypass network security.
+- **Invalid RST Packets**:
+    - Send invalid reset packets to disrupt connections.
+- **Urgency Flag**:
+    - Use urgent flags in TCP packets for evasion.
+- **Polymorphic Shellcode**:
+    - Modify shellcode to avoid signature detection.
+- **Application-Layer Attacks**:
+    - Exploit application vulnerabilities.
+- **Desynchronization**:
+    - Desynchronize IDS/IPS and target communications.
+- **Other Types of Evasion**:
+    - Various advanced techniques to avoid detection.
+
+### Tools for IDS/IPS and Honeypots:
+- **HoneyBOT**
+- **MongoDB-HoneyProxy**
+- **Modern Honey Network**
+- **Honeyd**
 
 ---
 
