@@ -31,7 +31,7 @@
 | Exam                                                                   | Status             |
 | ---------------------------------------------------------------------- | ------------------ |
 | [Sessional 1](AI/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
-| [Sessional 2](AI/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :x:                | 
+| [Sessional 2](AI/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :x:                |
 | [Finals](AI/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark: |
 
 # Information Security
