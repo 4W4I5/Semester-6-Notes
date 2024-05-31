@@ -662,7 +662,7 @@
     - Rule-based intrusion detection system.
 	    - Example Rule
 		    - `log tcp any any -> 192.168.1.0/24 !6000:6010`
-			    - Log ProtocolType
+			    - RuleAction ProtocolType src dest
     - Capabilities include rule actions, IP protocols, direction operator, IP addresses, and port numbers.
 - **Suricata and AlienVault OSSIM**:
     - Alternative IDS tools with various detection capabilities.
