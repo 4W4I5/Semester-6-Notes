@@ -1,8 +1,8 @@
 | Topic Title                                     | Status             |
 | ----------------------------------------------- | ------------------ |
-| Lecture 16: Sniffing                            | :white_check_mark: |
-| Lecture 17: Social Engineering                  | :white_check_mark: |
-| Lecture 21: DoS & DDoS                          | :white_check_mark: |
+| Lecture 16: Sniffing                            | :white_check_mark: | 
+| Lecture 17: Social Engineering                  | :warning:          |
+| Lecture 21: DoS & DDoS                          | :warning:          |
 | Lecture 22: IDS, IPS, Firewall Evasion          | :white_check_mark: |
 | Assignment 3 & 4: Host + Port Discovery         | :white_check_mark: |
 | Assignment 5: Post Exploitation (RID Hijacking) | :white_check_mark: |
