@@ -724,11 +724,14 @@
     - Bypass IDS filters that do not properly handle or inspect urgent data.
 - **Polymorphic Shellcode**
     - Modify shellcode to avoid signature detection.
+	    - Combine multiple sigs to avoid matches
     - Change the appearance of the shellcode each time it is sent.
+	    - Encode/Encrypt the payload
     - Evade signature-based IDS by ensuring the shellcode does not match known patterns.
 - **Application-Layer Attacks**
     - Exploit application vulnerabilities that can cause an overflow.
     - Target weaknesses in the application layer (e.g., SQL injection, XSS).
+	    - Compress the files to bypass sig verification
     - Bypass lower-layer IDS/IPS that focus on network or transport layer attacks.
 - **Desynchronization**
 	- **Pre-Connection SYN**
