@@ -18,11 +18,24 @@
         - Occurs on hubs where traffic is broadcasted to all ports.
         - No additional packets are sent; the attacker just listens.
     - **Active Sniffing**:
-        - Used on switches where traffic is sent to specific ports.
-        - Involves sending packets to manipulate network devices (e.g., MAC flooding, DHCP attacks, DNS poisoning, ARP poisoning).
+        - Used on switches where traffic is sent to specific ports via unicast packets.
+        - Involves sending packets to manipulate network devices via the following
+	        - MAC flooding
+	        - DHCP attacks
+	        - DNS poisoning
+	        - ARP poisoning
 - **Data Captured by Sniffing**
-    - Types of traffic captured: syslog, DNS, web, email, and more.
-    - Sensitive information like usernames and passwords from protocols such as HTTP, POP, IMAP, FTP, Telnet, etc.
+    - Types of traffic captured:
+	    - SYSLOG
+	    - DNS
+	    - Web
+	    - Email, etc.
+    - Sensitive information like usernames and passwords from protocols
+	    - HTTP
+	    - POP
+	    - IMAP
+	    - FTP
+	    - Telnet, etc.
 - **Working of Sniffers**
     - **Promiscuous Mode**: Network Interface Card (NIC) captures all packets.
     - **Packet Decryption**: Once captured, packets are decrypted to extract useful information.
