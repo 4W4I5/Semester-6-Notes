@@ -647,15 +647,32 @@
 
 #### **Evasion Techniques:**
 - **Insertion and Evasion**:
-    - Techniques to bypass IDS/IPS detection.
+	- **Insertion**
+	    - Force IDS/IPS to read invalid packets
+		    - Malformed length
+		    - Varied TTL
+		- IDS gets way more packets than the destination in an attempt to sneak more through
+	- **Evasion**
+		- Send a bytestream where half is rejected by IDS
+		- The malicious section is not rejected and passed onto the end system
+		- IDS gets fewer packets than the destination
 - **Denial-of-Service Attack (DoS)**:
     - Overload the system to disrupt service.
+    - Target the centralized logging/monitoring server, overload so that
+	    - IDS/IPS is locked up
+	    - Support cannot observe logs, as none are recorded
+	    - DoS the IDS/IPS + Logging server
 - **Obfuscating**:
     - Hiding attack details to avoid detection.
+    - Use of polymorphic code, bypasses Sig-based IDS/IPS
 - **False Positive Generation**:
     - Create noise to cause false alarms.
+    - Hide real attack traffic, IDS cannot differentiate true from false
 - **Session Splicing**:
     - Split attack data into smaller packets.
+    - Useful for IDS that do not reconstruct packets after intrusion sigs
+	    - Even if they do, they have a time limit via a delay, bypassing that limit allows for splicing
+	- Attack is not logged after a successful splice
 - **Unicode Evasion Technique**:
     - Use unicode characters to bypass detection.
 - **Fragmentation Attack**:
