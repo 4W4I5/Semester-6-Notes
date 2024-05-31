@@ -659,6 +659,10 @@ def scan(nm, target, argument=None):
 			- 5 -> Identifier Authority Value
 			- 21-3623811015-3361044348-30300820 -> Subauthority value
 			- 1013 -> RID.
-				- 
+				- In this case it is not a default account hence the >1000 RID
+	- HEX info. Note that these are reversed
+		- Offset 30 stores RID
+		- Offset 38 stores account enable state
+			- 1502 -> Disabled, 1402 -> Enabled
 
 ---
