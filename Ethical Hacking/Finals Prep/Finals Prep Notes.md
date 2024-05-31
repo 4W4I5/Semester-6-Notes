@@ -1,12 +1,12 @@
 | Topic Title                                     | Status             |
 | ----------------------------------------------- | ------------------ |
 | Lecture 16: Sniffing                            | :white_check_mark: |
-| Lecture 17: Social Engineering                  | :warning:          |
-| Lecture 21: DoS & DDoS                          | :warning:          |
-| Lecture 22: IDS, IPS, Firewall Evasion          | :warning:          |
+| Lecture 17: Social Engineering                  | :white_check_mark: |
+| Lecture 21: DoS & DDoS                          | :white_check_mark: |
+| Lecture 22: IDS, IPS, Firewall Evasion          | :white_check_mark: |
 | Assignment 3: Host Discovery                    | :warning:          |
 | Assignment 4: Port Discovery                    | :warning:          |
-| Assignment 5: Post Exploitation (RIA Hijacking) | :warning:          |
+| Assignment 5: Post Exploitation (RID Hijacking) | :warning:          |
 
 # Lecture 16: Sniffing
 - **Concept of Sniffing**
@@ -538,6 +538,6 @@
 
 ---
 
-# Assignment 5: Post Exploitation (RIA Hijacking)
+# Assignment 5: Post Exploitation (RID Hijacking)
 
 ---
