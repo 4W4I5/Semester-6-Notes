@@ -53,17 +53,18 @@
     - **Passive Wiretapping**: Monitors and records without alteration. Example is SPAN
     - **Lawful Interception**: Legal wiretapping by law enforcement agencies.
 - **PRISM**
-    - A program by NSA for monitoring communications passing through or stored on US servers.
-    - Collects data to identify and monitor suspicious activities.
+    - **Planning Tool for Resource Integration (PRISM)**: Monitors internet traffic through US servers.
+    - A program by NSA for monitoring communications passing through or stored on US servers that collects data to identify and monitor suspicious activities.
 - **MAC Attacks**
     - **MAC Address and CAM Table**:
-        - MAC address: 48-bit unique identifier for network devices. Comprised of OUI-NIC
-	        - Offsets
+        - **MAC address**: 48-bit unique identifier for network devices. Comprised of OUI-NIC
+	        - **Offsets**
 		        - 24-bit Object Unique Identifier (OUI)
 		        - 24-bit Network-Interface Controller (NIC)
-		    - Notable things
+		    - **Notable things**
 			    - First Octet -> 7th Bit is for Globally Unique/Locally administered. 8th Bit is for Unicast/Multicast
-        - CAM table: Used in switches to map MAC addresses to ports for packet forwarding.
+        - **CAM table**: Used in switches to map MAC addresses to ports for packet forwarding.
+		    - **Content Addressable Memory (CAM)** -> Works by recording MAC addresses and their associated ports.
     - **MAC Flooding**:
         - Overloads CAM table with fake MAC addresses causing the switch to broadcast packets.
     - **Switch Port Stealing**:
@@ -79,9 +80,9 @@
 - **Defending Against DHCP Attacks**
     - **DHCP Snooping**: Filters untrusted DHCP messages and maintains a binding database of legitimate DHCP transactions.
     - **Port Security**: Limits the number of MAC addresses to mitigate attacks.
-- **ARP Poisoning**
+- **ARP Poisoning** -> Uses MAC flooding to turn a switch into a hub, enabling packet sniffing.
     - **ARP Spoofing**:
-        - Sends forged ARP packets to associate attacker's MAC address with the IP of a legitimate user.
+        - Sends forged ARP packets to associate attacker's MAC address with the IP of a legitimate user to intercept traffic intended for them.
     - **Consequences**: Enables session hijacking, data interception, man-in-the-middle attacks, and more.
 - **Defending Against ARP Poisoning**
     - **Dynamic ARP Inspection (DAI)**: Validates ARP packets against trusted IP-to-MAC bindings.
@@ -91,14 +92,6 @@
 - **Defending Against Spoofing Attacks**
     - **DHCP Snooping and DAI**: Protect against MAC spoofing.
     - **Source Guard**: Restricts traffic to assigned IP addresses on client-facing switch ports.
-- **Additional Information**
-    - **Planning Tool for Resource Integration (PRISM)**: Monitors internet traffic through US servers.
-    - **Content Addressable Memory (CAM)**: Works by recording MAC addresses and their associated ports.
-    - **DHCP Starvation Attack**: Denial-of-service by exhausting DHCP pool with fake requests.
-    - **DHCP Snooping**: Security feature that filters untrusted DHCP messages and builds a binding table.
-    - **ARP Poisoning**: Uses MAC flooding to turn a switch into a hub, enabling packet sniffing.
-    - **ARP Spoofing**: Attacker sends forged ARP packets to intercept traffic intended for a legitimate user.
-    - **MAC Spoofing Tools**: Utilities that facilitate MAC address manipulation.
 ---
 
 # Lecture 17: Social Engineering
