@@ -646,53 +646,72 @@
     - Detects intruders accessing the network without consent.
 
 #### **Evasion Techniques:**
-- **Insertion and Evasion**:
-	- **Insertion**
-	    - Force IDS/IPS to read invalid packets
-		    - Malformed length
-		    - Varied TTL
-		- IDS gets way more packets than the destination in an attempt to sneak more through
-	- **Evasion**
-		- Send a bytestream where half is rejected by IDS
-		- The malicious section is not rejected and passed onto the end system
-		- IDS gets fewer packets than the destination
-- **Denial-of-Service Attack (DoS)**:
+- **Insertion and Evasion**
+    - **Insertion**:
+        - Force IDS/IPS to read invalid packets:
+            - Malformed length
+            - Varied TTL
+        - IDS gets way more packets than the destination in an attempt to sneak more through
+    - **Evasion**:
+        - Send a bytestream where half is rejected by IDS
+        - The malicious section is not rejected and passed onto the end system
+        - IDS gets fewer packets than the destination
+- **Denial-of-Service Attack (DoS)**
     - Overload the system to disrupt service.
-    - Target the centralized logging/monitoring server, overload so that
-	    - IDS/IPS is locked up
-	    - Support cannot observe logs, as none are recorded
-	    - DoS the IDS/IPS + Logging server
-- **Obfuscating**:
+    - Target the centralized logging/monitoring server, overload so that:
+        - IDS/IPS is locked up
+        - Support cannot observe logs, as none are recorded
+        - DoS the IDS/IPS + Logging server
+- **Obfuscating**
     - Hiding attack details to avoid detection.
-    - Use of polymorphic code, bypasses Sig-based IDS/IPS
-- **False Positive Generation**:
+    - Use of polymorphic code, bypasses signature-based IDS/IPS
+- **False Positive Generation**
     - Create noise to cause false alarms.
     - Hide real attack traffic, IDS cannot differentiate true from false
-- **Session Splicing**:
+- **Session Splicing**
     - Split attack data into smaller packets.
-    - Useful for IDS that do not reconstruct packets after intrusion sigs
-	    - Even if they do, they have a time limit via a delay, bypassing that limit allows for splicing
-	- Attack is not logged after a successful splice
-- **Unicode Evasion Technique**:
+    - Useful for IDS that do not reconstruct packets after intrusion signatures
+        - Even if they do, they have a time limit via a delay, bypassing that limit allows for splicing
+    - Attack is not logged after a successful splice
+- **Unicode Evasion Technique**
     - Use Unicode characters to bypass detection.
     - Multiple representations of the same character
-    - Convert attack strings to Unicode to avoid pattern and sig matching
-- **Fragmentation Attack**:
+    - Convert attack strings to Unicode to avoid pattern and signature matching
+- **Fragmentation Attack**
     - Split malicious payload into fragments.
-- **Time-To-Live Attack**:
+    - Break down the payload into smaller packets.
+    - Avoid detection by signature-based IDS that check for known attack patterns in single, larger packets.
+- **Time-To-Live Attack**
     - Manipulate TTL to bypass network security.
-- **Invalid RST Packets**:
+    - Set the TTL value of packets to expire before reaching the IDS.
+    - Ensure that the IDS does not see the packet while the target does.
+- **Invalid RST Packets**
     - Send invalid reset packets to disrupt connections.
-- **Urgency Flag**:
+    - Send reset (RST) packets with invalid or unexpected sequence numbers.
+    - Confuse the IDS and disrupt legitimate connections or avoid detection.
+- **Urgency Flag**
     - Use urgent flags in TCP packets for evasion.
-- **Polymorphic Shellcode**:
+    - Set the URG flag in TCP packets.
+    - Bypass IDS filters that do not properly handle or inspect urgent data.
+- **Polymorphic Shellcode**
     - Modify shellcode to avoid signature detection.
-- **Application-Layer Attacks**:
+    - Change the appearance of the shellcode each time it is sent.
+    - Evade signature-based IDS by ensuring the shellcode does not match known patterns.
+- **Application-Layer Attacks**
     - Exploit application vulnerabilities.
-- **Desynchronization**:
+    - Target weaknesses in the application layer (e.g., SQL injection, XSS).
+    - Bypass lower-layer IDS/IPS that focus on network or transport layer attacks.
+- **Desynchronization**
     - Desynchronize IDS/IPS and target communications.
-- **Other Types of Evasion**:
+    - Manipulate packet sequence numbers or timing.
+    - Cause the IDS to lose track of the session, missing parts of the attack.
+- **Other Types of Evasion**
     - Various advanced techniques to avoid detection.
+    - **Examples**:
+        - **Encrypted Traffic**: Use encryption to hide payload content.
+        - **Tunneling**: Encapsulate malicious traffic in legitimate protocols (e.g., HTTP, DNS).
+        - **Traffic Morphing**: Alter traffic patterns to mimic benign activity.
+        - **Behavioral Evasion**: Change attack behavior dynamically to avoid behavioral detection systems.
 
 ### Tools for IDS/IPS and Honeypots:
 - **HoneyBOT**
