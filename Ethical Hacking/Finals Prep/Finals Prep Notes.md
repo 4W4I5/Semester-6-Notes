@@ -143,7 +143,11 @@
     - Exploit the Relationship: Using trust to extract information.
 - **Types of Social Engineering Attacks**
     - Human-Based:
-        - Impersonation: Pretending to be someone else to gain information.
+        - Impersonation/Reverse Social Engineering: Pretending to be someone else to gain information.
+	        - Honey Traps
+	        - Baiting
+	        - Quid Pro Quo
+	        - Elicitation
         - Eavesdropping: Listening to private conversations to gather information.
         - Shoulder Surfing: Observing someone entering confidential information.
         - Dumpster Diving: Searching through trash for sensitive information.
