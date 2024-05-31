@@ -748,7 +748,15 @@
 - Tighten the security of all communication devices such as modems, routers, and switches
 - Shut down switch ports associated with known attack hosts
 - Perform an in-depth analysis of ambiguous network traffic for all possible threats
-
+- Use a TCP FIN or a reset (RST) packet to terminate malicious TCP sessions
+- Look for the a nop opcode other than 0x90 to defend against the polymorphle shellcode problem
+- Train users to identify attack patterns and regularly update/patch all the systems and network devices
+- Deploy an IDS after a thorough analysis of the network topology, the nature of network traffic, and the number of hosts to monitor
+- Use a traffic normalizer to remove potential ambiguity from the packet stream before it reaches the IDS
+- If possible, block ICMP TTL expired packets at the external interface level and change the TTL fleld to a large value
+- Regularly update the antivirus signature database
+- Use a traffic normalization solution at the IDS to protect the system against evasions
+- Store the attack information (attacker IP, victim IP, timestamp) for future analysis
 
 
 ### Tools for IDS/IPS and Honeypots:
