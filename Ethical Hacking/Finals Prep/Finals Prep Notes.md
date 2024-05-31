@@ -100,7 +100,7 @@
 ---
 
 # Lecture 17: Social Engineering
-#### Introduction to Social Engineering
+## Introduction to Social Engineering
 - **Definition**: The art of convincing people to reveal confidential information.
 - **Common Targets**:
     - Help desk personnel
@@ -113,7 +113,7 @@
     - Vendors
     - Senior executives
 
-#### Impact of Social Engineering
+## Impact of Social Engineering
 - **Economic Losses**: Direct financial damage.
 - **Damage to Goodwill**: Harm to reputation and trust.
 - **Loss of Privacy**: Compromised personal and organizational information.
@@ -121,7 +121,7 @@
 - **Lawsuits and Arbitration**: Legal consequences and disputes.
 - **Temporary or Permanent Closure**: Operational shutdowns.
 
-#### Vulnerable Behaviors
+## Vulnerable Behaviors
 - **Authority**: Trusting figures of authority without verification.
 - **Intimidation**: Succumbing to threats or coercion.
 - **Consensus/Social Proof**: Following the crowd without critical thinking.
@@ -131,24 +131,24 @@
 - **Trust**: Misplaced trust in unverified entities.
 - **Greed**: Falling for offers that seem too good to be true.
 
-#### Factors Making Companies Vulnerable
+## Factors Making Companies Vulnerable
 - **Insufficient Security Training**: Lack of awareness and skills.
 - **Unregulated Access to Information**: No strict control over sensitive data.
 - **Multiple Organizational Units**: Complexity and lack of cohesive security measures.
 - **Lack of Security Policies**: Absence of formal guidelines and procedures.
 
-#### Effectiveness of Social Engineering
+## Effectiveness of Social Engineering
 - **Human Susceptibility**: Humans are the weakest link in security.
 - **Detection Challenges**: Difficult to identify and prevent.
 - **Low Cost and Ease of Implementation**: Simple and inexpensive for attackers.
 
-#### Phases of Social Engineering Attack
+## Phases of Social Engineering Attack
 1. **Research the Target Company**: Gathering information.
 2. **Select a Target**: Identifying a specific victim.
 3. **Develop a Relationship**: Establishing trust.
 4. **Exploit the Relationship**: Using trust to extract information.
 
-#### Types of Social Engineering Attacks
+## Types of Social Engineering Attacks
 - **Human-Based**: Direct interactions such as:
     - **Impersonation**: Pretending to be someone else to gain information.
     - **Eavesdropping**: Listening to private conversations to gather information.
@@ -167,7 +167,7 @@
     - **Fake Security Applications**: Apps pretending to be security tools but are malicious.
     - **SMiShing**: Phishing attacks via SMS.
 
-#### Phishing Tools
+## Phishing Tools
 - **ShellPhish**
 - **BLACKEYE**
 - **Phishx**
@@ -175,7 +175,7 @@
 - **Trape**
 - **Evilginx**
 
-#### Insider Threats
+## Insider Threats
 - **Definition**: Attacks by trusted individuals with privileged access.
 - **Common Perpetrators**:
     - Privileged users
@@ -191,13 +191,13 @@
     - Competition
     - Public announcements
 
-#### Types of Insider Threats
+## Types of Insider Threats
 1. **Malicious Insider**: Intentional harm.
 2. **Negligent Insider**: Unintentional harm due to carelessness.
 3. **Professional Insider**: Selling information to competitors.
 4. **Compromised Insider**: External manipulation of an insider.
 
-#### Social Networking Threats
+## Social Networking Threats
 - **Data Theft**
 - **Involuntary Data Leakage**
 - **Targeted Attacks**
@@ -209,7 +209,7 @@
 - **Infrastructure and Maintenance Costs**
 - **Loss of Productivity**
 
-#### Identity Theft
+## Identity Theft
 - **Definition**: Stealing personal information for fraudulent purposes.
 - **Commonly Stolen Information**:
     - Name
@@ -236,7 +236,7 @@
     - Health services
     - Tax fraud
 
-#### Countermeasures
+## Countermeasures
 - **Awareness and Training**: Educate employees.
 - **Effective Policies**: Develop and enforce security policies.
 - **Background Checks**: Thorough vetting of employees.
@@ -247,7 +247,7 @@
 - **Data Loss Prevention (DLP)**: Tools to monitor and protect data.
 - **Identity and Access Management (IAM)**: Control user access.
 
-#### Detecting Insider Threats
+## Detecting Insider Threats
 - **Deterrence Controls**:
     - Separation of duties
     - Assigning privileges
@@ -261,21 +261,21 @@
     - Access controls
     - User actions
 
-#### Identity Theft Prevention
+## Identity Theft Prevention
 - **Document Security**: Shred sensitive documents.
 - **Personal Information Protection**: Secure personal data.
 - **Credit Monitoring**: Regularly review credit reports.
 - **Safe Communication**: Verify requests for personal data.
 - **Secure Online Practices**: Avoid sharing sensitive information on public Wi-Fi, enable two-factor authentication, use host security tools.
 
-#### Examples of Social Engineering Attacks
+## Examples of Social Engineering Attacks
 1. **Phishing**: Deceptive emails or websites to steal information.
 2. **Pretexting**: Creating a fabricated scenario to obtain information.
 3. **Baiting**: Offering something enticing to get information or infect a system.
 4. **Quid Pro Quo**: Offering a service in exchange for information.
 5. **Tailgating**: Following someone into a restricted area.
 
-### Additional Information (Not in PPT)
+# Additional Information (Not in PPT)
 - **Social Engineering in Cybersecurity Context**:
     - Often the first step in larger cyber attacks.
     - Can lead to more significant breaches like malware deployment, ransomware attacks, and data exfiltration.
@@ -290,7 +290,7 @@
 ---
 
 # Lecture 21: DoS & DDoS
-#### Overview of DoS/DDoS
+## Overview of DoS/DDoS
 - **Denial of Service (DoS) Attack**
     - Definition: An attack on a computer or network that reduces, restricts, or prevents access to system resources for legitimate users.
     - Goal: To make a system or network resource unavailable to its intended users.
@@ -299,7 +299,7 @@
     - Definition: A coordinated attack that involves multiple compromised systems (botnet) attacking a single target, denying service to users of the targeted system.
     - Mechanism: Utilizes a botnet to launch attacks from numerous sources.
 
-#### Types of DoS Attacks
+## Types of DoS Attacks
 - **Flooding Attacks**
     - Overloading a system with more traffic than it can handle.
 - **Service Flooding**
@@ -311,12 +311,12 @@
 - **Infinite Loops**
     - Hanging a system by causing it to enter an infinite loop.
 
-#### Impact of DoS Attacks
+## Impact of DoS Attacks
 - Consumption of resources (bandwidth, disk space, CPU time).
 - Physical destruction or alteration of network components.
 - Destruction of programs and files in a computer system.
 
-#### Categories of DoS/DDoS Attack Vectors
+## Categories of DoS/DDoS Attack Vectors
 - **Volumetric Attacks**
     - **Definition**: Exhaust bandwidth either within the target network or between the target and the rest of the Internet.
     - **Magnitude**: Measured in bits per second (bps).
@@ -355,18 +355,18 @@
         - Permanent DoS (PDoS) attack
         - Distributed reflection DoS (DRDoS) attack
 
-#### Botnets in DDoS Attacks
+## Botnets in DDoS Attacks
 - **Botnets**: Networks of compromised systems used to perform various malicious activities including DDoS attacks, spamming, keylogging, and more.
 - **Typical Botnet Setup**:
     - Scanning for vulnerable machines.
     - Propagation of malicious code.
     - Use of mobile devices for launching attacks.
 
-#### Case Studies
+## Case Studies
 - **DDoS Attack on GitHub**
     - Demonstrates the impact of DDoS attacks and response strategies.
 
-#### DoS/DDoS Attack Techniques
+## DoS/DDoS Attack Techniques
 - **UDP Flooding Attack**: Overwhelming a target with UDP packets.
 - **ICMP Flooding Attack**: Overloading a target with ICMP packets.
 - **Ping of Death**: Sending oversized packets causing buffer overflow.
@@ -375,11 +375,11 @@
 - **Zero-Day Attack**: Exploiting unknown vulnerabilities.
 - **SYN Flood Attack**: Exploiting TCP connection sequence by sending SYN requests and not responding to SYN-ACK.
 
-#### Countermeasures for SYN Flood Attacks
+## Countermeasures for SYN Flood Attacks
 - Decrease the time-out period for pending connections.
 - Use SYN cookies and SynAttackProtect.
 
-#### Detection and Countermeasures
+## Detection and Countermeasures
 - **Detection Techniques**: Identify unusual traffic patterns, implement rate-limiting, and use anomaly detection systems.
 - **Countermeasure Strategies**:
     - Protect secondary victims.
@@ -389,16 +389,16 @@
     - Mitigate ongoing attacks.
     - Perform post-attack forensics.
 
-#### ISP Level Protection
+## ISP Level Protection
 - **Collaboration**: Work with ISPs to implement large-scale defenses.
 
-#### Protection Tools and Techniques
+## Protection Tools and Techniques
 - **Tools**: Firewalls, intrusion detection systems (IDS), honeypots (e.g., SSHHiPot, Artillery).
 - **Techniques**: Rate limiting, IP blacklisting, traffic analysis, and behavior-based detection.
 ---
 
 # Lecture 22: IDS, IPS, Firewall Evasion
-### Difference between IDS, IPS, FW, NGFW
+## Difference between IDS, IPS, FW, NGFW
 - **IDS (Intrusion Detection System):**
 	- **Function:**
 	    - Monitors network traffic for suspicious activity and potential threats.
@@ -479,7 +479,7 @@
 		    - Associates network traffic with specific users, enabling user-based policies.
 		    - Enhances visibility and control over user activity on the network.
 
-#### **Intrusion Detection System (IDS):**
+### **Intrusion Detection System (IDS):**
 - **How an IDS Detects an Intrusion**:
     - Monitors network traffic.
     - Identifies suspicious activities based on signatures and behavior.
@@ -496,9 +496,10 @@
     - True Negative.
     - False Negative.
 
-#### **Intrusion Prevention System (IPS):**
+### **Intrusion Prevention System (IPS):**
 - An Intrusion Prevention System (IPS) is a proactive security measure that not only detects but also prevents malicious activities on a network.
-##### How IPS Works:
+
+#### How IPS Works:
 - **Traffic Monitoring:**
     - The IPS continuously monitors all network traffic, inspecting packet headers and payloads to identify potential threats.
 - **Detection Methods:**
@@ -510,7 +511,8 @@
         - Uses predefined security policies to detect and respond to malicious activities. Policies can be based on organizational rules and compliance requirements.
     - **Heuristic-based Detection:**
         - Uses algorithms and heuristics to detect suspicious activities by identifying patterns that may indicate an attack.
-##### **Response Actions:**
+
+#### **Response Actions:**
 - **Blocking:**
     - The IPS can block malicious traffic immediately, preventing it from reaching its intended target.
 - **Dropping:**
@@ -519,7 +521,8 @@
     - Infected devices or suspicious traffic can be isolated to prevent the spread of malware.
 - **Alerting:**
     - When a threat is detected, the IPS sends alerts to network administrators for further investigation.
-##### **Types of IPS:**
+
+#### **Types of IPS:**
 1. **Network-based IPS (NIPS):**
     - Deployed at critical points in the network to inspect traffic across multiple segments.
     - Protects the network perimeter and internal network segments from a variety of threats.
@@ -527,7 +530,8 @@
     - Installed on individual hosts (e.g., servers, workstations).
     - Monitors and protects individual devices from both external and internal threats.
     - Provides granular control and protection for specific high-value assets.
-##### **Advantages of IPS:**
+
+#### **Advantages of IPS:**
 - **Proactive Defense:**
     - An IPS actively blocks threats, providing a proactive layer of defense.
 - **Comprehensive Protection:**
@@ -536,7 +540,8 @@
     - Ensures adherence to security policies and compliance requirements.
 - **Integration:**
     - Can be integrated with other security solutions, such as firewalls and SIEM systems, for a comprehensive security posture.
-##### **Challenges and Limitations of IPS:**
+
+#### **Challenges and Limitations of IPS:**
 - **False Positives:**
     - Incorrectly identifying legitimate traffic as malicious can disrupt business operations.
 - **Performance Impact:**
@@ -545,7 +550,8 @@
     - Requires skilled personnel to configure, manage, and fine-tune the system.
 - **Evasion Techniques:**
     - Sophisticated attackers may employ techniques to bypass IPS detection, necessitating constant updates and vigilance.
-##### **IPS Deployment Best Practices:**
+
+#### **IPS Deployment Best Practices:**
 - **Proper Placement:**
     - Position IPS devices strategically within the network to maximize coverage and effectiveness.
 - **Regular Updates:**
@@ -558,14 +564,16 @@
     - Integrate IPS with other security systems for a layered defense strategy.
 - **Testing:**
     - Regularly test the IPS to ensure it functions as expected and provides adequate protection.
-##### **IPS vs. IDS:**
+
+#### **IPS vs. IDS:**
 - **Intrusion Detection System (IDS):**
     - Detects and alerts on potential threats but does not take action to prevent them.
     - Functions as a passive monitoring tool.
 - **Intrusion Prevention System (IPS):**
     - Actively blocks or mitigates detected threats, providing a proactive defense.
     - Functions as an active security measure.
-##### **Examples of IPS:**
+
+#### **Examples of IPS:**
 1. **Snort:**
     - An open-source network IPS and IDS.
     - Uses a rule-based language to detect and prevent network intrusions.
@@ -578,6 +586,7 @@
 4. **Palo Alto Networks:**
     - Next-generation firewalls with integrated IPS functionality.
     - Provides advanced threat prevention and real-time protection.
+
 #### **Firewalls:**
 - **Firewall Architecture**:
     - Packet filtering.
@@ -650,7 +659,6 @@
 		- Can notice this during monitoring
 	- **Detect presence of Bait&Switch Honeypot**
 		- Observe TCP/IP attributes such as RTT, TTL, TCP Timestamp
-
 
 #### **Intrusion Detection Tools:**
 - **Snort**:
@@ -799,7 +807,8 @@
 ---
 
 # Assignment 3 + 4: Host + Port Discovery
-### Host Discovery
+## Host Discovery
+
 ``` python
 def scan(nm, target, arguments=None):
     # Perform the scan
@@ -850,7 +859,8 @@ def scan(nm, target, arguments=None):
     ]
 ```
 
-### Port Discovery
+## Port Discovery
+
 ``` python
 def scan(nm, target, argument=None):
     # Perform the scan
@@ -909,6 +919,7 @@ def scan(nm, target, argument=None):
         ]
 
 ```
+
 ---
 
 # Assignment 5: Post Exploitation (RID Hijacking)
