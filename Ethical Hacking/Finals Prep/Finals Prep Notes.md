@@ -715,8 +715,10 @@
     - Set the TTL value of packets to expire before reaching the IDS. Frag malicious packet into 3 frags
 	    - Send Frag1-HighTTL + Frag2-LowTTL
 	    - IDS checks both, Target only gets the 1st frag
-	    - Send Frag3-HighTTL
-	    - IDS
+	    - Send Frag3-HighTTL, target receives 3rd frag
+	    - IDS drop malformed packet after reassembly
+	    - Send Frag2-NormalTTL
+	    - No log created for attack
     - Ensure that the IDS does not see the packet while the target does.
 - **Invalid RST Packets**
     - Send invalid reset packets to disrupt connections.
