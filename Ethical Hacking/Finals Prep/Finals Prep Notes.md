@@ -742,7 +742,13 @@
         - **Traffic Morphing**: Alter traffic patterns to mimic benign activity.
         - **Behavioral Evasion**: Change attack behavior dynamically to avoid behavioral detection systems.
 
-### Defend against IDS Evasion
+### Defend against IDS/FW Evasion
+- Ensure that IDSs normalize fragmented packets and allow those packets to be reassembled in the proper order
+- Define the DNS server with a client resolver for the routers and similar network devices
+- Tighten the security of all communication devices such as modems, routers, and switches
+- Shut down switch ports associated with known attack hosts
+- Perform an in-depth analysis of ambiguous network traffic for all possible threats
+
 
 
 ### Tools for IDS/IPS and Honeypots:
