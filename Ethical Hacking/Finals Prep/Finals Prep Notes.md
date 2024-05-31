@@ -4,8 +4,8 @@
 | Lecture 17: Social Engineering                  | :white_check_mark: |
 | Lecture 21: DoS & DDoS                          | :white_check_mark: |
 | Lecture 22: IDS, IPS, Firewall Evasion          | :white_check_mark: |
-| Assignment 3 & 4: Host + Port Discovery         | :white_check_mark: | 
-| Assignment 5: Post Exploitation (RID Hijacking) | :warning:          |
+| Assignment 3 & 4: Host + Port Discovery         | :white_check_mark: |
+| Assignment 5: Post Exploitation (RID Hijacking) | :white_check_mark: |
 
 # Lecture 16: Sniffing
 - **Concept of Sniffing**
@@ -540,33 +540,27 @@ def scan(nm, target, arguments=None):
 
     # Loop through the scan results and get the status and state of each host
     hosts_list = [(x, nm[x]["status"]["state"]) for x in nm.all_hosts()]
-    # Sort the hosts list
-    hosts_list = sorted(hosts_list)
 
     # if hosts_list is emptu, then no hosts were discovered
     if len(hosts_list) == 0:
         print(
-            f"\t{Fore.LIGHTRED_EX}[{Fore.WHITE}!{Fore.LIGHTRED_EX}]{Fore.WHITE} No hosts discovered."
+            f"\t[!] No hosts discovered."
         )
     else:
         print(
-            f"\t{Fore.LIGHTRED_EX}[{Fore.WHITE}!{Fore.LIGHTRED_EX}]{Fore.WHITE} Hosts discovered:"
+            f"\t[!] Hosts discovered:"
         )
         for host, status in hosts_list:
             # If host is X.X.X.1 or X.X.X.254, then it is a router
             if host.split(".")[-1] == "1" or host.split(".")[-1] == "254":
                 print(
-                    f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is a router."
+                    f"\t\t[+] {host} is a router."
                 )
             else:
                 # If host is up, then get the reason
                 if nm[host]["status"]["state"] == "up":
                     # If host is up, then get the reason
                     reason = nm[host]["status"]["reason"]
-                else:
-                # print(
-                #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is {status}."
-                # )
 
     print("\n")
 
@@ -599,8 +593,6 @@ def scan(nm, target, argument=None):
 
     # Loop through the scan results and get the status and state of each host
     hosts_list = [(x, nm[x]["status"]["state"]) for x in nm.all_hosts()]
-    # Sort the hosts list
-    hosts_list = sorted(hosts_list)
 
     # if hosts_list is emptu, then no hosts were discovered
     if len(hosts_list) == 0:
@@ -611,12 +603,12 @@ def scan(nm, target, argument=None):
             if host.split(".")[-1] == "1":
                 continue
                 # print(
-                #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is default gateway."
+                #     f"\t\t[+] {host} is default gateway."
                 # )
             elif host.split(".")[-1] == "254":
                 continue
                 # print(
-                #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is a broadcast address."
+                #     f"\t\t[+] {host} is a broadcast address."
                 # )
             else:
                 # If host is up, then get the reason
@@ -633,16 +625,6 @@ def scan(nm, target, argument=None):
                         print(lport)
                         for port in lport:
                             state = nm[host][proto][port]["state"]
-                            # if state == "closed":
-                            #     continue
-                    # else:
-                # print(
-                #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is {status}."
-                # )
-
-        # print(
-        #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}Number Of Hosts Down{Fore.WHITE} is {Fore.LIGHTRED_EX}{downHosts}{Fore.WHITE}."
-        # )
 
     print("\n")
         scanName = [
@@ -661,5 +643,22 @@ def scan(nm, target, argument=None):
 ---
 
 # Assignment 5: Post Exploitation (RID Hijacking)
+- **Registry Entry**
+	- HKEY_LOCAL_MACHINE\\SAM\\SAM\\Domains\\Accounts\\\\Users\\selectedUser\\
+	- Access by using PsExec to run regedit (Access SAM entries as SYSTEM)
+	- Key value determines account access level (RID)
+		- Admins have 0x1f4h -> 500
+		- Guests have 0x1f5h -> 501
+	- Can be validated using wmic (Use sql style commands to query data)
+- **Reading Security Identifiers (SID)**
+	- Length -> 256 char
+	- Format
+		- `S-1-5-21-3623811015-3361044348-30300820-1013`
+			- S -> SID is a string
+			- 1 -> Version level of SID
+			- 5 -> Identifier Authority Value
+			- 21-3623811015-3361044348-30300820 -> Subauthority value
+			- 1013 -> RID.
+				- 
 
 ---
