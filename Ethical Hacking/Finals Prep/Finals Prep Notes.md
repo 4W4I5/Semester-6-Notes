@@ -1,12 +1,12 @@
-| Topic Title                                     | Status    |
-| ----------------------------------------------- | --------- |
-| Lecture 16: Sniffing                            | :warning: |
-| Lecture 17: Social Engineering                  | :warning: |
-| Lecture 21: DoS & DDoS                          | :warning: |
-| Lecture 22: IDS, IPS, Firewall Evasion          | :warning: |
-| Assignment 3: Host Discovery                    | :warning: |
-| Assignment 4: Port Discovery                    | :warning: |
-| Assignment 5: Post Exploitation (RIA Hijacking) | :warning: |
+| Topic Title                                     | Status             |
+| ----------------------------------------------- | ------------------ |
+| Lecture 16: Sniffing                            | :white_check_mark: |
+| Lecture 17: Social Engineering                  | :warning:          |
+| Lecture 21: DoS & DDoS                          | :warning:          |
+| Lecture 22: IDS, IPS, Firewall Evasion          | :warning:          |
+| Assignment 3: Host Discovery                    | :warning:          |
+| Assignment 4: Port Discovery                    | :warning:          |
+| Assignment 5: Post Exploitation (RIA Hijacking) | :warning:          |
 
 # Lecture 16: Sniffing
 - **Concept of Sniffing**
@@ -63,12 +63,16 @@
 		        - 24-bit Network-Interface Controller (NIC)
 		    - **Notable things**
 			    - First Octet -> 7th Bit is for Globally Unique/Locally administered. 8th Bit is for Unicast/Multicast
-        - **CAM table**: Used in switches to map MAC addresses to ports for packet forwarding.
+        - **CAM table**: Used in switches to map MAC addresses to interface ports for packet forwarding.
 		    - **Content Addressable Memory (CAM)** -> Works by recording MAC addresses and their associated ports.
+			    - To prevent a reuse however, every MAC entry is set to age after a set period of time. Default is 300 seconds
     - **MAC Flooding**:
-        - Overloads CAM table with fake MAC addresses causing the switch to broadcast packets.
+        - Overloads CAM table with fake MAC addresses to fake IP Addresses causing the switch to broadcast packets as there is no direct route to the target device anymore.
+        - Tool -> MACOF
     - **Switch Port Stealing**:
         - Involves sending bogus ARP packets to update CAM table, redirecting traffic to the attacker.
+        - Source of ARP is the target and Destination is of the target
+        - Causes a race condition
 - **Defending Against MAC Attacks**
     - **Port Security**: Limits the number of MAC addresses per port and sets violation actions.
     - **Dynamic Port Security**: Configures allowed number of MAC addresses dynamically.
