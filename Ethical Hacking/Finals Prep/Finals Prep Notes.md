@@ -4,7 +4,7 @@
 | Lecture 17: Social Engineering                  | :white_check_mark: |
 | Lecture 21: DoS & DDoS                          | :white_check_mark: |
 | Lecture 22: IDS, IPS, Firewall Evasion          | :white_check_mark: |
-| Assignment 3 & 4: Host + Port Discovery         | :warning:          |
+| Assignment 3 & 4: Host + Port Discovery         | :white_check_mark: | 
 | Assignment 5: Post Exploitation (RID Hijacking) | :warning:          |
 
 # Lecture 16: Sniffing
@@ -530,7 +530,134 @@
 ---
 
 # Assignment 3 + 4: Host + Port Discovery
+### Host Discovery
+``` python
+def scan(nm, target, arguments=None):
+    # Perform the scan
+    nm.scan(
+        hosts=target, arguments=f"{arguments} --min-rate=5000 -T5 -reason", sudo=True
+    )
 
+    # Loop through the scan results and get the status and state of each host
+    hosts_list = [(x, nm[x]["status"]["state"]) for x in nm.all_hosts()]
+    # Sort the hosts list
+    hosts_list = sorted(hosts_list)
+
+    # if hosts_list is emptu, then no hosts were discovered
+    if len(hosts_list) == 0:
+        print(
+            f"\t{Fore.LIGHTRED_EX}[{Fore.WHITE}!{Fore.LIGHTRED_EX}]{Fore.WHITE} No hosts discovered."
+        )
+    else:
+        print(
+            f"\t{Fore.LIGHTRED_EX}[{Fore.WHITE}!{Fore.LIGHTRED_EX}]{Fore.WHITE} Hosts discovered:"
+        )
+        for host, status in hosts_list:
+            # If host is X.X.X.1 or X.X.X.254, then it is a router
+            if host.split(".")[-1] == "1" or host.split(".")[-1] == "254":
+                print(
+                    f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is a router."
+                )
+            else:
+                # If host is up, then get the reason
+                if nm[host]["status"]["state"] == "up":
+                    # If host is up, then get the reason
+                    reason = nm[host]["status"]["reason"]
+                else:
+                # print(
+                #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is {status}."
+                # )
+
+    print("\n")
+
+    # List of scan names
+    scanName = [
+        "ARP ping (-PR)",
+        "ICMP Echo ping (-PE)",
+        "ICMP Echo ping sweep (-PS)",
+        "ICMP timestamp ping (-PP)",
+        "ICMP Address Mask ping (-PM)",
+        "UDP Ping (-PU)",
+        "TCP SYN (-PS)",
+        "TCP ACK (-PA)",
+        "TCP NULL (-PN)",
+        "TCP FIN (-sF)",
+        "TCP XMAS (-sX)",
+        "IP Protocol ping (-PO)",
+    ]
+```
+
+### Port Discovery
+``` python
+def scan(nm, target, argument=None):
+    # Perform the scan
+    nm.scan(
+        hosts=target,
+        arguments=f"{argument} -F --min-rate=5000 -T5 --reason",
+        sudo=True,
+    )
+
+    # Loop through the scan results and get the status and state of each host
+    hosts_list = [(x, nm[x]["status"]["state"]) for x in nm.all_hosts()]
+    # Sort the hosts list
+    hosts_list = sorted(hosts_list)
+
+    # if hosts_list is emptu, then no hosts were discovered
+    if len(hosts_list) == 0:
+    else:
+        downHosts = 0
+        for host, status in hosts_list:
+            # If host is X.X.X.1 or X.X.X.254, then it is a router
+            if host.split(".")[-1] == "1":
+                continue
+                # print(
+                #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is default gateway."
+                # )
+            elif host.split(".")[-1] == "254":
+                continue
+                # print(
+                #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is a broadcast address."
+                # )
+            else:
+                # If host is up, then get the reason
+                if nm[host]["status"]["state"] == "up":
+                    # If host is up, then get the reason
+                    reason = nm[host]["status"]["reason"]
+                    if reason == "localhost-response":
+                        continue
+
+                    # Get port status of the host as well
+                    for proto in nm[host].all_protocols():
+                        lport = list(nm[host][proto].keys())
+                        lport.sort()
+                        print(lport)
+                        for port in lport:
+                            state = nm[host][proto][port]["state"]
+                            # if state == "closed":
+                            #     continue
+                    # else:
+                # print(
+                #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}{host}{Fore.WHITE} is {status}."
+                # )
+
+        # print(
+        #     f"\t\t{Fore.LIGHTRED_EX}[{Fore.WHITE}+{Fore.LIGHTRED_EX}]{Fore.WHITE} {Fore.LIGHTYELLOW_EX}Number Of Hosts Down{Fore.WHITE} is {Fore.LIGHTRED_EX}{downHosts}{Fore.WHITE}."
+        # )
+
+    print("\n")
+        scanName = [
+            "ICMP Ping (-PE)",
+            "UDP Ping (-sU)",
+            "TCP SYN (-sT)",
+            "TCP SYN Silent|Half-Open (-sS)",
+            "Inverse TCP NULL (-sN)",
+            "Inverse TCP XMAS (-sX)",
+            "Inverse TCP Maimon (-sM)",
+            "ACK TTL-Based (-sA)",
+            "ACK Window (-sW)",
+        ]
+
+```
 ---
 
 # Assignment 5: Post Exploitation (RID Hijacking)
