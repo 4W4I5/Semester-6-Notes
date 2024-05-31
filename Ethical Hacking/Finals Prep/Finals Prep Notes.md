@@ -674,7 +674,9 @@
 	    - Even if they do, they have a time limit via a delay, bypassing that limit allows for splicing
 	- Attack is not logged after a successful splice
 - **Unicode Evasion Technique**:
-    - Use unicode characters to bypass detection.
+    - Use Unicode characters to bypass detection.
+    - Multiple representations of the same character
+    - Convert attack strings to Unicode to avoid pattern and sig matching
 - **Fragmentation Attack**:
     - Split malicious payload into fragments.
 - **Time-To-Live Attack**:
