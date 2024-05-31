@@ -101,7 +101,193 @@
 ---
 
 # Lecture 17: Social Engineering
+#### Introduction to Social Engineering
+- **Definition**: The art of convincing people to reveal confidential information.
+- **Common Targets**:
+    - Help desk personnel
+    - Support executives
+    - System administrators
+    - Receptionists
+    - Technical support executives
+    - Users
+    - Clients
+    - Vendors
+    - Senior executives
 
+#### Impact of Social Engineering
+- **Economic Losses**: Direct financial damage.
+- **Damage to Goodwill**: Harm to reputation and trust.
+- **Loss of Privacy**: Compromised personal and organizational information.
+- **Dangers of Terrorism**: Potential misuse of information for terrorist activities.
+- **Lawsuits and Arbitration**: Legal consequences and disputes.
+- **Temporary or Permanent Closure**: Operational shutdowns.
+
+#### Vulnerable Behaviors
+- **Authority**: Trusting figures of authority without verification.
+- **Intimidation**: Succumbing to threats or coercion.
+- **Consensus/Social Proof**: Following the crowd without critical thinking.
+- **Scarcity**: Acting out of fear of missing out.
+- **Urgency**: Responding quickly due to a sense of urgency.
+- **Familiarity/Liking**: Trusting individuals based on perceived friendliness.
+- **Trust**: Misplaced trust in unverified entities.
+- **Greed**: Falling for offers that seem too good to be true.
+
+#### Factors Making Companies Vulnerable
+- **Insufficient Security Training**: Lack of awareness and skills.
+- **Unregulated Access to Information**: No strict control over sensitive data.
+- **Multiple Organizational Units**: Complexity and lack of cohesive security measures.
+- **Lack of Security Policies**: Absence of formal guidelines and procedures.
+
+#### Effectiveness of Social Engineering
+- **Human Susceptibility**: Humans are the weakest link in security.
+- **Detection Challenges**: Difficult to identify and prevent.
+- **Low Cost and Ease of Implementation**: Simple and inexpensive for attackers.
+
+#### Phases of Social Engineering Attack
+1. **Research the Target Company**: Gathering information.
+2. **Select a Target**: Identifying a specific victim.
+3. **Develop a Relationship**: Establishing trust.
+4. **Exploit the Relationship**: Using trust to extract information.
+
+#### Types of Social Engineering Attacks
+- **Human-Based**: Direct interactions such as:
+    - **Impersonation**: Pretending to be someone else to gain information.
+    - **Eavesdropping**: Listening to private conversations to gather information.
+    - **Shoulder Surfing**: Observing someone entering confidential information.
+    - **Dumpster Diving**: Searching through trash for sensitive information.
+    - **Piggybacking/Tailgating**: Gaining unauthorized access by following someone into a secure area.
+- **Computer-Based**: Techniques such as:
+    - **Phishing**: Deceptive emails or websites to steal information.
+    - **Spam**: Unsolicited emails often containing malicious links or attachments.
+    - **Pop-up Attacks**: Malicious pop-ups that trick users into revealing information.
+    - **Spear Phishing**: Targeted phishing attacks on specific individuals.
+    - **Vishing**: Voice phishing using phone calls to extract information.
+    - **Whaling**: Phishing attacks targeting senior executives.
+- **Mobile-Based**: Techniques such as:
+    - **Malicious Apps**: Applications designed to steal information.
+    - **Fake Security Applications**: Apps pretending to be security tools but are malicious.
+    - **SMiShing**: Phishing attacks via SMS.
+
+#### Phishing Tools
+- **ShellPhish**
+- **BLACKEYE**
+- **Phishx**
+- **Modlishka**
+- **Trape**
+- **Evilginx**
+
+#### Insider Threats
+- **Definition**: Attacks by trusted individuals with privileged access.
+- **Common Perpetrators**:
+    - Privileged users
+    - Disgruntled employees
+    - Terminated employees
+    - Accident-prone employees
+    - Third parties
+    - Undertrained staff
+- **Motivations**:
+    - Financial gain
+    - Data theft
+    - Revenge
+    - Competition
+    - Public announcements
+
+#### Types of Insider Threats
+1. **Malicious Insider**: Intentional harm.
+2. **Negligent Insider**: Unintentional harm due to carelessness.
+3. **Professional Insider**: Selling information to competitors.
+4. **Compromised Insider**: External manipulation of an insider.
+
+#### Social Networking Threats
+- **Data Theft**
+- **Involuntary Data Leakage**
+- **Targeted Attacks**
+- **Network Vulnerability**
+- **Spam and Phishing**
+- **Content Modification**
+- **Malware Propagation**
+- **Business Reputation Damage**
+- **Infrastructure and Maintenance Costs**
+- **Loss of Productivity**
+
+#### Identity Theft
+- **Definition**: Stealing personal information for fraudulent purposes.
+- **Commonly Stolen Information**:
+    - Name
+    - Address
+    - SSN
+    - Phone number
+    - DOB
+    - Bank account numbers
+    - Credit card info
+    - Usernames and passwords
+- **Uses**:
+    - Fraudulent credit card accounts
+    - Phone services
+    - Utility services
+    - Bank accounts
+    - ATM withdrawals
+    - Loans
+    - Government benefits
+    - Impersonation
+    - Insurance claims
+    - Selling information
+    - Online orders
+    - Email hijacking
+    - Health services
+    - Tax fraud
+
+#### Countermeasures
+- **Awareness and Training**: Educate employees.
+- **Effective Policies**: Develop and enforce security policies.
+- **Background Checks**: Thorough vetting of employees.
+- **Two-Factor Authentication**: Enhanced security measures.
+- **Regular Software Updates**: Ensure systems are up-to-date.
+- **Monitoring and Auditing**: Continuous oversight of activities.
+- **Physical Security**: Secure access to physical facilities.
+- **Data Loss Prevention (DLP)**: Tools to monitor and protect data.
+- **Identity and Access Management (IAM)**: Control user access.
+
+#### Detecting Insider Threats
+- **Deterrence Controls**:
+    - Separation of duties
+    - Assigning privileges
+    - Recommended actions
+- **Detection Controls**:
+    - IDS/IPS
+    - Log management
+    - SIEM tools
+- **Insider Risk Controls**:
+    - Monitor permissions
+    - Access controls
+    - User actions
+
+#### Identity Theft Prevention
+- **Document Security**: Shred sensitive documents.
+- **Personal Information Protection**: Secure personal data.
+- **Credit Monitoring**: Regularly review credit reports.
+- **Safe Communication**: Verify requests for personal data.
+- **Secure Online Practices**: Avoid sharing sensitive information on public Wi-Fi, enable two-factor authentication, use host security tools.
+
+#### Examples of Social Engineering Attacks
+1. **Phishing**: Deceptive emails or websites to steal information.
+2. **Pretexting**: Creating a fabricated scenario to obtain information.
+3. **Baiting**: Offering something enticing to get information or infect a system.
+4. **Quid Pro Quo**: Offering a service in exchange for information.
+5. **Tailgating**: Following someone into a restricted area.
+
+### Additional Information (Not in PPT)
+- **Social Engineering in Cybersecurity Context**:
+    - Often the first step in larger cyber attacks.
+    - Can lead to more significant breaches like malware deployment, ransomware attacks, and data exfiltration.
+- **Psychological Manipulation Techniques**:
+    - **Reciprocity**: People tend to return favors.
+    - **Commitment**: Once a person commits to something, they are more likely to follow through.
+    - **Consistency**: Aligning new requests with previous actions or beliefs.
+- **Recent Trends**:
+    - Increasing sophistication of attacks.
+    - Use of AI and deepfakes to enhance credibility.
+    - Targeted attacks on remote workers due to the rise of telecommuting.
 ---
 
 # Lecture 21: DoS & DDoS
