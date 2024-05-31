@@ -644,10 +644,17 @@
 	- **Detect presence of HoneyD Honeypot**
 		- Observe time-based TCP Fingerprinting behavior (SYN-Proxy)
 	- **Detect presence of User-Mode Linux Honeypot**
+		- Observe mount, interrupts and cmdline files in /proc
+		- These contain UML info
 	- **Detect presence of Sebek-based Honeypot**
+		- Observe congestion in Network Layer
 	- **Detect presence of Snort_inline Honeypot**
+		- Observe outgoing packets through another host and look for modifications
 	- **Detect presence of Fake AP**
+		- Only beacon frames sent by FakeAP
+		- Can notice this during monitoring
 	- **Detect presence of Bait&Switch Honeypot**
+		- Observe TCP/IP attributes such as RTT, TTL, TCP Timestamp
 
 
 #### **Intrusion Detection Tools:**
