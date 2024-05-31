@@ -727,7 +727,7 @@
     - Change the appearance of the shellcode each time it is sent.
     - Evade signature-based IDS by ensuring the shellcode does not match known patterns.
 - **Application-Layer Attacks**
-    - Exploit application vulnerabilities.
+    - Exploit application vulnerabilities that can cause an overflow.
     - Target weaknesses in the application layer (e.g., SQL injection, XSS).
     - Bypass lower-layer IDS/IPS that focus on network or transport layer attacks.
 - **Desynchronization**
