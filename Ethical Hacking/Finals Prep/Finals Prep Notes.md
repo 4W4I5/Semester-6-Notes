@@ -743,21 +743,35 @@
         - **Behavioral Evasion**: Change attack behavior dynamically to avoid behavioral detection systems.
 
 ### Defend against IDS/FW Evasion
-- Ensure that IDSs normalize fragmented packets and allow those packets to be reassembled in the proper order
-- Define the DNS server with a client resolver for the routers and similar network devices
-- Tighten the security of all communication devices such as modems, routers, and switches
-- Shut down switch ports associated with known attack hosts
-- Perform an in-depth analysis of ambiguous network traffic for all possible threats
-- Use a TCP FIN or a reset (RST) packet to terminate malicious TCP sessions
-- Look for the a nop opcode other than 0x90 to defend against the polymorphle shellcode problem
-- Train users to identify attack patterns and regularly update/patch all the systems and network devices
-- Deploy an IDS after a thorough analysis of the network topology, the nature of network traffic, and the number of hosts to monitor
-- Use a traffic normalizer to remove potential ambiguity from the packet stream before it reaches the IDS
-- If possible, block ICMP TTL expired packets at the external interface level and change the TTL fleld to a large value
-- Regularly update the antivirus signature database
-- Use a traffic normalization solution at the IDS to protect the system against evasions
-- Store the attack information (attacker IP, victim IP, timestamp) for future analysis
-
+- **IDS Best Practices:**
+	- Normalize fragmented packets for proper reassembly.
+	- Define DNS server with client resolver for routers and network devices.
+	- Enhance security of modems, routers, and switches.
+	- Disable switch ports associated with known attack hosts.
+	- Conduct in-depth analysis of ambiguous network traffic.
+	- Use TCP FIN or reset (RST) packets to terminate malicious TCP sessions.
+	- Detect non-standard nop opcodes to defend against polymorphic shellcode.
+	- Train users to recognize attack patterns and update systems regularly.
+	- Deploy IDS after analyzing network topology, traffic nature, and host count.
+	- Use traffic normalizers to remove ambiguity before packets reach IDS.
+	- Block ICMP TTL expired packets at external interfaces and set large TTL values.
+	- Regularly update antivirus signature databases.
+	- Store attack information (IP addresses, timestamps) for future analysis.
+- **Firewall Best Practices:**
+	- Run regular risk queries to identify vulnerable firewall rules.
+	- Filter out intruder IP addresses in firewall configuration.
+	- Set ruleset to deny all traffic by default, enabling only required services.
+	- Monitor and restrict user access to firewall configurations.
+	- Notify and document firewall changes to the security policy administrator.
+	- Use unique user IDs for firewall services instead of administrator/root IDs.
+	- Configure and protect a remote syslog server from malicious users.
+	- Regularly monitor firewall logs and investigate suspicious entries.
+	- Specify source and destination IP addresses and ports.
+	- Control physical access to the firewall.
+	- Disable all FTP connections by default.
+	- Take regular backups of firewall ruleset and configuration files.
+	- Review all inbound and outbound traffic allowed through the firewall.
+	- Schedule regular firewall security audits.
 
 ### Tools for IDS/IPS and Honeypots:
 - **HoneyBOT**
