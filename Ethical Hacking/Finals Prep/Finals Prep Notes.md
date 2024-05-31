@@ -1,6 +1,6 @@
 | Topic Title                                     | Status             |
 | ----------------------------------------------- | ------------------ |
-| Lecture 16: Sniffing                            | :white_check_mark: | 
+| Lecture 16: Sniffing                            | :white_check_mark: |
 | Lecture 17: Social Engineering                  | :warning:          |
 | Lecture 21: DoS & DDoS                          | :warning:          |
 | Lecture 22: IDS, IPS, Firewall Evasion          | :white_check_mark: |
@@ -290,83 +290,87 @@
 ---
 
 # Lecture 21: DoS & DDoS
-## DoS/DDoS
+#### DoS/DDoS
 - **Denial of Service (DoS) Attack**
-    - Definition: An attack on a computer or network that reduces, restricts, or prevents access to system resources for legitimate users.
-    - Goal: To make a system or network resource unavailable to its intended users.
-    - Methods: Flooding the victim’s system with non-legitimate service requests or traffic.
+    - Definition: An attack designed to make a machine or network resource unavailable to its intended users by temporarily or indefinitely disrupting services of a host connected to the Internet.
+    - Goal: To deny legitimate users access to services or resources.
+    - Methods: Overloading the system with non-legitimate requests, making it unable to respond to legitimate traffic.
 - **Distributed Denial of Service (DDoS) Attack**
-    - Definition: A coordinated attack that involves multiple compromised systems (botnet) attacking a single target, denying service to users of the targeted system.
-    - Mechanism: Utilizes a botnet to launch attacks from numerous sources.
+    - Definition: An attack where multiple compromised systems attack a single target, causing a Denial of Service (DoS) for users of the targeted system.
+    - Mechanism: Uses a botnet to generate overwhelming traffic from numerous sources.
 
-## Types of DoS Attacks
+#### Types of DoS Attacks
 - **Flooding Attacks**
-    - Overloading a system with more traffic than it can handle.
+    - Overwhelming a system with excessive traffic.
+    - UDP flood, ICMP flood.
 - **Service Flooding**
-    - Overloading a service (e.g., IRC) with more events than it can handle.
+    - Overloading a service with more events than it can handle.
+    - Overloading an IRC server with excessive connections.
 - **Corrupt Packet Attacks**
     - Crashing a TCP/IP stack by sending corrupt packets.
 - **Unexpected Interactions**
     - Crashing a service by interacting with it in unexpected ways.
+    - Sending unexpected inputs to a service causing it to fail.
 - **Infinite Loops**
-    - Hanging a system by causing it to enter an infinite loop.
+    - Causing a system to hang by making it enter an infinite loop.
+    - Sending a specific sequence of packets that trigger an infinite loop in the service.
 
-## Impact of DoS Attacks
-- Consumption of resources (bandwidth, disk space, CPU time).
-- Physical destruction or alteration of network components.
-- Destruction of programs and files in a computer system.
+#### Impact of DoS Attacks
+- **Resource Consumption**
+    - Bandwidth, disk space, CPU time.
+- **Physical Damage**
+    - Destruction or alteration of network components.
+- **Data Damage**
+    - Destruction of programs and files in a computer system.
 
-## DoS/DDoS Attack Vectors
+#### Categories of DoS/DDoS Attack Vectors
 - **Volumetric Attacks**
     - **Definition**: Exhaust bandwidth either within the target network or between the target and the rest of the Internet.
     - **Magnitude**: Measured in bits per second (bps).
     - **Techniques**:
-        - **Flood Attack**: Zombies send large volumes of traffic to exhaust the target’s bandwidth.
-        - **Amplification Attack**: Attacker sends messages to a broadcast IP address to amplify malicious traffic.
-        - **Examples**:
-            - UDP flood attack
-            - ICMP flood attack
-            - Ping of Death (PoD) attack
-            - Smurf attack
-            - Pulse wave attack
-            - Zero-day attack
-            - Malformed IP packet flood attack
-            - Spoofed IP packet flood attack
+        - **UDP Flood Attack**: Overwhelming a target with UDP packets.
+        - **ICMP Flood Attack**: Overloading a target with ICMP packets.
+        - **Ping of Death (PoD) Attack**: Sending oversized packets causing buffer overflow.
+        - **Smurf Attack**: Using IP broadcast with ICMP requests to flood a target.
+        - **Pulse Wave Attack**: Alternating high-volume attacks to bypass mitigation strategies.
+        - **Zero-Day Attack**: Exploiting unknown vulnerabilities.
+        - **Malformed IP Packet Flood Attack**: Sending malformed packets to exhaust resources.
+        - **Spoofed IP Packet Flood Attack**: Sending packets with a forged sender address.
 - **Protocol Attacks**
     - **Definition**: Consume resources other than bandwidth, such as connection state tables.
     - **Magnitude**: Measured in packets per second (pps) or connections per second (cps).
     - **Techniques**:
-        - SYN flood attack
-        - Fragmentation attack
-        - Spoofed session flood attack
-        - ACK flood attack
-        - TCP state exhaustion attack
-        - RST attack
+        - **SYN Flood Attack**: Exploiting TCP connection sequence by sending SYN requests and not responding to SYN-ACK.
+        - **Fragmentation Attack**: Sending fragmented packets to exhaust resources.
+        - **Spoofed Session Flood Attack**: Overloading with spoofed session requests.
+        - **ACK Flood Attack**: Sending numerous ACK packets to exhaust resources.
+        - **TCP State Exhaustion Attack**: Exploiting TCP state handling to exhaust resources.
+        - **RST Attack**: Sending RST packets to tear down legitimate connections.
 - **Application Layer Attacks**
     - **Definition**: Exploit vulnerabilities in the application layer protocol or application itself.
     - **Magnitude**: Measured in requests per second (rps).
     - **Techniques**:
-        - HTTP flood attack
-        - Slowloris attack
-        - UDP application layer flood attack
-        - HTTPS GET/POST attack
-        - Multi-vector attack
-        - Peer-to-peer attack
-        - Permanent DoS (PDoS) attack
-        - Distributed reflection DoS (DRDoS) attack
+        - **HTTP Flood Attack**: Overloading with HTTP requests.
+        - **Slowloris Attack**: Keeping connections open to exhaust server resources.
+        - **UDP Application Layer Flood Attack**: Overwhelming with UDP application-layer requests.
+        - **HTTPS GET/POST Attack**: Overloading with HTTPS requests.
+        - **Multi-Vector Attack**: Combining multiple attack vectors.
+        - **Peer-to-Peer Attack**: Exploiting P2P networks to flood a target.
+        - **Permanent DoS (PDoS) Attack**: Permanently disabling hardware or software.
+        - **Distributed Reflection DoS (DRDoS) Attack**: Using amplification techniques to reflect attacks.
 
-## Botnets in DDoS Attacks
+#### Botnets in DDoS Attacks
 - **Botnets**: Networks of compromised systems used to perform various malicious activities including DDoS attacks, spamming, keylogging, and more.
 - **Typical Botnet Setup**:
-    - Scanning for vulnerable machines.
-    - Propagation of malicious code.
-    - Use of mobile devices for launching attacks.
+    - **Scanning for Vulnerable Machines**: Identifying and compromising vulnerable systems.
+    - **Propagation of Malicious Code**: Distributing malware to establish control over compromised systems.
+    - **Use of Mobile Devices**: Leveraging mobile devices to launch attacks.
 
-## Case Studies
+#### Case Studies
 - **DDoS Attack on GitHub**
-    - Demonstrates the impact of DDoS attacks and response strategies.
+    - **Details**: Demonstrates the impact of DDoS attacks and response strategies.
 
-## DoS/DDoS Attack Techniques
+#### DoS/DDoS Attack Techniques
 - **UDP Flooding Attack**: Overwhelming a target with UDP packets.
 - **ICMP Flooding Attack**: Overloading a target with ICMP packets.
 - **Ping of Death**: Sending oversized packets causing buffer overflow.
@@ -375,75 +379,40 @@
 - **Zero-Day Attack**: Exploiting unknown vulnerabilities.
 - **SYN Flood Attack**: Exploiting TCP connection sequence by sending SYN requests and not responding to SYN-ACK.
 
-## Countermeasures for SYN Flood Attacks
-- Decrease the time-out period for pending connections.
-- Use SYN cookies and SynAttackProtect.
+#### Countermeasures for SYN Flood Attacks
+- **Decrease Time-Out Period**: Reducing the time connections remain in the half-open state.
+- **SYN Cookies**: Using cryptographic techniques to handle SYN requests without allocating resources until the connection is completed.
+- **SynAttackProtect**: Enabling built-in protection mechanisms in network devices and operating systems.
 
-## DDOS Detection and Countermeasures
+#### Detection and Countermeasures
 - **Detection Techniques**:
-	- Identify unusual traffic patterns.
-	- Implement rate-limiting to control traffic flow.
-	- Use anomaly detection systems to detect deviations from normal behavior.
-	- Deploy network traffic analysis tools to monitor real-time traffic.
-	- Utilize signature-based detection for known attack patterns.
-	- Implement behavioral analysis to detect abnormal user and network behavior.
-	- Conduct regular vulnerability assessments and penetration testing.
+    - Identifying unusual traffic patterns.
+    - Implementing rate-limiting.
+    - Using anomaly detection systems.
 - **Countermeasure Strategies**:
-	- **Absorb the attack:**
-		- Requires preplanning + Additional Resources
-	- **Degrading Services:**
-		- Only keep critical functions running until attack has subsided
-	- **Shutting down**
-		- While mentioned in the slides, this is stupid as this is exactly what the attacker intends for
-	- **Protect Secondary Victims**:
-	    - Implement network segmentation to isolate critical systems.
-	    - Use access control lists (ACLs) to restrict traffic to and from vulnerable areas.
-	    - Ensure robust backup systems to protect data integrity.
-	    - Educate secondary victims on security best practices.
-	- **Neutralize Handlers**:
-	    - Identify and disable command and control (C&C) servers used by attackers.
-	    - Use threat intelligence to update blacklists of known malicious IP addresses.
-	    - Deploy honeypots to attract and neutralize malicious traffic.
-	    - Engage with ISPs to take down malicious domains and servers.
-	- **Prevent Potential Attacks**:
-	    - Apply patches and updates to all systems and applications promptly.
-	    - Implement strong authentication and authorization mechanisms.
-	    - Use encryption to protect data in transit and at rest.
-	    - Employ proactive threat hunting to identify and mitigate threats before they materialize.
-	    - Enforce strict password policies and use multi-factor authentication (MFA).
-	- **Deflect Attacks**:
-	    - Use deception technologies such as honeypots and honeynets to divert attackers.
-	    - Implement load balancers to distribute traffic and reduce the impact of attacks.
-	    - Deploy cloud-based DDoS protection services.
-	    - Use network address translation (NAT) to obscure internal network structure.
-	- **Mitigate Ongoing Attacks**:
-	    - Deploy an incident response team to manage and mitigate the attack.
-	    - Use firewall rules to block malicious IP addresses and domains.
-	    - Implement rate limiting and traffic shaping to control traffic flow.
-	    - Engage with law enforcement and security vendors for assistance.
-	    - Isolate affected systems to prevent the spread of the attack.
-	- **Perform Post-Attack Forensics**:
-	    - Collect and analyze logs from all relevant systems.
-	    - Preserve evidence for potential legal action.
-	    - Conduct a root cause analysis to determine how the attack occurred.
-	    - Review and update security policies and procedures based on findings.
-	    - Communicate findings and lessons learned to stakeholders and improve defenses.
-	- **Incident Response Planning**:
-	    - Develop and maintain an incident response plan (IRP).
-	    - Conduct regular training and simulation exercises for the incident response team.
-	    - Establish clear communication channels for incident reporting and response.
-	- **Continuous Monitoring and Improvement**:
-	    - Implement continuous monitoring of networks and systems for real-time threat detection.
-	    - Use security information and event management (SIEM) systems to aggregate and analyze security data.
-	    - Regularly review and update detection and countermeasure strategies based on emerging threats and vulnerabilities.
-	    - Perform regular security audits and compliance checks.
+    - **Protect Secondary Victims**: Implementing strategies to protect systems indirectly affected by the attack.
+    - **Neutralize Handlers**: Disabling the control mechanisms used to manage botnets.
+    - **Prevent Potential Attacks**: Implementing preemptive measures to deter future attacks.
+    - **Deflect Attacks**: Redirecting malicious traffic away from the target.
+    - **Mitigate Ongoing Attacks**: Implementing real-time defenses to reduce the impact of an ongoing attack.
+    - **Post-Attack Forensics**: Analyzing the attack to improve future defenses.
 
-## ISP Level Protection
-- **Collaboration**: Work with ISPs to implement large-scale defenses.
+#### ISP Level Protection
+- **Collaboration**: Working with ISPs to implement large-scale defenses.
 
-## Protection Tools and Techniques
-- **Tools**: Firewalls, intrusion detection systems (IDS), honeypots (e.g., SSHHiPot, Artillery).
-- **Techniques**: Rate limiting, IP blacklisting, traffic analysis, and behavior-based detection.
+#### Protection Tools and Techniques
+- **Firewalls**: Configuring rules to block malicious traffic.
+- **Intrusion Detection Systems (IDS)**: Monitoring network traffic for suspicious activity.
+- **Honeypots**: Deploying decoy systems to attract and analyze attacks (e.g., SSHHiPot, Artillery).
+- **Rate Limiting**: Controlling the rate of incoming traffic to prevent overload.
+- **IP Blacklisting**: Blocking traffic from known malicious IP addresses.
+- **Traffic Analysis**: Analyzing traffic patterns to identify and block attacks.
+- **Behavior-Based Detection**: Identifying attacks based on anomalous behavior patterns.
+
+#### Additional Information (Added)
+- **Advanced Mitigation Techniques**: Use of AI and machine learning to predict and mitigate attacks.
+- **Cloud-Based DDoS Protection**: Leveraging cloud services for scalable DDoS protection.
+- **Legal and Ethical Considerations**: Understanding the legal implications and ethical considerations of implementing certain countermeasures.
 ---
 
 # Lecture 22: IDS, IPS, Firewall Evasion
