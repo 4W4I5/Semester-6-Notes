@@ -379,15 +379,64 @@
 - Decrease the time-out period for pending connections.
 - Use SYN cookies and SynAttackProtect.
 
-## Detection and Countermeasures
-- **Detection Techniques**: Identify unusual traffic patterns, implement rate-limiting, and use anomaly detection systems.
+## DDOS Detection and Countermeasures
+- **Detection Techniques**:
+	- Identify unusual traffic patterns.
+	- Implement rate-limiting to control traffic flow.
+	- Use anomaly detection systems to detect deviations from normal behavior.
+	- Deploy network traffic analysis tools to monitor real-time traffic.
+	- Utilize signature-based detection for known attack patterns.
+	- Implement behavioral analysis to detect abnormal user and network behavior.
+	- Conduct regular vulnerability assessments and penetration testing.
 - **Countermeasure Strategies**:
-    - Protect secondary victims.
-    - Neutralize handlers.
-    - Prevent potential attacks.
-    - Deflect attacks.
-    - Mitigate ongoing attacks.
-    - Perform post-attack forensics.
+	- **Absorb the attack:**
+		- Requires preplanning + Additional Resources
+	- **Degrading Services:**
+		- Only keep critical functions running until attack has subsided
+	- **Shutting down**
+		- While mentioned in the slides, this is stupid as this is exactly what the attacker intends for
+	- **Protect Secondary Victims**:
+	    - Implement network segmentation to isolate critical systems.
+	    - Use access control lists (ACLs) to restrict traffic to and from vulnerable areas.
+	    - Ensure robust backup systems to protect data integrity.
+	    - Educate secondary victims on security best practices.
+	- **Neutralize Handlers**:
+	    - Identify and disable command and control (C&C) servers used by attackers.
+	    - Use threat intelligence to update blacklists of known malicious IP addresses.
+	    - Deploy honeypots to attract and neutralize malicious traffic.
+	    - Engage with ISPs to take down malicious domains and servers.
+	- **Prevent Potential Attacks**:
+	    - Apply patches and updates to all systems and applications promptly.
+	    - Implement strong authentication and authorization mechanisms.
+	    - Use encryption to protect data in transit and at rest.
+	    - Employ proactive threat hunting to identify and mitigate threats before they materialize.
+	    - Enforce strict password policies and use multi-factor authentication (MFA).
+	- **Deflect Attacks**:
+	    - Use deception technologies such as honeypots and honeynets to divert attackers.
+	    - Implement load balancers to distribute traffic and reduce the impact of attacks.
+	    - Deploy cloud-based DDoS protection services.
+	    - Use network address translation (NAT) to obscure internal network structure.
+	- **Mitigate Ongoing Attacks**:
+	    - Deploy an incident response team to manage and mitigate the attack.
+	    - Use firewall rules to block malicious IP addresses and domains.
+	    - Implement rate limiting and traffic shaping to control traffic flow.
+	    - Engage with law enforcement and security vendors for assistance.
+	    - Isolate affected systems to prevent the spread of the attack.
+	- **Perform Post-Attack Forensics**:
+	    - Collect and analyze logs from all relevant systems.
+	    - Preserve evidence for potential legal action.
+	    - Conduct a root cause analysis to determine how the attack occurred.
+	    - Review and update security policies and procedures based on findings.
+	    - Communicate findings and lessons learned to stakeholders and improve defenses.
+	- **Incident Response Planning**:
+	    - Develop and maintain an incident response plan (IRP).
+	    - Conduct regular training and simulation exercises for the incident response team.
+	    - Establish clear communication channels for incident reporting and response.
+	- **Continuous Monitoring and Improvement**:
+	    - Implement continuous monitoring of networks and systems for real-time threat detection.
+	    - Use security information and event management (SIEM) systems to aggregate and analyze security data.
+	    - Regularly review and update detection and countermeasure strategies based on emerging threats and vulnerabilities.
+	    - Perform regular security audits and compliance checks.
 
 ## ISP Level Protection
 - **Collaboration**: Work with ISPs to implement large-scale defenses.
