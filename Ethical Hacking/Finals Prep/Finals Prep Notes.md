@@ -712,7 +712,11 @@
     - Avoid detection by signature-based IDS that check for known attack patterns in single, larger packets.
 - **Time-To-Live Attack**
     - Manipulate TTL to bypass network security.
-    - Set the TTL value of packets to expire before reaching the IDS.
+    - Set the TTL value of packets to expire before reaching the IDS. Frag malicious packet into 3 frags
+	    - Send Frag1-HighTTL + Frag2-LowTTL
+	    - IDS checks both, Target only gets the 1st frag
+	    - Send Frag3-HighTTL
+	    - IDS
     - Ensure that the IDS does not see the packet while the target does.
 - **Invalid RST Packets**
     - Send invalid reset packets to disrupt connections.
