@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Ethical Hacking/Finals Prep/Finals Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Ethical Hacking/Finals Prep/Finals Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Ethical Hacking/Finals Prep/Finals Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Ethical Hacking/Finals Prep/Finals Prep Notes.md"
               }
             }
           },
@@ -172,8 +172,10 @@
   },
   "active": "8c6d55feab7a2f1f",
   "lastOpenFiles": [
-    "VARE/Finals Prep/Finals Prep Notes.md",
     "README.md",
+    "Ethical Hacking/Finals Prep/Finals Prep Notes.md",
+    "Ethical Hacking/Finals Prep",
+    "VARE/Finals Prep/Finals Prep Notes.md",
     "VARE/Sessional 2 Prep/Sessional 2 Prep Notes.md",
     "VARE/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "VARE/Finals Prep",
@@ -195,7 +197,6 @@
     "Forensics/Sessional 1 Prep",
     "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "InfoSec/Info_sec/Info sec P1.pdf",
-    "InfoSec/Sessional 1 Prep",
     "InfoSec/2_InfoSec_30th_Jan, 2024.md",
     "InfoSec/3_InfoSec_1st_Feb, 2024.md",
     "InfoSec/6_InfoSec_15th_Feb, 2024.md",
@@ -207,7 +208,6 @@
     "Ethical Hacking/4_Ethical Hacking_12th_Feb, 2024.md",
     "Ethical Hacking/5_Ethical Hacking_14th_Feb, 2024.md",
     "VARE/1_VARE_25th_Jan, 2024.md",
-    "VARE/3_VARE_1st_Feb, 2024.md",
     "InfoSec/Info_sec/Info sec/Info sec P9.png",
     "InfoSec/Info_sec/Info sec/Info sec P8.png",
     "InfoSec/Info_sec/Info sec/Info sec P7.png",
