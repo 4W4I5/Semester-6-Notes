@@ -290,7 +290,7 @@
 ---
 
 # Lecture 21: DoS & DDoS
-## Overview of DoS/DDoS
+## DoS/DDoS
 - **Denial of Service (DoS) Attack**
     - Definition: An attack on a computer or network that reduces, restricts, or prevents access to system resources for legitimate users.
     - Goal: To make a system or network resource unavailable to its intended users.
@@ -316,7 +316,7 @@
 - Physical destruction or alteration of network components.
 - Destruction of programs and files in a computer system.
 
-## Categories of DoS/DDoS Attack Vectors
+## DoS/DDoS Attack Vectors
 - **Volumetric Attacks**
     - **Definition**: Exhaust bandwidth either within the target network or between the target and the rest of the Internet.
     - **Magnitude**: Measured in bits per second (bps).
