@@ -627,6 +627,28 @@
         - Trap web crawlers extracting sensitive information.
     - **Honeynets**:
         - Networks of honeypots to determine adversaries' capabilities.
+- **Detecting Honeypots**
+	- **Probe services on system**
+		- Craft malicious HTTPS, SMTPS or IMAPS packets
+		- Deny the 3-way handshake to confirm if service is running
+		- Can extend this by using TOR for multiprobes
+	- **Detect Layer 7 TarPits**
+		- Observe Latency Response
+	- **Detect Layer 4 TarPits**
+		- Observe TCP window Size, could constantly ACK packets even if it is 0
+	- **Detect Layer 2 TarPits**
+		- Observe MAC address **0:0:f:ff:ff:ff**
+			- Acts as a black hole
+	- **Detect Honeypots running on VMWare**
+		- Observe IEEE standards for current range of MAC addresses assigned to VMWare inc
+	- **Detect presence of HoneyD Honeypot**
+		- Observe time-based TCP Fingerprinting behavior (SYN-Proxy)
+	- **Detect presence of User-Mode Linux Honeypot**
+	- **Detect presence of Sebek-based Honeypot**
+	- **Detect presence of Snort_inline Honeypot**
+	- **Detect presence of Fake AP**
+	- **Detect presence of Bait&Switch Honeypot**
+
 
 #### **Intrusion Detection Tools:**
 - **Snort**:
