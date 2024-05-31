@@ -44,19 +44,25 @@
     - Used to capture and analyze network traffic without interference.
     - Advantages include mobility, flexibility, and high throughput.
     - Examples: Products from Keysight Technologies, RADCOM, Fluke.
-- **SPAN Port**
-    - Used for network performance monitoring.
-    - Allows capturing traffic from one port on a switch to another port using tools like Wireshark.
+	- **SPAN Port**
+	    - Used for network performance monitoring.
+	    - Allows capturing traffic from one port on a switch to another port using tools like Wireshark.
+	    - In essence it follows the logic of a wiretap where you are tapped into the flow of communication
 - **Wiretapping**
-    - **Active Wiretapping**: Monitors and alters communications.
-    - **Passive Wiretapping**: Monitors and records without alteration.
+    - **Active Wiretapping**: Monitors and alters communications. Example can be port forwarding
+    - **Passive Wiretapping**: Monitors and records without alteration. Example is SPAN
     - **Lawful Interception**: Legal wiretapping by law enforcement agencies.
 - **PRISM**
     - A program by NSA for monitoring communications passing through or stored on US servers.
     - Collects data to identify and monitor suspicious activities.
 - **MAC Attacks**
     - **MAC Address and CAM Table**:
-        - MAC address: 48-bit unique identifier for network devices.
+        - MAC address: 48-bit unique identifier for network devices. Comprised of OUI-NIC
+	        - Offsets
+		        - 24-bit Object Unique Identifier (OUI)
+		        - 24-bit Network-Interface Controller (NIC)
+		    - Notable things
+			    - First Octet -> 7th Bit is for Globally Unique/Locally administered. 8th Bit is for Unicast/Multicast
         - CAM table: Used in switches to map MAC addresses to ports for packet forwarding.
     - **MAC Flooding**:
         - Overloads CAM table with fake MAC addresses causing the switch to broadcast packets.
