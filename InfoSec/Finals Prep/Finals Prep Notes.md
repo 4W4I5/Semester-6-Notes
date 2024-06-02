@@ -103,7 +103,9 @@
 		- g = 1F83D9ABFB41BD6B
 		- h = 5BE0CD19137E2179
 4. **Round Function:**
-   #### WARN: Diagram nhi smjha
+	- Each current block is hashed with the previous output (the buffer contents for the first block) for N number of blocks
+	- Perform Round & Addition for each block
+	- #### WARN: Diagram nhi smjha
    <!--
    - The round function processes each 1024-bit block using a series of logical functions and bitwise operations to update the hash value.
    - **Example Rounds:**
