@@ -1,12 +1,12 @@
 > [!WARNING]
-> Used GPT to convert pptx files into md files, have not processed these myself yet
+> Used GPT to convert pptx files into md files, only those marked with :white_check_mark: have been processed
 
-| Title                                                     | Status    |
-| --------------------------------------------------------- | --------- |
-| Lecture 11: Cryptographic Hash Functions                  | :warning: |
-| Lecture 12: Message Authentication Codes                  | :warning: |
-| Lecture 13: Digital Signatures                            | :warning: |
-| Lecture 14: Cryptographic Key Management and Distribution | :warning: |
+| Title                                                     | Status             |
+| --------------------------------------------------------- | ------------------ |
+| Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: | 
+| Lecture 12: Message Authentication Codes                  | :warning:          |
+| Lecture 13: Digital Signatures                            | :warning:          |
+| Lecture 14: Cryptographic Key Management and Distribution | :warning:          |
 
 # Lecture 11: Cryptographic Hash Functions
 ## Introduction
