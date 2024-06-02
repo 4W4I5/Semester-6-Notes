@@ -32,16 +32,14 @@
 - **Flows:** Methods of Authentication
 	- Encrypt message+hash before sending
 	- Encrypt hash before sending
+	- #### WARN: 2 more but diagram ki smjh nhi aarhi
 
 
 ## Digital Signatures
 - **Mechanism:** The hash value of a message is encrypted with the sender's private key.
-- **Verification:** Anyone with the sender's public key can verify the message's integrity.
-- **Example:** Digital certificates in SSL/TLS protocols.
-
-## Examples of Digital Signatures
-- **SSL/TLS Certificates:** Ensure secure communication over the internet.
-- **Code Signing:** Verifies the integrity and origin of software applications.
+- **Verification:** Anyone with the sender's public key can verify the message's integrity but to alter it would need to know the private key as well.
+- **Example:**
+	- #### WARN: Cant understand diagrams
 
 ## Password Verification
 - **Mechanism:** Passwords are hashed and stored. During login, the entered password is hashed and compared to the stored hash.
@@ -50,29 +48,41 @@
 ## Simple Hash Function
 - **Process:** Input as a sequence of \( n \)-bit blocks processed iteratively.
 - **XOR Hash Function:** Bit-by-bit XOR of every block.
-
-## Problem with Simple Hash Function
-- **Effectiveness:** Effective for random data, probability of unchanged hash value due to data error is \( 2^{-n} \).
-- **Example:** For a 128-bit hash value, effective probability for normal text files with high-order bit zero is \( 2^{-112} \).
-
-## Improvement of Simple Hash Function
-- **Circular Shift:** Perform a one-bit circular shift on the hash value after each block.
-- **Procedure:**
-  1. Initialize \( n \)-bit hash value to zero.
-  2. For each \( n \)-bit block:
-     - Rotate hash value left by one bit.
-     - XOR block into hash value.
+- **Problems: **
+	- **Effectiveness:** Effective for random data, probability of unchanged hash value due to data error is \( 2<sup>-n</sup> \).
+	- **Example:** For a 128-bit hash value, effective probability for normal text files with high-order bit zero is \( 2<sup>-112</sup> \).
+- **Improvement:**
+	- **Circular Shift:** Perform a one-bit circular shift on the hash value after each block.
+	- **Procedure:**
+	  1. Initialize \( n \)-bit hash value to zero.
+	  2. For each \( n \)-bit block:
+	     - Rotate hash value left by one bit.
+	     - XOR block into hash value.
 
 ## Requirements and Security
-- **Pre-image Resistance:** Difficult to find any input \( x \) that maps to a specific hash \( h \).
-- **Second Pre-image Resistance:** Difficult to find any second input \( x' \) such that \( H(x) = H(x') \).
-- **Collision Resistance:** Difficult to find any two distinct inputs \( x \) and \( x' \) such that \( H(x) = H(x') \).
+| **Requirement**                                      | **Description**                                                                                                  |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Variable input size                                  | H can be applied to a block of data of any size.                                                                 |
+| Fixed output size                                    | H produces a fixed-length output.                                                                                |
+| Efficiency                                           | H(x) is relatively easy to compute for any given x, making both hardware and software implementations practical. |
+| Preimage resistant (one-way property)                | For any given hash value h, it is computationally infeasible to find y such that H(y) = h.                       |
+| Second preimage resistant (weak collision resistant) | For any given block x, it is computationally infeasible to find y ≠ x with H(y) = H(x).                          |
+| Collision resistant (strong collision resistant)     | It is computationally infeasible to find any pair (x, y) with x ≠ y, such that H(x) = H(y).                      |
+| Pseudorandomness                                     | Output of H meets standard tests for pseudorandomness.                                                           |
 
 ## Hash Properties for Hash Functions
-- **Deterministic:** Same input always produces the same output.
-- **Quick Computation:** Hash function should be efficient to compute.
-- **Small Changes:** Any small change to the input should produce a significantly different hash.
-- **Fixed Output Size:** The output hash should have a fixed size, regardless of the input size.
+|                                         | Preimage Resistant | Second Preimage Resistant | Collision Resistant |
+| --------------------------------------- | ------------------ | ------------------------- | ------------------- |
+| Hash + digital signature                | yes                | yes                       | yes*                |
+| Intrusion detection and virus detection |                    | yes                       |                     |
+| Hash + symmetric encryption             |                    |                           |                     |
+| One-way password file                   | yes                |                           |                     |
+| MAC                                     | yes                | yes                       | yes*                |
+- **Property Definitions**
+	- **Pre-image Resistance:** Difficult to find any input xxx that maps to a specific hash hhh.
+	- **Second Pre-image Resistance:** Difficult to find any second input x′x'x′ such that H(x)=H(x′)H(x) = H(x')H(x)=H(x′).
+	- **Collision Resistance:** Difficult to find any two distinct inputs xxx and x′x'x′ such that H(x)=H(x′)H(x) = H(x')H(x)=H(x′).
+
 
 ## Secure Hash Algorithm (SHA)
 ### SHA-512 Logic
