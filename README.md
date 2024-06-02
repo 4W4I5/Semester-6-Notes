@@ -36,11 +36,11 @@
 
 # Information Security
 
-| Exam                                                                        | Status                                                                                                             |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [Sessional 1](InfoSec/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :x: \|  [Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf) |
-| [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :x:                                                                                                                   |
-| [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :x:                                                                                                                   |
+| Exam                                                                                                                      | Status             |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| [Sessional 1 \| Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf) | :white_check_mark: |
+| [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md)                                               | :x:                |
+| [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                                                                  | :x:                |
 
 # Ethical Hacking
 
@@ -48,4 +48,4 @@
 | ------------------------------------------------------------------------------------- | ------------------ |
 | [Sessional 1](Ethical%20Hacking/Sessional%201%20Prep/Sessional%201%20Prep%20Notes.md) | :white_check_mark: |
 | [Sessional 2](Ethical%20Hacking/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md) | :white_check_mark: |
-| [Finals](Ethical%20Hacking/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark: | 
+| [Finals](Ethical%20Hacking/Finals%20Prep/Finals%20Prep%20Notes.md)                    | :white_check_mark: |
