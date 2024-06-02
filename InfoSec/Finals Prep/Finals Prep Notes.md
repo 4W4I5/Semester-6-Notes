@@ -29,6 +29,9 @@
 	- **Message Digest:** A hash value used to authenticate a message.
 - **Flaw:** Susceptible to a MITM attack
 	- Attacker modifies contents of the message without the hash and recomputes the hash to match
+- **Flows:** Methods of Authentication
+	- Encrypt message+hash before sending
+	- Encrypt hash before sending
 
 
 ## Digital Signatures
