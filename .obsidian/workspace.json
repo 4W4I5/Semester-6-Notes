@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "InfoSec/Finals Prep/Finals Prep Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "InfoSec/Finals Prep/Finals Prep Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "InfoSec/Finals Prep/Finals Prep Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "InfoSec/Finals Prep/Finals Prep Notes.md"
               }
             }
           },
@@ -172,9 +172,9 @@
   },
   "active": "8c6d55feab7a2f1f",
   "lastOpenFiles": [
+    "README.md",
     "InfoSec/Sessional 1 Prep/Sessional 1 Prep Notes.md",
     "InfoSec/Finals Prep/Finals Prep Notes.md",
-    "README.md",
     "InfoSec/Finals Prep",
     "Ethical Hacking/Finals Prep/Finals Prep Notes.md",
     "Ethical Hacking/Finals Prep",

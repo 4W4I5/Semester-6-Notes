@@ -13,10 +13,8 @@
 - **Definition:** A hash function \( H \) accepts a variable-length block of data \( M \) and produces a fixed-size result \( h = H(M) \) called a hash value or hash code.
 - **Primary Objective:** Ensure data integrity.
 - **Property:** Any change in \( M \) results in a change in the hash value with high probability.
-
-## Cryptographic Hash Function
-- **One-way property:** Computationally infeasible to find a data object that maps to a pre-specified hash result.
-- **Collision-free property:** Computationally infeasible to find two data objects that map to the same hash result.
+	- **One-way property:** Computationally infeasible to find a data object that maps to a pre-specified hash result.
+	- **Collision-free property:** Computationally infeasible to find two data objects that map to the same hash result.
 - **Usage:** Verify if data has changed.
 
 ## Applications of Cryptographic Hash Functions
@@ -28,11 +26,10 @@
 
 ## Message Authentication
 - **Mechanism:** Verifies the integrity of a message and ensures it has not been altered.
-- **Message Digest:** A hash value used to authenticate a message.
+	- **Message Digest:** A hash value used to authenticate a message.
+- **Flaw:** Susceptible to a MITM attack
+	- Attacker modifies contents of the message without the hash and recomputes the hash to match
 
-## Man-in-the-Middle (MITM) Attack
-- **Description:** An attacker intercepts and possibly alters the communication between two parties.
-- **Prevention:** Use of secure hash functions and cryptographic protocols to detect alterations and verify authenticity.
 
 ## Digital Signatures
 - **Mechanism:** The hash value of a message is encrypted with the sender's private key.
