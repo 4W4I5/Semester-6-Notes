@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > Classwise notes are no longer being made. Only sessional and finals prep material will be available.
-> While i may not make classwise notes anymore, you are more than welcome to clone the repo and push your own notes here. I'll link them as soon as possible.
+> While i may not make classwise notes anymore, you are more than welcome to fork the repo and push your own notes here. I'll link them as soon as possible.
 
 | Symbols            | Meaning          |
 | ------------------ | ---------------- |
@@ -40,7 +40,7 @@
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | [Sessional 1 \| Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf) | :white_check_mark: |
 | [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md)                                               | :x:                |
-| [Finals](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                                                                  | :x:                |
+| [Finals \| Very Rough](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                                                    | :warning:          |
 
 # Ethical Hacking
 
