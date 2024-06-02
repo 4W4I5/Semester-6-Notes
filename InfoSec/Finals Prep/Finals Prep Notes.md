@@ -3,7 +3,7 @@
 
 | Title                                                     | Status             |
 | --------------------------------------------------------- | ------------------ |
-| Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: | 
+| Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: |
 | Lecture 12: Message Authentication Codes                  | :warning:          |
 | Lecture 13: Digital Signatures                            | :warning:          |
 | Lecture 14: Cryptographic Key Management and Distribution | :warning:          |
