@@ -1,7 +1,12 @@
-| Title                                    | Status    |
-| ---------------------------------------- | --------- |
-| Lecture 11: Cryptographic Hash Functions | :warning: |
-|                                          |           |
+> [!WARNING]
+> Used GPT to convert pptx files into md files, have not processed these myself yet
+
+| Title                                                     | Status    |
+| --------------------------------------------------------- | --------- |
+| Lecture 11: Cryptographic Hash Functions                  | :warning: |
+| Lecture 12: Message Authentication Codes                  | :warning: |
+| Lecture 13: Digital Signatures                            | :warning: |
+| Lecture 14: Cryptographic Key Management and Distribution | :warning: |
 
 # Lecture 11: Cryptographic Hash Functions
 ## Introduction
@@ -265,4 +270,101 @@ Frame Check Sequence (FCS) or Checksum is an error-detecting code commonly used 
 
 ---
 
-# Lecture 14: C
+# Lecture 14: Cryptographic Key Management and Distribution
+## Key Distribution Options
+For two parties A and B, key distribution can be achieved in several ways:
+
+1. **Physical Delivery by A**: A can select a key and physically deliver it to B.
+2. **Third-Party Selection**: A third party can select the key and physically deliver it to A and B.
+3. **Using Previous Keys**: If A and B have previously and recently used a key, one party can transmit the new key to the other, encrypted using the old key.
+4. **Encrypted Connection to a Third Party**: If A and B each have an encrypted connection to a third party C, C can deliver a key on the encrypted links to A and B.
+
+## Key Distribution Between Two Communicating Entities
+
+### Key Hierarchy
+- **Description**: The key hierarchy establishes different levels of keys with specific roles. For instance, master keys, session keys, and encryption keys. Each level of keys serves a different purpose and provides different levels of security.
+
+### Symmetric Key Distribution Using Asymmetric Encryption
+
+#### Simple Secret Key Distribution
+- **Diagram**: Two parties exchange a secret key using a simple protocol where one party sends the key encrypted with the other's public key.
+- **Explanation**:
+    1. **Initiator A**: Encrypts the secret key with the public key of responder B and sends it.
+    2. **Responder B**: Decrypts the received message with its private key to obtain the secret key.
+
+#### Man-in-the-Middle (MITM) Attack
+- **Diagram**: An attacker intercepts the communication between A and B.
+- **Explanation**:
+    1. The attacker intercepts the public key sent from A to B.
+    2. The attacker sends its own public key to B, pretending to be A.
+    3. B encrypts the secret key with the attacker's public key.
+    4. The attacker decrypts the message, reads the secret key, re-encrypts it with the real public key of B, and forwards it.
+
+### Secret Key Distribution with Confidentiality and Authentication
+- **Diagram**: An improved protocol that ensures both confidentiality and authentication.
+- **Explanation**:
+    1. **Initiator A**: Encrypts the secret key with B's public key and signs the message with its private key.
+    2. **Responder B**: Verifies the signature using A's public key and decrypts the message with its private key to obtain the secret key.
+
+## Distribution of Public Keys
+
+### Public Announcement of Public Keys
+Anyone can forge a public announcement. That is, some user could pretend to be user A and send a public key to another participant or broadcast such a public key. Until user A discovers the forgery and alerts other participants, the forger can read all encrypted messages intended for A and use the forged keys for authentication.
+
+### Publicly Available Directory
+1. The authority maintains a directory with a {name, public key} entry for each participant.
+2. Each participant registers a public key with the directory authority. Registration would have to be in person or by some form of secure, authenticated communication.
+3. A participant may replace the existing key with a new one at any time, either because of the desire to replace a public key that has already been used for a large amount of data or because the corresponding private key has been compromised.
+4. Participants could access the directory electronically. Secure, authenticated communication from the authority to the participant is mandatory.
+
+This scheme is more secure than individual public announcements but still has vulnerabilities. If an adversary obtains or computes the private key of the directory authority, the adversary could authoritatively pass out counterfeit public keys and impersonate any participant and eavesdrop on messages sent to any participant. Another way to achieve the same end is for the adversary to tamper with the records kept by the authority.
+
+### Public-Key Authority
+The public-key authority could be a bottleneck in the system, as a user must appeal to the authority for a public key for every other user it wishes to contact. As before, the directory of names and public keys maintained by the authority is vulnerable to tampering.
+
+### Public-Key Certificates
+
+#### X.509 Certificates
+ITU-T recommendation X.509 is part of the X.500 series of recommendations that define a directory service. X.509 defines a framework for the provision of authentication services by the X.500 directory to its users. X.509 is an important standard because the certificate structure and authentication protocols defined in X.509 are used in a variety of contexts.
+
+#### X.509 Public-Key Certificate Use
+- **Diagram**: Illustrates how public key certificates are used in authentication.
+- **Explanation**:
+    1. **Unsigned Certificate**: Contains user ID and user’s public key.
+    2. **Generate Hash**: Create a hash code of the unsigned certificate.
+    3. **Sign Certificate**: Use the CA’s private key to form a signature on the hash code.
+    4. **Verify Algorithm**: The recipient uses the CA’s public key to verify the signature.
+
+#### X.509 Certificate Format
+- **Diagram**: Shows the structure of an X.509 certificate.
+- **Components**:
+    - Version
+    - Certificate Serial Number
+    - Signature Algorithm Identifier
+    - Issuer Name
+    - Validity Period (Not Before, Not After)
+    - Subject’s Public Key Information
+    - Issuer Unique Identifier (Optional)
+    - Subject Unique Identifier (Optional)
+    - Extensions (Optional)
+    - Signature
+
+### How to Verify the Certificate
+Suppose A has obtained a certificate from certification authority X1 and B has obtained a certificate from CA X2. If A does not securely know the public key of X2, then B’s certificate issued by X2 is useless to A. A can read B’s certificate but cannot verify the signature.
+
+However, if the two CAs have securely exchanged their own public keys, the following procedure will enable A to obtain B’s public key:
+
+1. Obtain from the directory the certificate of X2 signed by X1. Because A securely knows X1’s public key, A can obtain X2’s public key from its certificate and verify it using X1’s signature on the certificate.
+2. A then goes back to the directory and obtains the certificate of B signed by X2. Because A now has a trusted copy of X2’s public key, A can verify the signature and securely obtain B’s public key.
+
+### Example PKI Scenario
+- **Diagram**: Illustrates a Public Key Infrastructure (PKI) scenario.
+- **Explanation**:
+    - **Entities**:
+        - **Certification Authority (CA)**: Issues and manages certificates.
+        - **Registration Authority (RA)**: Handles the registration process for users.
+        - **End User**: Utilizes the certificates for secure communication.
+    - **Process**:
+        1. **Request for Certificate**: The end user requests a certificate from the RA.
+        2. **Issuing Certificate**: The CA issues the certificate and the user can now use it for secure communication.
+        3. **Using Certificates**: The end user can now use their private key to sign messages and others can use the corresponding public key to verify the signatures.
