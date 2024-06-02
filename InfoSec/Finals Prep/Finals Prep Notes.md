@@ -105,6 +105,8 @@
 4. **Round Function:**
 	- Each current block is hashed with the previous output (the buffer contents for the first block) for N number of blocks
 	- Perform Round & Addition for each block
+	- Diagram Interpretation
+		- `a = SUM(MAJ(a,b,c))`
 	- #### WARN: Diagram nhi smjha
    <!--
    - The round function processes each 1024-bit block using a series of logical functions and bitwise operations to update the hash value.
