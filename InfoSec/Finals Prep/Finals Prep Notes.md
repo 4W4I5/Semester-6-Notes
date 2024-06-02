@@ -3,16 +3,16 @@
 
 | Title                                                     | Status             |
 | --------------------------------------------------------- | ------------------ |
-| Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: |
+| Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: (Diagrams not done yet) |
 | Lecture 12: Message Authentication Codes                  | :warning:          |
 | Lecture 13: Digital Signatures                            | :warning:          |
 | Lecture 14: Cryptographic Key Management and Distribution | :warning:          |
 
 # Lecture 11: Cryptographic Hash Functions
 ## Introduction
-- **Definition:** A hash function \( H \) accepts a variable-length block of data \( M \) and produces a fixed-size result \( h = H(M) \) called a hash value or hash code.
+- **Definition:** A hash function ( H ) accepts a variable-length block of data ( M ) and produces a fixed-size result ( h = H(M) ) called a hash value or hash code.
 - **Primary Objective:** Ensure data integrity.
-- **Property:** Any change in \( M \) results in a change in the hash value with high probability.
+- **Property:** Any change in ( M ) results in a change in the hash value with high probability.
 	- **One-way property:** Computationally infeasible to find a data object that maps to a pre-specified hash result.
 	- **Collision-free property:** Computationally infeasible to find two data objects that map to the same hash result.
 - **Usage:** Verify if data has changed.
@@ -46,16 +46,16 @@
 - **Security:** Protects against password theft by storing only the hash.
 
 ## Simple Hash Function
-- **Process:** Input as a sequence of \( n \)-bit blocks processed iteratively.
+- **Process:** Input as a sequence of ( n )-bit blocks processed iteratively.
 - **XOR Hash Function:** Bit-by-bit XOR of every block.
 - **Problems: **
-	- **Effectiveness:** Effective for random data, probability of unchanged hash value due to data error is \( 2<sup>-n</sup> \).
-	- **Example:** For a 128-bit hash value, effective probability for normal text files with high-order bit zero is \( 2<sup>-112</sup> \).
+	- **Effectiveness:** Effective for random data, probability of unchanged hash value due to data error is ( 2<sup>-n</sup> ).
+	- **Example:** For a 128-bit hash value, effective probability for normal text files with high-order bit zero is ( 2<sup>-112</sup> ).
 - **Improvement:**
 	- **Circular Shift:** Perform a one-bit circular shift on the hash value after each block.
 	- **Procedure:**
-	  1. Initialize \( n \)-bit hash value to zero.
-	  2. For each \( n \)-bit block:
+	  1. Initialize ( n )-bit hash value to zero.
+	  2. For each ( n )-bit block:
 	     - Rotate hash value left by one bit.
 	     - XOR block into hash value.
 
@@ -86,27 +86,31 @@
 
 ## Secure Hash Algorithm (SHA)
 ### SHA-512 Logic
-- **Input:** Message with a maximum length of less than \( 2^{128} \) bits. In 1024-bit blocks
+- **Input:** Message with a maximum length of less than ( 2^{128} ) bits. In 1024-bit blocks
 - **Output:** 512-bit message digest.
 
 ### SHA-512 Steps
 1. **Append Padding Bits:** Length congruent to 896 modulo 1024, padding consists of one 1 bit followed by necessary 0 bits.
-2. **Append Length:** Append 128-bit block containing the length of the original message.
+2. **Append Length:** Append 128-bit block containing the length of the original message before padding.
 3. **Initialize Hash Buffer:** 512-bit buffer as eight 64-bit registers.
-   - \( a = 6A09E667F3BCC908 \)
-   - \( b = BB67AE8584CAA73B \)
-   - \( c = 3C6EF372FE94F82B \)
-   - \( d = A54FF53A5F1D36F1 \)
-   - \( e = 510E527FADE682D1 \)
-   - \( f = 9B05688C2B3E6C1F \)
-   - \( g = 1F83D9ABFB41BD6B \)
-   - \( h = 5BE0CD19137E2179 \)
-
+	- **Values:**
+		- a = 6A09E667F3BCC908
+		- b = BB67AE8584CAA73B
+		- c = 3C6EF372FE94F82B
+		- d = A54FF53A5F1D36F1
+		- e = 510E527FADE682D1
+		- f = 9B05688C2B3E6C1F
+		- g = 1F83D9ABFB41BD6B
+		- h = 5BE0CD19137E2179
 4. **Round Function:**
+   #### WARN: Diagram nhi smjha
+   <!--
    - The round function processes each 1024-bit block using a series of logical functions and bitwise operations to update the hash value.
    - **Example Rounds:**
      - **Message Schedule:** Prepare 80 words from the 1024-bit block.
      - **Compression Function:** Update the hash value with bitwise operations, modular additions, and logical functions.
+
+    -->
 
 ---
 
@@ -164,14 +168,14 @@ Two methods:
 
 ### CBC MAC (CMAC)
 **Description**:
-- An adversary can exploit CBC MAC when given the CBC MAC of a one-block message \( X \):
-  - If \( T = \text{MAC}(K, X) \)
-  - The adversary knows the CBC MAC for the two-block message \( X \parallel (X \oplus T) \), which is also \( T \).
+- An adversary can exploit CBC MAC when given the CBC MAC of a one-block message ( X ):
+  - If ( T = \text{MAC}(K, X) )
+  - The adversary knows the CBC MAC for the two-block message ( X \parallel (X \oplus T) ), which is also ( T ).
 
 **Attack on CMAC:**
 - It cannot be used for variable length messages:
-  - \( T1 = \text{MAC}(M1) \)
-  - \( T2 = \text{MAC}(M2 \oplus T1) = \text{MAC}(M1 \parallel M2) \)
+  - ( T1 = \text{MAC}(M1) )
+  - ( T2 = \text{MAC}(M2 \oplus T1) = \text{MAC}(M1 \parallel M2) )
 
 
 ### Frame Check Sequence /Checksum
@@ -209,73 +213,73 @@ Frame Check Sequence (FCS) or Checksum is an error-detecting code commonly used 
 ### ElGamal Digital Signature Scheme
 
 #### Key Generation
-- **Global Elements**: A prime number \( q \) and a primitive root \( \alpha \) of \( q \).
+- **Global Elements**: A prime number ( q ) and a primitive root ( \alpha ) of ( q ).
 - **User A's Key Pair**: Generated as follows:
-  1. Select a private key \( x \) such that \( 1 < x < q-1 \).
-  2. Compute the public key \( y \) as \( y = \alpha^x \mod q \).
+  1. Select a private key ( x ) such that ( 1 < x < q-1 ).
+  2. Compute the public key ( y ) as ( y = \alpha^x \mod q ).
 
 #### Signature Generation
-1. Choose a random integer \( k \) such that \( 1 < k < q-1 \) and \( \gcd(k, q-1) = 1 \).
-2. Compute \( r = (\alpha^k \mod q) \).
-3. Compute \( k^{-1} \mod (q-1) \).
-4. Compute \( s = (k^{-1} (H(m) - xr)) \mod (q-1) \).
-5. The signature is the pair \( (r, s) \).
+1. Choose a random integer ( k ) such that ( 1 < k < q-1 ) and ( \gcd(k, q-1) = 1 ).
+2. Compute ( r = (\alpha^k \mod q) ).
+3. Compute ( k^{-1} \mod (q-1) ).
+4. Compute ( s = (k^{-1} (H(m) - xr)) \mod (q-1) ).
+5. The signature is the pair ( (r, s) ).
 
 #### Signature Verification
-1. Verify that \( 0 < r < q \) and \( 0 < s < q-1 \).
-2. Compute \( v1 = \alpha^{H(m)} \mod q \).
-3. Compute \( v2 = (y^r r^s) \mod q \).
-4. The signature is valid if \( v1 = v2 \).
+1. Verify that ( 0 < r < q ) and ( 0 < s < q-1 ).
+2. Compute ( v1 = \alpha^{H(m)} \mod q ).
+3. Compute ( v2 = (y^r r^s) \mod q ).
+4. The signature is valid if ( v1 = v2 ).
 
 #### Example
-- For example, let \( q = 23 \), \( \alpha = 5 \), \( x = 6 \), \( y = 8 \), \( k = 15 \), and message \( m = "Hello" \).
+- For example, let ( q = 23 ), ( \alpha = 5 ), ( x = 6 ), ( y = 8 ), ( k = 15 ), and message ( m = "Hello" ).
 - Follow the steps to generate and verify the signature (details would involve specific calculations based on the steps above).
 
 ### NIST Digital Signature Algorithm (DSA)
 - **Overview**: DSA is a Federal Information Processing Standard for digital signatures.
-- **Key Generation**: Involves generating a private key \( x \) and a corresponding public key \( y \).
+- **Key Generation**: Involves generating a private key ( x ) and a corresponding public key ( y ).
 - **Signature Generation**:
-  1. Generate a random number \( k \).
-  2. Compute \( r = (g^k \mod p) \mod q \).
-  3. Compute \( s = (k^{-1}(H(m) + xr)) \mod q \).
+  1. Generate a random number ( k ).
+  2. Compute ( r = (g^k \mod p) \mod q ).
+  3. Compute ( s = (k^{-1}(H(m) + xr)) \mod q ).
 - **Signature Verification**:
-  1. Compute \( w = s^{-1} \mod q \).
-  2. Compute \( u1 = (H(m)w) \mod q \) and \( u2 = (rw) \mod q \).
-  3. Compute \( v = ((g^{u1} y^{u2}) \mod p) \mod q \).
-  4. The signature is valid if \( v = r \).
+  1. Compute ( w = s^{-1} \mod q ).
+  2. Compute ( u1 = (H(m)w) \mod q ) and ( u2 = (rw) \mod q ).
+  3. Compute ( v = ((g^{u1} y^{u2}) \mod p) \mod q ).
+  4. The signature is valid if ( v = r ).
 
 ### Elliptic Curve Digital Signature Algorithm (ECDSA)
 
 #### Process Overview
 - **Elements Involved**:
-  - **Global Domain Parameters**: Defines an elliptic curve \( E \) and a base point \( G \) on \( E \).
+  - **Global Domain Parameters**: Defines an elliptic curve ( E ) and a base point ( G ) on ( E ).
   - **Key Generation**:
-    - Select a random integer \( d \) as the private key.
-    - Compute the public key \( Q = dG \).
+    - Select a random integer ( d ) as the private key.
+    - Compute the public key ( Q = dG ).
   - **Signature Generation**:
-    1. Compute the hash \( e = H(m) \).
-    2. Select a random integer \( k \).
-    3. Compute \( R = kG \) and \( r = R_x \mod n \) (where \( R_x \) is the x-coordinate of \( R \)).
-    4. Compute \( s = k^{-1}(e + dr) \mod n \).
-    5. The signature is the pair \( (r, s) \).
+    1. Compute the hash ( e = H(m) ).
+    2. Select a random integer ( k ).
+    3. Compute ( R = kG ) and ( r = R_x \mod n ) (where ( R_x ) is the x-coordinate of ( R )).
+    4. Compute ( s = k^{-1}(e + dr) \mod n ).
+    5. The signature is the pair ( (r, s) ).
   - **Signature Verification**:
-    1. Verify \( r \) and \( s \) are in the correct range.
-    2. Compute \( e = H(m) \).
-    3. Compute \( w = s^{-1} \mod n \).
-    4. Compute \( u1 = ew \mod n \) and \( u2 = rw \mod n \).
-    5. Compute \( R = u1G + u2Q \) and \( v = R_x \mod n \).
-    6. The signature is valid if \( v = r \).
+    1. Verify ( r ) and ( s ) are in the correct range.
+    2. Compute ( e = H(m) ).
+    3. Compute ( w = s^{-1} \mod n ).
+    4. Compute ( u1 = ew \mod n ) and ( u2 = rw \mod n ).
+    5. Compute ( R = u1G + u2Q ) and ( v = R_x \mod n ).
+    6. The signature is valid if ( v = r ).
 
 #### Global Domain Parameters
 - **Parameters**:
-  - The elliptic curve \( E \) over a finite field \( \mathbb{F}_p \) or \( \mathbb{F}_{2^m} \).
-  - A base point \( G \) with large order \( n \).
-  - The field size \( p \) or \( 2^m \), and the coefficients defining the curve.
+  - The elliptic curve ( E ) over a finite field ( \mathbb{F}_p ) or ( \mathbb{F}_{2^m} ).
+  - A base point ( G ) with large order ( n ).
+  - The field size ( p ) or ( 2^m ), and the coefficients defining the curve.
 
 #### Key Generation, Digital Signature Generation, and Verification
-- **Key Generation**: Select private key \( d \), compute public key \( Q = dG \).
-- **Digital Signature Generation**: Generate \( r \) and \( s \) as detailed above.
-- **Digital Signature Verification**: Verify \( r \) and \( s \) using the steps detailed above.
+- **Key Generation**: Select private key ( d ), compute public key ( Q = dG ).
+- **Digital Signature Generation**: Generate ( r ) and ( s ) as detailed above.
+- **Digital Signature Verification**: Verify ( r ) and ( s ) using the steps detailed above.
 
 ---
 
