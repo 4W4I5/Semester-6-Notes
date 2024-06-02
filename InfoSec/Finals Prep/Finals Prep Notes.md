@@ -86,9 +86,8 @@
 
 ## Secure Hash Algorithm (SHA)
 ### SHA-512 Logic
-- **Input:** Message with a maximum length of less than \( 2^{128} \) bits.
+- **Input:** Message with a maximum length of less than \( 2^{128} \) bits. In 1024-bit blocks
 - **Output:** 512-bit message digest.
-- **Processing:** In 1024-bit blocks.
 
 ### SHA-512 Steps
 1. **Append Padding Bits:** Length congruent to 896 modulo 1024, padding consists of one 1 bit followed by necessary 0 bits.
