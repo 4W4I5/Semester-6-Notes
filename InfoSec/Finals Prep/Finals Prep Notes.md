@@ -4,7 +4,7 @@
 | Title                                                     | Status                                     |
 | --------------------------------------------------------- | ------------------------------------------ |
 | Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: (Diagrams not done yet) |
-| Lecture 12: Message Authentication Codes                  | :white_check_mark:                         | 
+| Lecture 12: Message Authentication Codes                  | :white_check_mark:                         |
 | Lecture 13: Digital Signatures                            | :warning:                                  |
 | Lecture 14: Cryptographic Key Management and Distribution | :warning:                                  |
 
@@ -173,9 +173,6 @@
 		- Extract checksum and compare at sender side
 
 ## Message Authentication Code (MAC)
-
-An alternative authentication technique involves using a secret key to generate a small fixed-size block of data known as a cryptographic checksum or MAC, appended to the message. This technique assumes that two communicating parties (say A and B) share a common secret key (K). When A sends a message to B, it calculates the MAC as follows:
-
 - Similar to FCS
 - A and B share a common secret Key K
 - MAC calculated via C(K,M) and appended to message
@@ -184,7 +181,6 @@ An alternative authentication technique involves using a secret key to generate 
 		- Assured that the message has not been altered and that the message is from the alleged sender.
 
 ## MACs Based on Block Ciphers
-
 1. **DAA (Data Authentication Algorithm)**
 	- **Description**: DAA is based on the Data Encryption Standard (DES). It uses DES in a cryptographic mode that ensures data integrity and authenticity.
 	- **Details**: The DAA algorithm involves applying DES in cipher block chaining (CBC) mode to produce a fixed-length output (often 64 bits) from any input length. The algorithm ensures that any modification to the message will result in a different MAC, which the receiver can detect.
@@ -200,15 +196,13 @@ An alternative authentication technique involves using a secret key to generate 
 					- T1 = MAC(M1)
 					- T2 = MAC(M2 + T1) = MAC(M1 \|\| M2)
 
-
-
 ---
 
 # Lecture 13: Digital Signatures
 ## Digital Signatures Overview
 - **Purpose**: Message authentication protects two parties exchanging messages from any third party but does not protect the two parties from each other. Various disputes can arise, such as:
-  - **Forgery**: One party (e.g., Mary) may forge a message and claim it came from the other (e.g., John). Mary would simply have to create a message and append an authentication code using the key that John and Mary share.
-  - **Denial**: One party (e.g., John) can deny sending a message since it is possible for Mary to forge a message.
+	- **Forgery**: One party (e.g., Mary) may forge a message and claim it came from the other (e.g., John). Mary would simply have to create a message and append an authentication code using the key that John and Mary share.
+	- **Denial**: One party (e.g., John) can deny sending a message since it is possible for Mary to forge a message.
 
 ## Digital Signature Properties
 - **Verification**: Must verify the author, date, and time of the signature.
@@ -227,16 +221,16 @@ An alternative authentication technique involves using a secret key to generate 
 - **Definition**: Involves only the communicating parties (source and destination) with the destination knowing the public key of the source.
 - **Security**: Depends on the security of the sender’s private key.
 - **Threats**:
-  - **Denial**: A sender may claim that the private key was lost or stolen to deny sending a message.
-  - **Actual Theft**: If a private key is stolen, an opponent can send a message signed with the sender's signature and backdate it.
+	- **Denial**: A sender may claim that the private key was lost or stolen to deny sending a message.
+	- **Actual Theft**: If a private key is stolen, an opponent can send a message signed with the sender's signature and backdate it.
 
 ## ElGamal Digital Signature Scheme
 
 ### Key Generation
 - **Global Elements**: A prime number ( q ) and a primitive root ( \alpha ) of ( q ).
 - **User A's Key Pair**: Generated as follows:
-  1. Select a private key ( x ) such that ( 1 < x < q-1 ).
-  2. Compute the public key ( y ) as ( y = \alpha^x \mod q ).
+	1. Select a private key ( x ) such that ( 1 < x < q-1 ).
+	2. Compute the public key ( y ) as ( y = \alpha^x \mod q ).
 
 ### Signature Generation
 1. Choose a random integer ( k ) such that ( 1 < k < q-1 ) and ( \gcd(k, q-1) = 1 ).
@@ -259,42 +253,42 @@ An alternative authentication technique involves using a secret key to generate 
 - **Overview**: DSA is a Federal Information Processing Standard for digital signatures.
 - **Key Generation**: Involves generating a private key ( x ) and a corresponding public key ( y ).
 - **Signature Generation**:
-  1. Generate a random number ( k ).
-  2. Compute ( r = (g^k \mod p) \mod q ).
-  3. Compute ( s = (k^{-1}(H(m) + xr)) \mod q ).
+	1. Generate a random number ( k ).
+	2. Compute ( r = (g^k \mod p) \mod q ).
+	3. Compute ( s = (k^{-1}(H(m) + xr)) \mod q ).
 - **Signature Verification**:
-  1. Compute ( w = s^{-1} \mod q ).
-  2. Compute ( u1 = (H(m)w) \mod q ) and ( u2 = (rw) \mod q ).
-  3. Compute ( v = ((g^{u1} y^{u2}) \mod p) \mod q ).
-  4. The signature is valid if ( v = r ).
+	1. Compute ( w = s^{-1} \mod q ).
+	2. Compute ( u1 = (H(m)w) \mod q ) and ( u2 = (rw) \mod q ).
+	3. Compute ( v = ((g^{u1} y^{u2}) \mod p) \mod q ).
+	4. The signature is valid if ( v = r ).
 
 ### Elliptic Curve Digital Signature Algorithm (ECDSA)
 
 #### Process Overview
 - **Elements Involved**:
-  - **Global Domain Parameters**: Defines an elliptic curve ( E ) and a base point ( G ) on ( E ).
-  - **Key Generation**:
-    - Select a random integer ( d ) as the private key.
-    - Compute the public key ( Q = dG ).
-  - **Signature Generation**:
-    1. Compute the hash ( e = H(m) ).
-    2. Select a random integer ( k ).
-    3. Compute ( R = kG ) and ( r = R_x \mod n ) (where ( R_x ) is the x-coordinate of ( R )).
-    4. Compute ( s = k^{-1}(e + dr) \mod n ).
-    5. The signature is the pair ( (r, s) ).
-  - **Signature Verification**:
-    1. Verify ( r ) and ( s ) are in the correct range.
-    2. Compute ( e = H(m) ).
-    3. Compute ( w = s^{-1} \mod n ).
-    4. Compute ( u1 = ew \mod n ) and ( u2 = rw \mod n ).
-    5. Compute ( R = u1G + u2Q ) and ( v = R_x \mod n ).
-    6. The signature is valid if ( v = r ).
+	- **Global Domain Parameters**: Defines an elliptic curve ( E ) and a base point ( G ) on ( E ).
+	- **Key Generation**:
+		- Select a random integer ( d ) as the private key.
+		- Compute the public key ( Q = dG ).
+	- **Signature Generation**:
+		1. Compute the hash ( e = H(m) ).
+		2. Select a random integer ( k ).
+		3. Compute ( R = kG ) and ( r = R_x \mod n ) (where ( R_x ) is the x-coordinate of ( R )).
+		4. Compute ( s = k^{-1}(e + dr) \mod n ).
+		5. The signature is the pair ( (r, s) ).
+	- **Signature Verification**:
+		1. Verify ( r ) and ( s ) are in the correct range.
+		2. Compute ( e = H(m) ).
+		3. Compute ( w = s^{-1} \mod n ).
+		4. Compute ( u1 = ew \mod n ) and ( u2 = rw \mod n ).
+		5. Compute ( R = u1G + u2Q ) and ( v = R_x \mod n ).
+		6. The signature is valid if ( v = r ).
 
 #### Global Domain Parameters
 - **Parameters**:
-  - The elliptic curve ( E ) over a finite field ( \mathbb{F}*p ) or ( \mathbb{F}*{2^m} ).
-  - A base point ( G ) with large order ( n ).
-  - The field size ( p ) or ( 2^m ), and the coefficients defining the curve.
+	- The elliptic curve ( E ) over a finite field ( \mathbb{F}*p ) or ( \mathbb{F}*{2^m} ).
+	- A base point ( G ) with large order ( n ).
+	- The field size ( p ) or ( 2^m ), and the coefficients defining the curve.
 
 #### Key Generation, Digital Signature Generation, and Verification
 - **Key Generation**: Select private key ( d ), compute public key ( Q = dG ).
