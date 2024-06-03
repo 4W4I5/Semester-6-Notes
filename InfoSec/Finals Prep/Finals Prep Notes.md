@@ -157,26 +157,38 @@ Any message authentication or digital signature mechanism has two levels of func
 		- Need private key for auth, public key for sigs
 - **Diagrams Explained**
 	- A
-		- Symmetric grants confidentiality & authentication
-			- Required -> Key and message for encryption
+	- /InfoSec/Finals%20Prep/Images/
+		- ![](/InfoSec/Finals%20Prep/Images/Pasted%20image%2020240603230643.png)
+			- Symmetric grants confidentiality & authentication
+				- Required -> Key and message for encryption
 	- B
-		- Public-Key grants confidentiality
-			- Required -> Public Key for encryption
+		- ![](/InfoSec/Finals%20Prep/Images/Pasted%20image%2020240603230747.png)
+			- Public-Key grants confidentiality
+				- Required -> Public Key for encryption
 	- C
-		- Public-Key grants Authentication & Signature
-			- Required -> Private Key for encryption
+		- ![](/InfoSec/Finals%20Prep/Images/Pasted%20image%2020240603230754.png)
+			- Public-Key grants Authentication & Signature
+				- Required -> Private Key for encryption
 	- D
-		- Public-Key grants Confidentiality, Authentication & Signature
-			- Required -> Private Key for encryption, Public key for signature
+		- ![](/InfoSec/Finals%20Prep/Images/Pasted%20image%2020240603230810.png)
+			- Public-Key grants Confidentiality, Authentication & Signature
+				- Required -> Private Key for encryption, Public key for signature
 
 ## Frame Check Sequence (FCS Checksum)
-
+- Provides error control in case message integrity is tampered/corrupted
+- **Diagrams**
+	- Internal Error Control
+		- Calc checksum, append to end of message and encrypt
+		- Compare at the receiver side after decryption
+	- External Error Control
+		- Encrypt message, calc checksum and append to encrypted message
+		- Extract checksum and compare at sender side
 
 ## Message Authentication Code (MAC)
 
 An alternative authentication technique involves using a secret key to generate a small fixed-size block of data known as a cryptographic checksum or MAC, appended to the message. This technique assumes that two communicating parties (say A and B) share a common secret key (K). When A sends a message to B, it calculates the MAC as follows:
 
-\[ \text{MAC} = C(K, M) \]
+\[text{MAC} = C(K, M)\]
 
 If the received MAC matches the calculated MAC, then:
 
