@@ -1,12 +1,12 @@
 > [!WARNING]
 > Used GPT to convert pptx files into md files, only those marked with :white_check_mark: have been processed
 
-| Title                                                     | Status             |
-| --------------------------------------------------------- | ------------------ |
+| Title                                                     | Status                                     |
+| --------------------------------------------------------- | ------------------------------------------ |
 | Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: (Diagrams not done yet) |
-| Lecture 12: Message Authentication Codes                  | :warning:          |
-| Lecture 13: Digital Signatures                            | :warning:          |
-| Lecture 14: Cryptographic Key Management and Distribution | :warning:          |
+| Lecture 12: Message Authentication Codes                  | :white_check_mark:                         | 
+| Lecture 13: Digital Signatures                            | :warning:                                  |
+| Lecture 14: Cryptographic Key Management and Distribution | :warning:                                  |
 
 # Lecture 11: Cryptographic Hash Functions
 ## Introduction
@@ -32,14 +32,15 @@
 - **Flows:** Methods of Authentication
 	- Encrypt message+hash before sending
 	- Encrypt hash before sending
-	- #### WARN: 2 more but diagram ki smjh nhi aarhi
-
+	- Seed hash + message without encryption
+	- Seed Hash + Message before encryption
 
 ## Digital Signatures
 - **Mechanism:** The hash value of a message is encrypted with the sender's private key.
 - **Verification:** Anyone with the sender's public key can verify the message's integrity but to alter it would need to know the private key as well.
 - **Example:**
-	- #### WARN: Cant understand diagrams
+	- Encrypt hash with private key, decrypt with public key
+	- Same as above but encrypt with symmetric key
 
 ## Password Verification
 - **Mechanism:** Passwords are hashed and stored. During login, the entered password is hashed and compared to the stored hash.
@@ -172,47 +173,32 @@
 		- Extract checksum and compare at sender side
 
 ## Message Authentication Code (MAC)
+
 An alternative authentication technique involves using a secret key to generate a small fixed-size block of data known as a cryptographic checksum or MAC, appended to the message. This technique assumes that two communicating parties (say A and B) share a common secret key (K). When A sends a message to B, it calculates the MAC as follows:
 
 - Similar to FCS
 - A and B share a common secret Key K
 - MAC calculated via C(K,M) and appended to message
-- B Calculates MAC and comapres
-
-\[text{MAC} = C(K, M)\]
-
-If the received MAC matches the calculated MAC, then:
-
-- The receiver is assured that the message has not been altered.
-- The receiver is assured that the message is from the alleged sender.
-
+- B Calculates MAC and compares the received MAC
+	- If match
+		- Assured that the message has not been altered and that the message is from the alleged sender.
 
 ## MACs Based on Block Ciphers
 
-Two methods:
-
 1. **DAA (Data Authentication Algorithm)**
-   - **Description**: DAA is based on the Data Encryption Standard (DES). It uses DES in a cryptographic mode that ensures data integrity and authenticity.
-   - **Details**: The DAA algorithm involves applying DES in cipher block chaining (CBC) mode to produce a fixed-length output (often 64 bits) from any input length. The algorithm ensures that any modification to the message will result in a different MAC, which the receiver can detect.
-   - *[Added for clarity]*
-2. **CMAC (Cipher-based Message Authentication Code)**
-   - **Description**: CMAC is a block cipher-based MAC algorithm that is designed to provide message authentication. It can be used with any block cipher, including AES and DES.
-   - **Details**: CMAC involves encrypting the message using a block cipher in a specific mode (typically CBC), then processing the final block with a special key. This key is derived from the original encryption key using a defined method, ensuring the integrity and authenticity of the message.
-   - *[Added for clarity]*
-
-## CBC MAC (CMAC)
-
-**Description**:
-
-- An adversary can exploit CBC MAC when given the CBC MAC of a one-block message ( X ):
-  - If ( T = \text{MAC}(K, X) )
-  - The adversary knows the CBC MAC for the two-block message ( X \parallel (X \oplus T) ), which is also ( T ).
-
-**Attack on CMAC:**
-
-- It cannot be used for variable length messages:
-  - ( T1 = \text{MAC}(M1) )
-  - ( T2 = \text{MAC}(M2 \oplus T1) = \text{MAC}(M1 \parallel M2) )
+	- **Description**: DAA is based on the Data Encryption Standard (DES). It uses DES in a cryptographic mode that ensures data integrity and authenticity.
+	- **Details**: The DAA algorithm involves applying DES in cipher block chaining (CBC) mode to produce a fixed-length output (often 64 bits) from any input length. The algorithm ensures that any modification to the message will result in a different MAC, which the receiver can detect.
+1. **CMAC (Cipher-based Message Authentication Code)**
+	- **Description**: CMAC is a block cipher-based MAC algorithm that is designed to provide message authentication. It can be used with any block cipher, including AES and DES.
+	- **Details**: CMAC involves encrypting the message using a block cipher in a specific mode (typically CBC), then processing the final block with a special key.
+		- This key is derived from the original encryption key using a defined method, ensuring the integrity and authenticity of the message.
+		- The final encryption MSB yields the Length of Message T
+	- **Flaw:** An adversary can exploit CBC MAC when given the CBC MAC of a one-block message ( X ):
+		- If ( T = MAC(K, X) )
+			- The adversary knows the CBC MAC for the two-block message ( X \|\| (X  +  T) ), which is also ( T ).
+				- It cannot be used for variable length messages:
+					- T1 = MAC(M1)
+					- T2 = MAC(M2 + T1) = MAC(M1 \|\| M2)
 
 
 
