@@ -5,7 +5,7 @@
 | --------------------------------------------------------- | ------------------------------------------ |
 | Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: (Diagrams not done yet) |
 | Lecture 12: Message Authentication Codes                  | :white_check_mark:                         |
-| Lecture 13: Digital Signatures                            | :warning:                                  |
+| Lecture 13: Digital Signatures                            | :white_check_mark:                                  |
 | Lecture 14: Cryptographic Key Management and Distribution | :warning:                                  |
 
 # Lecture 11: Cryptographic Hash Functions
@@ -250,13 +250,14 @@
 - **Key Generation**: Involves generating a private key ( x ) and a corresponding public key ( y ).
 - **Signature Generation**:
 	1. Generate a random number ( k ).
-	2. Compute ( r = (g<sup>k</sup> mod p) mod q ).
-	3. Compute ( s = (k<sup>-H(m)</sup> + xr)) mod q ).
+	2. Compute r = (g<sup>k</sup> mod p) mod q .
+	3. Compute s = (k<sup>H(m)</sup> + xr)) mod q .
 - **Signature Verification**:
-	1. Compute ( w = s<sup>-1</sup> mod q ).
-	2. Compute ( u1 = (H(m)w) mod q ) and ( u2 = (rw) mod q ).
-	3. Compute ( v = ((g^{u1} y^{u2}) mod p) mod q ).
-	4. The signature is valid if ( v = r ).
+	1. Compute w = s'<sup>-1</sup> mod q .
+	2. Compute u1 = (H(m)w) mod q
+	3. Compute u2 = (r'w) mod q .
+	4. Compute v = ((g<sup>u1</sup> y<sup>u2</sup>) mod p) mod q .
+	5. The signature is valid if ( v = r').
 
 ### Elliptic Curve Digital Signature Algorithm (ECDSA)
 
@@ -279,17 +280,6 @@
 		4. Compute ( u1 = ew mod n ) and ( u2 = rw mod n ).
 		5. Compute ( R = u1G + u2Q ) and ( v = R_x mod n ).
 		6. The signature is valid if ( v = r ).
-
-#### Global Domain Parameters
-- **Parameters**:
-	- The elliptic curve ( E ) over a finite field ( \mathbb{F}*p ) or ( \mathbb{F}*{2^m} ).
-	- A base point ( G ) with large order ( n ).
-	- The field size ( p ) or ( 2^m ), and the coefficients defining the curve.
-
-#### Key Generation, Digital Signature Generation, and Verification
-- **Key Generation**: Select private key ( d ), compute public key ( Q = dG ).
-- **Digital Signature Generation**: Generate ( r ) and ( s ) as detailed above.
-- **Digital Signature Verification**: Verify ( r ) and ( s ) using the steps detailed above.
 
 ---
 
