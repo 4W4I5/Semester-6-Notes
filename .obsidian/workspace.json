@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 397.5,
-    "collapsed": true
+    "width": 397.5
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -173,7 +172,7 @@
   },
   "active": "8d32371d5a5b5b44",
   "lastOpenFiles": [
-    "Pasted image 20240604013816.png",
+    "InfoSec/Finals Prep/Images/Pasted image 20240604013816.png",
     "ke.md",
     "InfoSec/Finals Prep/Finals Prep Notes.md",
     "InfoSec/Finals Prep/Images/Pasted image 20240603230754.png",
