@@ -1,12 +1,14 @@
-> [!WARNING]
-> Used GPT to convert pptx files into md files, only those marked with :white_check_mark: have been processed
+
+<!--
+/InfoSec/Finals%20Prep/Images/
+-->
 
 | Title                                                     | Status                                     |
 | --------------------------------------------------------- | ------------------------------------------ |
 | Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: (Diagrams not done yet) |
 | Lecture 12: Message Authentication Codes                  | :white_check_mark:                         |
-| Lecture 13: Digital Signatures                            | :white_check_mark:                                  |
-| Lecture 14: Cryptographic Key Management and Distribution | :warning:                                  |
+| Lecture 13: Digital Signatures                            | :white_check_mark:                         |
+| Lecture 14: Cryptographic Key Management and Distribution | :white_check_mark:                         |
 
 # Lecture 11: Cryptographic Hash Functions
 ## Introduction
@@ -145,7 +147,6 @@
 		- Need private key for auth, public key for sigs
 - **Diagrams Explained**
 	- A
-	- /InfoSec/Finals%20Prep/Images/
 		- ![](/InfoSec/Finals%20Prep/Images/Pasted%20image%2020240603230643.png)
 			- Symmetric grants confidentiality & authentication
 				- Required -> Key and message for encryption
@@ -438,22 +439,17 @@ ITU-T recommendation X.509 is part of the X.500 series of recommendations that d
     - Signature
 
 ### How to Verify the Certificate
-
-Suppose A has obtained a certificate from certification authority X1 and B has obtained a certificate from CA X2. If A does not securely know the public key of X2, then B’s certificate issued by X2 is useless to A. A can read B’s certificate but cannot verify the signature.
+- Suppose A has obtained a certificate from certification authority X1 and B has obtained a certificate from CA X2.
+- If A does not securely know the public key of X2, then B’s certificate issued by X2 is useless to A.
+	- A can read B’s certificate but cannot verify the signature.
 
 However, if the two CAs have securely exchanged their own public keys, the following procedure will enable A to obtain B’s public key:
 
-1. Obtain from the directory the certificate of X2 signed by X1. Because A securely knows X1’s public key, A can obtain X2’s public key from its certificate and verify it using X1’s signature on the certificate.
-2. A then goes back to the directory and obtains the certificate of B signed by X2. Because A now has a trusted copy of X2’s public key, A can verify the signature and securely obtain B’s public key.
+1. Obtain from the directory the certificate of X2 signed by X1.
+2. Because A securely knows X1’s public key, A can obtain X2’s public key from its certificate and verify it using X1’s signature on the certificate.
+3. A then goes back to the directory and obtains the certificate of B signed by X2.
+4. A now has a trusted copy of X2’s public key, A can verify the signature and securely obtain B’s public key.
 
-### Example PKI Scenario
-- **Diagram**: Illustrates a Public Key Infrastructure (PKI) scenario.
-- **Explanation**:
-    - **Entities**:
-        - **Certification Authority (CA)**: Issues and manages certificates.
-        - **Registration Authority (RA)**: Handles the registration process for users.
-        - **End User**: Utilizes the certificates for secure communication.
-    - **Process**:
-        1. **Request for Certificate**: The end user requests a certificate from the RA.
-        2. **Issuing Certificate**: The CA issues the certificate and the user can now use it for secure communication.
-        3. **Using Certificates**: The end user can now use their private key to sign messages and others can use the corresponding public key to verify the signatures.
+### PKI Scenario
+
+![](/InfoSec/Finals%20Prep/Images/Pasted%20image%2020240604013816.png)
