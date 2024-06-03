@@ -290,9 +290,14 @@
 3. **Using Previous Keys**: If A and B have previously and recently used a key, one party can transmit the new key to the other, encrypted using the old key.
 4. **Encrypted Connection to a Third Party**: If A and B each have an encrypted connection to a third party C, C can deliver a key on the encrypted links to A and B.
 
-## Key Distribution Between Two Communicating Entities
+## Key Distribution using a 3rd party
 ### Key Translation
-- Send request using 
+- Direct KTC involvement
+	- Send a Request using a SenderMaster key and Session key with session against the KTC (Key translation Center)
+	- KTC creates a session with the Receiver using ReceiverMaster key but the same session key as the sender
+	- Receiver can now create a session with the Sender
+- Indirect KTC involvement
+	- Same as direct but the Sender inits a request with the KTC which then provides keys to both Sender + Receiver
 ### Key Translation with Key Forwarding
 
 
