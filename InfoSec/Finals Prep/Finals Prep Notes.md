@@ -200,22 +200,21 @@
 
 # Lecture 13: Digital Signatures
 ## Digital Signatures Overview
-- **Purpose**: Message authentication protects two parties exchanging messages from any third party but does not protect the two parties from each other. Various disputes can arise, such as:
+- **Purpose**: Message authentication protects two parties exchanging messages from any third party but does not protect the two parties from each other.
+- **Flaws**
 	- **Forgery**: One party (e.g., Mary) may forge a message and claim it came from the other (e.g., John). Mary would simply have to create a message and append an authentication code using the key that John and Mary share.
 	- **Denial**: One party (e.g., John) can deny sending a message since it is possible for Mary to forge a message.
-
-## Digital Signature Properties
-- **Verification**: Must verify the author, date, and time of the signature.
-- **Authentication**: Must authenticate the contents at the time of the signature.
-- **Third-Party Verification**: Must be verifiable by third parties to resolve disputes.
-- **Inclusion of Authentication Function**: Digital signature functions include the authentication function.
-
-## Digital Signature Requirements
-- The signature must be a bit pattern that depends on the message.
-- It must use information only known to the sender to prevent forgery and denial.
-- Production and verification of the digital signature must be relatively easy.
-- It must be computationally infeasible to forge the signature.
-- It must be practical to store a copy of the digital signature.
+- **Properties**
+	- **Verification**: Must verify the author, date, and time of the signature.
+	- **Authentication**: Must authenticate the contents at the time of the signature.
+	- **Third-Party Verification**: Must be verifiable by third parties to resolve disputes.
+	- **Inclusion of Authentication Function**: Digital signature functions include the authentication function.
+- **Requirements**
+	- The signature must be a bit pattern that depends on the message.
+	- It must use information only known to the sender to prevent forgery and denial.
+	- Production and verification of the digital signature must be relatively easy.
+	- It must be computationally infeasible to forge the signature.
+	- It must be practical to store a copy of the digital signature.
 
 ## Direct Digital Signatures
 - **Definition**: Involves only the communicating parties (source and destination) with the destination knowing the public key of the source.
