@@ -226,22 +226,23 @@
 ## ElGamal Digital Signature Scheme
 
 ### Key Generation
-- **Global Elements**: A prime number ( q ) and a primitive root ( α ) of ( q ).
+- **Global Elements**: A prime number (q) and a primitive root (α) of (q).
 - **User A's Key Pair**: Generated as follows:
-	1. Select a private key ( x ) such that ( 1 < x < q-1 ).
-	2. Compute the public key ( y ) as ( y = α^x mod q ).
+	1. Select a private key (x) such that (1 < x < q-1).
+	2. Compute the public key (y) as (y = α^x mod q).
 
 ### Signature Generation
-1. Choose a random integer ( k ) such that ( 1 < k < q-1 ) and ( gcd(k, q-1) = 1 ).
-2. Compute r = (α<sup>k</sup> mod q) .
+1. Choose a random integer (k) such that (1 < k < q-1) and gcd(k, q-1) = 1.
+2. Compute S<sub>1</sub> = (α<sup>k</sup> mod q) .
+	1. This is basically the same as Elgammal C1
 3. Compute k<sup>-1</sup> mod (q-1) .
-4. Compute s = (k<sup>-1</sup> (H(m) - xr)) mod (q-1) .
-5. The signature is the pair ( (r, s) ).
+4. Compute S<sub>2</sub> = k<sup>-1</sup> (H(m) - xr) mod (q-1) .
+5. The signature is the pair (S<sub>1</sub>, S<sub>2</sub>).
 
 ### Signature Verification
 1. Verify that ( 0 < r < q ) and ( 0 < s < q-1 ).
-2. Compute ( v1 = α<sup>H(m)</sup> mod q ).
-3. Compute ( v2 = (y<sup>r</sup> r<sup>s</sup>) mod q ).
+2. Compute v<sub>1</sub> = α<sup>m</sup> mod q.
+3. Compute v<sub>2</sub> = Y<sub>A</sub><sup>S<sub>1</sub></sup> S<sub>1</sub><sup>S<sub>2</sub></sup> mod q.
 4. The signature is valid if ( v1 = v2 ).
 
 ### Example
