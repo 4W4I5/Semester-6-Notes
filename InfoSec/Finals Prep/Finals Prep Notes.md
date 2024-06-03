@@ -292,7 +292,7 @@
 
 ## Key Distribution Between Two Communicating Entities
 ### Key Translation
-- 
+- Send request using 
 ### Key Translation with Key Forwarding
 
 
