@@ -245,10 +245,6 @@
 3. Compute v<sub>2</sub> = Y<sub>A</sub><sup>S<sub>1</sub></sup> S<sub>1</sub><sup>S<sub>2</sub></sup> mod q.
 4. The signature is valid if ( v1 = v2 ).
 
-### Example
-- For example, let ( q = 23 ), ( α = 5 ), ( x = 6 ), ( y = 8 ), ( k = 15 ), and message ( m = "Hello" ).
-- Follow the steps to generate and verify the signature (details would involve specific calculations based on the steps above).
-
 ### NIST Digital Signature Algorithm (DSA)
 - **Overview**: DSA is a Federal Information Processing Standard for digital signatures.
 - **Key Generation**: Involves generating a private key ( x ) and a corresponding public key ( y ).
