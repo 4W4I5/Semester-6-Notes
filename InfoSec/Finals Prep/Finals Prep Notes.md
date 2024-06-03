@@ -174,6 +174,11 @@
 ## Message Authentication Code (MAC)
 An alternative authentication technique involves using a secret key to generate a small fixed-size block of data known as a cryptographic checksum or MAC, appended to the message. This technique assumes that two communicating parties (say A and B) share a common secret key (K). When A sends a message to B, it calculates the MAC as follows:
 
+- Similar to FCS
+- A and B share a common secret Key K
+- MAC calculated via C(K,M) and appended to message
+- B Calculates MAC and comapres
+
 \[text{MAC} = C(K, M)\]
 
 If the received MAC matches the calculated MAC, then:
