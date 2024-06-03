@@ -226,26 +226,26 @@
 ## ElGamal Digital Signature Scheme
 
 ### Key Generation
-- **Global Elements**: A prime number ( q ) and a primitive root ( \alpha ) of ( q ).
+- **Global Elements**: A prime number ( q ) and a primitive root ( α ) of ( q ).
 - **User A's Key Pair**: Generated as follows:
 	1. Select a private key ( x ) such that ( 1 < x < q-1 ).
-	2. Compute the public key ( y ) as ( y = \alpha^x \mod q ).
+	2. Compute the public key ( y ) as ( y = α^x mod q ).
 
 ### Signature Generation
-1. Choose a random integer ( k ) such that ( 1 < k < q-1 ) and ( \gcd(k, q-1) = 1 ).
-2. Compute ( r = (\alpha^k \mod q) ).
-3. Compute ( k^{-1} \mod (q-1) ).
-4. Compute ( s = (k^{-1} (H(m) - xr)) \mod (q-1) ).
+1. Choose a random integer ( k ) such that ( 1 < k < q-1 ) and ( gcd(k, q-1) = 1 ).
+2. Compute r = (α<sup>k</sup> mod q) .
+3. Compute k<sup>-1</sup> mod (q-1) .
+4. Compute s = (k<sup>-1</sup> (H(m) - xr)) mod (q-1) .
 5. The signature is the pair ( (r, s) ).
 
 ### Signature Verification
 1. Verify that ( 0 < r < q ) and ( 0 < s < q-1 ).
-2. Compute ( v1 = \alpha^{H(m)} \mod q ).
-3. Compute ( v2 = (y^r r^s) \mod q ).
+2. Compute ( v1 = α<sup>H(m)</sup> mod q ).
+3. Compute ( v2 = (y<sup>r</sup> r<sup>s</sup>) mod q ).
 4. The signature is valid if ( v1 = v2 ).
 
 ### Example
-- For example, let ( q = 23 ), ( \alpha = 5 ), ( x = 6 ), ( y = 8 ), ( k = 15 ), and message ( m = "Hello" ).
+- For example, let ( q = 23 ), ( α = 5 ), ( x = 6 ), ( y = 8 ), ( k = 15 ), and message ( m = "Hello" ).
 - Follow the steps to generate and verify the signature (details would involve specific calculations based on the steps above).
 
 ### NIST Digital Signature Algorithm (DSA)
@@ -253,12 +253,12 @@
 - **Key Generation**: Involves generating a private key ( x ) and a corresponding public key ( y ).
 - **Signature Generation**:
 	1. Generate a random number ( k ).
-	2. Compute ( r = (g^k \mod p) \mod q ).
-	3. Compute ( s = (k^{-1}(H(m) + xr)) \mod q ).
+	2. Compute ( r = (g<sup>k</sup> mod p) mod q ).
+	3. Compute ( s = (k<sup>-H(m)</sup> + xr)) mod q ).
 - **Signature Verification**:
-	1. Compute ( w = s^{-1} \mod q ).
-	2. Compute ( u1 = (H(m)w) \mod q ) and ( u2 = (rw) \mod q ).
-	3. Compute ( v = ((g^{u1} y^{u2}) \mod p) \mod q ).
+	1. Compute ( w = s<sup>-1</sup> mod q ).
+	2. Compute ( u1 = (H(m)w) mod q ) and ( u2 = (rw) mod q ).
+	3. Compute ( v = ((g^{u1} y^{u2}) mod p) mod q ).
 	4. The signature is valid if ( v = r ).
 
 ### Elliptic Curve Digital Signature Algorithm (ECDSA)
@@ -272,15 +272,15 @@
 	- **Signature Generation**:
 		1. Compute the hash ( e = H(m) ).
 		2. Select a random integer ( k ).
-		3. Compute ( R = kG ) and ( r = R_x \mod n ) (where ( R_x ) is the x-coordinate of ( R )).
-		4. Compute ( s = k^{-1}(e + dr) \mod n ).
+		3. Compute ( R = kG ) and ( r = R_x mod n ) (where ( R_x ) is the x-coordinate of ( R )).
+		4. Compute ( s = k<sup>-1</sup>(e + dr) mod n ).
 		5. The signature is the pair ( (r, s) ).
 	- **Signature Verification**:
 		1. Verify ( r ) and ( s ) are in the correct range.
 		2. Compute ( e = H(m) ).
-		3. Compute ( w = s^{-1} \mod n ).
-		4. Compute ( u1 = ew \mod n ) and ( u2 = rw \mod n ).
-		5. Compute ( R = u1G + u2Q ) and ( v = R_x \mod n ).
+		3. Compute ( w = s^{-1} mod n ).
+		4. Compute ( u1 = ew mod n ) and ( u2 = rw mod n ).
+		5. Compute ( R = u1G + u2Q ) and ( v = R_x mod n ).
 		6. The signature is valid if ( v = r ).
 
 #### Global Domain Parameters
