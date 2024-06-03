@@ -284,22 +284,19 @@
 ---
 
 # Lecture 14: Cryptographic Key Management and Distribution
-## Key Distribution Options
-
-For two parties A and B, key distribution can be achieved in several ways:
-
+## Methods of Key Distribution
 1. **Physical Delivery by A**: A can select a key and physically deliver it to B.
 2. **Third-Party Selection**: A third party can select the key and physically deliver it to A and B.
 3. **Using Previous Keys**: If A and B have previously and recently used a key, one party can transmit the new key to the other, encrypted using the old key.
 4. **Encrypted Connection to a Third Party**: If A and B each have an encrypted connection to a third party C, C can deliver a key on the encrypted links to A and B.
 
 ## Key Distribution Between Two Communicating Entities
+### Key Translation
+- 
+### Key Translation with Key Forwarding
 
-### Key Hierarchy
-- **Description**: The key hierarchy establishes different levels of keys with specific roles. For instance, master keys, session keys, and encryption keys. Each level of keys serves a different purpose and provides different levels of security.
 
 ### Symmetric Key Distribution Using Asymmetric Encryption
-
 #### Simple Secret Key Distribution
 - **Diagram**: Two parties exchange a secret key using a simple protocol where one party sends the key encrypted with the other's public key.
 - **Explanation**:
