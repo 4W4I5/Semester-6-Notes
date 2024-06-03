@@ -236,7 +236,7 @@
 2. Compute S<sub>1</sub> = (α<sup>k</sup> mod q) .
 	1. This is basically the same as Elgammal C1
 3. Compute k<sup>-1</sup> mod (q-1) .
-4. Compute S<sub>2</sub> = k<sup>-1</sup> (H(m) - xr) mod (q-1) .
+4. Compute S<sub>2</sub> = k<sup>-1</sup>e(m - X<sub>A</sub>S<sub>1</sub>) mod (q-1) .
 5. The signature is the pair (S<sub>1</sub>, S<sub>2</sub>).
 
 ### Signature Verification
