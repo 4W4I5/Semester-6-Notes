@@ -453,3 +453,20 @@ However, if the two CAs have securely exchanged their own public keys, the follo
 ### PKI Scenario
 
 ![](/InfoSec/Finals%20Prep/Images/Pasted%20image%2020240604013816.png)
+
+- **Key Generation by Bob**:
+    - Bob generates a pair of keys: a public key and a private key.
+- **Application for Certificate**:
+    - Bob sends a request to the Registration Authority (RA) for a public key certificate. This includes Bob's public key and identity information.
+- **Verification by Registration Authority (RA)**:
+    - The RA verifies Bob's identity and details. Once verified, the RA forwards Bob's certificate request to the Certification Authority (CA).
+- **Certificate Issuance by Certification Authority (CA)**:
+    - The CA creates Bob's public key certificate, which binds Bob's identity to his public key.
+    - The CA signs the certificate with its own private key to ensure its authenticity.
+- **Certificate Storage**:
+    - Bob's public key certificate is stored in a repository, which may also contain certificate revocation lists (CRLs).
+- **Certificate Retrieval by Alice**:
+    - When Alice needs to verify Bob's signature on a document, she retrieves Bob's public key certificate from the repository.
+- **Verification Process by Alice**:
+    - Alice uses the CA's public key to verify the signature on Bob's public key certificate.
+    - Once verified, Alice uses Bob's public key to verify the signature on the document signed by Bob.
