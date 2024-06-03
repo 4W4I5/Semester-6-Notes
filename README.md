@@ -40,7 +40,7 @@
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | [Sessional 1 \| Dawood's Notes](https://github.com/4W4I5/Semester-6-Notes/blob/main/InfoSec/Info_sec/Info%20sec%20P1.pdf) | :white_check_mark: |
 | [Sessional 2](InfoSec/Sessional%202%20Prep/Sessional%202%20Prep%20Notes.md)                                               | :x:                |
-| [Finals \| Very Rough](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                                                    | :warning:          |
+| [Finals \| Theory Only](InfoSec/Finals%20Prep/Finals%20Prep%20Notes.md)                                                    | :white_check_mark:          |
 
 # Ethical Hacking
 

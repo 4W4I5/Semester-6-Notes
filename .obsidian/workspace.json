@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "InfoSec/Finals Prep/Finals Prep Notes.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 397.5
+    "width": 397.5,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "InfoSec/Finals Prep/Finals Prep Notes.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "InfoSec/Finals Prep/Finals Prep Notes.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "InfoSec/Finals Prep/Finals Prep Notes.md"
+                "file": "README.md"
               }
             }
           },
@@ -172,9 +173,9 @@
   },
   "active": "8d32371d5a5b5b44",
   "lastOpenFiles": [
+    "InfoSec/Finals Prep/Finals Prep Notes.md",
     "InfoSec/Finals Prep/Images/Pasted image 20240604013816.png",
     "ke.md",
-    "InfoSec/Finals Prep/Finals Prep Notes.md",
     "InfoSec/Finals Prep/Images/Pasted image 20240603230754.png",
     "InfoSec/Finals Prep/Images/Pasted image 20240603230747.png",
     "Pasted image 20240603230803.png",
@@ -216,7 +217,6 @@
     "InfoSec/Info_sec/Info sec/Info sec P9.png",
     "InfoSec/Info_sec/Info sec/Info sec P8.png",
     "InfoSec/Info_sec/Info sec/Info sec P7.png",
-    "InfoSec/Info_sec/Info sec/Info sec P6.png",
-    "InfoSec/Info_sec/Info sec/Info sec P5.png"
+    "InfoSec/Info_sec/Info sec/Info sec P6.png"
   ]
 }
