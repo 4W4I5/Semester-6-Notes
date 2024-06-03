@@ -149,9 +149,27 @@ Any message authentication or digital signature mechanism has two levels of func
 
 ## Message Encryption
 - **Can Encryption be used as authentication?**
-  - Yes/No?
-  - Symmetric?
-  - Asymmetric?
+	- Yes/No?
+		- Yes if private key is used
+	- Symmetric?
+		- Already does
+	- Asymmetric?
+		- Need private key for auth, public key for sigs
+- **Diagrams Explained**
+	- A
+		- Symmetric grants confidentiality & authentication
+			- Required -> Key and message for encryption
+	- B
+		- Public-Key grants confidentiality
+			- Required -> Public Key for encryption
+	- C
+		- Public-Key grants Authentication & Signature
+			- Required -> Private Key for encryption
+	- D
+		- Public-Key grants Confidentiality, Authentication & Signature
+			- Required -> Private Key for encryption, Public key for signature
+
+## Frame Check Sequence (FCS Checksum)
 
 
 ## Message Authentication Code (MAC)
@@ -194,9 +212,6 @@ Two methods:
   - ( T2 = \text{MAC}(M2 \oplus T1) = \text{MAC}(M1 \parallel M2) )
 
 
-## Frame Check Sequence /Checksum
-
-Frame Check Sequence (FCS) or Checksum is an error-detecting code commonly used in data communications. It ensures that the data received is the same as the data sent by computing a value based on the data's binary content and sending this value along with the data. The receiver performs the same computation and compares the result. Any discrepancy indicates an error.
 
 ---
 
