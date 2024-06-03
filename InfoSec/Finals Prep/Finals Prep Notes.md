@@ -60,6 +60,7 @@
 	     - XOR block into hash value.
 
 ## Requirements and Security
+
 | **Requirement**                                      | **Description**                                                                                                  |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Variable input size                                  | H can be applied to a block of data of any size.                                                                 |
@@ -71,6 +72,7 @@
 | Pseudorandomness                                     | Output of H meets standard tests for pseudorandomness.                                                           |
 
 ## Hash Properties for Hash Functions
+
 |                                         | Preimage Resistant | Second Preimage Resistant | Collision Resistant |
 | --------------------------------------- | ------------------ | ------------------------- | ------------------- |
 | Hash + digital signature                | yes                | yes                       | yes*                |
@@ -78,6 +80,7 @@
 | Hash + symmetric encryption             |                    |                           |                     |
 | One-way password file                   | yes                |                           |                     |
 | MAC                                     | yes                | yes                       | yes*                |
+
 - **Property Definitions**
 	- **Pre-image Resistance:** Difficult to find any input xxx that maps to a specific hash hhh.
 	- **Second Pre-image Resistance:** Difficult to find any second input x′x'x′ such that H(x)=H(x′)H(x) = H(x')H(x)=H(x′).
@@ -108,7 +111,6 @@
 	- Diagram Interpretation
 		- `a = SUM(MAJ(a,b,c))`
 	- #### WARN: Diagram nhi smjha
-
    - The round function processes each 1024-bit block using a series of logical functions and bitwise operations to update the hash value.
    - **Example Rounds:**
      - **Message Schedule:** Prepare 80 words from the 1024-bit block.
@@ -119,48 +121,55 @@
 ---
 
 # Lecture 12: Message Authentication Codes
-### Message Authentication Requirements
-In the context of communications across a network, the following attacks can be identified:
-- Disclosure
-- Traffic analysis
-- Masquerade
-- Content modification
-- Sequence modification
-- Timing modification
-- Source repudiation
-- Destination repudiation
+## Message Authentication Requirements
+- **MAC Definition**
+	- Verify integrity of the message and the authenticity of the sender
+	- A signature counters repudiation
+- **Attacks on Comms across a network**
+	- Disclosure
+	- Traffic analysis
+	- Masquerade
+	- Content modification
+	- Sequence modification
+	- Timing modification
+	- Source repudiation
+	- Destination repudiation
 
-Message authentication is a procedure to verify that received messages come from the alleged source and have not been altered. It may also verify sequencing and timeliness. A digital signature is an authentication technique that also includes measures to counter repudiation by the source.
 
-### Message Authentication Functions
+## Message Authentication Functions
+
 Any message authentication or digital signature mechanism has two levels of functionality:
+
 1. **Lower Level**: Produces an authenticator, a value used to authenticate a message.
+	1. **Hash Function**: Maps a message of any length into a fixed-length hash value, serving as the authenticator.
+	2. **Message Encryption**: The ciphertext of the entire message serves as its authenticator.
+	3. **Message Authentication Code (MAC)**: A function of the message and a secret key that produces a fixed-length value serving as the authenticator.
 2. **Higher Level**: Utilizes the authenticator in a protocol that enables a receiver to verify the authenticity of a message.
 
-### Authenticator Functions
-1. **Hash Function**: Maps a message of any length into a fixed-length hash value, serving as the authenticator.
-2. **Message Encryption**: The ciphertext of the entire message serves as its authenticator.
-3. **Message Authentication Code (MAC)**: A function of the message and a secret key that produces a fixed-length value serving as the authenticator.
 
-### Message Encryption
+## Message Encryption
 - **Can Encryption be used as authentication?**
   - Yes/No?
   - Symmetric?
   - Asymmetric?
 
 
-### Message Authentication Code (MAC)
+## Message Authentication Code (MAC)
+
 An alternative authentication technique involves using a secret key to generate a small fixed-size block of data known as a cryptographic checksum or MAC, appended to the message. This technique assumes that two communicating parties (say A and B) share a common secret key (K). When A sends a message to B, it calculates the MAC as follows:
 
 \[ \text{MAC} = C(K, M) \]
 
 If the received MAC matches the calculated MAC, then:
+
 - The receiver is assured that the message has not been altered.
 - The receiver is assured that the message is from the alleged sender.
 
 
-### MACs Based on Block Ciphers
+## MACs Based on Block Ciphers
+
 Two methods:
+
 1. **DAA (Data Authentication Algorithm)**
    - **Description**: DAA is based on the Data Encryption Standard (DES). It uses DES in a cryptographic mode that ensures data integrity and authenticity.
    - **Details**: The DAA algorithm involves applying DES in cipher block chaining (CBC) mode to produce a fixed-length output (often 64 bits) from any input length. The algorithm ensures that any modification to the message will result in a different MAC, which the receiver can detect.
@@ -170,72 +179,75 @@ Two methods:
    - **Details**: CMAC involves encrypting the message using a block cipher in a specific mode (typically CBC), then processing the final block with a special key. This key is derived from the original encryption key using a defined method, ensuring the integrity and authenticity of the message.
    - *[Added for clarity]*
 
-### CBC MAC (CMAC)
+## CBC MAC (CMAC)
+
 **Description**:
+
 - An adversary can exploit CBC MAC when given the CBC MAC of a one-block message ( X ):
   - If ( T = \text{MAC}(K, X) )
   - The adversary knows the CBC MAC for the two-block message ( X \parallel (X \oplus T) ), which is also ( T ).
 
 **Attack on CMAC:**
+
 - It cannot be used for variable length messages:
   - ( T1 = \text{MAC}(M1) )
   - ( T2 = \text{MAC}(M2 \oplus T1) = \text{MAC}(M1 \parallel M2) )
 
 
-### Frame Check Sequence /Checksum
+## Frame Check Sequence /Checksum
 
 Frame Check Sequence (FCS) or Checksum is an error-detecting code commonly used in data communications. It ensures that the data received is the same as the data sent by computing a value based on the data's binary content and sending this value along with the data. The receiver performs the same computation and compares the result. Any discrepancy indicates an error.
 
 ---
 
 # Lecture 13: Digital Signatures
-### Digital Signatures Overview
+## Digital Signatures Overview
 - **Purpose**: Message authentication protects two parties exchanging messages from any third party but does not protect the two parties from each other. Various disputes can arise, such as:
   - **Forgery**: One party (e.g., Mary) may forge a message and claim it came from the other (e.g., John). Mary would simply have to create a message and append an authentication code using the key that John and Mary share.
   - **Denial**: One party (e.g., John) can deny sending a message since it is possible for Mary to forge a message.
 
-### Digital Signature Properties
+## Digital Signature Properties
 - **Verification**: Must verify the author, date, and time of the signature.
 - **Authentication**: Must authenticate the contents at the time of the signature.
 - **Third-Party Verification**: Must be verifiable by third parties to resolve disputes.
 - **Inclusion of Authentication Function**: Digital signature functions include the authentication function.
 
-### Digital Signature Requirements
+## Digital Signature Requirements
 - The signature must be a bit pattern that depends on the message.
 - It must use information only known to the sender to prevent forgery and denial.
 - Production and verification of the digital signature must be relatively easy.
 - It must be computationally infeasible to forge the signature.
 - It must be practical to store a copy of the digital signature.
 
-### Direct Digital Signatures
+## Direct Digital Signatures
 - **Definition**: Involves only the communicating parties (source and destination) with the destination knowing the public key of the source.
 - **Security**: Depends on the security of the sender’s private key.
 - **Threats**:
   - **Denial**: A sender may claim that the private key was lost or stolen to deny sending a message.
   - **Actual Theft**: If a private key is stolen, an opponent can send a message signed with the sender's signature and backdate it.
 
-### ElGamal Digital Signature Scheme
+## ElGamal Digital Signature Scheme
 
-#### Key Generation
+### Key Generation
 - **Global Elements**: A prime number ( q ) and a primitive root ( \alpha ) of ( q ).
 - **User A's Key Pair**: Generated as follows:
   1. Select a private key ( x ) such that ( 1 < x < q-1 ).
   2. Compute the public key ( y ) as ( y = \alpha^x \mod q ).
 
-#### Signature Generation
+### Signature Generation
 1. Choose a random integer ( k ) such that ( 1 < k < q-1 ) and ( \gcd(k, q-1) = 1 ).
 2. Compute ( r = (\alpha^k \mod q) ).
 3. Compute ( k^{-1} \mod (q-1) ).
 4. Compute ( s = (k^{-1} (H(m) - xr)) \mod (q-1) ).
 5. The signature is the pair ( (r, s) ).
 
-#### Signature Verification
+### Signature Verification
 1. Verify that ( 0 < r < q ) and ( 0 < s < q-1 ).
 2. Compute ( v1 = \alpha^{H(m)} \mod q ).
 3. Compute ( v2 = (y^r r^s) \mod q ).
 4. The signature is valid if ( v1 = v2 ).
 
-#### Example
+### Example
 - For example, let ( q = 23 ), ( \alpha = 5 ), ( x = 6 ), ( y = 8 ), ( k = 15 ), and message ( m = "Hello" ).
 - Follow the steps to generate and verify the signature (details would involve specific calculations based on the steps above).
 
@@ -276,7 +288,7 @@ Frame Check Sequence (FCS) or Checksum is an error-detecting code commonly used 
 
 #### Global Domain Parameters
 - **Parameters**:
-  - The elliptic curve ( E ) over a finite field ( \mathbb{F}_p ) or ( \mathbb{F}_{2^m} ).
+  - The elliptic curve ( E ) over a finite field ( \mathbb{F}*p ) or ( \mathbb{F}*{2^m} ).
   - A base point ( G ) with large order ( n ).
   - The field size ( p ) or ( 2^m ), and the coefficients defining the curve.
 
@@ -289,6 +301,7 @@ Frame Check Sequence (FCS) or Checksum is an error-detecting code commonly used 
 
 # Lecture 14: Cryptographic Key Management and Distribution
 ## Key Distribution Options
+
 For two parties A and B, key distribution can be achieved in several ways:
 
 1. **Physical Delivery by A**: A can select a key and physically deliver it to B.
@@ -326,6 +339,7 @@ For two parties A and B, key distribution can be achieved in several ways:
 ## Distribution of Public Keys
 
 ### Public Announcement of Public Keys
+
 Anyone can forge a public announcement. That is, some user could pretend to be user A and send a public key to another participant or broadcast such a public key. Until user A discovers the forgery and alerts other participants, the forger can read all encrypted messages intended for A and use the forged keys for authentication.
 
 ### Publicly Available Directory
@@ -337,11 +351,13 @@ Anyone can forge a public announcement. That is, some user could pretend to be u
 This scheme is more secure than individual public announcements but still has vulnerabilities. If an adversary obtains or computes the private key of the directory authority, the adversary could authoritatively pass out counterfeit public keys and impersonate any participant and eavesdrop on messages sent to any participant. Another way to achieve the same end is for the adversary to tamper with the records kept by the authority.
 
 ### Public-Key Authority
+
 The public-key authority could be a bottleneck in the system, as a user must appeal to the authority for a public key for every other user it wishes to contact. As before, the directory of names and public keys maintained by the authority is vulnerable to tampering.
 
 ### Public-Key Certificates
 
 #### X.509 Certificates
+
 ITU-T recommendation X.509 is part of the X.500 series of recommendations that define a directory service. X.509 defines a framework for the provision of authentication services by the X.500 directory to its users. X.509 is an important standard because the certificate structure and authentication protocols defined in X.509 are used in a variety of contexts.
 
 #### X.509 Public-Key Certificate Use
@@ -367,6 +383,7 @@ ITU-T recommendation X.509 is part of the X.500 series of recommendations that d
     - Signature
 
 ### How to Verify the Certificate
+
 Suppose A has obtained a certificate from certification authority X1 and B has obtained a certificate from CA X2. If A does not securely know the public key of X2, then B’s certificate issued by X2 is useless to A. A can read B’s certificate but cannot verify the signature.
 
 However, if the two CAs have securely exchanged their own public keys, the following procedure will enable A to obtain B’s public key:
