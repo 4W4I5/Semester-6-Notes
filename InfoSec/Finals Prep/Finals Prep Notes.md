@@ -108,15 +108,7 @@
 4. **Round Function:**
 	- Each current block is hashed with the previous output (the buffer contents for the first block) for N number of blocks
 	- Perform Round & Addition for each block
-	- Diagram Interpretation
-		- `a = SUM(MAJ(a,b,c))`
-	- #### WARN: Diagram nhi smjha
-   - The round function processes each 1024-bit block using a series of logical functions and bitwise operations to update the hash value.
-   - **Example Rounds:**
-     - **Message Schedule:** Prepare 80 words from the 1024-bit block.
-     - **Compression Function:** Update the hash value with bitwise operations, modular additions, and logical functions.
-
-    -->
+	- The round function processes each 1024-bit block using a series of logical functions and bitwise operations to update the hash value.
 
 ---
 
@@ -129,17 +121,12 @@
 	- Disclosure
 	- Traffic analysis
 	- Masquerade
-	- Content modification
-	- Sequence modification
-	- Timing modification
-	- Source repudiation
-	- Destination repudiation
+	- Modifications
+		- Sequence, Timing & Content
+	- Source/Distance repudiation
 
 
 ## Message Authentication Functions
-
-Any message authentication or digital signature mechanism has two levels of functionality:
-
 1. **Lower Level**: Produces an authenticator, a value used to authenticate a message.
 	1. **Hash Function**: Maps a message of any length into a fixed-length hash value, serving as the authenticator.
 	2. **Message Encryption**: The ciphertext of the entire message serves as its authenticator.
@@ -185,7 +172,6 @@ Any message authentication or digital signature mechanism has two levels of func
 		- Extract checksum and compare at sender side
 
 ## Message Authentication Code (MAC)
-
 An alternative authentication technique involves using a secret key to generate a small fixed-size block of data known as a cryptographic checksum or MAC, appended to the message. This technique assumes that two communicating parties (say A and B) share a common secret key (K). When A sends a message to B, it calculates the MAC as follows:
 
 \[text{MAC} = C(K, M)\]
