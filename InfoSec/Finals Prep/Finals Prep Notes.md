@@ -3,12 +3,12 @@
 /InfoSec/Finals%20Prep/Images/
 -->
 
-| Title                                                     | Status                                     |
-| --------------------------------------------------------- | ------------------------------------------ |
-| Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: (Diagrams not done yet) |
-| Lecture 12: Message Authentication Codes                  | :white_check_mark:                         |
-| Lecture 13: Digital Signatures                            | :white_check_mark:                         |
-| Lecture 14: Cryptographic Key Management and Distribution | :white_check_mark:                         |
+| Title                                                     | Status             |
+| --------------------------------------------------------- | ------------------ |
+| Lecture 11: Cryptographic Hash Functions                  | :white_check_mark: | 
+| Lecture 12: Message Authentication Codes                  | :white_check_mark: |
+| Lecture 13: Digital Signatures                            | :white_check_mark: |
+| Lecture 14: Cryptographic Key Management and Distribution | :white_check_mark: |
 
 # Lecture 11: Cryptographic Hash Functions
 ## Introduction
