@@ -292,13 +292,31 @@
 
 ## Key Distribution using a 3rd party
 ### Key Translation
-- Direct KTC involvement
-	- Send a Request using a SenderMaster key and Session key with session against the KTC (Key translation Center)
-	- KTC creates a session with the Receiver using ReceiverMaster key but the same session key as the sender
-	- Receiver can now create a session with the Sender
-- Indirect KTC involvement
-	- Same as direct but the Sender inits a request with the KTC which then provides keys to both Sender + Receiver
+- **Sender (A) sends a request**: A generates a session key (Ks), encrypts it using its master key (Kma), and sends this to the KTC.
+- **KTC creates a session**: The KTC decrypts the session key (Ks) using Kma, then re-encrypts it using the receiver's (B's) master key (Kmb).
+- **Receiver (B) can now create a session**: B decrypts the session key (Ks) using Kmb and establishes a secure session with A using Ks.
+
 ### Key Translation with Key Forwarding
+- **Sender (A) sends a request**: A generates a session key (Ks), encrypts it using its master key (Kma), and sends this to the KTC.
+- **KTC re-encrypts the session key**: The KTC decrypts Ks using Kma, then re-encrypts it using B's master key (Kmb).
+- **KTC sends the re-encrypted session key to A**: A receives the session key encrypted with Kmb.
+- **A forwards the session key to B**: A sends the encrypted session key (Ks encrypted with Kmb) to B.
+- **Receiver (B) decrypts the session key**: B decrypts Ks using Kmb and establishes a secure session with A using Ks.
+
+### Key Distribution
+- **Sender (A) requests a session key**: A sends a request to the KDC for a session key (Ks) to use with B.
+- **KDC generates the session key**: The KDC generates Ks.
+- **KDC encrypts the session key for A and B**: The KDC encrypts Ks with A's master key (Kma) and B's master key (Kmb).
+- **KDC sends the encrypted session keys to A and B**: A receives Ks encrypted with Kma, and B receives Ks encrypted with Kmb.
+- **Both A and B establish a secure session**: A and B decrypt Ks using their respective master keys and use Ks for secure communication.
+
+### Key Distribution with Key Forwarding
+- **Sender (A) requests a session key**: A sends a request to the KDC for a session key (Ks) to use with B.
+- **KDC generates the session key**: The KDC generates Ks.
+- **KDC encrypts the session key for A and B**: The KDC encrypts Ks with A's master key (Kma) and B's master key (Kmb).
+- **KDC sends both encrypted keys to A**: A receives Ks encrypted with Kma and Ks encrypted with Kmb.
+- **A forwards the session key to B**: A sends the session key encrypted with Kmb to B.
+- **Both A and B establish a secure session**: A and B decrypt Ks using their respective master keys and use Ks for secure communication.
 
 
 ### Symmetric Key Distribution Using Asymmetric Encryption
